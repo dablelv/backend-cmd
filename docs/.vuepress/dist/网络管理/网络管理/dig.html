@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.命令简介 | 后台开发命令 365</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.d682e6f9.css" as="style"><link rel="preload" href="/assets/js/app.3ae06b93.js" as="script"><link rel="preload" href="/assets/js/2.e69c4131.js" as="script"><link rel="preload" href="/assets/js/201.33d0460d.js" as="script"><link rel="prefetch" href="/assets/js/10.46eac4f5.js"><link rel="prefetch" href="/assets/js/100.717d3102.js"><link rel="prefetch" href="/assets/js/101.1098dd8d.js"><link rel="prefetch" href="/assets/js/102.5190119f.js"><link rel="prefetch" href="/assets/js/103.a8168e2c.js"><link rel="prefetch" href="/assets/js/104.dc339a30.js"><link rel="prefetch" href="/assets/js/105.77526c37.js"><link rel="prefetch" href="/assets/js/106.92b681b4.js"><link rel="prefetch" href="/assets/js/107.6c8a70a4.js"><link rel="prefetch" href="/assets/js/108.0d488278.js"><link rel="prefetch" href="/assets/js/109.57bdb317.js"><link rel="prefetch" href="/assets/js/11.1266f776.js"><link rel="prefetch" href="/assets/js/110.eb36baa6.js"><link rel="prefetch" href="/assets/js/111.c7c22cb6.js"><link rel="prefetch" href="/assets/js/112.ba373da3.js"><link rel="prefetch" href="/assets/js/113.479491b0.js"><link rel="prefetch" href="/assets/js/114.93764698.js"><link rel="prefetch" href="/assets/js/115.ab2ec839.js"><link rel="prefetch" href="/assets/js/116.c14671c6.js"><link rel="prefetch" href="/assets/js/117.5723df5e.js"><link rel="prefetch" href="/assets/js/118.968834ee.js"><link rel="prefetch" href="/assets/js/119.ec5b4914.js"><link rel="prefetch" href="/assets/js/12.d071b9ef.js"><link rel="prefetch" href="/assets/js/120.840efcfc.js"><link rel="prefetch" href="/assets/js/121.6eec1b31.js"><link rel="prefetch" href="/assets/js/122.a08e675f.js"><link rel="prefetch" href="/assets/js/123.5ad029b5.js"><link rel="prefetch" href="/assets/js/124.c81bcb25.js"><link rel="prefetch" href="/assets/js/125.e7362587.js"><link rel="prefetch" href="/assets/js/126.734a915a.js"><link rel="prefetch" href="/assets/js/127.d82be8a7.js"><link rel="prefetch" href="/assets/js/128.e0756077.js"><link rel="prefetch" href="/assets/js/129.b23724c1.js"><link rel="prefetch" href="/assets/js/13.69dc70fc.js"><link rel="prefetch" href="/assets/js/130.3a045f1f.js"><link rel="prefetch" href="/assets/js/131.1130e9c2.js"><link rel="prefetch" href="/assets/js/132.703c2067.js"><link rel="prefetch" href="/assets/js/133.4bc0b9a3.js"><link rel="prefetch" href="/assets/js/134.702dfabb.js"><link rel="prefetch" href="/assets/js/135.bb8d4799.js"><link rel="prefetch" href="/assets/js/136.c8e2ef9a.js"><link rel="prefetch" href="/assets/js/137.d5ad649d.js"><link rel="prefetch" href="/assets/js/138.c4756f08.js"><link rel="prefetch" href="/assets/js/139.9674cf5b.js"><link rel="prefetch" href="/assets/js/14.bb3dea7c.js"><link rel="prefetch" href="/assets/js/140.989c6833.js"><link rel="prefetch" href="/assets/js/141.7b41216d.js"><link rel="prefetch" href="/assets/js/142.5886f3df.js"><link rel="prefetch" href="/assets/js/143.1d84594c.js"><link rel="prefetch" href="/assets/js/144.7eb7d5f1.js"><link rel="prefetch" href="/assets/js/145.e4fe1aec.js"><link rel="prefetch" href="/assets/js/146.63ade8a9.js"><link rel="prefetch" href="/assets/js/147.51f49be6.js"><link rel="prefetch" href="/assets/js/148.43cc9051.js"><link rel="prefetch" href="/assets/js/149.42fed394.js"><link rel="prefetch" href="/assets/js/15.25bc76b6.js"><link rel="prefetch" href="/assets/js/150.dd826e76.js"><link rel="prefetch" href="/assets/js/151.5b6d3066.js"><link rel="prefetch" href="/assets/js/152.c5a1a2a9.js"><link rel="prefetch" href="/assets/js/153.da9ae47b.js"><link rel="prefetch" href="/assets/js/154.07438fc5.js"><link rel="prefetch" href="/assets/js/155.9196e706.js"><link rel="prefetch" href="/assets/js/156.c6ce7ae0.js"><link rel="prefetch" href="/assets/js/157.9a0ca008.js"><link rel="prefetch" href="/assets/js/158.9f34967b.js"><link rel="prefetch" href="/assets/js/159.870fc31d.js"><link rel="prefetch" href="/assets/js/16.feec3eab.js"><link rel="prefetch" href="/assets/js/160.4f414a6f.js"><link rel="prefetch" href="/assets/js/161.7b69711b.js"><link rel="prefetch" href="/assets/js/162.bebbe2e3.js"><link rel="prefetch" href="/assets/js/163.8c299c96.js"><link rel="prefetch" href="/assets/js/164.83f1c66e.js"><link rel="prefetch" href="/assets/js/165.023a4ed5.js"><link rel="prefetch" href="/assets/js/166.c9bf569f.js"><link rel="prefetch" href="/assets/js/167.039309ce.js"><link rel="prefetch" href="/assets/js/168.1c4db17a.js"><link rel="prefetch" href="/assets/js/169.aa51d8fe.js"><link rel="prefetch" href="/assets/js/17.5f667054.js"><link rel="prefetch" href="/assets/js/170.af74717c.js"><link rel="prefetch" href="/assets/js/171.584e518e.js"><link rel="prefetch" href="/assets/js/172.1e8a6007.js"><link rel="prefetch" href="/assets/js/173.716bab72.js"><link rel="prefetch" href="/assets/js/174.f9048720.js"><link rel="prefetch" href="/assets/js/175.4ac0b838.js"><link rel="prefetch" href="/assets/js/176.ef6163bc.js"><link rel="prefetch" href="/assets/js/177.0629d5fd.js"><link rel="prefetch" href="/assets/js/178.6f670574.js"><link rel="prefetch" href="/assets/js/179.7051d221.js"><link rel="prefetch" href="/assets/js/18.30279338.js"><link rel="prefetch" href="/assets/js/180.60c42336.js"><link rel="prefetch" href="/assets/js/181.05db641e.js"><link rel="prefetch" href="/assets/js/182.3fa16bdf.js"><link rel="prefetch" href="/assets/js/183.03d760d7.js"><link rel="prefetch" href="/assets/js/184.eb84e368.js"><link rel="prefetch" href="/assets/js/185.5d4b3c52.js"><link rel="prefetch" href="/assets/js/186.b8e52ba8.js"><link rel="prefetch" href="/assets/js/187.fbf1694f.js"><link rel="prefetch" href="/assets/js/188.a1b68191.js"><link rel="prefetch" href="/assets/js/189.495df2f3.js"><link rel="prefetch" href="/assets/js/19.5791cc57.js"><link rel="prefetch" href="/assets/js/190.90021ea3.js"><link rel="prefetch" href="/assets/js/191.aac67e3e.js"><link rel="prefetch" href="/assets/js/192.b5ed94c7.js"><link rel="prefetch" href="/assets/js/193.cefe237d.js"><link rel="prefetch" href="/assets/js/194.253dd2bb.js"><link rel="prefetch" href="/assets/js/195.55e5dbc2.js"><link rel="prefetch" href="/assets/js/196.b14af240.js"><link rel="prefetch" href="/assets/js/197.d242ebe5.js"><link rel="prefetch" href="/assets/js/198.a91bb64c.js"><link rel="prefetch" href="/assets/js/199.92f806dc.js"><link rel="prefetch" href="/assets/js/20.e2fad8f3.js"><link rel="prefetch" href="/assets/js/200.7062afd7.js"><link rel="prefetch" href="/assets/js/202.92aeed9a.js"><link rel="prefetch" href="/assets/js/203.8f6ff62d.js"><link rel="prefetch" href="/assets/js/204.a4cf5e1d.js"><link rel="prefetch" href="/assets/js/205.c67997b0.js"><link rel="prefetch" href="/assets/js/206.533230b9.js"><link rel="prefetch" href="/assets/js/207.40f568de.js"><link rel="prefetch" href="/assets/js/208.2af4b390.js"><link rel="prefetch" href="/assets/js/209.3272a033.js"><link rel="prefetch" href="/assets/js/21.3488dd76.js"><link rel="prefetch" href="/assets/js/210.12bcb1f0.js"><link rel="prefetch" href="/assets/js/211.8a5360a2.js"><link rel="prefetch" href="/assets/js/212.84a0953e.js"><link rel="prefetch" href="/assets/js/213.e5cafa9a.js"><link rel="prefetch" href="/assets/js/214.898e977f.js"><link rel="prefetch" href="/assets/js/215.f9a2e66d.js"><link rel="prefetch" href="/assets/js/216.0dacfd18.js"><link rel="prefetch" href="/assets/js/217.f15c0ab1.js"><link rel="prefetch" href="/assets/js/218.deda5b98.js"><link rel="prefetch" href="/assets/js/219.c16fd88b.js"><link rel="prefetch" href="/assets/js/22.525c98ea.js"><link rel="prefetch" href="/assets/js/220.e1473e05.js"><link rel="prefetch" href="/assets/js/221.a091852b.js"><link rel="prefetch" href="/assets/js/222.5d3db5ed.js"><link rel="prefetch" href="/assets/js/223.7395be35.js"><link rel="prefetch" href="/assets/js/224.3ffd3c0b.js"><link rel="prefetch" href="/assets/js/225.e9e5e5a3.js"><link rel="prefetch" href="/assets/js/226.55059c9f.js"><link rel="prefetch" href="/assets/js/227.fde1ab27.js"><link rel="prefetch" href="/assets/js/228.35792714.js"><link rel="prefetch" href="/assets/js/229.933eb4d0.js"><link rel="prefetch" href="/assets/js/23.c62d630f.js"><link rel="prefetch" href="/assets/js/230.3d00406d.js"><link rel="prefetch" href="/assets/js/231.5b9804c7.js"><link rel="prefetch" href="/assets/js/232.b40b2f43.js"><link rel="prefetch" href="/assets/js/233.09aad620.js"><link rel="prefetch" href="/assets/js/234.293db744.js"><link rel="prefetch" href="/assets/js/235.b5b1ba74.js"><link rel="prefetch" href="/assets/js/236.7948a766.js"><link rel="prefetch" href="/assets/js/237.f879b3f0.js"><link rel="prefetch" href="/assets/js/238.71fb727f.js"><link rel="prefetch" href="/assets/js/239.b0f5e0ba.js"><link rel="prefetch" href="/assets/js/24.3892c2e8.js"><link rel="prefetch" href="/assets/js/240.0c2809d3.js"><link rel="prefetch" href="/assets/js/241.37c3575a.js"><link rel="prefetch" href="/assets/js/242.b9d15c87.js"><link rel="prefetch" href="/assets/js/243.56595d53.js"><link rel="prefetch" href="/assets/js/244.ddf5ad82.js"><link rel="prefetch" href="/assets/js/245.435e541b.js"><link rel="prefetch" href="/assets/js/246.bc46bf07.js"><link rel="prefetch" href="/assets/js/247.1a48a362.js"><link rel="prefetch" href="/assets/js/248.7f444f00.js"><link rel="prefetch" href="/assets/js/249.1f2d896f.js"><link rel="prefetch" href="/assets/js/25.bba7bab4.js"><link rel="prefetch" href="/assets/js/250.0a2789fa.js"><link rel="prefetch" href="/assets/js/251.4beee155.js"><link rel="prefetch" href="/assets/js/252.744a7636.js"><link rel="prefetch" href="/assets/js/253.9860cdd1.js"><link rel="prefetch" href="/assets/js/254.12e63609.js"><link rel="prefetch" href="/assets/js/255.598cd740.js"><link rel="prefetch" href="/assets/js/256.62f3bbb3.js"><link rel="prefetch" href="/assets/js/257.1278969d.js"><link rel="prefetch" href="/assets/js/258.8fdbdcd6.js"><link rel="prefetch" href="/assets/js/259.60e5437c.js"><link rel="prefetch" href="/assets/js/26.cd9abe23.js"><link rel="prefetch" href="/assets/js/260.1c4d3c32.js"><link rel="prefetch" href="/assets/js/261.c7dd87b9.js"><link rel="prefetch" href="/assets/js/262.f329c304.js"><link rel="prefetch" href="/assets/js/263.20cbfb3e.js"><link rel="prefetch" href="/assets/js/264.c6b63253.js"><link rel="prefetch" href="/assets/js/265.cc19fa2d.js"><link rel="prefetch" href="/assets/js/266.433d95ba.js"><link rel="prefetch" href="/assets/js/267.8b20e89c.js"><link rel="prefetch" href="/assets/js/268.91fffe3c.js"><link rel="prefetch" href="/assets/js/269.8ad0a25e.js"><link rel="prefetch" href="/assets/js/27.f813cd85.js"><link rel="prefetch" href="/assets/js/28.cdfa492e.js"><link rel="prefetch" href="/assets/js/29.f10d3ba9.js"><link rel="prefetch" href="/assets/js/3.d38113cc.js"><link rel="prefetch" href="/assets/js/30.831e55a7.js"><link rel="prefetch" href="/assets/js/31.649df9eb.js"><link rel="prefetch" href="/assets/js/32.8c1784c6.js"><link rel="prefetch" href="/assets/js/33.6e9bf07a.js"><link rel="prefetch" href="/assets/js/34.730de2f5.js"><link rel="prefetch" href="/assets/js/35.db0f4ab2.js"><link rel="prefetch" href="/assets/js/36.ccd6de2b.js"><link rel="prefetch" href="/assets/js/37.3753eb44.js"><link rel="prefetch" href="/assets/js/38.d12dcb29.js"><link rel="prefetch" href="/assets/js/39.d5885e10.js"><link rel="prefetch" href="/assets/js/4.c69c5b0e.js"><link rel="prefetch" href="/assets/js/40.3bed49b5.js"><link rel="prefetch" href="/assets/js/41.30f53ce5.js"><link rel="prefetch" href="/assets/js/42.a4b38348.js"><link rel="prefetch" href="/assets/js/43.a6a760de.js"><link rel="prefetch" href="/assets/js/44.15cd7843.js"><link rel="prefetch" href="/assets/js/45.272d2d95.js"><link rel="prefetch" href="/assets/js/46.6e2de83a.js"><link rel="prefetch" href="/assets/js/47.f78d08e9.js"><link rel="prefetch" href="/assets/js/48.aa6d87fe.js"><link rel="prefetch" href="/assets/js/49.aba38dcf.js"><link rel="prefetch" href="/assets/js/5.4dc8d661.js"><link rel="prefetch" href="/assets/js/50.342881a2.js"><link rel="prefetch" href="/assets/js/51.cee42bba.js"><link rel="prefetch" href="/assets/js/52.4224d314.js"><link rel="prefetch" href="/assets/js/53.fc63c9b8.js"><link rel="prefetch" href="/assets/js/54.5e844609.js"><link rel="prefetch" href="/assets/js/55.bf257fbb.js"><link rel="prefetch" href="/assets/js/56.726cd4e2.js"><link rel="prefetch" href="/assets/js/57.3591e744.js"><link rel="prefetch" href="/assets/js/58.de4eef1e.js"><link rel="prefetch" href="/assets/js/59.978817f2.js"><link rel="prefetch" href="/assets/js/6.88d03338.js"><link rel="prefetch" href="/assets/js/60.ee2edc5d.js"><link rel="prefetch" href="/assets/js/61.dafdb5d2.js"><link rel="prefetch" href="/assets/js/62.baa37873.js"><link rel="prefetch" href="/assets/js/63.1a6a53cf.js"><link rel="prefetch" href="/assets/js/64.551ba02d.js"><link rel="prefetch" href="/assets/js/65.9270aa9f.js"><link rel="prefetch" href="/assets/js/66.f8343da1.js"><link rel="prefetch" href="/assets/js/67.ea0370b5.js"><link rel="prefetch" href="/assets/js/68.adf6cf8d.js"><link rel="prefetch" href="/assets/js/69.3a3588fc.js"><link rel="prefetch" href="/assets/js/7.8ceda348.js"><link rel="prefetch" href="/assets/js/70.962c671d.js"><link rel="prefetch" href="/assets/js/71.5e02976c.js"><link rel="prefetch" href="/assets/js/72.383648e5.js"><link rel="prefetch" href="/assets/js/73.aa8cb241.js"><link rel="prefetch" href="/assets/js/74.9350847e.js"><link rel="prefetch" href="/assets/js/75.d45ea12a.js"><link rel="prefetch" href="/assets/js/76.036a60f9.js"><link rel="prefetch" href="/assets/js/77.eed2b349.js"><link rel="prefetch" href="/assets/js/78.ab65c100.js"><link rel="prefetch" href="/assets/js/79.1bc30c9a.js"><link rel="prefetch" href="/assets/js/8.415e53bc.js"><link rel="prefetch" href="/assets/js/80.72ce6de8.js"><link rel="prefetch" href="/assets/js/81.b08e076c.js"><link rel="prefetch" href="/assets/js/82.d52488dd.js"><link rel="prefetch" href="/assets/js/83.c5b48460.js"><link rel="prefetch" href="/assets/js/84.ebcbb47b.js"><link rel="prefetch" href="/assets/js/85.e791a1bd.js"><link rel="prefetch" href="/assets/js/86.f39e0f93.js"><link rel="prefetch" href="/assets/js/87.ee74d037.js"><link rel="prefetch" href="/assets/js/88.23b1adf8.js"><link rel="prefetch" href="/assets/js/89.0ea24c35.js"><link rel="prefetch" href="/assets/js/9.7b756d22.js"><link rel="prefetch" href="/assets/js/90.dfac6d02.js"><link rel="prefetch" href="/assets/js/91.eb00407f.js"><link rel="prefetch" href="/assets/js/92.f2ca838a.js"><link rel="prefetch" href="/assets/js/93.effb8550.js"><link rel="prefetch" href="/assets/js/94.6a3ebb48.js"><link rel="prefetch" href="/assets/js/95.97a09d91.js"><link rel="prefetch" href="/assets/js/96.e06e882c.js"><link rel="prefetch" href="/assets/js/97.bc1a6708.js"><link rel="prefetch" href="/assets/js/98.8c936e14.js"><link rel="prefetch" href="/assets/js/99.b2884563.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d682e6f9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://excalidraw.com/apple-touch-icon.png" alt="后台开发命令 365" class="logo"> <span class="site-name can-hide">后台开发命令 365</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://u1s1.vip/about" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友链
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  下拉1
+</a></li><li class="dropdown-item"><!----> <a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  下拉2
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://u1s1.vip/about" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友链
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  下拉1
+</a></li><li class="dropdown-item"><!----> <a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  下拉2
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>帮助</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>文件系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进程管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>编译调试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>二进制工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Shell 编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>系统管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>终端配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>权限管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>网络管理</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>远程登录</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>网络传输</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>网络管理</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/网络管理/网络管理/arp.html" class="sidebar-link">arp</a></li><li><a href="/网络管理/网络管理/arpd.html" class="sidebar-link">arpd</a></li><li><a href="/网络管理/网络管理/arping.html" class="sidebar-link">arping</a></li><li><a href="/网络管理/网络管理/arpwatch.html" class="sidebar-link">arpwatch</a></li><li><a href="/网络管理/网络管理/dhclient.html" class="sidebar-link">dhclient</a></li><li><a href="/网络管理/网络管理/dig.html" class="active sidebar-link">dig</a></li><li><a href="/网络管理/网络管理/ethtool.html" class="sidebar-link">ethtool</a></li><li><a href="/网络管理/网络管理/host.html" class="sidebar-link">host</a></li><li><a href="/网络管理/网络管理/ifcfg.html" class="sidebar-link">ifcfg</a></li><li><a href="/网络管理/网络管理/ifconfig.html" class="sidebar-link">ifconfig</a></li><li><a href="/网络管理/网络管理/ifdown.html" class="sidebar-link">ifdown</a></li><li><a href="/网络管理/网络管理/ifup.html" class="sidebar-link">ifup</a></li><li><a href="/网络管理/网络管理/ip.html" class="sidebar-link">ip</a></li><li><a href="/网络管理/网络管理/ipcalc.html" class="sidebar-link">ipcalc</a></li><li><a href="/网络管理/网络管理/iptables.html" class="sidebar-link">iptables</a></li><li><a href="/网络管理/网络管理/iptables-restore.html" class="sidebar-link">iptables-restore</a></li><li><a href="/网络管理/网络管理/iptables-save.html" class="sidebar-link">iptables-save</a></li><li><a href="/网络管理/网络管理/lnstat.html" class="sidebar-link">lnstat</a></li><li><a href="/网络管理/网络管理/mii-tool.html" class="sidebar-link">mii-tool</a></li><li><a href="/网络管理/网络管理/ncat.html" class="sidebar-link">ncat</a></li><li><a href="/网络管理/网络管理/netstat.html" class="sidebar-link">netstat</a></li><li><a href="/网络管理/网络管理/nmap.html" class="sidebar-link">nmap</a></li><li><a href="/网络管理/网络管理/nslookup.html" class="sidebar-link">nslookup</a></li><li><a href="/网络管理/网络管理/nstat.html" class="sidebar-link">nstat</a></li><li><a href="/网络管理/网络管理/ping.html" class="sidebar-link">ping</a></li><li><a href="/网络管理/网络管理/route.html" class="sidebar-link">route</a></li><li><a href="/网络管理/网络管理/ss.html" class="sidebar-link">ss</a></li><li><a href="/网络管理/网络管理/tcpdump.html" class="sidebar-link">tcpdump</a></li><li><a href="/网络管理/网络管理/tracepath.html" class="sidebar-link">tracepath</a></li><li><a href="/网络管理/网络管理/traceroute.html" class="sidebar-link">traceroute</a></li><li><a href="/网络管理/网络管理/usernetctl.html" class="sidebar-link">usernetctl</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>版本控制</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实用工具</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-命令简介"><a href="#_1-命令简介" class="header-anchor">#</a> 1.命令简介</h2> <p>dig（domain information groper）是域名查询工具。</p> <p>dig 是一个灵活的 DNS 查询工具，它会打印出 DNS 域名服务器的回应，主要用来从 DNS 域名服务器查询主机地址信息。</p> <p>dig 命令与 nslookup 命令功能基本相同，但是 dig 命令灵活性好、易用、输出清晰。</p> <h2 id="_2-命令格式"><a href="#_2-命令格式" class="header-anchor">#</a> 2.命令格式</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> <span class="token punctuation">[</span>@server<span class="token punctuation">]</span> <span class="token punctuation">[</span>-b address<span class="token punctuation">]</span> <span class="token punctuation">[</span>-c class<span class="token punctuation">]</span> <span class="token punctuation">[</span>-f filename<span class="token punctuation">]</span> <span class="token punctuation">[</span>-k filename<span class="token punctuation">]</span> <span class="token punctuation">[</span>-m<span class="token punctuation">]</span> <span class="token punctuation">[</span>-p port<span class="token comment">#] [-q name] [-t type] [-x addr] [-y [hmac:]name:key] [-4] [-6] [name] [type] [class] [queryopt...]</span>
+
+<span class="token function">dig</span> <span class="token punctuation">[</span>-h<span class="token punctuation">]</span>
+
+<span class="token function">dig</span> <span class="token punctuation">[</span>global-queryopt<span class="token punctuation">..</span>.<span class="token punctuation">]</span> <span class="token punctuation">[</span>query<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+</code></pre></div><h2 id="_3-简单用法"><a href="#_3-简单用法" class="header-anchor">#</a> 3.简单用法</h2> <p>典型的 dig 调用格式如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> <span class="token punctuation">[</span>@server<span class="token punctuation">]</span> name <span class="token builtin class-name">type</span>
+</code></pre></div><p>其中 server 是域名服务器的名称或 IP 地址。这可以是以点分十进制表示的 IPv4 地址，也可以是以冒号分隔的 IPv6 地址。当提供的服务器参数是主机名时，dig 会在查询该域名服务器之前解析该名称。</p> <p>如果未提供 server 参数，dig 会查找 /etc/resolv.conf；如果在那里找到一个地址，它将查询该地址的名称服务器。如果使用了 -4 或 -6 选项，则只尝试相应传输的地址。如果没有找到可用的地址，dig 将向本地主机发送查询。将显示来自名称服务器的响应。</p> <p>name 为要查找的资源记录的名称。</p> <p>type 指示所需的查询类型 ANY、A、MX、SIG 等。类型可以是任何有效的查询类型。如果没有提供类型参数，dig 将查找 A 记录。</p> <h2 id="_4-选项说明"><a href="#_4-选项说明" class="header-anchor">#</a> 4.选项说明</h2> <h3 id="_4-1-普通选项"><a href="#_4-1-普通选项" class="header-anchor">#</a> 4.1 普通选项</h3> <div class="language- extra-class"><pre class="language-text"><code>@
+	指定进行域名解析的域名服务器。
+-b &lt;address&gt;[#&lt;port&gt;]
+	使用指定的本机 IP 地址向域名服务器发送域名查询请求。
+-c &lt;class&gt;
+	缺省查询类（IN for internet）由选项 -c 重设。class 能够是任何合法类，比如查询 Hesiod 记录的 HS 类或查询 CHAOSNET 记录的 CH 类。
+-f &lt;file&gt;
+	指定 dig 以批处理的方式运行，文件中保存着需要批处理查询的 DNS 任务信息。
+-k &lt;keyfile&gt;
+	要签署由 dig 发送的 DNS 查询连同对他们使用事务签名（TSIG）的响应，用选项 -k 指定 TSIG 密钥文档。
+-p &lt;port&gt;
+	指定域名服务器所使用端口号。
+-t &lt;type&gt;
+	指定要查询的 DNS 数据类型（默认为 A）。
+-x &lt;addr&gt;
+	执行逆向域名查询。
+-4
+	使用 ipv4（默认）
+-6
+	使用 ipv6。
+-h
+	显示命令帮助信息。
+-y [hmac:]name:key
+	您能够通过命令行上的 -y 选项指定 TSIG 密钥；name 是 TSIG 密码的名称，key 是实际的密码。密码是 64 位加密字符串，通常由 dnssec-keygen（8）生成。当在多用户系统上使用选项 -y 时应该谨慎，因为密码在 ps(1) 的输出或 Shell 的历史文档中可能是可见的。当同时使用 dig 和 TSCG 认证时，被查询的名称服务器需要知道密码和解码规则。在 BIND 中，通过提供正确的密码和 named.conf 中的服务器声明实现。
+</code></pre></div><h3 id="_4-2-查询选项"><a href="#_4-2-查询选项" class="header-anchor">#</a> 4.2 查询选项</h3> <p>dig 提供查询选项号，他影响搜索方式和结果显示。一些在查询请求报头配置或复位标志位，一部分决定显示哪些回复信息，其他的确定超时和重试策略。每个查询选项被带前缀（+）的关键字标识。一些关键字配置或复位一个选项。通常前缀是求反关键字含义的字符串 no。其他关键字分配各选项的值，比如超时时间间隔。他们的格式形如 +keyword=value。查询选项是：</p> <div class="language- extra-class"><pre class="language-text"><code>+[no]tcp
+    查询域名服务器时使用 [不使用] TCP。缺省行为是使用 UDP，除非是 AXFR 或 IXFR 请求，才使用 TCP 连接。
++[no]vc
+    查询名称服务器时使用 [不使用] TCP。+[no]tcp 的备用语法提供了向下兼容。 vc 代表虚电路。
++[no]ignore
+    忽略 UDP 响应的中断，而不是用 TCP 重试。缺省情况运行 TCP 重试。
++domain=somename
+    设定包含单个域 somename 的搜索列表，似乎被 /etc/resolv.conf 中的域伪指令指定，并且启用搜索列表处理，似乎给定了 +search 选项。
++[no]search
+    使用 [不使用] 搜索列表或 resolv.conf 中的域伪指令（假如有的话）定义的搜索列表。缺省情况不使用搜索列表。
++[no]defname
+    不建议看作 +[no]search 的同义词。
++[no]aaonly
+    该选项不做任何事。他用来提供对配置成未实现解析器标志的 dig 的旧版本的兼容性。
++[no]adflag
+    在查询中配置 [不配置] AD（真实数据）位。现在 AD 位只在响应中有标准含义，而查询中没有，但是出于完整性考虑在查询中这种性能能够配置。
++[no]cdflag
+    在查询中配置 [不配置] CD（检查禁用）位。他请求服务器不运行响应信息的 DNSSEC 合法性。
++[no]recursive
+    转换查询中的 RD（需要递归）位配置。在缺省情况下配置该位，也就是说 dig 正常情形下发送递归查询。当使用查询选项 +nssearch 或 +trace 时，递归自动禁用。
++[no]nssearch
+    这个选项被配置时，dig 试图寻找包含待搜名称的网段的权威域名服务器，并显示网段中每台域名服务器的 SOA 记录。
++[no]trace
+    转换为待查询名称从根名称服务器开始的代理路径跟踪。缺省情况不使用跟踪。一旦启用跟踪，dig 使用迭代查询解析待查询名称。他将按照从根服务器的参照，显示来自每台使用解析查询的服务器的应答。
++[no]cmd
+    设定在输出中显示指出 dig 版本及其所用的查询选项的初始注释。缺省情况下显示注释。
++[no]short
+    提供简要答复。缺省值是以冗长格式显示答复信息。
++[no]identify
+    当启用 +short 选项时，显示 [或不显示] 提供给答的 IP 地址和端口号。假如请求简短格式应答，缺省情况不显示提供给答的服务器的源地址和端口号。
++[no]comments
+    转换输出中的注释行显示。缺省值是显示注释。
++[no]stats
+    该查询选项设定显示统计信息：查询进行时，应答的大小等等。缺省显示查询统计信息。
++[no]qr
+    显示 [不显示] 发送的查询请求。缺省不显示。
++[no]question
+    当返回应答时，显示 [不显示] 查询请求的问题部分。缺省作为注释显示问题部分。
++[no]answer
+    显示 [不显示] 应答的回答部分。缺省显示。
++[no]authority
+    显示 [不显示] 应答的权限部分。缺省显示。
++[no]additional
+    显示 [不显示] 应答的附加部分。缺省显示。
++[no]all
+    配置或清除任何显示标志。
++time=T
+    为查询配置超时时间为 T 秒。缺省是5秒。假如将 T 配置为小于1的数，则以1秒作为查询超时时间。
++tries=A
+    配置向服务器发送 UDP 查询请求的重试次数为 A，代替缺省的 3 次。假如把 A 小于或等于 0，则采用 1 为重试次数。
++ndots=D
+    出于完全考虑，配置必须出现在名称 D 的点数。缺省值是使用在 /etc/resolv.conf 中的 ndots 语句定义的，或是 1，假如没有 ndots 语句的话。带更少点数的名称被解释为相对名称，并通过搜索列表中的域或文档 /etc/resolv.conf 中的域伪指令进行搜索。
++bufsize=B
+    配置使用 EDNS0 的 UDP 消息缓冲区大小为 B 字节。缓冲区的最大值和最小值分别为 65535 和 0。超出这个范围的值自动舍入到最近的有效值。
++[no]multiline
+    以周详的多行格式显示类似 SOA 的记录，并附带可读注释。缺省值是每单个行上显示一条记录，以便于电脑解析 dig 的输出。
+</code></pre></div><h3 id="_4-3-多条查询"><a href="#_4-3-多条查询" class="header-anchor">#</a> 4.3 多条查询</h3> <p>dig 的 BIND 9 支持在命令行上指定多个查询（支持 -f 批处理文档选项的附加功能）。每条查询能够使用自己的标志位、选项和查询选项。</p> <p>在这种情况下，在上面描述的命令行语法中，每条查询自变量代表一个个别查询。每一条由任意标准选项和标志、待查询名称、可选查询类型和类连同任何适用于该查询的查询选项。</p> <p>也能够使用对任何查询均有效的查询选项全局集合。全局查询选项必须位于命令行上第一个名称、类、类型、选项、标志和查询选项的元组之前。任何全局查询选项（除了 +[no]cmd 选项）能够被下面的查询特别选项重设。例如：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> +qr www.isc.org any <span class="token parameter variable">-x</span> <span class="token number">127.0</span>.0.1 isc.org ns +noqr
+</code></pre></div><p>显示 dig 如何从命令行出发进行三个查询：一个针对 www.isc.org的任意查询、一个 127.0.0.1 的逆向查询，连同一个 isc.org 的 NS 记录查询。应用了 +qr 的全局查询选项，以便 dig 显示进行每条查询的初始查询。最后那个查询有一个本地查询选项 +noqr，表示 dig 在搜索 isc.org 的 NS 记录时不显示初始查询。</p> <h2 id="_5-常用示例"><a href="#_5-常用示例" class="header-anchor">#</a> 5.常用示例</h2> <p>（1）查询对应域名的 IP。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> www.baidu.com
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.11</span>.4-P2-RedHat-9.11.4-26.P2.el7_9.9 <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> www.baidu.com
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">7891</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr rd ra<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">3</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">0</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>www.baidu.com.			IN	A
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+www.baidu.com.		<span class="token number">385</span>	IN	CNAME	www.a.shifen.com.
+www.a.shifen.com.	<span class="token number">195</span>	IN	A	<span class="token number">110.242</span>.68.4
+www.a.shifen.com.	<span class="token number">195</span>	IN	A	<span class="token number">110.242</span>.68.3
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">0</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">183.60</span>.83.19<span class="token comment">#53(183.60.83.19)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: Wed Nov 02 <span class="token number">17</span>:37:57 CST <span class="token number">2022</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">90</span>
+</code></pre></div><p>（2）对目标 IP 进行反向解析查询。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> <span class="token parameter variable">-x</span> <span class="token number">110.242</span>.68.4
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.11</span>.4-P2-RedHat-9.11.4-26.P2.el7_9.9 <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> <span class="token parameter variable">-x</span> <span class="token number">110.242</span>.68.4
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NXDOMAIN, id: <span class="token number">4828</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr rd ra<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">0</span>, AUTHORITY: <span class="token number">1</span>, ADDITIONAL: <span class="token number">0</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span><span class="token number">4.68</span>.242.110.in-addr.arpa.	IN	PTR
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> AUTHORITY SECTION:
+<span class="token number">110</span>.in-addr.arpa.	<span class="token number">3073</span>	IN	SOA	ns1.apnic.net. read-txt-record-of-zone-first-dns-admin.apnic.net. <span class="token number">3006097985</span> <span class="token number">7200</span> <span class="token number">1800</span> <span class="token number">604800</span> <span class="token number">3600</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">0</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">183.60</span>.83.19<span class="token comment">#53(183.60.83.19)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: Wed Nov 02 <span class="token number">18</span>:29:39 CST <span class="token number">2022</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">132</span>
+</code></pre></div><p>（3）查询目标域名的 MX 记录。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> <span class="token parameter variable">-t</span> MX www.baidu.com
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.11</span>.4-P2-RedHat-9.11.4-26.P2.el7_9.9 <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> <span class="token parameter variable">-t</span> MX www.baidu.com
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">45775</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr rd ra<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">2</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">0</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>www.baidu.com.			IN	MX
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+www.baidu.com.		<span class="token number">50</span>	IN	CNAME	www.a.shifen.com.
+www.a.shifen.com.	<span class="token number">12</span>	IN	CNAME	www.wshifen.com.
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">185</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">183.60</span>.83.19<span class="token comment">#53(183.60.83.19)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: Wed Nov 02 <span class="token number">18</span>:39:09 CST <span class="token number">2022</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">84</span>
+</code></pre></div><p>（4）查询目标域名的 A 记录。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> www.baidu.com A
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.11</span>.4-P2-RedHat-9.11.4-26.P2.el7_9.9 <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> A www.baidu.com
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">22145</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr rd ra<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">3</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">0</span>
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>www.baidu.com.			IN	A
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+www.baidu.com.		<span class="token number">230</span>	IN	CNAME	www.a.shifen.com.
+www.a.shifen.com.	<span class="token number">60</span>	IN	A	<span class="token number">220.181</span>.38.150
+www.a.shifen.com.	<span class="token number">60</span>	IN	A	<span class="token number">220.181</span>.38.149
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">0</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">183.60</span>.83.19<span class="token comment">#53(183.60.83.19)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: Wed Nov 02 <span class="token number">18</span>:41:59 CST <span class="token number">2022</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">90</span>
+</code></pre></div><p>（5）需要快速响应时，+short。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> www.baidu.com +short
+www.a.shifen.com.
+<span class="token number">110.242</span>.68.4
+<span class="token number">110.242</span>.68.3
+</code></pre></div><p>（6）查询指定域名的 AAAA 记录。</p> <p>在现在这种 IPv4 和 IPv6 混用的情况下，你也可以使用 AAAA 的选项查询主机的 IPv6 AAAA 记录。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> www.baidu.com AAAA +short
+www.a.shifen.com.
+</code></pre></div><p>（7）指定域名服务器进行查询。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> @ns1.google.com www.google.com
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.11</span>.4-P2-RedHat-9.11.4-26.P2.el7_9.9 <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> @ns1.google.com www.google.com
+<span class="token punctuation">;</span> <span class="token punctuation">(</span><span class="token number">2</span> servers found<span class="token punctuation">)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Got answer:
+<span class="token punctuation">;</span><span class="token punctuation">;</span> -<span class="token operator">&gt;&gt;</span>HEADER<span class="token operator">&lt;&lt;-</span> opcode: QUERY, status: NOERROR, id: <span class="token number">32759</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> flags: qr aa rd<span class="token punctuation">;</span> QUERY: <span class="token number">1</span>, ANSWER: <span class="token number">1</span>, AUTHORITY: <span class="token number">0</span>, ADDITIONAL: <span class="token number">1</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WARNING: recursion requested but not available
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> OPT PSEUDOSECTION:
+<span class="token punctuation">;</span> EDNS: version: <span class="token number">0</span>, flags:<span class="token punctuation">;</span> udp: <span class="token number">512</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> QUESTION SECTION:
+<span class="token punctuation">;</span>www.google.com.			IN	A
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> ANSWER SECTION:
+www.google.com.		<span class="token number">300</span>	IN	A	<span class="token number">172.217</span>.163.36
+
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Query time: <span class="token number">1</span> msec
+<span class="token punctuation">;</span><span class="token punctuation">;</span> SERVER: <span class="token number">216.239</span>.32.10<span class="token comment">#53(216.239.32.10)</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> WHEN: Wed Nov 02 <span class="token number">19</span>:11:34 CST <span class="token number">2022</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> MSG SIZE  rcvd: <span class="token number">59</span>
+</code></pre></div><p>（8）跟踪 dig 查询的路径。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> www.baidu.com +trace
+
+<span class="token punctuation">;</span> <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> DiG <span class="token number">9.11</span>.4-P2-RedHat-9.11.4-26.P2.el7_9.9 <span class="token operator">&lt;&lt;</span><span class="token operator">&gt;&gt;</span> www.baidu.com +trace
+<span class="token punctuation">;</span><span class="token punctuation">;</span> global options: +cmd
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	g.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	h.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	i.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	j.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	k.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	l.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	m.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	a.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	b.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	c.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	d.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	e.root-servers.net.
+<span class="token builtin class-name">.</span>			<span class="token number">145562</span>	IN	NS	f.root-servers.net.
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Received <span class="token number">228</span> bytes from <span class="token number">183.60</span>.83.19<span class="token comment">#53(183.60.83.19) in 0 ms</span>
+
+com.			<span class="token number">172800</span>	IN	NS	e.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	b.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	j.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	m.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	i.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	f.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	a.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	g.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	h.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	l.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	k.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	c.gtld-servers.net.
+com.			<span class="token number">172800</span>	IN	NS	d.gtld-servers.net.
+com.			<span class="token number">86400</span>	IN	DS	<span class="token number">30909</span> <span class="token number">8</span> <span class="token number">2</span> E2D3C916F6DEEAC73294E8268FB5885044A833FC5459588F4A9184CF C41A5766
+com.			<span class="token number">86400</span>	IN	RRSIG	DS <span class="token number">8</span> <span class="token number">1</span> <span class="token number">86400</span> <span class="token number">20221115050000</span> <span class="token number">20221102040000</span> <span class="token number">18733</span> <span class="token builtin class-name">.</span> a0WoIH6CLYRdzPYa8jxPxxO3rc+dXaMVMNLMDsIm/W/YSZgNMCQhu6Ot RlpcSkaLfBalvyc4UT3NZVcaKKnLtz2EILzPimFu8WpguvaUPRl2VB4T kSac5EZWJ/l2Ql1xP5SNannn8llOrX9VVPzFHX+yvegvd3i4USxRAYFL oA2T/hke5wPXe8NehGKUZ2JiWNJhlUt7lEmUZfzSs7gQVbNnli0553qD QNeSPUcULmegn5VYdkomRCU7A999vCXt4MXU2wqY/uG9HnAI0YYxhagl /QIOfqRGgAHzO6+MIp8Ka39JAdU6Fa/hsxqaT8gaUOcymJl3kKAdmaZp <span class="token assign-left variable">W22uiw</span><span class="token operator">==</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Received <span class="token number">1173</span> bytes from <span class="token number">198.41</span>.0.4<span class="token comment">#53(a.root-servers.net) in 175 ms</span>
+
+baidu.com.		<span class="token number">172800</span>	IN	NS	ns2.baidu.com.
+baidu.com.		<span class="token number">172800</span>	IN	NS	ns3.baidu.com.
+baidu.com.		<span class="token number">172800</span>	IN	NS	ns4.baidu.com.
+baidu.com.		<span class="token number">172800</span>	IN	NS	ns1.baidu.com.
+baidu.com.		<span class="token number">172800</span>	IN	NS	ns7.baidu.com.
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. <span class="token number">86400</span> IN NSEC3 <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> - CK0Q2D6NI4I7EQH8NA30NS61O48UL8G5 NS SOA RRSIG DNSKEY NSEC3PARAM
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. <span class="token number">86400</span> IN RRSIG NSEC3 <span class="token number">8</span> <span class="token number">2</span> <span class="token number">86400</span> <span class="token number">20221107052501</span> <span class="token number">20221031031501</span> <span class="token number">53929</span> com. SiHIQWlGsgNBM3Z2CkXHdmPDjPKOHq1c4gyn4yH7Jc9rqW1vjsxnTpeT nXnFjczSw5stuVGWq0idhB86WDmrht9t4FvJyjthmJDUY18cqGrVtpjl 6QSze9CoFkcnv78H6o+60wVDifBk65SrRs/+919oeiUHLhKyt2PxXjoK 5e8dvsbVPpU45dtKzFyViCt6mBJDe+Fj2cISnV4xzoPLqQ<span class="token operator">==</span>
+HPVUVSGH5TFIA7CM6SS6SMPOS87OE0CE.com. <span class="token number">86400</span> IN NSEC3 <span class="token number">1</span> <span class="token number">1</span> <span class="token number">0</span> - HPVV8SARM2LDLRBTVC5EP1CUB1EF7LOP NS DS RRSIG
+HPVUVSGH5TFIA7CM6SS6SMPOS87OE0CE.com. <span class="token number">86400</span> IN RRSIG NSEC3 <span class="token number">8</span> <span class="token number">2</span> <span class="token number">86400</span> <span class="token number">20221107064509</span> <span class="token number">20221031043509</span> <span class="token number">53929</span> com. D/6PuA/gOcevOyQWymXB1QOgmWXtjfJotFC44k7KlThRlWBI9mCjGYNS 5X9r9yH+3fJ/FxamMnwosHNLOLbhq9zaYR1EiDMY/WueNpmn4U4Nn1Ov veeWJg2bTuOrvWqS9WYpLmoXkDery1L0hMAWy1lPXSSAY4MVkMaL3lbV JwIqoEPqUv5gHojjg04+BFaR1QLNhGlYAYq0RkJ8t5Xf9A<span class="token operator">==</span>
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Received <span class="token number">849</span> bytes from <span class="token number">192.5</span>.6.30<span class="token comment">#53(a.gtld-servers.net) in 228 ms</span>
+
+www.baidu.com.		<span class="token number">1200</span>	IN	CNAME	www.a.shifen.com.
+<span class="token punctuation">;</span><span class="token punctuation">;</span> Received <span class="token number">72</span> bytes from <span class="token number">36.152</span>.45.193<span class="token comment">#53(ns3.baidu.com) in 76 ms</span>
+</code></pre></div><p>（9）获取 SOA 记录。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">dig</span> baidu.com +nssearch
+SOA dns.baidu.com. sa.baidu.com. <span class="token number">2012145904</span> <span class="token number">300</span> <span class="token number">300</span> <span class="token number">2592000</span> <span class="token number">7200</span> from server <span class="token number">111.45</span>.3.226 <span class="token keyword">in</span> <span class="token number">49</span> ms.
+SOA dns.baidu.com. sa.baidu.com. <span class="token number">2012145904</span> <span class="token number">300</span> <span class="token number">300</span> <span class="token number">2592000</span> <span class="token number">7200</span> from server <span class="token number">180.76</span>.76.92 <span class="token keyword">in</span> <span class="token number">52</span> ms.
+SOA dns.baidu.com. sa.baidu.com. <span class="token number">2012145904</span> <span class="token number">300</span> <span class="token number">300</span> <span class="token number">2592000</span> <span class="token number">7200</span> from server <span class="token number">14.215</span>.178.80 <span class="token keyword">in</span> <span class="token number">52</span> ms.
+SOA dns.baidu.com. sa.baidu.com. <span class="token number">2012145904</span> <span class="token number">300</span> <span class="token number">300</span> <span class="token number">2592000</span> <span class="token number">7200</span> from server <span class="token number">112.80</span>.248.64 <span class="token keyword">in</span> <span class="token number">70</span> ms.
+SOA dns.baidu.com. sa.baidu.com. <span class="token number">2012145904</span> <span class="token number">300</span> <span class="token number">300</span> <span class="token number">2592000</span> <span class="token number">7200</span> from server <span class="token number">36.152</span>.45.193 <span class="token keyword">in</span> <span class="token number">73</span> ms.
+SOA dns.baidu.com. sa.baidu.com. <span class="token number">2012145905</span> <span class="token number">300</span> <span class="token number">300</span> <span class="token number">2592000</span> <span class="token number">7200</span> from server <span class="token number">110.242</span>.68.134 <span class="token keyword">in</span> <span class="token number">77</span> ms.
+SOA dns.baidu.com. sa.baidu.com. <span class="token number">2012145905</span> <span class="token number">300</span> <span class="token number">300</span> <span class="token number">2592000</span> <span class="token number">7200</span> from server <span class="token number">220.181</span>.33.31 <span class="token keyword">in</span> <span class="token number">83</span> ms.
+</code></pre></div><hr> <h2 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h2> <p><a href="https://www.linux.org/docs/man1/dig.html" target="_blank" rel="noopener noreferrer">dig(1) manual - linux.org<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/dengjin20104042056/article/details/99976430" target="_blank" rel="noopener noreferrer">一步一步学Linux——dig命令(160)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/网络管理/网络管理/dhclient.html" class="prev">
+        dhclient
+      </a></span> <span class="next"><a href="/网络管理/网络管理/ethtool.html">
+        ethtool
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3ae06b93.js" defer></script><script src="/assets/js/2.e69c4131.js" defer></script><script src="/assets/js/201.33d0460d.js" defer></script>
+  </body>
+</html>

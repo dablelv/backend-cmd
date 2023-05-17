@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.命令简介 | 后台开发命令 365</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.d682e6f9.css" as="style"><link rel="preload" href="/assets/js/app.3ae06b93.js" as="script"><link rel="preload" href="/assets/js/2.e69c4131.js" as="script"><link rel="preload" href="/assets/js/191.aac67e3e.js" as="script"><link rel="prefetch" href="/assets/js/10.46eac4f5.js"><link rel="prefetch" href="/assets/js/100.717d3102.js"><link rel="prefetch" href="/assets/js/101.1098dd8d.js"><link rel="prefetch" href="/assets/js/102.5190119f.js"><link rel="prefetch" href="/assets/js/103.a8168e2c.js"><link rel="prefetch" href="/assets/js/104.dc339a30.js"><link rel="prefetch" href="/assets/js/105.77526c37.js"><link rel="prefetch" href="/assets/js/106.92b681b4.js"><link rel="prefetch" href="/assets/js/107.6c8a70a4.js"><link rel="prefetch" href="/assets/js/108.0d488278.js"><link rel="prefetch" href="/assets/js/109.57bdb317.js"><link rel="prefetch" href="/assets/js/11.1266f776.js"><link rel="prefetch" href="/assets/js/110.eb36baa6.js"><link rel="prefetch" href="/assets/js/111.c7c22cb6.js"><link rel="prefetch" href="/assets/js/112.ba373da3.js"><link rel="prefetch" href="/assets/js/113.479491b0.js"><link rel="prefetch" href="/assets/js/114.93764698.js"><link rel="prefetch" href="/assets/js/115.ab2ec839.js"><link rel="prefetch" href="/assets/js/116.c14671c6.js"><link rel="prefetch" href="/assets/js/117.5723df5e.js"><link rel="prefetch" href="/assets/js/118.968834ee.js"><link rel="prefetch" href="/assets/js/119.ec5b4914.js"><link rel="prefetch" href="/assets/js/12.d071b9ef.js"><link rel="prefetch" href="/assets/js/120.840efcfc.js"><link rel="prefetch" href="/assets/js/121.6eec1b31.js"><link rel="prefetch" href="/assets/js/122.a08e675f.js"><link rel="prefetch" href="/assets/js/123.5ad029b5.js"><link rel="prefetch" href="/assets/js/124.c81bcb25.js"><link rel="prefetch" href="/assets/js/125.e7362587.js"><link rel="prefetch" href="/assets/js/126.734a915a.js"><link rel="prefetch" href="/assets/js/127.d82be8a7.js"><link rel="prefetch" href="/assets/js/128.e0756077.js"><link rel="prefetch" href="/assets/js/129.b23724c1.js"><link rel="prefetch" href="/assets/js/13.69dc70fc.js"><link rel="prefetch" href="/assets/js/130.3a045f1f.js"><link rel="prefetch" href="/assets/js/131.1130e9c2.js"><link rel="prefetch" href="/assets/js/132.703c2067.js"><link rel="prefetch" href="/assets/js/133.4bc0b9a3.js"><link rel="prefetch" href="/assets/js/134.702dfabb.js"><link rel="prefetch" href="/assets/js/135.bb8d4799.js"><link rel="prefetch" href="/assets/js/136.c8e2ef9a.js"><link rel="prefetch" href="/assets/js/137.d5ad649d.js"><link rel="prefetch" href="/assets/js/138.c4756f08.js"><link rel="prefetch" href="/assets/js/139.9674cf5b.js"><link rel="prefetch" href="/assets/js/14.bb3dea7c.js"><link rel="prefetch" href="/assets/js/140.989c6833.js"><link rel="prefetch" href="/assets/js/141.7b41216d.js"><link rel="prefetch" href="/assets/js/142.5886f3df.js"><link rel="prefetch" href="/assets/js/143.1d84594c.js"><link rel="prefetch" href="/assets/js/144.7eb7d5f1.js"><link rel="prefetch" href="/assets/js/145.e4fe1aec.js"><link rel="prefetch" href="/assets/js/146.63ade8a9.js"><link rel="prefetch" href="/assets/js/147.51f49be6.js"><link rel="prefetch" href="/assets/js/148.43cc9051.js"><link rel="prefetch" href="/assets/js/149.42fed394.js"><link rel="prefetch" href="/assets/js/15.25bc76b6.js"><link rel="prefetch" href="/assets/js/150.dd826e76.js"><link rel="prefetch" href="/assets/js/151.5b6d3066.js"><link rel="prefetch" href="/assets/js/152.c5a1a2a9.js"><link rel="prefetch" href="/assets/js/153.da9ae47b.js"><link rel="prefetch" href="/assets/js/154.07438fc5.js"><link rel="prefetch" href="/assets/js/155.9196e706.js"><link rel="prefetch" href="/assets/js/156.c6ce7ae0.js"><link rel="prefetch" href="/assets/js/157.9a0ca008.js"><link rel="prefetch" href="/assets/js/158.9f34967b.js"><link rel="prefetch" href="/assets/js/159.870fc31d.js"><link rel="prefetch" href="/assets/js/16.feec3eab.js"><link rel="prefetch" href="/assets/js/160.4f414a6f.js"><link rel="prefetch" href="/assets/js/161.7b69711b.js"><link rel="prefetch" href="/assets/js/162.bebbe2e3.js"><link rel="prefetch" href="/assets/js/163.8c299c96.js"><link rel="prefetch" href="/assets/js/164.83f1c66e.js"><link rel="prefetch" href="/assets/js/165.023a4ed5.js"><link rel="prefetch" href="/assets/js/166.c9bf569f.js"><link rel="prefetch" href="/assets/js/167.039309ce.js"><link rel="prefetch" href="/assets/js/168.1c4db17a.js"><link rel="prefetch" href="/assets/js/169.aa51d8fe.js"><link rel="prefetch" href="/assets/js/17.5f667054.js"><link rel="prefetch" href="/assets/js/170.af74717c.js"><link rel="prefetch" href="/assets/js/171.584e518e.js"><link rel="prefetch" href="/assets/js/172.1e8a6007.js"><link rel="prefetch" href="/assets/js/173.716bab72.js"><link rel="prefetch" href="/assets/js/174.f9048720.js"><link rel="prefetch" href="/assets/js/175.4ac0b838.js"><link rel="prefetch" href="/assets/js/176.ef6163bc.js"><link rel="prefetch" href="/assets/js/177.0629d5fd.js"><link rel="prefetch" href="/assets/js/178.6f670574.js"><link rel="prefetch" href="/assets/js/179.7051d221.js"><link rel="prefetch" href="/assets/js/18.30279338.js"><link rel="prefetch" href="/assets/js/180.60c42336.js"><link rel="prefetch" href="/assets/js/181.05db641e.js"><link rel="prefetch" href="/assets/js/182.3fa16bdf.js"><link rel="prefetch" href="/assets/js/183.03d760d7.js"><link rel="prefetch" href="/assets/js/184.eb84e368.js"><link rel="prefetch" href="/assets/js/185.5d4b3c52.js"><link rel="prefetch" href="/assets/js/186.b8e52ba8.js"><link rel="prefetch" href="/assets/js/187.fbf1694f.js"><link rel="prefetch" href="/assets/js/188.a1b68191.js"><link rel="prefetch" href="/assets/js/189.495df2f3.js"><link rel="prefetch" href="/assets/js/19.5791cc57.js"><link rel="prefetch" href="/assets/js/190.90021ea3.js"><link rel="prefetch" href="/assets/js/192.b5ed94c7.js"><link rel="prefetch" href="/assets/js/193.cefe237d.js"><link rel="prefetch" href="/assets/js/194.253dd2bb.js"><link rel="prefetch" href="/assets/js/195.55e5dbc2.js"><link rel="prefetch" href="/assets/js/196.b14af240.js"><link rel="prefetch" href="/assets/js/197.d242ebe5.js"><link rel="prefetch" href="/assets/js/198.a91bb64c.js"><link rel="prefetch" href="/assets/js/199.92f806dc.js"><link rel="prefetch" href="/assets/js/20.e2fad8f3.js"><link rel="prefetch" href="/assets/js/200.7062afd7.js"><link rel="prefetch" href="/assets/js/201.33d0460d.js"><link rel="prefetch" href="/assets/js/202.92aeed9a.js"><link rel="prefetch" href="/assets/js/203.8f6ff62d.js"><link rel="prefetch" href="/assets/js/204.a4cf5e1d.js"><link rel="prefetch" href="/assets/js/205.c67997b0.js"><link rel="prefetch" href="/assets/js/206.533230b9.js"><link rel="prefetch" href="/assets/js/207.40f568de.js"><link rel="prefetch" href="/assets/js/208.2af4b390.js"><link rel="prefetch" href="/assets/js/209.3272a033.js"><link rel="prefetch" href="/assets/js/21.3488dd76.js"><link rel="prefetch" href="/assets/js/210.12bcb1f0.js"><link rel="prefetch" href="/assets/js/211.8a5360a2.js"><link rel="prefetch" href="/assets/js/212.84a0953e.js"><link rel="prefetch" href="/assets/js/213.e5cafa9a.js"><link rel="prefetch" href="/assets/js/214.898e977f.js"><link rel="prefetch" href="/assets/js/215.f9a2e66d.js"><link rel="prefetch" href="/assets/js/216.0dacfd18.js"><link rel="prefetch" href="/assets/js/217.f15c0ab1.js"><link rel="prefetch" href="/assets/js/218.deda5b98.js"><link rel="prefetch" href="/assets/js/219.c16fd88b.js"><link rel="prefetch" href="/assets/js/22.525c98ea.js"><link rel="prefetch" href="/assets/js/220.e1473e05.js"><link rel="prefetch" href="/assets/js/221.a091852b.js"><link rel="prefetch" href="/assets/js/222.5d3db5ed.js"><link rel="prefetch" href="/assets/js/223.7395be35.js"><link rel="prefetch" href="/assets/js/224.3ffd3c0b.js"><link rel="prefetch" href="/assets/js/225.e9e5e5a3.js"><link rel="prefetch" href="/assets/js/226.55059c9f.js"><link rel="prefetch" href="/assets/js/227.fde1ab27.js"><link rel="prefetch" href="/assets/js/228.35792714.js"><link rel="prefetch" href="/assets/js/229.933eb4d0.js"><link rel="prefetch" href="/assets/js/23.c62d630f.js"><link rel="prefetch" href="/assets/js/230.3d00406d.js"><link rel="prefetch" href="/assets/js/231.5b9804c7.js"><link rel="prefetch" href="/assets/js/232.b40b2f43.js"><link rel="prefetch" href="/assets/js/233.09aad620.js"><link rel="prefetch" href="/assets/js/234.293db744.js"><link rel="prefetch" href="/assets/js/235.b5b1ba74.js"><link rel="prefetch" href="/assets/js/236.7948a766.js"><link rel="prefetch" href="/assets/js/237.f879b3f0.js"><link rel="prefetch" href="/assets/js/238.71fb727f.js"><link rel="prefetch" href="/assets/js/239.b0f5e0ba.js"><link rel="prefetch" href="/assets/js/24.3892c2e8.js"><link rel="prefetch" href="/assets/js/240.0c2809d3.js"><link rel="prefetch" href="/assets/js/241.37c3575a.js"><link rel="prefetch" href="/assets/js/242.b9d15c87.js"><link rel="prefetch" href="/assets/js/243.56595d53.js"><link rel="prefetch" href="/assets/js/244.ddf5ad82.js"><link rel="prefetch" href="/assets/js/245.435e541b.js"><link rel="prefetch" href="/assets/js/246.bc46bf07.js"><link rel="prefetch" href="/assets/js/247.1a48a362.js"><link rel="prefetch" href="/assets/js/248.7f444f00.js"><link rel="prefetch" href="/assets/js/249.1f2d896f.js"><link rel="prefetch" href="/assets/js/25.bba7bab4.js"><link rel="prefetch" href="/assets/js/250.0a2789fa.js"><link rel="prefetch" href="/assets/js/251.4beee155.js"><link rel="prefetch" href="/assets/js/252.744a7636.js"><link rel="prefetch" href="/assets/js/253.9860cdd1.js"><link rel="prefetch" href="/assets/js/254.12e63609.js"><link rel="prefetch" href="/assets/js/255.598cd740.js"><link rel="prefetch" href="/assets/js/256.62f3bbb3.js"><link rel="prefetch" href="/assets/js/257.1278969d.js"><link rel="prefetch" href="/assets/js/258.8fdbdcd6.js"><link rel="prefetch" href="/assets/js/259.60e5437c.js"><link rel="prefetch" href="/assets/js/26.cd9abe23.js"><link rel="prefetch" href="/assets/js/260.1c4d3c32.js"><link rel="prefetch" href="/assets/js/261.c7dd87b9.js"><link rel="prefetch" href="/assets/js/262.f329c304.js"><link rel="prefetch" href="/assets/js/263.20cbfb3e.js"><link rel="prefetch" href="/assets/js/264.c6b63253.js"><link rel="prefetch" href="/assets/js/265.cc19fa2d.js"><link rel="prefetch" href="/assets/js/266.433d95ba.js"><link rel="prefetch" href="/assets/js/267.8b20e89c.js"><link rel="prefetch" href="/assets/js/268.91fffe3c.js"><link rel="prefetch" href="/assets/js/269.8ad0a25e.js"><link rel="prefetch" href="/assets/js/27.f813cd85.js"><link rel="prefetch" href="/assets/js/28.cdfa492e.js"><link rel="prefetch" href="/assets/js/29.f10d3ba9.js"><link rel="prefetch" href="/assets/js/3.d38113cc.js"><link rel="prefetch" href="/assets/js/30.831e55a7.js"><link rel="prefetch" href="/assets/js/31.649df9eb.js"><link rel="prefetch" href="/assets/js/32.8c1784c6.js"><link rel="prefetch" href="/assets/js/33.6e9bf07a.js"><link rel="prefetch" href="/assets/js/34.730de2f5.js"><link rel="prefetch" href="/assets/js/35.db0f4ab2.js"><link rel="prefetch" href="/assets/js/36.ccd6de2b.js"><link rel="prefetch" href="/assets/js/37.3753eb44.js"><link rel="prefetch" href="/assets/js/38.d12dcb29.js"><link rel="prefetch" href="/assets/js/39.d5885e10.js"><link rel="prefetch" href="/assets/js/4.c69c5b0e.js"><link rel="prefetch" href="/assets/js/40.3bed49b5.js"><link rel="prefetch" href="/assets/js/41.30f53ce5.js"><link rel="prefetch" href="/assets/js/42.a4b38348.js"><link rel="prefetch" href="/assets/js/43.a6a760de.js"><link rel="prefetch" href="/assets/js/44.15cd7843.js"><link rel="prefetch" href="/assets/js/45.272d2d95.js"><link rel="prefetch" href="/assets/js/46.6e2de83a.js"><link rel="prefetch" href="/assets/js/47.f78d08e9.js"><link rel="prefetch" href="/assets/js/48.aa6d87fe.js"><link rel="prefetch" href="/assets/js/49.aba38dcf.js"><link rel="prefetch" href="/assets/js/5.4dc8d661.js"><link rel="prefetch" href="/assets/js/50.342881a2.js"><link rel="prefetch" href="/assets/js/51.cee42bba.js"><link rel="prefetch" href="/assets/js/52.4224d314.js"><link rel="prefetch" href="/assets/js/53.fc63c9b8.js"><link rel="prefetch" href="/assets/js/54.5e844609.js"><link rel="prefetch" href="/assets/js/55.bf257fbb.js"><link rel="prefetch" href="/assets/js/56.726cd4e2.js"><link rel="prefetch" href="/assets/js/57.3591e744.js"><link rel="prefetch" href="/assets/js/58.de4eef1e.js"><link rel="prefetch" href="/assets/js/59.978817f2.js"><link rel="prefetch" href="/assets/js/6.88d03338.js"><link rel="prefetch" href="/assets/js/60.ee2edc5d.js"><link rel="prefetch" href="/assets/js/61.dafdb5d2.js"><link rel="prefetch" href="/assets/js/62.baa37873.js"><link rel="prefetch" href="/assets/js/63.1a6a53cf.js"><link rel="prefetch" href="/assets/js/64.551ba02d.js"><link rel="prefetch" href="/assets/js/65.9270aa9f.js"><link rel="prefetch" href="/assets/js/66.f8343da1.js"><link rel="prefetch" href="/assets/js/67.ea0370b5.js"><link rel="prefetch" href="/assets/js/68.adf6cf8d.js"><link rel="prefetch" href="/assets/js/69.3a3588fc.js"><link rel="prefetch" href="/assets/js/7.8ceda348.js"><link rel="prefetch" href="/assets/js/70.962c671d.js"><link rel="prefetch" href="/assets/js/71.5e02976c.js"><link rel="prefetch" href="/assets/js/72.383648e5.js"><link rel="prefetch" href="/assets/js/73.aa8cb241.js"><link rel="prefetch" href="/assets/js/74.9350847e.js"><link rel="prefetch" href="/assets/js/75.d45ea12a.js"><link rel="prefetch" href="/assets/js/76.036a60f9.js"><link rel="prefetch" href="/assets/js/77.eed2b349.js"><link rel="prefetch" href="/assets/js/78.ab65c100.js"><link rel="prefetch" href="/assets/js/79.1bc30c9a.js"><link rel="prefetch" href="/assets/js/8.415e53bc.js"><link rel="prefetch" href="/assets/js/80.72ce6de8.js"><link rel="prefetch" href="/assets/js/81.b08e076c.js"><link rel="prefetch" href="/assets/js/82.d52488dd.js"><link rel="prefetch" href="/assets/js/83.c5b48460.js"><link rel="prefetch" href="/assets/js/84.ebcbb47b.js"><link rel="prefetch" href="/assets/js/85.e791a1bd.js"><link rel="prefetch" href="/assets/js/86.f39e0f93.js"><link rel="prefetch" href="/assets/js/87.ee74d037.js"><link rel="prefetch" href="/assets/js/88.23b1adf8.js"><link rel="prefetch" href="/assets/js/89.0ea24c35.js"><link rel="prefetch" href="/assets/js/9.7b756d22.js"><link rel="prefetch" href="/assets/js/90.dfac6d02.js"><link rel="prefetch" href="/assets/js/91.eb00407f.js"><link rel="prefetch" href="/assets/js/92.f2ca838a.js"><link rel="prefetch" href="/assets/js/93.effb8550.js"><link rel="prefetch" href="/assets/js/94.6a3ebb48.js"><link rel="prefetch" href="/assets/js/95.97a09d91.js"><link rel="prefetch" href="/assets/js/96.e06e882c.js"><link rel="prefetch" href="/assets/js/97.bc1a6708.js"><link rel="prefetch" href="/assets/js/98.8c936e14.js"><link rel="prefetch" href="/assets/js/99.b2884563.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d682e6f9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://excalidraw.com/apple-touch-icon.png" alt="后台开发命令 365" class="logo"> <span class="site-name can-hide">后台开发命令 365</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://u1s1.vip/about" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友链
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  下拉1
+</a></li><li class="dropdown-item"><!----> <a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  下拉2
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://u1s1.vip/about" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友链
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  下拉1
+</a></li><li class="dropdown-item"><!----> <a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  下拉2
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>帮助</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>文件系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进程管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>编译调试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>二进制工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Shell 编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>系统管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>终端配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>权限管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>网络管理</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>远程登录</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>网络传输</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/网络管理/网络传输/curl.html" class="active sidebar-link">curl</a></li><li><a href="/网络管理/网络传输/rz.html" class="sidebar-link">rz</a></li><li><a href="/网络管理/网络传输/scp.html" class="sidebar-link">scp</a></li><li><a href="/网络管理/网络传输/sz.html" class="sidebar-link">sz</a></li><li><a href="/网络管理/网络传输/wget.html" class="sidebar-link">wget</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>网络管理</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>版本控制</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实用工具</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-命令简介"><a href="#_1-命令简介" class="header-anchor">#</a> 1.命令简介</h2> <p>curl 是一种从服务器下载或向服务器传输数据的工具。</p> <p>它支持文件的上传和下载，是综合传输工具，但按使用习惯，一般称 curl 为下载工具。curl 被设计为无需用户交互即可工作。</p> <p>curl 作为一款强大的下载工具，支持包括 HTTP、HTTPS、FTP、SFTP、SCP 等众多协议，还提供了大量有用的技巧，如代理支持、用户身份验证、FTP 上传、HTTP post、SSL 连接、文件传输恢复、Metalink 等等。</p> <p>一般我们使用 curl 作为 HTTP(s) 的客户端访问指定链接。</p> <h2 id="_2-命令格式"><a href="#_2-命令格式" class="header-anchor">#</a> 2.命令格式</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">curl</span> <span class="token punctuation">[</span>OPTIONS<span class="token punctuation">]</span> <span class="token punctuation">[</span>URL<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+</code></pre></div><h2 id="_3-选项说明"><a href="#_3-选项说明" class="header-anchor">#</a> 3.选项说明</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>-<span class="token comment">#, --progress-bar</span>
+	显示进度条
+-a, <span class="token parameter variable">--append</span>
+	上传文件时，附加到目标文件
+-A, --user-agent STRING
+	设置用户代理发送给服务器
+<span class="token parameter variable">--anyauth</span>
+	可以使用“任何”身份验证方法
+-b, <span class="token parameter variable">--cookie</span> <span class="token assign-left variable">NAME</span><span class="token operator">=</span>STRING <span class="token operator">|</span> FILE
+	指定 cookie 字符串或从指定的文件中读取 cookie。如果有多个 <span class="token assign-left variable">NAME</span><span class="token operator">=</span>STRING 使用分号分隔。
+<span class="token parameter variable">--basic</span>
+	使用 HTTP 基本验证
+-B, --use-ascii
+	使用 ASCII 文本传输
+-c, --cookie-jar FILE
+	将自动将从服务器接收到的任何 cookie 保存到指定的文件中。
+-C, --continue-at OFFSET
+	断点续转
+-d, <span class="token parameter variable">--data</span> DATA
+	以 HTTP POST 方式传送指定格式的数据。如 JSON 串，相应地 Header 中的 Content-Type 字段需设为 application/json。如果传输文件，使用选项 <span class="token parameter variable">-T</span>
+--data-ascii DATA
+	以 ascii 的方式 post 数据
+--data-binary DATA
+	以二进制的方式 post 数据
+<span class="token parameter variable">--negotiate</span>
+	使用 HTTP 身份验证
+<span class="token parameter variable">--digest</span>
+	使用数字身份验证
+--disable-eprt
+	禁止使用 EPRT 或 LPRT
+--disable-epsv
+	禁止使用 EPSV
+-D, --dump-header FILE
+	把 header 信息写入到指定文件中
+--egd-file FILE
+ 	为随机数据<span class="token punctuation">(</span>SSL<span class="token punctuation">)</span>设置EGD socket路径
+--tcp-nodelay
+	使用 TCP_NODELAY 选项
+-e, <span class="token parameter variable">--referer</span>
+	来源网址
+-E, <span class="token parameter variable">--cert</span> CERT<span class="token punctuation">[</span>:PASSWD<span class="token punctuation">]</span>
+	客户端证书文件和密码 <span class="token punctuation">(</span>SSL<span class="token punctuation">)</span>
+ --cert-type TYPE
+ 	证书文件类型 <span class="token punctuation">(</span>DER/PEM/ENG<span class="token punctuation">)</span> <span class="token punctuation">(</span>SSL<span class="token punctuation">)</span>
+<span class="token parameter variable">--key</span> KEY
+	私钥文件名 <span class="token punctuation">(</span>SSL<span class="token punctuation">)</span>
+--key-type TYPE
+	私钥文件类型 <span class="token punctuation">(</span>DER/PEM/ENG<span class="token punctuation">)</span> <span class="token punctuation">(</span>SSL<span class="token punctuation">)</span>
+<span class="token parameter variable">--pass</span> PASS
+	私钥密码 <span class="token punctuation">(</span>SSL<span class="token punctuation">)</span>
+<span class="token parameter variable">--engine</span> NAME
+	选择用于密码操作的OpenSSL加密引擎
+<span class="token parameter variable">--cacert</span> FILE
+	CA 证书 <span class="token punctuation">(</span>SSL<span class="token punctuation">)</span>
+<span class="token parameter variable">--capath</span> <span class="token operator">&lt;</span>directory<span class="token operator">&gt;</span>
+	CA 目录 <span class="token punctuation">(</span>made using c_rehash<span class="token punctuation">)</span> to verify peer against <span class="token punctuation">(</span>SSL<span class="token punctuation">)</span>
+<span class="token parameter variable">--ciphers</span> LIST
+	SSL 密码
+<span class="token parameter variable">--compressed</span>
+	要求返回是压缩的形势 <span class="token punctuation">(</span>using deflate or <span class="token function">gzip</span><span class="token punctuation">)</span>
+--connect-timeout <span class="token environment constant">SECONDS</span>
+	设置最大请求时间
+--create-dirs
+	建立本地目录的目录层次结构
+<span class="token parameter variable">--crlf</span>
+	上传是把 LF 转变成 CRLF
+-f, <span class="token parameter variable">--fail</span>
+	连接失败时不显示 http 错误
+--ftp-create-dirs
+	如果远程目录不存在，创建远程目录
+--ftp-method <span class="token punctuation">[</span>multicwd/nocwd/singlecwd<span class="token punctuation">]</span>
+	控制 CWD 的使用
+--ftp-pasv
+	使用 PASV/EPSV 代替端口
+--ftp-skip-pasv-ip
+	使用 PASV 的时候，忽略该IP地址
+--ftp-ssl
+	尝试用 SSL/TLS 来进行 <span class="token function">ftp</span> 数据传输
+--ftp-ssl-reqd
+	要求用 SSL/TLS 来进行 <span class="token function">ftp</span> 数据传输
+-F, <span class="token parameter variable">--form</span> <span class="token assign-left variable">NAME</span><span class="token operator">=</span>CONTENT
+	模拟 HTTP 表单提交数据。
+--form-string <span class="token assign-left variable">NAME</span><span class="token operator">=</span>STRING
+	模拟 http 表单提交数据
+-g, <span class="token parameter variable">--globoff</span>
+	禁用网址序列和范围使用 <span class="token punctuation">{</span><span class="token punctuation">}</span> 和 <span class="token punctuation">[</span><span class="token punctuation">]</span>
+-G, <span class="token parameter variable">--get</span>
+	以get的方式来发送数据
+-H, <span class="token parameter variable">--header</span> LINE
+	自定义头信息传递给服务器
+--ignore-content-length
+	忽略的 HTTP 头信息的长度
+-i, <span class="token parameter variable">--include</span>
+	输出时包括 protocol 头信息
+-I, <span class="token parameter variable">--head</span>
+	只显示请求头信息
+-j, --junk-session-cookies
+	读取文件进忽略 session cookie
+<span class="token parameter variable">--interface</span> INTERFACE
+	使用指定网络接口/地址
+<span class="token parameter variable">--krb4</span> LEVEL
+	使用指定安全级别的 krb4
+-k, <span class="token parameter variable">--insecure</span>
+	允许不使用证书到SSL站点
+-K, <span class="token parameter variable">--config</span>
+	指定的配置文件读取
+-l, --list-only
+	列出ftp目录下的文件名称
+--limit-rate RATE
+	设置传输速度
+--local-port NUM<span class="token punctuation">[</span>-NUM<span class="token punctuation">]</span>
+	强制使用本地端口号
+-L, <span class="token parameter variable">--location</span>
+	如果（HTTP/HTTPS）服务器报告请求的页面已移动到其他位置，此选项将使 <span class="token function">curl</span> 在新位置上重做请求。使用身份验证时，curl 只将其凭据发送到初始主机。如果重定向将 <span class="token function">curl</span> 转移到其他主机，它将无法截获用户+密码。另请参见选项 --location-trusted，了解如何更改此设置。您可以使用--max-redirs 选项限制要执行的重定向次数
+--location-trusted
+	（HTTP/HTTPS）类似于-L，--location，但允许向站点可能重定向到的所有主机发送名称+密码。这可能会导致安全漏洞因为如果使用 HTTP 协议明文传输用户名+密码
+-m, --max-time <span class="token environment constant">SECONDS</span>
+	设置请求处理超时时间（含建立连接的耗时）
+--max-redirs NUM
+	设置最大重定向次数
+--max-filesize BYTES
+	设置最大下载的文件总量
+-M, <span class="token parameter variable">--manual</span>
+	显示全手动
+-n, <span class="token parameter variable">--netrc</span>
+	从 netrc 文件中读取用户名和密码
+--netrc-optional
+	使用 .netrc 或者 URL来覆盖 <span class="token parameter variable">-n</span>
+<span class="token parameter variable">--ntlm</span>
+	使用 HTTP NTLM 身份验证
+-N, --no-buffer
+	禁用缓冲输出
+-o, <span class="token parameter variable">--output</span> FILE
+	把输出写到指定文件中
+-O, --remote-name
+	把输出写到与远程文件同名的本地文件中
+-p, <span class="token parameter variable">--proxytunnel</span>
+	使用 HTTP 代理
+--proxy-anyauth
+	选择任一代理身份验证方法
+--proxy-basic
+	在代理上使用基本身份验证
+--proxy-digest
+	在代理上使用数字身份验证
+ --proxy-ntlm
+ 	在代理上使用 ntlm 身份验证
+-P, --ftp-port ADDRESS
+	使用端口地址，而不是使用PASV
+-q, <span class="token parameter variable">--disable</span>
+	作为第一个参数，关闭 .curlrc
+-Q, <span class="token parameter variable">--quote</span> CMD
+	文件传输前，发送命令到服务器
+-r/--range RANGE
+	检索来自HTTP/1.1或FTP服务器字节范围
+--range-file
+	读取（SSL）的随机文件
+-R, --remote-time
+	在本地生成文件时，保留远程文件时间
+<span class="token parameter variable">--retry</span> NUM
+	传输出现问题时，重试的次数
+--retry-delay <span class="token environment constant">SECONDS</span>
+	传输出现问题时，设置重试间隔时间
+--retry-max-time <span class="token environment constant">SECONDS</span>
+	传输出现问题时，设置最大重试时间
+-s, <span class="token parameter variable">--silent</span>
+	静默模式。不输出任何东西
+-S, --show-error
+	显示错误
+<span class="token parameter variable">--socks4</span> HOST<span class="token punctuation">[</span>:PORT<span class="token punctuation">]</span>
+	用 socks4 代理给定主机和端口
+<span class="token parameter variable">--socks5</span> HOST<span class="token punctuation">[</span>:PORT<span class="token punctuation">]</span>
+	用 socks5 代理给定主机和端口
+<span class="token parameter variable">--stderr</span> FILE
+	将对 stderr 的所有写入重定向到指定的文件
+-t, --telnet-option <span class="token assign-left variable">OPT</span><span class="token operator">=</span>VAL
+	Telnet 选项设置
+<span class="token parameter variable">--trace</span> FILE
+	对指定文件进行 debug
+--trace-ascii FILE
+	启用对所有传入和传出数据（包括描述性信息）的完整跟踪转储到给定文件。使用“-”作为文件名将输出发送到 stdout
+--trace-time
+	跟踪详细输出时，添加时间戳
+-T, --upload-file FILE
+	上传文件
+<span class="token parameter variable">--url</span> URL
+	指定要提取的 URL
+-u, <span class="token parameter variable">--user</span> <span class="token environment constant">USER</span><span class="token punctuation">[</span>:PASSWORD<span class="token punctuation">]</span>
+	设置服务器的用户和密码
+-U, --proxy-user <span class="token environment constant">USER</span><span class="token punctuation">[</span>:PASSWORD<span class="token punctuation">]</span>
+	设置代理用户名和密码
+-v, <span class="token parameter variable">--verbose</span>
+	打印更多信息，主要用于调试
+-V, <span class="token parameter variable">--version</span>
+	显示有关 <span class="token function">curl</span> 及其使用的 libcurl 版本的信息
+-w, --write-out FORMAT
+	什么输出完成后
+-x, <span class="token parameter variable">--proxy</span> HOST<span class="token punctuation">[</span>:PORT<span class="token punctuation">]</span>
+	在给定的端口上使用HTTP代理
+-X, <span class="token parameter variable">--request</span> COMMAND
+	指定与 HTTP 服务器通信时使用的自定义请求方法，默认为 GET
+-y, --speed-time
+	放弃限速所要的时间，默认为30
+-Y, --speed-limit
+	停止传输速度的限制，速度时间
+</code></pre></div><h2 id="_4-常用示例"><a href="#_4-常用示例" class="header-anchor">#</a> 4.常用示例</h2> <ul><li>发起 HTTP GET 请求。</li></ul> <p>注意 GET 请求可以携带包体。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">-X</span> GET <span class="token string">'http://9.138.158.214:10000?advertiser_id=93&amp;auth_code=AUTH_CODE'</span> <span class="token parameter variable">-H</span> <span class="token string">'Content-Type:application/json'</span> <span class="token parameter variable">-d</span> <span class="token string">'{&quot;action_time&quot;:1591100087,&quot;ad_id&quot;:&quot;101642&quot;}'</span>
+</code></pre></div><p>如果 URL 携带参数，需要使用单引号或双引号将 URL 引起来，因为字符 &amp; 是 Shell 特殊字符，或使用反斜杠对其转义。</p> <ul><li>获取网页数据。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> https://www.baidu.com
+</code></pre></div><p>执行后，百度官网的网页内容就会显示在屏幕上了。</p> <ul><li>保存网页内容。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> https://www.baidu.com <span class="token operator">&gt;</span> baidu_index.html
+<span class="token comment"># 或</span>
+<span class="token function">curl</span> https://www.baidu.com <span class="token parameter variable">-o</span> baidu_index.html
+</code></pre></div><ul><li>静默模式下载文件。注意 URL 在最后要具体到某个文件，不然无法下载。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-O</span>  https://dl.softmgr.qq.com/original/im/QQ9.3.3.27011.exe
+</code></pre></div><ul><li>下载文件时显示进度条。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -<span class="token comment">#  -O  https://dl.softmgr.qq.com/original/im/QQ9.3.3.27011.exe</span>
+<span class="token comment">######################################################################## 100.0%</span>
+</code></pre></div><ul><li>访问需要授权的页面时，可通过 -u 选项提供用户名和密码进行授权。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">-u</span> root  https://github.com/jindeng/sz14.git
+Enter <span class="token function">host</span> password <span class="token keyword">for</span> user <span class="token string">'root'</span><span class="token builtin class-name">:</span>
+</code></pre></div><ul><li>只打印响应头部信息。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token punctuation">(</span>-I <span class="token operator">|</span> --head<span class="token punctuation">)</span> https://github.com/jindeng/sz14.git
+</code></pre></div><ul><li>限制 curl 的下载速度。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> URL --limit-rate 50k
+</code></pre></div><p>使用 --limit-rate 限制 curl 的下载速度，命令中用 k（千字节）和 m（兆字节）指定下载速度限制。</p> <ul><li>指定可下载的最大文件大小。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> URL --max-filesize bytes
+</code></pre></div><p>使用 --max-filesize 指定可下载的最大文件大小，如果文件大小超出限制，命令则返回一个非 0 退出码，如果命令正常则返回 0。</p> <ul><li>用 curl 设置用户代理。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> URL <span class="token parameter variable">-A</span> <span class="token string">&quot;Mozilla/5.0&quot;</span>
+</code></pre></div><p>有些网站访问会提示只能使用 IE 浏览器来访问，这是因为这些网站设置了检查用户代理，可以使用curl把用户代理设置为IE，这样就可以访问了。使用 -A 或者 --user-agent 选项。</p> <ul><li>自定义头信息传递给服务器。使用多个 -H 选项可传递多个头部信息。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">-H</span> <span class="token string">&quot;Host:man.linuxde.net&quot;</span> <span class="token parameter variable">-H</span> <span class="token string">&quot;accept-language:zh-cn&quot;</span> URL
+</code></pre></div><ul><li>设置 cookie。</li></ul> <p>使用 -b 或 --cookie 选项来指定 cookie，多个 cookie 使用分号分隔。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> URL <span class="token parameter variable">--cookie</span> <span class="token string">&quot;user=root;pass=123456&quot;</span>
+</code></pre></div><p>如果想将从服务器接收到的任何 cookie 保存到指定的文件中，使用 -c 或 --cookie-jar 选项。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> URL --cookie-jar FILE
+</code></pre></div><ul><li>curl 设置参照页字符串。使用 --referer 选项指定参照页字符串。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">--referer</span> URL1 URL2
+</code></pre></div><p>参照页是位于 HTTP 头部中的一个字符串，用来表示用户是从哪个页面到达当前页面的，如果用户点击网页 A 中的某个连接，那么用户就会跳转到B网页，网页 B 头部的参照页字符串就包含网页 A 的 URL。</p> <ul><li>断点续传。curl 能够从特定的文件偏移处继续下载，它可以通过指定一个便移量来下载部分文件。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> URL/File <span class="token parameter variable">-C</span> OFFSET
+</code></pre></div><p>偏移量是以字节为单位的整数，如果让 curl 自动推断出正确的续传位置使用：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">-C</span> - URL
+</code></pre></div><ul><li>连接失败时不显示 http 错误。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">-f</span> https://unknow.com
+</code></pre></div><ul><li>通过 ftp 上传。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">-T</span> test.sql ftp://用户名:密码@ip:port/demo/curtain/bbstudy_files/ 
+</code></pre></div><ul><li>通过 ftp下载。</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> <span class="token parameter variable">-u</span> 用户名:密码 <span class="token parameter variable">-O</span> URL
+</code></pre></div><hr> <h2 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h2> <p><a href="http://man7.org/linux/man-pages/man1/curl.1.html" target="_blank" rel="noopener noreferrer">curl(1) - Linux manual page - man7.org<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/dengjin20104042056/article/details/100145300" target="_blank" rel="noopener noreferrer">CSDN.【Linux】一步一步学Linux——curl命令(193)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/网络管理/远程登录/telnet.html" class="prev">
+        telnet
+      </a></span> <span class="next"><a href="/网络管理/网络传输/rz.html">
+        rz
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3ae06b93.js" defer></script><script src="/assets/js/2.e69c4131.js" defer></script><script src="/assets/js/191.aac67e3e.js" defer></script>
+  </body>
+</html>
