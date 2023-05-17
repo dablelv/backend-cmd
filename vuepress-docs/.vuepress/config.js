@@ -1,6 +1,7 @@
 module.exports = {
   title: "后台开发命令 365",
   description: "后台开发常用命令介绍",
+  base: "/backend-cmd/",
   plugins: [
     [
       'vuepress-plugin-right-anchor',
