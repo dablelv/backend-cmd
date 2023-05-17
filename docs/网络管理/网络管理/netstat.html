@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.命令简介 | 后台开发命令 365</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="后台开发常用命令介绍">
+    
+    <link rel="preload" href="/assets/css/0.styles.ddbe6459.css" as="style"><link rel="preload" href="/assets/js/app.a4389ebb.js" as="script"><link rel="preload" href="/assets/js/2.e69c4131.js" as="script"><link rel="preload" href="/assets/js/216.2a1ed93d.js" as="script"><link rel="prefetch" href="/assets/js/10.f12dc5c2.js"><link rel="prefetch" href="/assets/js/100.97872fe4.js"><link rel="prefetch" href="/assets/js/101.bffa5705.js"><link rel="prefetch" href="/assets/js/102.3b3a67ab.js"><link rel="prefetch" href="/assets/js/103.dd19b256.js"><link rel="prefetch" href="/assets/js/104.3a870948.js"><link rel="prefetch" href="/assets/js/105.bfb9a0c2.js"><link rel="prefetch" href="/assets/js/106.0a610ba8.js"><link rel="prefetch" href="/assets/js/107.0ad6a846.js"><link rel="prefetch" href="/assets/js/108.e3e582f5.js"><link rel="prefetch" href="/assets/js/109.38ef0001.js"><link rel="prefetch" href="/assets/js/11.7453fbed.js"><link rel="prefetch" href="/assets/js/110.b67abe7b.js"><link rel="prefetch" href="/assets/js/111.980255aa.js"><link rel="prefetch" href="/assets/js/112.2f16e381.js"><link rel="prefetch" href="/assets/js/113.458aa2e7.js"><link rel="prefetch" href="/assets/js/114.52f1c870.js"><link rel="prefetch" href="/assets/js/115.fa06459f.js"><link rel="prefetch" href="/assets/js/116.f3565361.js"><link rel="prefetch" href="/assets/js/117.df29f2d6.js"><link rel="prefetch" href="/assets/js/118.25f46bdb.js"><link rel="prefetch" href="/assets/js/119.f11f3528.js"><link rel="prefetch" href="/assets/js/12.5a3d2905.js"><link rel="prefetch" href="/assets/js/120.b4404a04.js"><link rel="prefetch" href="/assets/js/121.a072c8b0.js"><link rel="prefetch" href="/assets/js/122.be7f4c44.js"><link rel="prefetch" href="/assets/js/123.f1e468f6.js"><link rel="prefetch" href="/assets/js/124.4518ce30.js"><link rel="prefetch" href="/assets/js/125.5f173374.js"><link rel="prefetch" href="/assets/js/126.ab70f203.js"><link rel="prefetch" href="/assets/js/127.647f5f58.js"><link rel="prefetch" href="/assets/js/128.d7d4ae23.js"><link rel="prefetch" href="/assets/js/129.f56442c7.js"><link rel="prefetch" href="/assets/js/13.aa482c07.js"><link rel="prefetch" href="/assets/js/130.51b86489.js"><link rel="prefetch" href="/assets/js/131.0da5c519.js"><link rel="prefetch" href="/assets/js/132.df55c6ab.js"><link rel="prefetch" href="/assets/js/133.d374001b.js"><link rel="prefetch" href="/assets/js/134.e4980ca9.js"><link rel="prefetch" href="/assets/js/135.cdf73663.js"><link rel="prefetch" href="/assets/js/136.3505eb4c.js"><link rel="prefetch" href="/assets/js/137.39cce0d7.js"><link rel="prefetch" href="/assets/js/138.80cfaf77.js"><link rel="prefetch" href="/assets/js/139.5697a185.js"><link rel="prefetch" href="/assets/js/14.f7a04bc7.js"><link rel="prefetch" href="/assets/js/140.32e3f329.js"><link rel="prefetch" href="/assets/js/141.6252aaf3.js"><link rel="prefetch" href="/assets/js/142.3bd8bc1b.js"><link rel="prefetch" href="/assets/js/143.123c987c.js"><link rel="prefetch" href="/assets/js/144.6553b4fb.js"><link rel="prefetch" href="/assets/js/145.aef37dfa.js"><link rel="prefetch" href="/assets/js/146.1c9bdd99.js"><link rel="prefetch" href="/assets/js/147.7e0663d5.js"><link rel="prefetch" href="/assets/js/148.da4df825.js"><link rel="prefetch" href="/assets/js/149.2b18e130.js"><link rel="prefetch" href="/assets/js/15.6615de64.js"><link rel="prefetch" href="/assets/js/150.8c42cfea.js"><link rel="prefetch" href="/assets/js/151.b131528f.js"><link rel="prefetch" href="/assets/js/152.efdbf757.js"><link rel="prefetch" href="/assets/js/153.b03670fb.js"><link rel="prefetch" href="/assets/js/154.092c4fbf.js"><link rel="prefetch" href="/assets/js/155.1f012933.js"><link rel="prefetch" href="/assets/js/156.21a6be9e.js"><link rel="prefetch" href="/assets/js/157.3e48c05f.js"><link rel="prefetch" href="/assets/js/158.b40ee960.js"><link rel="prefetch" href="/assets/js/159.03c5f51a.js"><link rel="prefetch" href="/assets/js/16.6a85dfd1.js"><link rel="prefetch" href="/assets/js/160.6a12a2e6.js"><link rel="prefetch" href="/assets/js/161.d14d7b1e.js"><link rel="prefetch" href="/assets/js/162.7bf6bd93.js"><link rel="prefetch" href="/assets/js/163.66aa6c64.js"><link rel="prefetch" href="/assets/js/164.d71620f0.js"><link rel="prefetch" href="/assets/js/165.701adc3a.js"><link rel="prefetch" href="/assets/js/166.e83f8794.js"><link rel="prefetch" href="/assets/js/167.d966c66c.js"><link rel="prefetch" href="/assets/js/168.d54b01be.js"><link rel="prefetch" href="/assets/js/169.277865fb.js"><link rel="prefetch" href="/assets/js/17.94c18636.js"><link rel="prefetch" href="/assets/js/170.9016d8a4.js"><link rel="prefetch" href="/assets/js/171.8c817bd8.js"><link rel="prefetch" href="/assets/js/172.3989f38d.js"><link rel="prefetch" href="/assets/js/173.37d4a4b2.js"><link rel="prefetch" href="/assets/js/174.fe9e8fac.js"><link rel="prefetch" href="/assets/js/175.83293e65.js"><link rel="prefetch" href="/assets/js/176.e82def0a.js"><link rel="prefetch" href="/assets/js/177.1c9de526.js"><link rel="prefetch" href="/assets/js/178.79f7a351.js"><link rel="prefetch" href="/assets/js/179.c32de71d.js"><link rel="prefetch" href="/assets/js/18.aa3e2c7a.js"><link rel="prefetch" href="/assets/js/180.51686226.js"><link rel="prefetch" href="/assets/js/181.1fddf933.js"><link rel="prefetch" href="/assets/js/182.afce2bc2.js"><link rel="prefetch" href="/assets/js/183.b8da1273.js"><link rel="prefetch" href="/assets/js/184.f726bf4c.js"><link rel="prefetch" href="/assets/js/185.0bf3f2fc.js"><link rel="prefetch" href="/assets/js/186.112e4632.js"><link rel="prefetch" href="/assets/js/187.bf47d936.js"><link rel="prefetch" href="/assets/js/188.7d39180e.js"><link rel="prefetch" href="/assets/js/189.c9a637fd.js"><link rel="prefetch" href="/assets/js/19.5a0337af.js"><link rel="prefetch" href="/assets/js/190.fc819d64.js"><link rel="prefetch" href="/assets/js/191.d5622c58.js"><link rel="prefetch" href="/assets/js/192.95b52cbd.js"><link rel="prefetch" href="/assets/js/193.2e505557.js"><link rel="prefetch" href="/assets/js/194.df8f9da6.js"><link rel="prefetch" href="/assets/js/195.e827d636.js"><link rel="prefetch" href="/assets/js/196.81e8c2c8.js"><link rel="prefetch" href="/assets/js/197.8d079f1c.js"><link rel="prefetch" href="/assets/js/198.1979eb88.js"><link rel="prefetch" href="/assets/js/199.353f8736.js"><link rel="prefetch" href="/assets/js/20.22c1a76e.js"><link rel="prefetch" href="/assets/js/200.2cb3c08d.js"><link rel="prefetch" href="/assets/js/201.3122d2f6.js"><link rel="prefetch" href="/assets/js/202.b1c72263.js"><link rel="prefetch" href="/assets/js/203.5d4b79e5.js"><link rel="prefetch" href="/assets/js/204.883e1c22.js"><link rel="prefetch" href="/assets/js/205.ae69261b.js"><link rel="prefetch" href="/assets/js/206.812824f7.js"><link rel="prefetch" href="/assets/js/207.4cbaf27e.js"><link rel="prefetch" href="/assets/js/208.03a482ba.js"><link rel="prefetch" href="/assets/js/209.298e617b.js"><link rel="prefetch" href="/assets/js/21.aea74a25.js"><link rel="prefetch" href="/assets/js/210.45269326.js"><link rel="prefetch" href="/assets/js/211.b1a68b38.js"><link rel="prefetch" href="/assets/js/212.8f32be5b.js"><link rel="prefetch" href="/assets/js/213.9f934820.js"><link rel="prefetch" href="/assets/js/214.7c464965.js"><link rel="prefetch" href="/assets/js/215.77325bfa.js"><link rel="prefetch" href="/assets/js/217.64eddc74.js"><link rel="prefetch" href="/assets/js/218.757cda7d.js"><link rel="prefetch" href="/assets/js/219.33d148a8.js"><link rel="prefetch" href="/assets/js/22.4cd79e4e.js"><link rel="prefetch" href="/assets/js/220.ef503006.js"><link rel="prefetch" href="/assets/js/221.c6ca673b.js"><link rel="prefetch" href="/assets/js/222.fe2e2353.js"><link rel="prefetch" href="/assets/js/223.362ead4a.js"><link rel="prefetch" href="/assets/js/224.459ec94d.js"><link rel="prefetch" href="/assets/js/225.8b742319.js"><link rel="prefetch" href="/assets/js/226.bcdc3c01.js"><link rel="prefetch" href="/assets/js/227.fb258e43.js"><link rel="prefetch" href="/assets/js/228.99cd5c65.js"><link rel="prefetch" href="/assets/js/229.eddcfad6.js"><link rel="prefetch" href="/assets/js/23.abb94267.js"><link rel="prefetch" href="/assets/js/230.b9736106.js"><link rel="prefetch" href="/assets/js/231.d8565001.js"><link rel="prefetch" href="/assets/js/232.95c191e6.js"><link rel="prefetch" href="/assets/js/233.420fa346.js"><link rel="prefetch" href="/assets/js/234.bfa8b941.js"><link rel="prefetch" href="/assets/js/235.18f4da26.js"><link rel="prefetch" href="/assets/js/236.7553fe88.js"><link rel="prefetch" href="/assets/js/237.6337029c.js"><link rel="prefetch" href="/assets/js/238.a633c5f3.js"><link rel="prefetch" href="/assets/js/239.a6976cc2.js"><link rel="prefetch" href="/assets/js/24.a62c2116.js"><link rel="prefetch" href="/assets/js/240.902d0172.js"><link rel="prefetch" href="/assets/js/241.4e13a993.js"><link rel="prefetch" href="/assets/js/242.97c6cbc7.js"><link rel="prefetch" href="/assets/js/243.a38035d6.js"><link rel="prefetch" href="/assets/js/244.0ddb38d7.js"><link rel="prefetch" href="/assets/js/245.e77fe8b5.js"><link rel="prefetch" href="/assets/js/246.6200c89d.js"><link rel="prefetch" href="/assets/js/247.4deb757c.js"><link rel="prefetch" href="/assets/js/248.1ca476ea.js"><link rel="prefetch" href="/assets/js/249.115ec4f8.js"><link rel="prefetch" href="/assets/js/25.7fc0111f.js"><link rel="prefetch" href="/assets/js/250.47dc96f3.js"><link rel="prefetch" href="/assets/js/251.2003d82d.js"><link rel="prefetch" href="/assets/js/252.78ec88ea.js"><link rel="prefetch" href="/assets/js/253.893cae0f.js"><link rel="prefetch" href="/assets/js/254.fdc31bc0.js"><link rel="prefetch" href="/assets/js/255.3332d41e.js"><link rel="prefetch" href="/assets/js/256.4af54009.js"><link rel="prefetch" href="/assets/js/257.d3484fef.js"><link rel="prefetch" href="/assets/js/258.ac968bc7.js"><link rel="prefetch" href="/assets/js/259.ce35951e.js"><link rel="prefetch" href="/assets/js/26.607ab092.js"><link rel="prefetch" href="/assets/js/260.927c1240.js"><link rel="prefetch" href="/assets/js/261.05b2f19b.js"><link rel="prefetch" href="/assets/js/262.2daa594e.js"><link rel="prefetch" href="/assets/js/263.79e83d69.js"><link rel="prefetch" href="/assets/js/264.e63a36e8.js"><link rel="prefetch" href="/assets/js/265.b2906c29.js"><link rel="prefetch" href="/assets/js/266.9d88b448.js"><link rel="prefetch" href="/assets/js/267.2c62dc11.js"><link rel="prefetch" href="/assets/js/268.76292132.js"><link rel="prefetch" href="/assets/js/269.3d301a01.js"><link rel="prefetch" href="/assets/js/27.79ff68af.js"><link rel="prefetch" href="/assets/js/28.b7414d3a.js"><link rel="prefetch" href="/assets/js/29.d94c1a3d.js"><link rel="prefetch" href="/assets/js/3.d38113cc.js"><link rel="prefetch" href="/assets/js/30.4349444f.js"><link rel="prefetch" href="/assets/js/31.14d6d8d3.js"><link rel="prefetch" href="/assets/js/32.9de3dfcc.js"><link rel="prefetch" href="/assets/js/33.f72de9d1.js"><link rel="prefetch" href="/assets/js/34.bb435865.js"><link rel="prefetch" href="/assets/js/35.a5be19d4.js"><link rel="prefetch" href="/assets/js/36.3c45f2ad.js"><link rel="prefetch" href="/assets/js/37.8f42d984.js"><link rel="prefetch" href="/assets/js/38.082bba11.js"><link rel="prefetch" href="/assets/js/39.10712c4d.js"><link rel="prefetch" href="/assets/js/4.133784c1.js"><link rel="prefetch" href="/assets/js/40.f3d974ef.js"><link rel="prefetch" href="/assets/js/41.73fe4c7a.js"><link rel="prefetch" href="/assets/js/42.691d64e5.js"><link rel="prefetch" href="/assets/js/43.38790e2d.js"><link rel="prefetch" href="/assets/js/44.a7582388.js"><link rel="prefetch" href="/assets/js/45.de8c41aa.js"><link rel="prefetch" href="/assets/js/46.dc81b689.js"><link rel="prefetch" href="/assets/js/47.6698932f.js"><link rel="prefetch" href="/assets/js/48.dc716767.js"><link rel="prefetch" href="/assets/js/49.264bcc49.js"><link rel="prefetch" href="/assets/js/5.51618976.js"><link rel="prefetch" href="/assets/js/50.0a6ab749.js"><link rel="prefetch" href="/assets/js/51.1bee704d.js"><link rel="prefetch" href="/assets/js/52.85a32eb3.js"><link rel="prefetch" href="/assets/js/53.802db856.js"><link rel="prefetch" href="/assets/js/54.d679c553.js"><link rel="prefetch" href="/assets/js/55.42d0b504.js"><link rel="prefetch" href="/assets/js/56.b4ea463d.js"><link rel="prefetch" href="/assets/js/57.a4c34b5d.js"><link rel="prefetch" href="/assets/js/58.9cee7094.js"><link rel="prefetch" href="/assets/js/59.d1a955e5.js"><link rel="prefetch" href="/assets/js/6.88d03338.js"><link rel="prefetch" href="/assets/js/60.ba8c6e43.js"><link rel="prefetch" href="/assets/js/61.40350165.js"><link rel="prefetch" href="/assets/js/62.5abd107d.js"><link rel="prefetch" href="/assets/js/63.5ffa8c44.js"><link rel="prefetch" href="/assets/js/64.b5c8b8e7.js"><link rel="prefetch" href="/assets/js/65.7e24c502.js"><link rel="prefetch" href="/assets/js/66.76fa526c.js"><link rel="prefetch" href="/assets/js/67.d2bc2b3f.js"><link rel="prefetch" href="/assets/js/68.1a961ce2.js"><link rel="prefetch" href="/assets/js/69.fea57323.js"><link rel="prefetch" href="/assets/js/7.1c02874b.js"><link rel="prefetch" href="/assets/js/70.5365fe6a.js"><link rel="prefetch" href="/assets/js/71.4c9af374.js"><link rel="prefetch" href="/assets/js/72.b0dcbd30.js"><link rel="prefetch" href="/assets/js/73.2b91ac87.js"><link rel="prefetch" href="/assets/js/74.d12f353a.js"><link rel="prefetch" href="/assets/js/75.33344c1f.js"><link rel="prefetch" href="/assets/js/76.545c033c.js"><link rel="prefetch" href="/assets/js/77.e4d62c92.js"><link rel="prefetch" href="/assets/js/78.406317ce.js"><link rel="prefetch" href="/assets/js/79.1a0eff47.js"><link rel="prefetch" href="/assets/js/8.67545688.js"><link rel="prefetch" href="/assets/js/80.a125f077.js"><link rel="prefetch" href="/assets/js/81.75559d21.js"><link rel="prefetch" href="/assets/js/82.0ebd175d.js"><link rel="prefetch" href="/assets/js/83.b5dfc6a0.js"><link rel="prefetch" href="/assets/js/84.ad44124a.js"><link rel="prefetch" href="/assets/js/85.d3ea1a6f.js"><link rel="prefetch" href="/assets/js/86.fff394ef.js"><link rel="prefetch" href="/assets/js/87.b50aa59c.js"><link rel="prefetch" href="/assets/js/88.ae8a5566.js"><link rel="prefetch" href="/assets/js/89.88870ec4.js"><link rel="prefetch" href="/assets/js/9.0dc133a6.js"><link rel="prefetch" href="/assets/js/90.f5d57766.js"><link rel="prefetch" href="/assets/js/91.eab6c6a6.js"><link rel="prefetch" href="/assets/js/92.53c2f2d1.js"><link rel="prefetch" href="/assets/js/93.f950813d.js"><link rel="prefetch" href="/assets/js/94.b7770e29.js"><link rel="prefetch" href="/assets/js/95.33c8333d.js"><link rel="prefetch" href="/assets/js/96.acafc6c6.js"><link rel="prefetch" href="/assets/js/97.cdd42c16.js"><link rel="prefetch" href="/assets/js/98.207e8499.js"><link rel="prefetch" href="/assets/js/99.0a01764f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ddbe6459.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://excalidraw.com/apple-touch-icon.png" alt="后台开发命令 365" class="logo"> <span class="site-name can-hide">后台开发命令 365</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://u1s1.vip/about" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友链
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  下拉1
+</a></li><li class="dropdown-item"><!----> <a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  下拉2
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://u1s1.vip/about" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友链
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  下拉1
+</a></li><li class="dropdown-item"><!----> <a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  下拉2
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>帮助</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>文件系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进程管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>编译调试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>二进制工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Shell 编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>系统管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>终端配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>权限管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>网络管理</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>远程登录</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>网络传输</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>网络管理</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/网络管理/网络管理/arp.html" class="sidebar-link">arp</a></li><li><a href="/网络管理/网络管理/arpd.html" class="sidebar-link">arpd</a></li><li><a href="/网络管理/网络管理/arping.html" class="sidebar-link">arping</a></li><li><a href="/网络管理/网络管理/arpwatch.html" class="sidebar-link">arpwatch</a></li><li><a href="/网络管理/网络管理/dhclient.html" class="sidebar-link">dhclient</a></li><li><a href="/网络管理/网络管理/dig.html" class="sidebar-link">dig</a></li><li><a href="/网络管理/网络管理/ethtool.html" class="sidebar-link">ethtool</a></li><li><a href="/网络管理/网络管理/host.html" class="sidebar-link">host</a></li><li><a href="/网络管理/网络管理/ifcfg.html" class="sidebar-link">ifcfg</a></li><li><a href="/网络管理/网络管理/ifconfig.html" class="sidebar-link">ifconfig</a></li><li><a href="/网络管理/网络管理/ifdown.html" class="sidebar-link">ifdown</a></li><li><a href="/网络管理/网络管理/ifup.html" class="sidebar-link">ifup</a></li><li><a href="/网络管理/网络管理/ip.html" class="sidebar-link">ip</a></li><li><a href="/网络管理/网络管理/ipcalc.html" class="sidebar-link">ipcalc</a></li><li><a href="/网络管理/网络管理/iptables.html" class="sidebar-link">iptables</a></li><li><a href="/网络管理/网络管理/iptables-restore.html" class="sidebar-link">iptables-restore</a></li><li><a href="/网络管理/网络管理/iptables-save.html" class="sidebar-link">iptables-save</a></li><li><a href="/网络管理/网络管理/lnstat.html" class="sidebar-link">lnstat</a></li><li><a href="/网络管理/网络管理/mii-tool.html" class="sidebar-link">mii-tool</a></li><li><a href="/网络管理/网络管理/ncat.html" class="sidebar-link">ncat</a></li><li><a href="/网络管理/网络管理/netstat.html" class="active sidebar-link">netstat</a></li><li><a href="/网络管理/网络管理/nmap.html" class="sidebar-link">nmap</a></li><li><a href="/网络管理/网络管理/nslookup.html" class="sidebar-link">nslookup</a></li><li><a href="/网络管理/网络管理/nstat.html" class="sidebar-link">nstat</a></li><li><a href="/网络管理/网络管理/ping.html" class="sidebar-link">ping</a></li><li><a href="/网络管理/网络管理/route.html" class="sidebar-link">route</a></li><li><a href="/网络管理/网络管理/ss.html" class="sidebar-link">ss</a></li><li><a href="/网络管理/网络管理/tcpdump.html" class="sidebar-link">tcpdump</a></li><li><a href="/网络管理/网络管理/tracepath.html" class="sidebar-link">tracepath</a></li><li><a href="/网络管理/网络管理/traceroute.html" class="sidebar-link">traceroute</a></li><li><a href="/网络管理/网络管理/usernetctl.html" class="sidebar-link">usernetctl</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>版本控制</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实用工具</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-命令简介"><a href="#_1-命令简介" class="header-anchor">#</a> 1.命令简介</h2> <p>netstat 命令用来打印 Linux 系统的网络状态信息，包括网络连接（network connections）、路由表（routing tables）、网络接口设备统计信息（interface statistics）、伪连接（masquerade connections）和多播成员信息（multicast memberships）等，得知 Linux 系统网络的整体情况。</p> <p>如我们可以通过 netstat 获知系统当前被监听的端口号列表。</p> <p>netstat 是通过读取 /proc/net/ 路径下的 tcp、udp、unix 等文件来获取连接信息的。</p> <h2 id="_2-命令格式"><a href="#_2-命令格式" class="header-anchor">#</a> 2.命令格式</h2> <div class="language- extra-class"><pre class="language-text"><code>netstat [OPTIONS]
+</code></pre></div><h2 id="_3-选项说明"><a href="#_3-选项说明" class="header-anchor">#</a> 3.选项说明</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>-a, <span class="token parameter variable">--all</span>
+	显示所有网络连接
+-A，--protocol<span class="token operator">=</span>FAMILY
+	列出指定地址族的连接信息。FAMILY 为逗号分隔的地址族关键字列表，比如inet，inet6，unix，ipx，ax25，netrom，econet 和 ddp 等
+-c,--continuous
+	每隔 1s 刷新网络状态
+<span class="token parameter variable">-C</span>
+	从路由缓存获取路由信息
+-e, <span class="token parameter variable">--extend</span>
+	显示网络其他相关信息
+<span class="token parameter variable">-F</span>
+	显示 FIB 中的路由信息<span class="token punctuation">(</span>默认选项<span class="token punctuation">)</span> 
+-g, <span class="token parameter variable">--g</span>
+	显示 IPv4 和 IPv6 的多播组成员关系信息
+-h, <span class="token parameter variable">--help</span>
+	显示帮助信息
+-i, <span class="token parameter variable">-I</span><span class="token operator">=</span>IFACE, <span class="token parameter variable">--interfaces</span><span class="token operator">=</span>IFACE
+	显示所有网络接口或指定的网络接口
+-l, <span class="token parameter variable">--listening</span>
+	显示监听中的套接字<span class="token punctuation">(</span>默认选项<span class="token punctuation">)</span>
+-M, <span class="token parameter variable">--masquerade</span>
+	显示伪装的网络连接
+-n, <span class="token parameter variable">--numeric</span>
+	以数字形式而不是以符号显示主机、端口或用户名。
+--numeric-hosts
+	以数字形式显示主机地址
+--numeric-ports
+	以数字形式显示端口号
+--numeric-users
+	以数字形式显示用户名
+-N, --netlink, <span class="token parameter variable">--symbolic</span>
+	显示网络硬件外围设备的符号连接名称
+-o, <span class="token parameter variable">--timers</span>
+	显示计时器
+-p, <span class="token parameter variable">--programs</span>
+	显示正在使用 Socket 的进程 ID 和进程名
+-r, <span class="token parameter variable">--route</span>
+	显示内核路由表。命令 route <span class="token parameter variable">-e</span> 会产生同样的结果
+-s, <span class="token parameter variable">--statistice</span>
+	显示每种协议的统计信息
+-t, <span class="token parameter variable">--tcp</span>
+	显示TCP传输协议的连接状况
+-u, <span class="token parameter variable">--udp</span>
+	显示 UDP 传输协议的连接状况
+-v, <span class="token parameter variable">--verbose</span>
+	显示指令执行过程。特别是打印一些关于未配置地址族的有用信息
+-V, <span class="token parameter variable">--version</span>
+	显示版本信息
+-w, <span class="token parameter variable">--raw</span>
+	显示 RAW 传输协议的连接状况
+-x, <span class="token parameter variable">--unix</span>
+	此参数的效果和指定 <span class="token string">&quot;-A unix&quot;</span> 参数相同
+--ip, <span class="token parameter variable">--inet</span>
+	此参数的效果和指定 <span class="token string">&quot;-A inet&quot;</span> 参数相同
+</code></pre></div><h2 id="_4-常用示例"><a href="#_4-常用示例" class="header-anchor">#</a> 4.常用示例</h2> <p>（1）列出所有端口信息（包括监听和未监听的）。</p> <ul><li>列出所有端口。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -an
+ Active Internet connections (servers and established)
+ Proto Recv-Q Send-Q Local Address           Foreign Address         State
+ tcp        0      0 localhost:30037         *:*                     LISTEN
+ udp        0      0 *:bootpc                *:*
+ 
+Active UNIX domain sockets (servers and established)
+ Proto RefCnt Flags       Type       State         I-Node   Path
+ unix  2      [ ACC ]     STREAM     LISTENING     6135     /tmp/.X11-unix/X0
+ unix  2      [ ACC ]     STREAM     LISTENING     5140     /var/run/acpid.socket
+ ...
+</code></pre></div><ul><li>列出所有 tcp 端口。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -ant
+</code></pre></div><ul><li>列出所有 UDP 端口。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -anu
+</code></pre></div><p>（2）列出所有处于监听状态的连接。</p> <ul><li>显示处于监听状态的所有连接。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -ln
+ Active Internet connections (only servers)
+ Proto Recv-Q Send-Q Local Address           Foreign Address         State
+ tcp        0      0 localhost:ipp           *:*                     LISTEN
+ tcp6       0      0 localhost:ipp           [::]:*                  LISTEN
+ udp        0      0 *:49119                 *:*
+</code></pre></div><ul><li>只显示处于监听状态的 tcp 连接。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -lnt
+</code></pre></div><ul><li>只显示处于监听状态的 udp 连接。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -lnu
+</code></pre></div><ul><li>只显示处于监听状态的 unix 连接。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -lnx
+</code></pre></div><p>（3）显示每个协议的统计信息。</p> <ul><li>显示所有端口的统计信息。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -s
+ Ip:
+ 11150 total packets received
+ 1 with invalid addresses
+ 0 forwarded
+ 0 incoming packets discarded
+ 11149 incoming packets delivered
+ 11635 requests sent out
+ Icmp:
+ 0 ICMP messages received
+ 0 input ICMP message failed.
+ Tcp:
+ 582 active connections openings
+ 2 failed connection attempts
+ 25 connection resets received
+ Udp:
+ 1183 packets received
+ 4 packets to unknown port received.
+ .....
+</code></pre></div><ul><li>显示 TCP 端口的统计信息。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -st 
+</code></pre></div><ul><li>显示 UDP 端口统计信息。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -su
+</code></pre></div><p>（4）显示进程 ID 和名称。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -p
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 10.234.178.144:43538    100.113.169.225:31415   ESTABLISHED -                   
+tcp        0      0 10.234.178.144:33295    10.121.151.35:sd        ESTABLISHED 5354/VipMQAgent     
+tcp        0      0 10.234.178.144:21095    100.92.40.70:bacula-dir ESTABLISHED 25164/pgg_login_cme
+</code></pre></div><p>（5）以数字形式显示主机、端口和用户名。这样可以加速输出，因为不用进行比对查询。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -n
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 10.234.178.144:43538    100.113.169.225:31415   ESTABLISHED
+tcp        0      0 10.234.178.144:33295    10.121.151.35:9876      ESTABLISHED
+</code></pre></div><p>如果只是不想让这三个名称中的一个被显示，使用以下命令</p> <div class="language- extra-class"><pre class="language-text"><code>netsat -a --numeric-ports
+netsat -a --numeric-hosts
+netsat -a --numeric-users
+</code></pre></div><p>（6）每隔一秒持续输出 netstat 信息。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -c
+</code></pre></div><p>（7）显示系统不支持的地址族 (Address Families)。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat --verbose
+</code></pre></div><p>在输出的末尾，会有如下的信息</p> <div class="language- extra-class"><pre class="language-text"><code>netstat: no support for `AF IPX' on this system.
+netstat: no support for `AF AX25' on this system.
+netstat: no support for `AF X25' on this system.
+netstat: no support for `AF NETROM' on this system.
+</code></pre></div><p>（8）显示核心路由信息。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -r
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         0.0.0.0         0.0.0.0         U         0 0          0 tunnat
+9.0.0.0         10.175.82.193   255.0.0.0       UG        0 0          0 eth1
+10.0.0.0        10.175.82.193   255.0.0.0       UG        0 0          0 eth1
+</code></pre></div><p>注意：使用 netstat -rn 显示数字格式，不查询主机名称。</p> <p>（9）找出程序运行的端口。并不是所有的进程都能找到，没有权限的会不显示，使用 root 权限查看所有的信息。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -anp
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 10.175.82.204:61795     0.0.0.0:*               LISTEN      22006/./spp_pgg_dia 
+tcp        0      0 10.175.82.204:55011     0.0.0.0:*               LISTEN      3228/./spp_pgg_vod_ 
+tcp        0      0 10.175.82.204:10883     0.0.0.0:*               LISTEN      125115/./spp_pgg_co
+</code></pre></div><p>（10）显示网络接口列表。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -i
+Kernel Interface table
+Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth1      1500 32898847246      0      0 51410  34664370715      0      0      0 BMRU
+lo       65536 57852071211      0      0 0      57852071211      0      0      0 LRU
+tunnat    1480        0      0      0 0      103182603      0      0      0 OPRU
+</code></pre></div><p>显示详细信息，可以使用 ifconfig 或者 netstat -ie。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -ie
+Kernel Interface table
+eth1: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+        inet 10.175.82.204  netmask 255.255.255.192  broadcast 10.175.82.255
+        ether ec:f4:bb:e3:5b:b1  txqueuelen 10000  (Ethernet)
+        RX packets 32900073183  bytes 21958447410400 (19.9 TiB)
+        RX errors 0  dropped 0  overruns 51410  frame 0
+        TX packets 34665611337  bytes 7109591105017 (6.4 TiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0x91d00000-91e00000
+...
+</code></pre></div><p>（11）IP 和 TCP 分析。</p> <ul><li>查看本机连接的服务端口中连接数 TOP 的服务端 IP。其中 10.234.178.144:22 为本地 IP 端口。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>netstat -ant | grep &quot;10.234.178.144:22&quot; |awk '{print $5}'|awk -F: '{print $1}'|sort|uniq -c|sort -nr|head -10
+     24 100.112.141.208
+      2 10.63.93.159
+      2 10.191.131.38
+      2 10.101.242.11
+      2 100.92.40.70
+      2 100.113.141.219
+      2 100.112.159.163
+      1 9.68.178.53
+      1 10.191.134.83
+      1 10.139.233.47
+</code></pre></div><p>第二列为服务端IP，左边是本地发起的连接数。
+（b）查看 TCP 各种状态列表。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -ant | awk '{print $6}' | sort | uniq
+CLOSE_WAIT
+established)
+ESTABLISHED
+Foreign
+LISTEN
+TIME_WAIT
+</code></pre></div><p>（12）显示多播组信息。</p> <div class="language- extra-class"><pre class="language-text"><code>netstat -g
+IPv6/IPv4 Group Memberships
+Interface       RefCnt Group
+--------------- ------ ---------------------
+lo              1      all-systems.mcast.net
+eth1            1      all-systems.mcast.net
+tunnat          1      all-systems.mcast.net
+lo              1      ff02::1
+lo              1      ff01::1
+eth0            1      ff02::1
+eth0            1      ff01::1
+eth1            1      ff02::1
+
+</code></pre></div><p>netstat 的大部分功能都介绍了，如果想知道 netstat 更高级的功能，请参考 netstat 帮助手册。</p> <h2 id="_5-输出结果整体说明"><a href="#_5-输出结果整体说明" class="header-anchor">#</a> 5.输出结果整体说明</h2> <p>执行 netstat 命令输出：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>Active Internet connections <span class="token punctuation">(</span>w/o servers<span class="token punctuation">)</span>
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">9.77</span>.9.126:47239        <span class="token number">100.115</span>.0.57:9922       ESTABLISHED
+tcp        <span class="token number">0</span>     <span class="token number">52</span> <span class="token number">9.77</span>.9.126:36000        <span class="token number">10.19</span>.88.119:58814      ESTABLISHED
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">9.77</span>.9.126:37586        <span class="token number">10.170</span>.31.139:nsesrvr   ESTABLISHED
+udp        <span class="token number">0</span>      <span class="token number">0</span> TENCENT64:acp-proto     TENCENT64:openwebnet    ESTABLISHED
+udp        <span class="token number">0</span>      <span class="token number">0</span> TENCENT64:4216          TENCENT64:openwebnet    ESTABLISHED
+Active UNIX domain sockets <span class="token punctuation">(</span>w/o servers<span class="token punctuation">)</span>
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  <span class="token number">2</span>      <span class="token punctuation">[</span> <span class="token punctuation">]</span>         DGRAM                    <span class="token number">307286163</span> /tmp/agent_cmd.sock
+unix  <span class="token number">2</span>      <span class="token punctuation">[</span> <span class="token punctuation">]</span>         DGRAM                    <span class="token number">9484</span>     /var/run/nscd/socket
+unix  <span class="token number">2</span>      <span class="token punctuation">[</span> <span class="token punctuation">]</span>         DGRAM                    <span class="token number">275</span>      /run/systemd/notify
+<span class="token punctuation">..</span>.
+</code></pre></div><p>从整体上看 netstat 的输出结果可以分为两个部分。一个是 Active Internet connections，二是 Active UNIX domain sockets。</p> <p>（1）Active Internet connections。</p> <p>Active Internet connections 表示活跃的网络连接，包括 UDP 和 TCP连接信息。</p> <p>其中&quot;Recv-Q&quot;和&quot;Send-Q&quot;指接收队列和发送队列，这些数字一般都应该是0，如果不是则表示数据发送和接收队列存在堆积，这种情况较为少见。</p> <p>Local Address 和 Foreign Address 表示本地和远端的 IP、端口；</p> <p>State 表示连接的状态，主要有：</p> <div class="language- extra-class"><pre class="language-text"><code>LISTEN：监听状态；
+SYN_SEND：客户端在发送连接请求后进入SYN_SEND状态，等待服务端的连接请求和确认，即等待服务端发送SYN+ACK包；
+SYN_RECV：服务端在收到客户端的连接请求后，发送SYN+ACK包后，进入SYN_RECV状态；
+ESTABLISHED：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK后，客户端和服务器进入已建立连接状态；
+FIN-WAIT-1：客户端发送连接中断请求后进入FIN-WAIT-1状态，等待服务端的确认；
+FIN-WAIT-2：客户端接收到服务端的终端确认后进入FIN-WAIT-2状态，等待服务端的中断请求；
+CLOSE-WAIT：服务端在确认客户端的中断请求后，进入CLOSE-WAIT状态，等待从本地用户发来的连接中断请求；
+LAST-ACK：服务端向客户端发送连接中断请求后进入LAST-ACK状态，等待来自客户端的中断请求确认；
+TIME-WAIT：客户端发送中断请求确认后进入TIME-WAIT状态，等待足够的时间（2MSL）以确保服务端接收到来自客户端的中断请求确认； 
+CLOSED：四次挥手结束后，客户端和服务端进入连接断开状态。
+</code></pre></div><p>为了便于理解 TCP 建立连接的三次握手和断开连接的四次挥手过程中涉及的状态，附上两张便于理解的示意图。</p> <p>三次握手：
+<img src="https://img-blog.csdnimg.cn/20190201201646408.png" alt="在这里插入图片描述">
+四次挥手：
+<img src="https://img-blog.csdnimg.cn/20190201201713641.png" alt="在这里插入图片描述">
+（2）Active UNIX domain sockets。
+Active UNIX domain sockets，称为活跃 Unix 域套接字。</p> <p>Proto 显示连接使用的协议；
+RefCnt 表示使用数量，即通过此套接字连接的进程数；
+Flags 显示的标志为 SO_ACCEPTON（显示为 ACC）、SO_WAITDATA（W）或 SO_NOSPACE（N）。如果相应的进程等待一个连接请求，那么 SO_ACCECPTON 用于未连接的套接字。其它标志通常并不重要。
+Types 显示套接口的类型，一般为 DGRAM（数据报）和 STREAM（数据流）；
+State 显示套接字当前的状态，此字段包含以下关键字之一：</p> <div class="language- extra-class"><pre class="language-text"><code>FREE：套接字未分配。
+LISTENING：套接字正在监听一个连接请求。除非设置 --listening (-l) 或者 --all (-a) 选项，否则不显示。
+CONNECTING：套接字正要建立连接
+CONNECTED：套接字已连接
+DISCONNECTING：套接字已断开
+(empty)：套接字未连
+</code></pre></div><p>I-Node 表示套接字的 Inode 节点号；
+Path 表示套接字所在路径。</p> <hr> <h2 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h2> <p><a href="https://man7.org/linux/man-pages/man8/netstat.8.html" target="_blank" rel="noopener noreferrer">netstat(8) - Linux manual page - man7.org<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="http://linux.51yip.com/search/netstat" target="_blank" rel="noopener noreferrer">netstat - linux命令在线中文手册<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="http://www.cnblogs.com/ggjucheng/archive/2012/01/08/2316661.html" target="_blank" rel="noopener noreferrer">Linux netstat命令详解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.cnblogs.com/diantong/p/9669568.html" target="_blank" rel="noopener noreferrer">Linux命令之netstat<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/qzcsu/article/details/72861891" target="_blank" rel="noopener noreferrer">TCP的三次握手与四次挥手（详解+动图）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/网络管理/网络管理/ncat.html" class="prev">
+        ncat
+      </a></span> <span class="next"><a href="/网络管理/网络管理/nmap.html">
+        nmap
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.a4389ebb.js" defer></script><script src="/assets/js/2.e69c4131.js" defer></script><script src="/assets/js/216.2a1ed93d.js" defer></script>
+  </body>
+</html>

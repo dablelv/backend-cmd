@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.命令简介 | 后台开发命令 365</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="后台开发常用命令介绍">
+    
+    <link rel="preload" href="/assets/css/0.styles.ddbe6459.css" as="style"><link rel="preload" href="/assets/js/app.a4389ebb.js" as="script"><link rel="preload" href="/assets/js/2.e69c4131.js" as="script"><link rel="preload" href="/assets/js/269.3d301a01.js" as="script"><link rel="prefetch" href="/assets/js/10.f12dc5c2.js"><link rel="prefetch" href="/assets/js/100.97872fe4.js"><link rel="prefetch" href="/assets/js/101.bffa5705.js"><link rel="prefetch" href="/assets/js/102.3b3a67ab.js"><link rel="prefetch" href="/assets/js/103.dd19b256.js"><link rel="prefetch" href="/assets/js/104.3a870948.js"><link rel="prefetch" href="/assets/js/105.bfb9a0c2.js"><link rel="prefetch" href="/assets/js/106.0a610ba8.js"><link rel="prefetch" href="/assets/js/107.0ad6a846.js"><link rel="prefetch" href="/assets/js/108.e3e582f5.js"><link rel="prefetch" href="/assets/js/109.38ef0001.js"><link rel="prefetch" href="/assets/js/11.7453fbed.js"><link rel="prefetch" href="/assets/js/110.b67abe7b.js"><link rel="prefetch" href="/assets/js/111.980255aa.js"><link rel="prefetch" href="/assets/js/112.2f16e381.js"><link rel="prefetch" href="/assets/js/113.458aa2e7.js"><link rel="prefetch" href="/assets/js/114.52f1c870.js"><link rel="prefetch" href="/assets/js/115.fa06459f.js"><link rel="prefetch" href="/assets/js/116.f3565361.js"><link rel="prefetch" href="/assets/js/117.df29f2d6.js"><link rel="prefetch" href="/assets/js/118.25f46bdb.js"><link rel="prefetch" href="/assets/js/119.f11f3528.js"><link rel="prefetch" href="/assets/js/12.5a3d2905.js"><link rel="prefetch" href="/assets/js/120.b4404a04.js"><link rel="prefetch" href="/assets/js/121.a072c8b0.js"><link rel="prefetch" href="/assets/js/122.be7f4c44.js"><link rel="prefetch" href="/assets/js/123.f1e468f6.js"><link rel="prefetch" href="/assets/js/124.4518ce30.js"><link rel="prefetch" href="/assets/js/125.5f173374.js"><link rel="prefetch" href="/assets/js/126.ab70f203.js"><link rel="prefetch" href="/assets/js/127.647f5f58.js"><link rel="prefetch" href="/assets/js/128.d7d4ae23.js"><link rel="prefetch" href="/assets/js/129.f56442c7.js"><link rel="prefetch" href="/assets/js/13.aa482c07.js"><link rel="prefetch" href="/assets/js/130.51b86489.js"><link rel="prefetch" href="/assets/js/131.0da5c519.js"><link rel="prefetch" href="/assets/js/132.df55c6ab.js"><link rel="prefetch" href="/assets/js/133.d374001b.js"><link rel="prefetch" href="/assets/js/134.e4980ca9.js"><link rel="prefetch" href="/assets/js/135.cdf73663.js"><link rel="prefetch" href="/assets/js/136.3505eb4c.js"><link rel="prefetch" href="/assets/js/137.39cce0d7.js"><link rel="prefetch" href="/assets/js/138.80cfaf77.js"><link rel="prefetch" href="/assets/js/139.5697a185.js"><link rel="prefetch" href="/assets/js/14.f7a04bc7.js"><link rel="prefetch" href="/assets/js/140.32e3f329.js"><link rel="prefetch" href="/assets/js/141.6252aaf3.js"><link rel="prefetch" href="/assets/js/142.3bd8bc1b.js"><link rel="prefetch" href="/assets/js/143.123c987c.js"><link rel="prefetch" href="/assets/js/144.6553b4fb.js"><link rel="prefetch" href="/assets/js/145.aef37dfa.js"><link rel="prefetch" href="/assets/js/146.1c9bdd99.js"><link rel="prefetch" href="/assets/js/147.7e0663d5.js"><link rel="prefetch" href="/assets/js/148.da4df825.js"><link rel="prefetch" href="/assets/js/149.2b18e130.js"><link rel="prefetch" href="/assets/js/15.6615de64.js"><link rel="prefetch" href="/assets/js/150.8c42cfea.js"><link rel="prefetch" href="/assets/js/151.b131528f.js"><link rel="prefetch" href="/assets/js/152.efdbf757.js"><link rel="prefetch" href="/assets/js/153.b03670fb.js"><link rel="prefetch" href="/assets/js/154.092c4fbf.js"><link rel="prefetch" href="/assets/js/155.1f012933.js"><link rel="prefetch" href="/assets/js/156.21a6be9e.js"><link rel="prefetch" href="/assets/js/157.3e48c05f.js"><link rel="prefetch" href="/assets/js/158.b40ee960.js"><link rel="prefetch" href="/assets/js/159.03c5f51a.js"><link rel="prefetch" href="/assets/js/16.6a85dfd1.js"><link rel="prefetch" href="/assets/js/160.6a12a2e6.js"><link rel="prefetch" href="/assets/js/161.d14d7b1e.js"><link rel="prefetch" href="/assets/js/162.7bf6bd93.js"><link rel="prefetch" href="/assets/js/163.66aa6c64.js"><link rel="prefetch" href="/assets/js/164.d71620f0.js"><link rel="prefetch" href="/assets/js/165.701adc3a.js"><link rel="prefetch" href="/assets/js/166.e83f8794.js"><link rel="prefetch" href="/assets/js/167.d966c66c.js"><link rel="prefetch" href="/assets/js/168.d54b01be.js"><link rel="prefetch" href="/assets/js/169.277865fb.js"><link rel="prefetch" href="/assets/js/17.94c18636.js"><link rel="prefetch" href="/assets/js/170.9016d8a4.js"><link rel="prefetch" href="/assets/js/171.8c817bd8.js"><link rel="prefetch" href="/assets/js/172.3989f38d.js"><link rel="prefetch" href="/assets/js/173.37d4a4b2.js"><link rel="prefetch" href="/assets/js/174.fe9e8fac.js"><link rel="prefetch" href="/assets/js/175.83293e65.js"><link rel="prefetch" href="/assets/js/176.e82def0a.js"><link rel="prefetch" href="/assets/js/177.1c9de526.js"><link rel="prefetch" href="/assets/js/178.79f7a351.js"><link rel="prefetch" href="/assets/js/179.c32de71d.js"><link rel="prefetch" href="/assets/js/18.aa3e2c7a.js"><link rel="prefetch" href="/assets/js/180.51686226.js"><link rel="prefetch" href="/assets/js/181.1fddf933.js"><link rel="prefetch" href="/assets/js/182.afce2bc2.js"><link rel="prefetch" href="/assets/js/183.b8da1273.js"><link rel="prefetch" href="/assets/js/184.f726bf4c.js"><link rel="prefetch" href="/assets/js/185.0bf3f2fc.js"><link rel="prefetch" href="/assets/js/186.112e4632.js"><link rel="prefetch" href="/assets/js/187.bf47d936.js"><link rel="prefetch" href="/assets/js/188.7d39180e.js"><link rel="prefetch" href="/assets/js/189.c9a637fd.js"><link rel="prefetch" href="/assets/js/19.5a0337af.js"><link rel="prefetch" href="/assets/js/190.fc819d64.js"><link rel="prefetch" href="/assets/js/191.d5622c58.js"><link rel="prefetch" href="/assets/js/192.95b52cbd.js"><link rel="prefetch" href="/assets/js/193.2e505557.js"><link rel="prefetch" href="/assets/js/194.df8f9da6.js"><link rel="prefetch" href="/assets/js/195.e827d636.js"><link rel="prefetch" href="/assets/js/196.81e8c2c8.js"><link rel="prefetch" href="/assets/js/197.8d079f1c.js"><link rel="prefetch" href="/assets/js/198.1979eb88.js"><link rel="prefetch" href="/assets/js/199.353f8736.js"><link rel="prefetch" href="/assets/js/20.22c1a76e.js"><link rel="prefetch" href="/assets/js/200.2cb3c08d.js"><link rel="prefetch" href="/assets/js/201.3122d2f6.js"><link rel="prefetch" href="/assets/js/202.b1c72263.js"><link rel="prefetch" href="/assets/js/203.5d4b79e5.js"><link rel="prefetch" href="/assets/js/204.883e1c22.js"><link rel="prefetch" href="/assets/js/205.ae69261b.js"><link rel="prefetch" href="/assets/js/206.812824f7.js"><link rel="prefetch" href="/assets/js/207.4cbaf27e.js"><link rel="prefetch" href="/assets/js/208.03a482ba.js"><link rel="prefetch" href="/assets/js/209.298e617b.js"><link rel="prefetch" href="/assets/js/21.aea74a25.js"><link rel="prefetch" href="/assets/js/210.45269326.js"><link rel="prefetch" href="/assets/js/211.b1a68b38.js"><link rel="prefetch" href="/assets/js/212.8f32be5b.js"><link rel="prefetch" href="/assets/js/213.9f934820.js"><link rel="prefetch" href="/assets/js/214.7c464965.js"><link rel="prefetch" href="/assets/js/215.77325bfa.js"><link rel="prefetch" href="/assets/js/216.2a1ed93d.js"><link rel="prefetch" href="/assets/js/217.64eddc74.js"><link rel="prefetch" href="/assets/js/218.757cda7d.js"><link rel="prefetch" href="/assets/js/219.33d148a8.js"><link rel="prefetch" href="/assets/js/22.4cd79e4e.js"><link rel="prefetch" href="/assets/js/220.ef503006.js"><link rel="prefetch" href="/assets/js/221.c6ca673b.js"><link rel="prefetch" href="/assets/js/222.fe2e2353.js"><link rel="prefetch" href="/assets/js/223.362ead4a.js"><link rel="prefetch" href="/assets/js/224.459ec94d.js"><link rel="prefetch" href="/assets/js/225.8b742319.js"><link rel="prefetch" href="/assets/js/226.bcdc3c01.js"><link rel="prefetch" href="/assets/js/227.fb258e43.js"><link rel="prefetch" href="/assets/js/228.99cd5c65.js"><link rel="prefetch" href="/assets/js/229.eddcfad6.js"><link rel="prefetch" href="/assets/js/23.abb94267.js"><link rel="prefetch" href="/assets/js/230.b9736106.js"><link rel="prefetch" href="/assets/js/231.d8565001.js"><link rel="prefetch" href="/assets/js/232.95c191e6.js"><link rel="prefetch" href="/assets/js/233.420fa346.js"><link rel="prefetch" href="/assets/js/234.bfa8b941.js"><link rel="prefetch" href="/assets/js/235.18f4da26.js"><link rel="prefetch" href="/assets/js/236.7553fe88.js"><link rel="prefetch" href="/assets/js/237.6337029c.js"><link rel="prefetch" href="/assets/js/238.a633c5f3.js"><link rel="prefetch" href="/assets/js/239.a6976cc2.js"><link rel="prefetch" href="/assets/js/24.a62c2116.js"><link rel="prefetch" href="/assets/js/240.902d0172.js"><link rel="prefetch" href="/assets/js/241.4e13a993.js"><link rel="prefetch" href="/assets/js/242.97c6cbc7.js"><link rel="prefetch" href="/assets/js/243.a38035d6.js"><link rel="prefetch" href="/assets/js/244.0ddb38d7.js"><link rel="prefetch" href="/assets/js/245.e77fe8b5.js"><link rel="prefetch" href="/assets/js/246.6200c89d.js"><link rel="prefetch" href="/assets/js/247.4deb757c.js"><link rel="prefetch" href="/assets/js/248.1ca476ea.js"><link rel="prefetch" href="/assets/js/249.115ec4f8.js"><link rel="prefetch" href="/assets/js/25.7fc0111f.js"><link rel="prefetch" href="/assets/js/250.47dc96f3.js"><link rel="prefetch" href="/assets/js/251.2003d82d.js"><link rel="prefetch" href="/assets/js/252.78ec88ea.js"><link rel="prefetch" href="/assets/js/253.893cae0f.js"><link rel="prefetch" href="/assets/js/254.fdc31bc0.js"><link rel="prefetch" href="/assets/js/255.3332d41e.js"><link rel="prefetch" href="/assets/js/256.4af54009.js"><link rel="prefetch" href="/assets/js/257.d3484fef.js"><link rel="prefetch" href="/assets/js/258.ac968bc7.js"><link rel="prefetch" href="/assets/js/259.ce35951e.js"><link rel="prefetch" href="/assets/js/26.607ab092.js"><link rel="prefetch" href="/assets/js/260.927c1240.js"><link rel="prefetch" href="/assets/js/261.05b2f19b.js"><link rel="prefetch" href="/assets/js/262.2daa594e.js"><link rel="prefetch" href="/assets/js/263.79e83d69.js"><link rel="prefetch" href="/assets/js/264.e63a36e8.js"><link rel="prefetch" href="/assets/js/265.b2906c29.js"><link rel="prefetch" href="/assets/js/266.9d88b448.js"><link rel="prefetch" href="/assets/js/267.2c62dc11.js"><link rel="prefetch" href="/assets/js/268.76292132.js"><link rel="prefetch" href="/assets/js/27.79ff68af.js"><link rel="prefetch" href="/assets/js/28.b7414d3a.js"><link rel="prefetch" href="/assets/js/29.d94c1a3d.js"><link rel="prefetch" href="/assets/js/3.d38113cc.js"><link rel="prefetch" href="/assets/js/30.4349444f.js"><link rel="prefetch" href="/assets/js/31.14d6d8d3.js"><link rel="prefetch" href="/assets/js/32.9de3dfcc.js"><link rel="prefetch" href="/assets/js/33.f72de9d1.js"><link rel="prefetch" href="/assets/js/34.bb435865.js"><link rel="prefetch" href="/assets/js/35.a5be19d4.js"><link rel="prefetch" href="/assets/js/36.3c45f2ad.js"><link rel="prefetch" href="/assets/js/37.8f42d984.js"><link rel="prefetch" href="/assets/js/38.082bba11.js"><link rel="prefetch" href="/assets/js/39.10712c4d.js"><link rel="prefetch" href="/assets/js/4.133784c1.js"><link rel="prefetch" href="/assets/js/40.f3d974ef.js"><link rel="prefetch" href="/assets/js/41.73fe4c7a.js"><link rel="prefetch" href="/assets/js/42.691d64e5.js"><link rel="prefetch" href="/assets/js/43.38790e2d.js"><link rel="prefetch" href="/assets/js/44.a7582388.js"><link rel="prefetch" href="/assets/js/45.de8c41aa.js"><link rel="prefetch" href="/assets/js/46.dc81b689.js"><link rel="prefetch" href="/assets/js/47.6698932f.js"><link rel="prefetch" href="/assets/js/48.dc716767.js"><link rel="prefetch" href="/assets/js/49.264bcc49.js"><link rel="prefetch" href="/assets/js/5.51618976.js"><link rel="prefetch" href="/assets/js/50.0a6ab749.js"><link rel="prefetch" href="/assets/js/51.1bee704d.js"><link rel="prefetch" href="/assets/js/52.85a32eb3.js"><link rel="prefetch" href="/assets/js/53.802db856.js"><link rel="prefetch" href="/assets/js/54.d679c553.js"><link rel="prefetch" href="/assets/js/55.42d0b504.js"><link rel="prefetch" href="/assets/js/56.b4ea463d.js"><link rel="prefetch" href="/assets/js/57.a4c34b5d.js"><link rel="prefetch" href="/assets/js/58.9cee7094.js"><link rel="prefetch" href="/assets/js/59.d1a955e5.js"><link rel="prefetch" href="/assets/js/6.88d03338.js"><link rel="prefetch" href="/assets/js/60.ba8c6e43.js"><link rel="prefetch" href="/assets/js/61.40350165.js"><link rel="prefetch" href="/assets/js/62.5abd107d.js"><link rel="prefetch" href="/assets/js/63.5ffa8c44.js"><link rel="prefetch" href="/assets/js/64.b5c8b8e7.js"><link rel="prefetch" href="/assets/js/65.7e24c502.js"><link rel="prefetch" href="/assets/js/66.76fa526c.js"><link rel="prefetch" href="/assets/js/67.d2bc2b3f.js"><link rel="prefetch" href="/assets/js/68.1a961ce2.js"><link rel="prefetch" href="/assets/js/69.fea57323.js"><link rel="prefetch" href="/assets/js/7.1c02874b.js"><link rel="prefetch" href="/assets/js/70.5365fe6a.js"><link rel="prefetch" href="/assets/js/71.4c9af374.js"><link rel="prefetch" href="/assets/js/72.b0dcbd30.js"><link rel="prefetch" href="/assets/js/73.2b91ac87.js"><link rel="prefetch" href="/assets/js/74.d12f353a.js"><link rel="prefetch" href="/assets/js/75.33344c1f.js"><link rel="prefetch" href="/assets/js/76.545c033c.js"><link rel="prefetch" href="/assets/js/77.e4d62c92.js"><link rel="prefetch" href="/assets/js/78.406317ce.js"><link rel="prefetch" href="/assets/js/79.1a0eff47.js"><link rel="prefetch" href="/assets/js/8.67545688.js"><link rel="prefetch" href="/assets/js/80.a125f077.js"><link rel="prefetch" href="/assets/js/81.75559d21.js"><link rel="prefetch" href="/assets/js/82.0ebd175d.js"><link rel="prefetch" href="/assets/js/83.b5dfc6a0.js"><link rel="prefetch" href="/assets/js/84.ad44124a.js"><link rel="prefetch" href="/assets/js/85.d3ea1a6f.js"><link rel="prefetch" href="/assets/js/86.fff394ef.js"><link rel="prefetch" href="/assets/js/87.b50aa59c.js"><link rel="prefetch" href="/assets/js/88.ae8a5566.js"><link rel="prefetch" href="/assets/js/89.88870ec4.js"><link rel="prefetch" href="/assets/js/9.0dc133a6.js"><link rel="prefetch" href="/assets/js/90.f5d57766.js"><link rel="prefetch" href="/assets/js/91.eab6c6a6.js"><link rel="prefetch" href="/assets/js/92.53c2f2d1.js"><link rel="prefetch" href="/assets/js/93.f950813d.js"><link rel="prefetch" href="/assets/js/94.b7770e29.js"><link rel="prefetch" href="/assets/js/95.33c8333d.js"><link rel="prefetch" href="/assets/js/96.acafc6c6.js"><link rel="prefetch" href="/assets/js/97.cdd42c16.js"><link rel="prefetch" href="/assets/js/98.207e8499.js"><link rel="prefetch" href="/assets/js/99.0a01764f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ddbe6459.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://excalidraw.com/apple-touch-icon.png" alt="后台开发命令 365" class="logo"> <span class="site-name can-hide">后台开发命令 365</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://u1s1.vip/about" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友链
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  下拉1
+</a></li><li class="dropdown-item"><!----> <a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  下拉2
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://u1s1.vip/about" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友链
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="这是提示语" class="dropdown-title"><span class="title">下拉菜单</span> <span class="arrow down"></span></button> <button type="button" aria-label="这是提示语" class="mobile-dropdown-title"><span class="title">下拉菜单</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  下拉1
+</a></li><li class="dropdown-item"><!----> <a href="https://u1s1.vip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  下拉2
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>帮助</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>文件系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>进程管理</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>进程观测</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/进程管理/进程观测/pgrep.html" class="sidebar-link">pgrep</a></li><li><a href="/进程管理/进程观测/pidof.html" class="sidebar-link">pidof</a></li><li><a href="/进程管理/进程观测/pmap.html" class="sidebar-link">pmap</a></li><li><a href="/进程管理/进程观测/ps.html" class="sidebar-link">ps</a></li><li><a href="/进程管理/进程观测/pstack.html" class="sidebar-link">pstack</a></li><li><a href="/进程管理/进程观测/pstree.html" class="sidebar-link">pstree</a></li><li><a href="/进程管理/进程观测/strace.html" class="active sidebar-link">strace</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>性能检测</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>进程与作业管理</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>编译调试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>二进制工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Shell 编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>系统管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>终端配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>权限管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>版本控制</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实用工具</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-命令简介"><a href="#_1-命令简介" class="header-anchor">#</a> 1.命令简介</h2> <p>strace 用于跟踪系统调用和信号。</p> <p>strace 是一个集诊断、调试、统计于一体的工具，我们可以使用 strace 跟踪程序的系统调用和信号传递来对程序进行分析，以达到解决问题或者是了解程序工作过程的目的。当然 strace 与专业的调试工具比如说 gdb 之类的是没法相比的，因为它不是一个专业的调试器。</p> <p>strace 的最简单的用法就是执行一个指定的命令，在指定的命令结束之后它也就退出了。在命令执行的过程中，strace 会记录和解析进程的所有系统调用以及这个进程所接收到的所有信号值。</p> <h2 id="_2-命令格式"><a href="#_2-命令格式" class="header-anchor">#</a> 2.命令格式</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">strace</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token parameter variable">-p</span> <span class="token operator">&lt;</span>pid<span class="token operator">&gt;</span>
+<span class="token function">strace</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token operator">&lt;</span>command<span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>args<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+</code></pre></div><h2 id="_3-选项说明"><a href="#_3-选项说明" class="header-anchor">#</a> 3.选项说明</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token parameter variable">-c</span>
+	统计每个系统调用的时间、次数和错误，并在程序退出时报告摘要
+<span class="token parameter variable">-C</span>
+	类似于 -c，但在进程运行时也打印常规输出
+<span class="token parameter variable">-D</span>
+	将跟踪进程作为分离的孙进程运行，而不是作为跟踪对象的父进程运行。这通过保持跟踪对象是调用进程的直接子进程来减少 <span class="token function">strace</span> 的可见效果
+<span class="token parameter variable">-d</span>
+	输出 <span class="token function">strace</span> 关于标准错误的调试信息
+<span class="token parameter variable">-f</span>
+	跟踪由 fork<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>, vfork<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> and clone<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> 调用所产生的子进程
+<span class="token parameter variable">-ff</span>
+	如果提供 <span class="token parameter variable">-o</span> FILENAME，则所有进程的跟踪结果输出到相应的 FILENAME.pid 中，pid 是各进程的进程号 
+<span class="token parameter variable">-F</span>
+	该选项已废弃，作用等同于 <span class="token parameter variable">-f</span>
+<span class="token parameter variable">-h</span>
+	输出简要的帮助信息
+<span class="token parameter variable">-i</span>
+	在系统调用时打印指令指针
+<span class="token parameter variable">-q</span>
+	禁止附加、分离等信息。当输出被重定向到文件并直接运行命令而不是附加命令时，这将自动发生
+<span class="token parameter variable">-qq</span>
+	如果给定两次，则禁止关于进程退出状态的消息。
+<span class="token parameter variable">-r</span>
+	在每次系统调用进入时打印相对时间戳。它记录连续系统调用开始之间的时间差
+<span class="token parameter variable">-t</span>
+	在输出中的每一行前加上时间信息
+<span class="token parameter variable">-tt</span>
+	如果给定两次，在输出中的每一行前加上微秒级的时间信息
+<span class="token parameter variable">-ttt</span>
+	如果给定三次，则打印的时间将包括微秒，并且开始部分将打印自纪元以来的秒数
+<span class="token parameter variable">-T</span>
+	显示每一系统调用所耗的时间 
+<span class="token parameter variable">-v</span>
+	输出所有的系统调用。一些调用关于环境变量，状态，输入输出等调用，由于使用频繁默认不输出
+<span class="token parameter variable">-V</span>
+	输出 <span class="token function">strace</span> 的版本信息.
+<span class="token parameter variable">-x</span>
+	以十六进制形式输出非标准字符串
+<span class="token parameter variable">-xx</span>
+	所有字符串以十六进制形式输出
+<span class="token parameter variable">-y</span>
+	与文件描述符参数关联的打印路径
+<span class="token parameter variable">-a</span> COLUMN
+	设置返回值的输出位置，默认为40
+<span class="token parameter variable">-b</span> SYSCALL
+	如果达到指定的系统调用，与跟踪进程分离。目前，只支持 execve。如果希望跟踪多线程进程，因此需要 -f，但不希望跟踪其（可能非常复杂的）子进程，则此选项非常有用
+<span class="token parameter variable">-e</span> EXPR
+	指定一个表达式，用来控制如何跟踪。格式如下: 
+	<span class="token punctuation">[</span>qualifier<span class="token operator">=</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token operator">!</span><span class="token punctuation">]</span>value1<span class="token punctuation">[</span>,value2<span class="token punctuation">]</span><span class="token punctuation">..</span>. 
+	qualifier 只能是 trace, abbrev, verbose, raw, signal, read, <span class="token function">write</span> 其中之一。value 是用来限定的符号或数字。默认的 qualifier 是 trace，感叹号是否定符号。例如：-e <span class="token function">open</span> 等价于 <span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>open，表示只跟踪 <span class="token function">open</span> 调用。而 <span class="token parameter variable">-etrace</span><span class="token operator">=</span><span class="token operator">!</span>open 表示跟踪除了 ope 以外的所有其他调用。有两个特殊的符号 all 和 none，分别表示跟踪所有和不跟踪任何系统调用。注意有些 Shell 使用 <span class="token operator">!</span> 来执行历史记录里的命令，所以要使用反斜杠对 <span class="token operator">!</span> 进行转义
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>SET
+	只跟踪指定的系统调用。例如: <span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>open,close,rean,write 表示只跟踪这四个系统调用，默认的为 <span class="token assign-left variable">trace</span><span class="token operator">=</span>all 
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>file
+	只跟踪有关文件操作的系统调用
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>process 
+	只跟踪有关进程控制的系统调用
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>network 
+	跟踪与网络有关的所有系统调用
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">strace</span><span class="token operator">=</span>signal
+	跟踪所有与系统信号有关的系统调用 
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>ipc 
+	跟踪所有与进程通讯有关的系统调用
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>desc
+	跟踪所有与文件描述符相关的系统调用
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>memory
+	跟踪所有与内存映射相关的系统调用
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">abbrev</span><span class="token operator">=</span>SET
+	缩写打印大型结构的每个成员的输出。默认值是 <span class="token assign-left variable">abbrev</span><span class="token operator">=</span>all。-v 选项的效果是 <span class="token assign-left variable">abbrev</span><span class="token operator">=</span>none
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">verbose</span><span class="token operator">=</span>SET
+	为指定的系统调用集取消引用结构。默认是 <span class="token assign-left variable">verbose</span><span class="token operator">=</span>all
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">raw</span><span class="token operator">=</span>SET
+	将指定的系统调用的参数以十六进制显示
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">signal</span><span class="token operator">=</span>SET
+	指定跟踪的系统信号，默认为 <span class="token assign-left variable">signal</span><span class="token operator">=</span>all。如 <span class="token assign-left variable">signal</span><span class="token operator">=</span><span class="token operator">!</span>SIGIO（或 <span class="token assign-left variable">signal</span><span class="token operator">=</span><span class="token operator">!</span>io），表示不跟踪 SIGIO 信号
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">read</span><span class="token operator">=</span>SET
+	输出从指定文件描述符中读出的数据。例如：-e <span class="token assign-left variable">read</span><span class="token operator">=</span><span class="token number">3,5</span>
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">write</span><span class="token operator">=</span>SET
+	输出写入到指定文件中的数据
+<span class="token parameter variable">-o</span> FILENAME
+	将 <span class="token function">strace</span> 的输出写入指定文件
+<span class="token parameter variable">-O</span> OVERHEAD
+	将跟踪系统调用的开销设置为指定的微秒
+<span class="token parameter variable">-p</span> PID
+	跟踪指定的进程
+<span class="token parameter variable">-P</span> <span class="token environment constant">PATH</span>
+	只跟踪系统调用的访问路径。多个 <span class="token parameter variable">-P</span> 选项可用于指定多个路径
+<span class="token parameter variable">-s</span> STRSIZE
+	指定输出的字符串的最大长度，默认为 <span class="token number">32</span>。注意，文件名不被认为是字符串，总是全部打印
+<span class="token parameter variable">-S</span> SORTBY
+	根据指定的条件对 <span class="token parameter variable">-c</span> 选项打印的直方图的输出进行排序。SORTBY 合法值是 time、calls、name 和 nothing，默认值是 <span class="token function">time</span>
+<span class="token parameter variable">-u</span> USERNAME
+	以指定用户的 <span class="token environment constant">UID</span>、GID 和补充组执行被跟踪的命令
+<span class="token parameter variable">-E</span> <span class="token assign-left variable">VAR</span><span class="token operator">=</span>VAL
+ 	为命令设置环境变量
+ <span class="token parameter variable">-E</span> VAR
+ 	从继承的环境变量列表中删除变量 VAR，然后将其传递给命令
+</code></pre></div><h2 id="_4-常用示例"><a href="#_4-常用示例" class="header-anchor">#</a> 4.常用示例</h2> <p>现在我们做一个很简单的程序来演示 strace 的基本用法。这个程序的 C 语言代码如下：</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;please input:\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%10d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>通过 gcc 编译，默认生成名为 a.out 的可执行程序。</p> <div class="language- extra-class"><pre class="language-text"><code>gcc main.c
+</code></pre></div><p>（1）追踪系统调用。</p> <div class="language- extra-class"><pre class="language-text"><code>strace -o strace.out ./a.out
+</code></pre></div><p>输入 4 然后回车生成 strace 的输出文件 strace.out，其内容如下：</p> <div class="language- extra-class"><pre class="language-text"><code>execve(&quot;./a.out&quot;, [&quot;./a.out&quot;], [/* 28 vars */]) = 0
+brk(0)                                  = 0x1e79000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff4e9feb000
+access(&quot;/etc/ld.so.preload&quot;, R_OK)      = 0
+open(&quot;/etc/ld.so.preload&quot;, O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18, ...}) = 0
+mmap(NULL, 18, PROT_READ|PROT_WRITE, MAP_PRIVATE, 3, 0) = 0x7ff4e9fea000
+close(3)                                = 0
+readlink(&quot;/proc/self/exe&quot;, &quot;/root/test/c++/strace/a.out&quot;, 4096) = 27
+open(&quot;/lib64/libonion.so&quot;, O_RDONLY|O_CLOEXEC) = 3
+read(3, &quot;\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0&gt;\0\1\0\0\0`\20\0\0\0\0\0\0&quot;..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=42880, ...}) = 0
+mmap(NULL, 1072448, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff4e9ee4000
+mprotect(0x7ff4e9ee7000, 1048576, PROT_NONE) = 0
+mmap(0x7ff4e9fe7000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7ff4e9fe7000
+mmap(0x7ff4e9fe8000, 7488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff4e9fe8000
+close(3)                                = 0
+munmap(0x7ff4e9fea000, 18)              = 0
+open(&quot;/etc/ld.so.cache&quot;, O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=74350, ...}) = 0
+mmap(NULL, 74350, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff4e9ed1000
+close(3)                                = 0
+open(&quot;/lib64/libc.so.6&quot;, O_RDONLY|O_CLOEXEC) = 3
+read(3, &quot;\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0&gt;\0\1\0\0\0\20\35\2\0\0\0\0\0&quot;..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2122016, ...}) = 0
+mmap(NULL, 3944896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff4e9a07000
+mprotect(0x7ff4e9bc1000, 2093056, PROT_NONE) = 0
+mmap(0x7ff4e9dc0000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b9000) = 0x7ff4e9dc0000
+mmap(0x7ff4e9dc6000, 16832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff4e9dc6000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff4e9fea000
+open(&quot;/lib64/libdl.so.2&quot;, O_RDONLY|O_CLOEXEC) = 3
+read(3, &quot;\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0&gt;\0\1\0\0\0`\16\0\0\0\0\0\0&quot;..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=19344, ...}) = 0
+mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff4e9803000
+mprotect(0x7ff4e9805000, 2097152, PROT_NONE) = 0
+mmap(0x7ff4e9a05000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7ff4e9a05000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff4e9ecf000
+arch_prctl(ARCH_SET_FS, 0x7ff4e9ecf740) = 0
+mprotect(0x7ff4e9dc0000, 16384, PROT_READ) = 0
+mprotect(0x7ff4e9a05000, 4096, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7ff4e9fec000, 4096, PROT_READ) = 0
+munmap(0x7ff4e9ed1000, 74350)           = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff4e9ee3000
+write(1, &quot;please input:\n&quot;, 14)         = 14
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff4e9ee2000
+read(0, &quot;4\n&quot;, 1024)                    = 2
+write(1, &quot;         4\n&quot;, 11)            = 11
+exit_group(0)                           = ?
++++ exited with 0 +++
+</code></pre></div><p>从跟踪的结果可以看到，系统首先调用 execve 开始一个新的进程，接着进行环境的初始化操作，最后停顿在<code>read(0, &quot;4\n&quot;, 1024) = 2</code>，这也就是执行到了 scanf 函数，等待我们输入数字。在输入完 4 之后，再调用 write 函数将格式化后的数值 4 输出到屏幕，最后调用 exit_group 退出进程，完成整个程序的执行过程。</p> <p>（2）跟踪信号传递。</p> <p>我们还是使用上面的 a.out 程序，来观察进程接收信号的情况，即跟踪进程和信号相关的系统调用。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#开启跟踪</span>
+<span class="token function">strace</span> <span class="token parameter variable">-e</span> <span class="token assign-left variable">trace</span><span class="token operator">=</span>signal <span class="token parameter variable">-o</span> strace.out ./a.out
+
+<span class="token comment">#查找进程 ./a.out 进程 ID</span>
+<span class="token function">ps</span> <span class="token parameter variable">-ef</span> <span class="token operator">|</span> <span class="token function">grep</span> a.out <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-v</span> <span class="token string">&quot;grep\|strace&quot;</span>
+root     <span class="token number">10787</span> <span class="token number">10784</span>  <span class="token number">0</span> <span class="token number">22</span>:46 pts/1    00:00:00 ./a.out
+
+<span class="token comment">#根据上一步查到的进程 ID 通过 kill 命令发送信号 SIGKILL</span>
+<span class="token function">kill</span> <span class="token parameter variable">-9</span> <span class="token number">10787</span>
+</code></pre></div><p>再次查看 strace 的输出文件 strace.out 的内容。</p> <div class="language- extra-class"><pre class="language-text"><code>--- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+--- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
++++ killed by SIGKILL +++
+</code></pre></div><p>进程被杀退出时，strace 会输出 killed by SIGX（SIGX 代表发送给进程的信号）等，那么进程自己退出时会输出什么呢？</p> <p>这里有个叫做 test_exit 的程序，其代码如下：</p> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>argv<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token function">exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我们 strace 看下它退出时 strace 上能看到什么痕迹。</p> <div class="language- extra-class"><pre class="language-text"><code>strace -tt -e trace=process -f ./test_exit
+</code></pre></div><p>-e trace=process 表示只跟踪和进程管理相关的系统调用。</p> <p>输出：</p> <div class="language- extra-class"><pre class="language-text"><code>23:07:24.672849 execve(&quot;./test_exit&quot;, [&quot;./test_exit&quot;], [/* 35 vars */]) = 0
+23:07:24.674665 arch_prctl(ARCH_SET_FS, 0x7f1c0eca7740) = 0
+23:07:24.675108 exit_group(1)           = ?
+23:07:24.675259 +++ exited with 1 +++
+</code></pre></div><p>可以看出，进程自己退出时（调用 exit 函数，或者从 main 函数返回）, 最终调用的是 exit_group系统调用， 并且 strace 会输出 exited with X（X为退出码）。</p> <p>可能有人会疑惑，代码里面明明调用的是 exit, 怎么显示为 exit_group?</p> <p>这是因为这里的 exit 函数不是系统调用，而是 glibc 库提供的一个函数，exit 函数的调用最终会转化为 exit_group 系统调用，它会退出当前进程的所有线程。实际上，有一个叫做 <code>_exit()</code> 的系统调用（注意 exit 前面的下划线）线程退出时最终会调用它。</p> <p>（3）系统调用统计。</p> <p>strace 不光能追踪系统调用，通过使用参数 -c，它还能将进程所有的系统调用做一个统计分析给你，下面来看看 strace 对系统调用的统计。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">strace</span> <span class="token parameter variable">-c</span> ./a.out
+please input:
+<span class="token number">4</span>
+         <span class="token number">4</span>
+% <span class="token function">time</span>     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+<span class="token number">100.00</span>    <span class="token number">0.000038</span>           <span class="token number">3</span>        <span class="token number">15</span>           mmap
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">4</span>           <span class="token builtin class-name">read</span>
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">2</span>           <span class="token function">write</span>
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">5</span>           <span class="token function">open</span>
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">5</span>           close
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">7</span>           fstat
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">7</span>           mprotect
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">2</span>           munmap
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">1</span>           brk
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">1</span>           access
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">1</span>           execve
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">1</span>           readlink
+  <span class="token number">0.00</span>    <span class="token number">0.000000</span>           <span class="token number">0</span>         <span class="token number">1</span>           arch_prctl
+------ ----------- ----------- --------- --------- ----------------
+<span class="token number">100.00</span>    <span class="token number">0.000038</span>                    <span class="token number">52</span>           total
+</code></pre></div><p>这里很清楚的告诉你调用了那些系统函数，调用次数多少，消耗了多少时间等等这些信息，这个对我们分析一个程序来说是非常有用的。</p> <p>（4）跟踪一个现有的进程。</p> <p>strace 不光能自己初始化一个进程进行 trace，还能使用 -p 选项追踪现有进程。具体用法如下：</p> <div class="language- extra-class"><pre class="language-text"><code>strace -p PID
+</code></pre></div><hr> <h2 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h2> <p><a href="http://man7.org/linux/man-pages/man1/strace.1.html" target="_blank" rel="noopener noreferrer">strace(1) - Linux manual page - man7.org<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://man.linuxde.net/strace" target="_blank" rel="noopener noreferrer">strace - Linux 命令大全<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.cnblogs.com/machangwei-8/p/10388883.html" target="_blank" rel="noopener noreferrer">strace命令详解 - 马昌伟<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/进程管理/进程观测/pstree.html" class="prev">
+        pstree
+      </a></span> <span class="next"><a href="/进程管理/性能检测/iostat.html">
+        iostat
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.a4389ebb.js" defer></script><script src="/assets/js/2.e69c4131.js" defer></script><script src="/assets/js/269.3d301a01.js" defer></script>
+  </body>
+</html>
