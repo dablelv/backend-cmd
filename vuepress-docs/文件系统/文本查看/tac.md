@@ -1,5 +1,5 @@
 ## 1.命令简介
-tac（cat 的反序）命令以行为单位反序输出文件内容，即第一行最后显示，最后一行先显示。输出内容和 [cat](https://dablelv.blog.csdn.net/article/details/78569737) 命令相反。
+tac（cat 的反序）以行为单位反序输出文件内容，即第一行最后显示，最后一行先显示。输出内容和 [cat](https://dablelv.blog.csdn.net/article/details/78569737) 命令相反。
 ## 2.命令格式
 ```
 tac [OPTION]... [FILE]...

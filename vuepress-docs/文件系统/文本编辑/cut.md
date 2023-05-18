@@ -80,5 +80,6 @@ like linux
 
 ---
 # 参考文献
-[1] [cut(1) manual](http://man7.org/linux/man-pages/man1/cut.1.html)
-[2] [Linux 命令大全.cut 命令](https://man.linuxde.net/cut)
+[cut(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/cut.1.html)
+
+[Linux 命令大全.cut 命令](https://man.linuxde.net/cut)

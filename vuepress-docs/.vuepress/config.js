@@ -1,7 +1,10 @@
 module.exports = {
+  base: "/backend-cmd/",
   title: "后台开发命令 365",
   description: "后台开发常用命令介绍",
-  base: "/backend-cmd/",
+  head: [
+    ['meta',{name: 'referrer',content: 'no-referrer'}]
+  ],
   plugins: [
     [
       'vuepress-plugin-right-anchor',

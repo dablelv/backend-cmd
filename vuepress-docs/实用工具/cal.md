@@ -35,21 +35,25 @@ cal [OPTIONS] [[[DAY] MONTH] YEAR]
 cal
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200216190807146.png)
+
 （2）显示当前月份，星期一为一个星期的第一天。
 ```
 cal -m
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200216190737602.png)
+
 （3）显示当前月份，显示日期在当年中的第几天。
 ```
 cal -j
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200216191027558.png)
+
 （4）显示前一个月、当前月和下一个月的月历。
 ```
 cal -3
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200216191940342.png)
+
 （5）显示指定日期。
 ```
 cal 24 6 2015

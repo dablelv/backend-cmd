@@ -32,7 +32,9 @@ rev
 dablelv
 vlelbad
 ```
+
 每输入一行内容后，键入回车将显示反序后的内容。键入 Ctrl + d 结束输入。
+
 ---
 ## 参考文献
 [rev(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/rev.1.html)

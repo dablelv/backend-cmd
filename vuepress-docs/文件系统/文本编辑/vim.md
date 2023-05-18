@@ -10,11 +10,11 @@ vim [OPTIONS] -
 vim [OPTIONS] -t TAG
 vim [OPTIONS] -q [ERRORFILE]
 ```
-`[FILE...]`表示一系列使用 vim 编辑的文件，使用`:next`命令可以向前切换所编辑的文件，使用`--`可以向后切换。这是 vim 常用启动格式；
+`[FILE...]`表示一系列使用 vim 编辑的文件，使用`:next`命令可以向前切换所编辑的文件，使用`--`可以向后切换，这是 vim 常用启动格式。
 
-`-`：表示待编辑的文件从标准输入读取；
+`-`：表示待编辑的文件从标准输入读取。
 
-`-t TAG`：要编辑的文件和光标的初始位置取决于一个标签，一种 goto 标签。标签在标签文件中查找，与标签关联的文件成为当前文件并执行关联的命令。主要用于 C 程序，在这种情况下 TAG 可以是函数名，其结果是包含该函数的文件成为当前文件，并且光标位于函数的开头。参见：`:help tag-commands`；
+`-t TAG`：要编辑的文件和光标的初始位置取决于一个标签，一种 goto 标签。标签在标签文件中查找，与标签关联的文件成为当前文件并执行关联的命令。主要用于 C 程序，在这种情况下 TAG 可以是函数名，其结果是包含该函数的文件成为当前文件，并且光标位于函数的开头。参见：`:help tag-commands`。
 
 `-q [ERRORFILE]`：使用 quickFix 模式启动 vim，文件 ERRORFILE 将被读取并显示第一个错误。如果 ERRORFILE 省略，则默认为 AztecC.Err（Amiga 系统）或 errors.err（其它系统）。关于 quickFix 模式说明，可以使用`:help quickfix`查看。
 
@@ -136,7 +136,7 @@ $ 或 ):移至行尾
 gd：高亮显示光标所在的单词
 ```
 ## 5.vim 需知
-### 5.1 vim 的四大模式
+### 5.1 四大模式
 众所周知，vim 里面最具特色的东西就是它可以切换模式，那什么是模式呢？可以简单的理解为在不同的模式下面按相同的键而得到不同的效果。比如 vim 在插入模式下面连按两次 d，那么就会在光标位置插入两个字母 d，如果在正常模式下面连按两次 d，那么光标所在当前行将会被删除。
 
 既然说是 vim 的四大模式，那么 vim 到底有那四大模式呢？
@@ -165,14 +165,15 @@ gd：高亮显示光标所在的单词
 
 - **命令行模式 （command-line mode）**
 
-命令行模式又称为 ex 模式。ex 是 EXtended 的简称，是 Unix 系统上的纯文本编辑器。ex 命令可启动 vim，执行 ex 命令，并键入 visual 就可以进入 vim 的正常模式。
+命令行模式又称为 ex 模式。ex 是 EXtended 的简称，是 Unix 系统上的纯文本编辑器。ex 命令可启动 vim，执行 ex 命令，键入 visual 就可以进入 vim 的正常模式。
 
 vim 和 ex 编辑器的功能是相同的，二者主要区别是用户界面。在 vim 中，命令通常是单个键，例如 i、a、o 等；而在 ex 中，命令是以按回车键结束的行。在正常模式下，用户按冒号即可进入命令行模式，此时 vim 会在显示窗口的最后一行显示一个冒号作为命令行模式的提示符，等待用户输入命令。多数文件管理命令都是在此模式下执行的（如把编辑缓冲区的内容写到文件中等）。命令执行完后，vim 自动回到正常模式。
 
-### 5.2 vim 相关编码选项
-文件的编码和显示是一个令人头痛的东西，真希望这个世界上只存在utf-8编码，那就没那么痛苦了。vim编码配置涉及4个选项，分别是encoding 、fileencoding、fileencodings和termencoding，四者对应的简写分别为enc、fenc、fencs和tenc。
+### 5.2 编码选项
+文件的编码和显示是一个令人头痛的东西，真希望这个世界上只存在 UTF8 编码，那就没那么痛苦了。vim编码配置涉及4个选项，分别是encoding 、fileencoding、fileencodings和termencoding，四者对应的简写分别为enc、fenc、fencs和tenc。
+
 （1）encoding
-encoding是vim内部使用编码。vim运行时，其菜单、标签、以及各个缓冲区统一使用encoding作为字符编码。
+encoding 是 vim 内部使用的编码。vim 运行时，其菜单、标签、以及各个缓冲区统一使用 encoding 作为字符编码。
 
 （2）fileencoding
 fileencoding为文件采用的编码方式。使用vim打开文件后，可以使用末行命令`:set fenc=utf-8`将文件编码方式更改为UTF-8，注意，前提是vim打开文件时已经正确识别出文件编码，即未出现乱码。
@@ -183,10 +184,10 @@ fileencodings用于vim在打开文件的时候进行解码的猜测列表。文�
 set fileencodings=utf-8,gb18030,latin1
 ```
 （4）termencoding
-终端所使用的文本编码。这个选项的值用于告诉VIM终端使用了哪种文本编码用于文本输入和显示。如果该值为空，那么它被设置为encoding的值。
-## 5.3 vim 读写文件时编码转换过程
+终端所使用的文本编码。这个选项的值用于告诉 vim 终端使用了哪种文本编码用于文本输入和显示。如果该值为空，那么它被设置为 encoding 的值。
+### 5.3 读写文件时编码转换过程
 （1）读文件
-vim打开文件时，需要将磁盘文件内容载入缓存，并将缓存中的字符转为换终端编码，通过网络传输的方式，传输到终端进行显示。两个转换环节，有一个出错都会出现乱码。
+vim 打开文件时，需要将磁盘文件内容载入缓存，并将缓存中的字符转为换终端编码，通过网络传输的方式，传输到终端进行显示。两个转换环节，有一个出错都会出现乱码。
 ```shell
 fileencoding -> encoding -> termencoding
 ```
@@ -195,11 +196,15 @@ fileencoding -> encoding -> termencoding
 ```
 termencoding -> encoding  -> fileencoding 
 ```
-注意：使用vim读写文件时为避免出现乱码，至关重要的一点就是终端，比如SecureCRT或XShell的编码设置要与vim的termencoding设置相同，如果不同还是还是会出现乱码，尽管vim已经采用正确的编码格式解析了文件。比如将XShell设置为UTF-8。
-![在这里插入图片描述](https://img-blog.csdn.net/20181012195217621?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+注意：使用 vim 读写文件时为避免出现乱码，至关重要的一点就是终端，比如 SecureCRT 或 XShell 的编码设置要与 vim 的 termencoding 设置相同，如果不同还是还是会出现乱码，尽管 vim 已经采用正确的编码格式解析了文件。
+
+比如将 XShell 设置为 UTF8。
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181012195217621)
 
 ## 6.常见用法
-（1）vim 查看文件编码
+
+（1）vim 查看文件编码。
 ```
 :set fileencoding
 或者简写
@@ -207,21 +212,21 @@ termencoding -> encoding  -> fileencoding
 ```
 可显示文件编码格式。这个命令有致命的缺点。原因是只有正常显示文件内容时，该命令显示的文件编码格式才是文件本身的编码格式。因为该命令显示的编码格式并不是文件本身的编码格式，而是当前打开该文件所使用的编码格式。因此，这个命令在网上的说明大都是不准确的，特此说明。
 
-（2）修改编码类型
+（2）修改编码类型。
 使用vim修改：
-```Shell
+```shell
 :set fileencoding=gbk
 #或者
 :set fenc=gbk
 ```
-使用iconv来修改文件编码：
+使用 iconv 来修改文件编码：
 ```Shell
 iconv -f encoding -t encoding inputfile
 
 # 比如将一个GBK编码的文件转换成 UTF8 编码
 iconv -f GBK -t UTF-8 file1 -o file2UTF-8
 ```
-iconv的参数说明：
+iconv 的参数说明：
 ```Shell
 -f, --from-code=名称，原始文本编码
 -t, --to-code=名称，输出编码
@@ -231,7 +236,8 @@ iconv的参数说明：
 -s, --silent，关闭警告
 --verbose，打印进度信息
 ```
-（3）vim 指定编码类型浏览文件
+（3）vim 指定编码类型浏览文件。
+
 如果知道了文件的编码类型，可显示指定编码类型来解析文件，而不用vim去猜测文件的编码类型，事实上猜测的往往是错误。命令如下：
 ```
 vim file_name -c "e ++enc=utf-8"
@@ -247,14 +253,15 @@ vim file_name -c "e ++enc=utf-8"
 ```
 :g/pattern/cmd
 ```
-它表示在匹配 /pattern/ 这个正则表达式的行上执行 cmd 命令（也称冒号命令）。而 /^/ 这个表达式，用于匹配行首。因为任何一行都有行首，你的要求就很容易实现了：
+它表示在匹配 /pattern/ 这个正则表达式的行上执行 cmd 命令（也称冒号命令）。而 /^/ 这个表达式，用于匹配行首。因为任何一行都有行首，你的要求就很容易实现了。
 ```
 :g/^/norm 3o
 ```
-norm这个命令的意思是，把后面的参数看成是在普通模式下的按键，即命令模式下的按键。
+norm 这个命令的意思是，把后面的参数看成是在普通模式下的按键，即命令模式下的按键。
 
 （5）vim 高亮显示选中的单词
-将光标移到需要高亮显示的单词上，在命令模式下输入gd，那么就可以将当前的单词在当前文本中全部高亮显示，如下图所示，高亮显示dwBeInvitedUinLen。
+
+将光标移到需要高亮显示的单词上，在命令模式下输入gd，那么就可以将当前的单词在当前文本中全部高亮显示，如下图所示，高亮显示 dwBeInvitedUinLen。
 ![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTYwODAyMTYwNzMyMTMx)
 
 （6）vim 输入特殊字符
@@ -263,16 +270,16 @@ norm这个命令的意思是，把后面的参数看成是在普通模式下的�
 
 **使用字符编码：**
 
-vim可以用字符编码插入任意字符，使用此功能可以方便地输入键盘上找不到的字符。使用步骤如下：
-（1）编辑模式下按下Ctrl+v；
-（2）如果是ASCII字符，则输入三位十进制ASCII码值，不足三位，前补0。比如输入大写字母A，则输入065；如果是Unicode字符，则输入“u+四位十六进制码值”。比如输入大写字母A，则输入u0041。
+vim 可以用字符编码插入任意字符，使用此功能可以方便地输入键盘上找不到的字符。使用步骤如下：
+1. 编辑模式下按下 Ctrl+v；
+2. 如果是 ASCII 字符，则输入三位十进制 ASCII 码值，不足三位，前补0。比如输入大写字母 A，则输入 065；如果是 Unicode 字符，则输入“u+四位十六进制码值”。比如输入大写字母 A，则输入 u0041。
 
 更多详情内容可参见vim的帮助文档，末行模式输入：`h  i_ctrl-v_digit`。
 
 **使用二合字母（digraph）：**
 二合字母顾名思义，使用两个字母的组合来标识特殊字符。使用步骤如下：
-（1）编辑模式下按下Ctrl+k；
-（2）输入特殊字符对应的二合字母。可以使用`:dig`或`:h digraph-table`查看对应二合字母。比如回车符（Carriage Return） 的二合字母是CR。
+1. 编辑模式下按下 Ctrl+k；
+2. 输入特殊字符对应的二合字母。可以使用`:dig`或`:h digraph-table`查看对应二合字母。比如回车符（Carriage Return） 的二合字母是 CR。
 
 **Ctrl+字母：**
 在vim中，使用`:set list`显示所有字符时，经常会看到有`^I、^M`等符号，代表的字符可以使用`:h digraph-table`查看，特殊字符列表如下：
