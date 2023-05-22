@@ -109,3 +109,5 @@ whatis (1)           - display manual page descriptions
 [whatis(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/whatis.1.html)
 
 [apropos(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/apropos.1.html)
+
+<Vssue/>

@@ -12,5 +12,9 @@
   "devDependencies": {
     "vuepress": "^1.9.9",
     "vuepress-plugin-right-anchor": "^0.5.5"
+  },
+  "dependencies": {
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8"
   }
 }

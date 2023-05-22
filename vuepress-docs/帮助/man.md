@@ -1,5 +1,4 @@
 ## 1.命令简介
-
 man（manual） 用于查看命令帮助、配置文件帮助和编程帮助等信息。
 
 Linux 提供了丰富的命令以及帮助手册，当需要了解某个命令的作用及用法时，可以使用 man 查看一下其帮助手册，同时也可以使用 man man 查看 man 命令的使用方法。当需要了解与编程相关的系统调用以及库函数的用法时，也可以通过 man 查看接口的帮助手册。此外，系统相关的配置文件的介绍也可以通过 man 来查看。
@@ -251,3 +250,5 @@ man -w man
 [GNU troff (Groff) — a GNU project](http://www.gnu.org/software/groff/) 
 
 [Linux 命令（89）—— less 命令](https://dablelv.blog.csdn.net/article/details/102967501)
+
+<Vssue/>
