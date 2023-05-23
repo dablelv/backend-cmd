@@ -66,4 +66,4 @@ cat /dev/null > file
 
 [菜鸟教程.Linux cat命令](http://www.runoob.com/linux/linux-comm-cat.html)
 
-<Vssue :title="$title" />
+<Vssue :title="cat" />

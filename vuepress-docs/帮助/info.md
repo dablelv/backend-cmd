@@ -131,4 +131,4 @@ $ info -w info
 
 [Linux 命令大全.info 命令](https://man.linuxde.net/info)
 
-<Vssue :title="$title" />
+<Vssue :title="info" />

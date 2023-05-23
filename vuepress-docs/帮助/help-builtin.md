@@ -50,4 +50,4 @@ cd: cd [-L|[-P [-e]]] [dir]
 
 [bash(1) - Linux manual page - man7.org](https://www.linux.org/docs/man1/help.html)
 
-<Vssue :title="$title" />
+<Vssue :title="help-builtin" />
