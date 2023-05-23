@@ -202,3 +202,5 @@ mysql:!::
 [Linux系统的用户和用户组管理](https://www.cnblogs.com/zhongguiyao/p/9165917.html)
 
 [[Linux]用户和组相关配置文件介绍(共7个文件)](https://blog.csdn.net/humanking7/article/details/84001125#11__etcpasswd__17_24)
+
+<Vssue title="chown" />

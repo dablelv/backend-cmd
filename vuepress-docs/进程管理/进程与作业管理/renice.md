@@ -40,3 +40,5 @@ renice 5 -g <gid>
 ---
 ## 参考文献
 [renice(1) — Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/renice.1.html)
+
+<Vssue title="renice" />

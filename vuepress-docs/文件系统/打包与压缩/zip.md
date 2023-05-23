@@ -224,3 +224,5 @@ zip -dg -r shell.zip shell
 ---
 ## 参考文献
 [zip(1) manual - linux.org](https://www.linux.org/docs/man1/zip.html)
+
+<Vssue title="zip" />

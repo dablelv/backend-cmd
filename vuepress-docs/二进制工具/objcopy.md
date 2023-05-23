@@ -269,3 +269,5 @@ objcopy -R mysection main.add main.remove
 [Linux命令手册.objcopy](http://linux.51yip.com/search/objcopy)
 
 [Linux命令学习手册-objcopy命令](http://blog.chinaunix.net/uid-9525959-id-2001841.html)
+
+<Vssue title="objcopy" />

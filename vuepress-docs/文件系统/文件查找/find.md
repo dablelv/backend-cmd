@@ -425,3 +425,5 @@ find ./ -size 0 | xargs rm -f
 [Linux find 用法示例](https://www.cnblogs.com/wanqieddy/archive/2011/06/09/2076785.html)
 
 鸟哥.鸟哥的私房菜基础学习篇第三版[M].北京：人民邮电出版社，2010：183-184
+
+<Vssue title="find" />

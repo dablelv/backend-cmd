@@ -288,3 +288,5 @@ Bash 在文件名扩展的结果中包括以点(.)开头的文件名。
 [shopt(1) - Linux manual page - linux.org](https://www.linux.org/docs/man1/shopt.html)
 
 [【Linux】一步一步学Linux——shopt命令(214) - CSDN](https://blog.csdn.net/dengjin20104042056/article/details/100566309)
+
+<Vssue title="shopt-builtin" />

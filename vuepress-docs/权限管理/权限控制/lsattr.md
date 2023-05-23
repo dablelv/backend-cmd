@@ -39,3 +39,5 @@ lsattr 1.41.12 (17-May-2010)
 [chattr(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/chattr.1.html)
 
 [（总结）Linux的chattr与lsattr命令详解](http://www.ha97.com/5172.html)
+
+<Vssue title="lsattr" />

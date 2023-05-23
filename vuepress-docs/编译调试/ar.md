@@ -75,3 +75,5 @@ ar dv libc.a strlen.o
 [linux ar命令](https://blog.csdn.net/xuhongning/article/details/6365200)
 
 [ar (Unix).wikipedia](https://en.wikipedia.org/wiki/Ar_(Unix))
+
+<Vssue title="ar" />

@@ -87,3 +87,5 @@ btmp begins Mon Oct 17 03:43:01 2022
 ---
 ## 参考文献
 [lastb(1) — Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/lastb.1.html)
+
+<Vssue title="lastb" />

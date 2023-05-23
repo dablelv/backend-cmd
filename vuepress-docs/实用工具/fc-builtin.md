@@ -121,3 +121,5 @@ fc -s 2992
 [bash(1) - Linux manual page - man7.org](https://www.man7.org/linux/man-pages/man1/bash.1.html)
 
 [fc(1p) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/fc.1p.html)
+
+<Vssue title="fc-builtin" />

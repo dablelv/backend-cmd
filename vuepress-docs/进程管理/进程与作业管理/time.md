@@ -92,3 +92,5 @@ date +%s
 [time(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/time.1.html)
 
 [Linux time命令](https://www.runoob.com/linux/linux-comm-time.html)
+
+<Vssue title="time" />

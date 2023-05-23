@@ -23,3 +23,5 @@ bzip2recover: finished
 ---
 ## 参考文献
 [bzip2recover(1) manual - linux.org](https://www.linux.org/docs/man1/bzip2recover.html)
+
+<Vssue title="bzip2recover" />

@@ -93,4 +93,7 @@ NIS（Network Information Services）服务器主要提供用户的账号、密�
 
 ## 参考文献
 [nisdomainname(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/nisdomainname.1.html)
+
 [鸟哥的Linux 私房菜-- NIS 服务器](http://cn.linux.vbird.org/linux_server/0430nis.php)
+
+<Vssue title="nisdomainname" />

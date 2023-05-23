@@ -111,3 +111,5 @@ echo -e "\033[5;31;42mMySQL Server Stop...\033[0m"
 [echo命令 - Linux命令大全](http://man.linuxde.net/echo)
 
 [使用echo输出带颜色的字体](https://www.cnblogs.com/linusflow/p/7399761.html)
+
+<Vssue title="echo" />

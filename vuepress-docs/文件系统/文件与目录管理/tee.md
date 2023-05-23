@@ -35,3 +35,5 @@ make 2>&1 | tee file1 file2
 [tee(1) — Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/tee.1.html)
 
 [Linux命令大全.tee命令](http://man.linuxde.net/tee)
+
+<Vssue title="tee" />

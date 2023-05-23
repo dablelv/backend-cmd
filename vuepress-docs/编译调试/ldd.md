@@ -89,3 +89,5 @@ ldd /usr/bin/ls
 [Linux命令大全.ldd命令](http://man.linuxde.net/ldd)
 
 [博客园.ldd命令](https://www.cnblogs.com/wanghetao/p/3779611.html)
+
+<Vssue title="ldd" />

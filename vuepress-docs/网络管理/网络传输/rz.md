@@ -82,3 +82,5 @@ apt install lrzsz
 [利用SecureCRT上传、下载文件（使用sz与rz命令），超实用！](http://blog.csdn.net/lioncode/article/details/7921525)
 
 [lrzsz: free x/y/zmodem implementation - ohse.de](https://www.ohse.de/uwe/software/lrzsz.html)
+
+<Vssue title="rz" />

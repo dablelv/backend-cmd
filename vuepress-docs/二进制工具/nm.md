@@ -211,3 +211,5 @@ test.o:
 [Linux命令手册.nm](http://linux.51yip.com/search/nm)
 
 [linux中的nm命令简介](https://blog.csdn.net/stpeace/article/details/47089585)
+
+<Vssue title="nm" />

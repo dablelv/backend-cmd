@@ -44,3 +44,5 @@ service mysqld restart
 [service(8) manual - linux.org](https://www.linux.org/docs/man8/service.html)
 
 [service: no such service mysqld 与 MySQL 的开启、关闭和重启](https://dablelv.blog.csdn.net/article/details/51831534)
+
+<Vssue title="service" />

@@ -135,3 +135,5 @@ ps -ef | grep spp | awk '{printf "%s ",$2}' | xargs kill -9
 [Xargs用法详解 - CSDN](http://blog.csdn.net/zhangfn2011/article/details/6776925/)
 
 [linux xargs详解 - CSDN](http://blog.csdn.net/hittata/article/details/8021500)
+
+<Vssue title="xargs" />

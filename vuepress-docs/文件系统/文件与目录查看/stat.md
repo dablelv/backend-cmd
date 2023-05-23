@@ -124,3 +124,5 @@ Inodes: Total: 11162880   Free: 11077199
 [linux stat命令参数详解](http://blog.51cto.com/colinzhouyj/1288580)
 
 [磁盘、分区及Linux文件系统 [Disk, Partition, Linux File System]](https://www.cnblogs.com/sammyliu/p/4521315.html)
+
+<Vssue title="stat" />

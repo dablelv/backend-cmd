@@ -88,3 +88,5 @@ Ctrl+a+]：paste，把刚刚在 copy mode 选定的内容贴上。
 [Linux命令大全.screen命令](http://man.linuxde.net/screen)
 
 [系统load average](https://www.cnblogs.com/kaituorensheng/p/3602805.html)
+
+<Vssue title="screen" />

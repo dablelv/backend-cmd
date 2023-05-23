@@ -625,3 +625,5 @@ Key to Flags:
 [Linux命令大全.readelf命令](http://man.linuxde.net/readelf)
 
 俞甲子,石凡,等.程序员的自我修养——链接、装载与库[M].北京:电子工业出版社,2009-04.C3.1目标文件的格式.P56-57
+
+<Vssue title="readelf" />

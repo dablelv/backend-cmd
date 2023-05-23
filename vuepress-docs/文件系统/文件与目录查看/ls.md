@@ -191,3 +191,5 @@ ls -Shr
 [Linux命令大全.ls命令](http://man.linuxde.net/ls)
 
 [每天一个命令（2）](http://blog.csdn.net/liuguofeng719/article/details/51593812)
+
+<Vssue title="ls" />

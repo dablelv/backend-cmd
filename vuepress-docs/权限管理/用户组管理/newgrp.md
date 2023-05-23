@@ -25,3 +25,5 @@ newgrp test
 ---
 ## 参考文献
 [newgrp(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/newgrp.1.html)
+
+<Vssue title="newgrp" />

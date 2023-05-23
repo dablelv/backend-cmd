@@ -37,3 +37,5 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub dablelv@192.168.12.101
 ---
 ## 参考文献
 [ssh-copy-id(1) — Linux manual page - linux.org](https://www.linux.org/docs/man1/ssh-copy-id.html)
+
+<Vssue title="ssh-copy-id" />

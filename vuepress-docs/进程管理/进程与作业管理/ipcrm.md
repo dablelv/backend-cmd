@@ -88,3 +88,5 @@ ipcrm from util-linux 2.23.2
 [ipcrm(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/ipcrm.1.html)
 
 [工作中常用的Linux命令：ipcs/ipcrm命令](https://www.cnblogs.com/MartinChentf/p/6057100.html)
+
+<Vssue title="ipcrm" />

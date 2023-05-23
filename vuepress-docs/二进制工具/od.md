@@ -99,3 +99,5 @@ od -An -w1 -tx1 testfile|awk '{for(i=1;i<=NF;++i){printf "%s",$i}}'
 ---
 ## 参考文献
 [od(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/od.1.html)
+
+<Vssue title="od" />

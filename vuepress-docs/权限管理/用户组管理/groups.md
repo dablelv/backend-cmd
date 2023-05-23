@@ -53,3 +53,5 @@ uid=0(root) gid=0(root) groups=0(root)
 [groups(1) manual - linux.org](https://www.linux.org/docs/man1/groups.html)
 
 [linux怎么查看当前用户属于哪个用户组?](https://www.jb51.net/LINUXjishu/571236.html)
+
+<Vssue title="groups" />

@@ -105,3 +105,5 @@ file ./a.out
 [linux shell file与magic file文件](https://blog.csdn.net/pzqingchong/article/details/70226640)
 
 [Linux命令详解-file](https://www.cnblogs.com/Dodge/p/4278306.html)
+
+<Vssue title="file" />

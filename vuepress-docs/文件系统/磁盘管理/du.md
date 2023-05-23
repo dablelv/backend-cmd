@@ -122,3 +122,5 @@ $ ll sparse.file
 [du(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/du.1.html)
 
 [为什么用ls和du显示出来的文件大小有差别？](https://blog.csdn.net/loryliu/article/details/25337409)
+
+<Vssue title="du" />

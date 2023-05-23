@@ -148,3 +148,5 @@ ncat 127.0.0.1 8888 < /dev/zero
 [nc命令用法举例 - 博客园](https://www.cnblogs.com/nmap/p/6148306.html)
 
 [nc 命令使用详解 - 博客园](https://www.cnblogs.com/xuyaowen/p/nc_details.html)
+
+<Vssue title="ncat" />

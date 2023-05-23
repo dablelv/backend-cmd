@@ -326,3 +326,5 @@ vim 仍有很多未知的东西等待我们去发现，如果 vim 使用过程�
 [Vim技巧之四大模式_普通模式 - CSDN](https://blog.csdn.net/ii1245712564/article/details/46768097)
 
 [freecodecamp.Vim Editor Modes Explained](https://www.freecodecamp.org/news/vim-editor-modes-explained/)
+
+<Vssue title="vim" />

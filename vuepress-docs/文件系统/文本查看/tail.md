@@ -99,3 +99,5 @@ mqq:x:501:
 [tail(1) - Linux manual page - linux.org](https://www.linux.org/docs/man1/tail.html)
 
 [【Linux】一步一步学Linux——tail命令(42)](https://blog.csdn.net/dengjin20104042056/article/details/95937014)
+
+<Vssue title="tail" />

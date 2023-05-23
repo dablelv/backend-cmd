@@ -270,4 +270,4 @@ ls -lh /usr/bin/passwd
 ## 参考文献
 [ps(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/ps.1.html)
 
-[简书.linux系统中的 UID RUID EUID SUID](https://www.jianshu.com/p/23f2f2be2b29)
+<Vssue title="ps" />

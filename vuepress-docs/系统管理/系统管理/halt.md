@@ -70,3 +70,5 @@ halt -f
 
 ## 参考文献
 [halt(8) — Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/halt.8.html)
+
+<Vssue title="halt" />

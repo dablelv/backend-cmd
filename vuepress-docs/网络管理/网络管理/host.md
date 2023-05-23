@@ -144,3 +144,5 @@ www.a.shifen.com is an alias for www.wshifen.com.
 ---
 ## 参考文献
 [host(1) manual - linux.org](https://www.linux.org/docs/man1/host.html)
+
+<Vssue title="host" />

@@ -162,3 +162,5 @@ pstree | less
 ---
 ## 参考文献
 [pstree(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/pstree.1.html)
+
+<Vssue title="pstree" />

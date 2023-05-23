@@ -48,3 +48,5 @@ iconv -c -f gbk -t utf8 inputFile.txt -o outputFile.txt.utf8
 ---
 ## 参考文献
 [iconv(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/iconv.1.html)
+
+<Vssue title="iconv" />

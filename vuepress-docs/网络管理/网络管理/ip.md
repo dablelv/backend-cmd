@@ -199,3 +199,4 @@ ip route add 172.16.0.0 dev eth0
 
 [Linux基础命令---IP路由操作 - CSDN博客](https://blog.csdn.net/wj78080458/article/details/86909969)
 
+<Vssue title="ip" />

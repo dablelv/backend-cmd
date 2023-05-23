@@ -228,3 +228,5 @@ net.ipv4.icmp_echo_ignore_all=0          # 0 表示允许
 [ping命令详解 - CSDN](https://blog.csdn.net/u011857683/article/details/83662550)
 
 [【Linux】一步一步学Linux——ping命令(150) - CSDN](https://blog.csdn.net/dengjin20104042056/article/details/99709270)
+
+<Vssue title="ping" />

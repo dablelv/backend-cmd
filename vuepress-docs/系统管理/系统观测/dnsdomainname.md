@@ -75,3 +75,5 @@ Description:
 ---
 ## 参考文献
 [dnsdomainname(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/dnsdomainname.1.html)
+
+<Vssue title="dnsdomainname" />

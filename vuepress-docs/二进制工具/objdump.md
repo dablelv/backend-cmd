@@ -306,3 +306,5 @@ Idx Name          Size      VMA               LMA               File off  Algn
 [objdump(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/objdump.1.html)
 
 [objdump命令.Linux命令大全](http://man.linuxde.net/objdump)
+
+<Vssue title="objdump" />

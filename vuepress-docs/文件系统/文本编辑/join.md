@@ -80,3 +80,5 @@ zhouxun english 45  		//显示了文件 file2 中未匹配的一行
 ---
 ## 参考文献
 [join(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/join.1.html)
+
+<Vssue title="join" />

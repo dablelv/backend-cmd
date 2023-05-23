@@ -109,3 +109,5 @@ INACTIVE=0
 ---
 ## 参考文献
 [adduser(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/useradd.8.html)
+
+<Vssue title="adduser" />

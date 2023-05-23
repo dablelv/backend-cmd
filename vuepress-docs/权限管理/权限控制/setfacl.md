@@ -256,3 +256,5 @@ setfacl -b test
 [setfacl(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/setfacl.1.html)
 
 [【Linux】一步一步学Linux——setfacl命令(117)](https://blog.csdn.net/dengjin20104042056/article/details/98896132)
+
+<Vssue title="setfacl" />

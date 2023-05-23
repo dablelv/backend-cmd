@@ -362,3 +362,5 @@ proc                    /proc                   proc    defaults        0 0
 [磁盘的块大小(Block Size)和扇区大小(Sector Size)](http://blog.csdn.net/my_bai/article/details/73331360)
 
 [fdisk -l 命令详解](https://www.cnblogs.com/Dreama/articles/2106812.html)
+
+<Vssue title="fdisk" />

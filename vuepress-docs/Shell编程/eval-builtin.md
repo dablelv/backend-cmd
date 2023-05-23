@@ -54,3 +54,5 @@ lastarg
 [bash(1) - Linux manual page - man7.org](https://www.man7.org/linux/man-pages/man1/bash.1.html)
 
 [``和$()的区别及eval详解 - CSDN](https://blog.csdn.net/baidu_37964071/article/details/80930704)
+
+<Vssue title="eval-builtin" />

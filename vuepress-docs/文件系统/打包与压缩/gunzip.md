@@ -84,3 +84,5 @@ compressed        uncompressed  ratio uncompressed_name
 ---
 ## 参考文献
 [gunzip(1) manual - linux.org](https://www.linux.org/docs/man1/gunzip.html)
+
+<Vssue title="gunzip" />

@@ -83,3 +83,5 @@ like linux
 [cut(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/cut.1.html)
 
 [Linux 命令大全.cut 命令](https://man.linuxde.net/cut)
+
+<Vssue title="cut" />

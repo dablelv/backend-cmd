@@ -117,3 +117,5 @@ Central directory entry #1:
 ---
 ## 参考文献
 [zipinfo(1) manual - linux.org](https://www.linux.org/docs/man1/zipinfo.html)
+
+<Vssue title="zipinfo" />

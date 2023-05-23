@@ -71,3 +71,5 @@ Hello World
 ---
 ## 参考文献
 [strace(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/strace.1.html)
+
+<Vssue title="truncate" />

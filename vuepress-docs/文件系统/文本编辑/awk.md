@@ -359,3 +359,5 @@ awk -F'[ ]' '{print $1;}' test.txt
 [awk中使用shell命令](http://blog.chinaunix.net/uid-280990-id-2449802.html)
 
 [awk按照多个分隔符进行分割](https://blog.csdn.net/hongchangfirst/article/details/25071937)
+
+<Vssue title="awk" />

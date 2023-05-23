@@ -59,3 +59,5 @@ bg 2
 ---
 ## 参考文献
 [bg(1) manual - linux.org](https://www.linux.org/docs/man1/bg.html)
+
+<Vssue title="bg-builtin" />

@@ -58,3 +58,5 @@ gpasswd test
 [gpasswd(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/gpasswd.1.html)
 
 [CSDN.【Linux】一步一步学Linux——gpasswd命令(90)](https://blog.csdn.net/dengjin20104042056/article/details/98104598)
+
+<Vssue title="gpasswd" />

@@ -132,3 +132,5 @@ Fri Nov 11 00:00:05 CST 2016
 [date(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/date.1.html)
 
 [linux命令总结之date命令](https://www.cnblogs.com/ginvip/p/6357378.html)
+
+<Vssue title="date" />

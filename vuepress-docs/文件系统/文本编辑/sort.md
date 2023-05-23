@@ -79,3 +79,5 @@ bin:x:3:3:sys:/dev:/bin/sh
 [sort(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/sort.1.html)
 
 [Linux命令大全——sort命令](http://man.linuxde.net/sort)
+
+<Vssue title="sort" />

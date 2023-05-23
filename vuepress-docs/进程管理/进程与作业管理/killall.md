@@ -67,3 +67,5 @@ UNUSED
 ---
 ## 参考文献
 [killall(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/killall.1.html)
+
+<Vssue title="killall" />

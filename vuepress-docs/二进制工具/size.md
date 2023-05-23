@@ -101,3 +101,5 @@ text	   data	    bss	    dec	    hex	filename
 [size(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/size.1.html)
 
 [六个例子带你入门 size 命令](https://linux.cn/article-9504-1.html?pr)
+
+<Vssue title="size" />

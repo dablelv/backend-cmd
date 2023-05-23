@@ -46,3 +46,5 @@ umask
 [umask(1) manual - linux.org](https://www.linux.org/docs/man1/umask.html)
 
 [umask(1p) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/umask.1p.html)
+
+<Vssue title="umask-builtin" />

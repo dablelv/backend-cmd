@@ -72,3 +72,5 @@ Written by Richard Mlynarik and David MacKenzie.
 ---
 ## 参考文献
 [env(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/env.1.html)
+
+<Vssue title="env" />

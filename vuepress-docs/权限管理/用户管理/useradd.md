@@ -112,3 +112,5 @@ INACTIVE=0
 [useradd(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/useradd.8.html)
 
 [Linux命令之useradd - 博客园](https://www.cnblogs.com/diantong/p/9430258.html)
+
+<Vssue title="useradd" />

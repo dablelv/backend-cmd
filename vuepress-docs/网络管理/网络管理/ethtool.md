@@ -157,3 +157,5 @@ Cannot get EEPROM data: Operation not supported
 [一步一步学Linux——ethtool命令(155)](https://blog.csdn.net/dengjin20104042056/article/details/99880335)
 
 [Linux ethtool 命令详解：显示或修改以太网卡的配置信息](https://wangchujiang.com/linux-command/c/ethtool.html)
+
+<Vssue title="ethtool" />

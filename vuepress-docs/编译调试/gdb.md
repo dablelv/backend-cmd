@@ -155,3 +155,5 @@ cmd  : the command window
 [在gdb中显示源码(gdbtui使用方法)](http://www.360doc.com/content/14/0325/15/15064667_363606885.shtml)
 
 [GDB的使用,重点讲解图像化 gdb -tui 方式 ](http://laokaddk.blog.51cto.com/368606/945057/)
+
+<Vssue title="gdb" />

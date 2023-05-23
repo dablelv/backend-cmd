@@ -123,3 +123,5 @@ echo 3 > /proc/sys/vm/drop_caches
 [由free命令想到的](http://blog.csdn.net/hs794502825/article/details/37881879)
 
 [linux内存总结](https://blog.csdn.net/dbadream/article/details/9014179)
+
+<Vssue title="free" />

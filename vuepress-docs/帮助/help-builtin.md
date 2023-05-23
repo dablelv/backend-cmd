@@ -49,3 +49,5 @@ cd: cd [-L|[-P [-e]]] [dir]
 ## 参考文献
 
 [bash(1) - Linux manual page - man7.org](https://www.linux.org/docs/man1/help.html)
+
+<Vssue title="help-builtin" />

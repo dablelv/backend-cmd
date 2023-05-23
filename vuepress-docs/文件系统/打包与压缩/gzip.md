@@ -81,3 +81,5 @@ dir/file1:	-16.7% -- replaced with dir/file1.gz
 [gzip(1) manual - linux.org](https://www.linux.org/docs/man1/gzip.html)
 
 [Linux 命令大全.gzip 命令](https://man.linuxde.net/gzip)
+
+<Vssue title="gzip" />

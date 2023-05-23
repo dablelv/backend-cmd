@@ -67,3 +67,5 @@ groupadd -p $6$6B3fQyRr$DWk9/i2ly/8IFNA8lNReCAve6eODSGuvOD2Y2q/NGZXGgaQ9j/APs0Tp
 [groupadd(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/groupadd.8.html)
 
 [CSDN.【Linux】一步一步学Linux——groupadd命令(87)](https://blog.csdn.net/dengjin20104042056/article/details/97973193)
+
+<Vssue title="groupadd" />

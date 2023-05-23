@@ -188,3 +188,5 @@ nslookup -debug <域名>
 [GeeksforGeeks.nslookup command in Linux with Examples](https://www.geeksforgeeks.org/nslookup-command-in-linux-with-examples/)
 
 [【Linux】一步一步学Linux——nslookup命令(161)](https://blog.csdn.net/dengjin20104042056/article/details/99977872)
+
+<Vssue title="nslookup" />

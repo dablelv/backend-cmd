@@ -45,3 +45,5 @@ touch filename
 [touch(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/touch.1.html)
 
 [Linux touch命令](http://www.runoob.com/linux/linux-comm-touch.html)
+
+<Vssue title="touch" />

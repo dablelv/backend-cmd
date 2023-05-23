@@ -46,3 +46,5 @@ userdel -f tom
 [userdel(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/userdel.8.html)
 
 [CSDN.【Linux】一步一步学Linux——userdel命令(84)](https://blog.csdn.net/dengjin20104042056/article/details/97963550)
+
+<Vssue title="userdel" />

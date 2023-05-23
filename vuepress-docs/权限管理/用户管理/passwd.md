@@ -100,3 +100,5 @@ passwd -w 7 dablelv
 [passwd(1) manual](https://linux.die.net/man/1/passwd)
 
 [CSDN.【Linux】一步一步学Linux——passwd命令(85)](https://blog.csdn.net/dengjin20104042056/article/details/97966163)
+
+<Vssue title="passwd" />

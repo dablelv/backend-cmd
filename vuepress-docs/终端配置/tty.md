@@ -58,3 +58,5 @@ For complete documentation, run: info coreutils 'tty invocation'
 [tty(1p) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/tty.1p.html)
 
 [GNU coreutils online help](http://www.gnu.org/software/coreutils/)
+
+<Vssue title="tty" />

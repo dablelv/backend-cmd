@@ -101,3 +101,5 @@ tracepath -n www.baidu.com
 ---
 ## 参考文献
 [tracepath(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/tracepath.8.html)
+
+<Vssue title="tracepath" />

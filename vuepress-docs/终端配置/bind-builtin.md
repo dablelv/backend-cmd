@@ -116,4 +116,6 @@ Press any keys - Ctrl-D will terminate this program
 
 ---
 ## 参考文献
-[bind(1) manual - linux.org](https://www.linux.org/docs/man1/bind.html)
+[bash(1) - Linux manual page - man7.org](https://www.man7.org/linux/man-pages/man1/bash.1.html)
+
+<Vssue title="bind" />

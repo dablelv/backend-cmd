@@ -236,3 +236,5 @@ quit
 [bc - GNU Project - Free Software Foundation](https://www.gnu.org/software/bc/)
 
 [【Linux】一步一步学Linux——bc命令(233)](https://blog.csdn.net/dengjin20104042056/article/details/101051619)
+
+<Vssue title="bc" />

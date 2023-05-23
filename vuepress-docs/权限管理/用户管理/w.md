@@ -66,3 +66,5 @@ root     pts/2    223.73.1.91       1:16m -bash
 ---
 ## 参考文献
 [w(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/w.1.html)
+
+<Vssue title="w" />

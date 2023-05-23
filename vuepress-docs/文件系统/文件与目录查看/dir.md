@@ -155,3 +155,4 @@ centos7.sh  cosfs.sh  cpp  dnspod.sh  go  install_panel.sh  install.sh	LATEST.ta
 ## 参考文献
 [dir(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/dir.1.html)
 
+<Vssue title="dir" />

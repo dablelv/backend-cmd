@@ -375,3 +375,5 @@ lsof -i @peida.linux:20,21,22,25 -r 3
 [百度百科.Andrew文件系统](https://baike.baidu.com/item/Andrew%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
 
 [每天一个linux命令（51）：lsof命令 - 博客园](https://www.cnblogs.com/peida/archive/2013/02/26/2932972.html)
+
+<Vssue title="lsof" />

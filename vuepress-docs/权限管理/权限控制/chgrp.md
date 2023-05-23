@@ -79,3 +79,5 @@ drwxrwxrwx 2 root bin 4096 Oct 30 20:29 newdir
 ---
 ## 参考文献
 [chgrp(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/chgrp.1.html)
+
+<Vssue title="chgrp" />

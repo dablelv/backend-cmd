@@ -88,3 +88,5 @@ Sudoers I/O plugin version 1.8.21p2
 [sudo(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/sudo.8.html)
 
 [sudo命令 - Linux 命令大全](https://man.linuxde.net/sudo)
+
+<Vssue title="sudo" />

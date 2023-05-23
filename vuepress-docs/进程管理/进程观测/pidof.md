@@ -48,3 +48,5 @@ echo "end sleep"
 ---
 ## 参考文献
 [pidof(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/pidof.1.html)
+
+<Vssue title="pidof" />

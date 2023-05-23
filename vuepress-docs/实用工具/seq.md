@@ -77,3 +77,5 @@ seq -s "`echo -e '\t'`" 9 11
 [seq(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/seq.1.html)
 
 [【Linux】一步一步学Linux——seq命令(221)](https://blog.csdn.net/dengjin20104042056/article/details/100585527)
+
+<Vssue title="seq" />

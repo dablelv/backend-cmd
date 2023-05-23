@@ -77,3 +77,5 @@ SIGSTOP|Signal Stop|19|Stop|暂停进程（同 Ctrl + Z）
 [LINUX Signals](https://faculty.cs.niu.edu/~hutchins/csci480/signals.htm)
 
 [Signal (IPC) - Wikipedia](https://en.wikipedia.org/wiki/Signal_(IPC))
+
+<Vssue title="kill" />

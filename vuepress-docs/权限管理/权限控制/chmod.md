@@ -162,3 +162,5 @@ s 套接字
 [chmod(1) - Linux manual page - Michael Kerrisk](https://man7.org/linux/man-pages/man1/chmod.1.html)
 
 [Linux 文件特殊权限 SUID、SGID 与 SBIT](https://dablelv.blog.csdn.net/article/details/87280503)
+
+<Vssue title="chmod" />

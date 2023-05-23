@@ -133,3 +133,5 @@ usage: tput [-V] [-S] [-T term] capname
 [Linux tput 命令详解：通过terminfo数据库对终端会话进行初始化和操作](https://wangchujiang.com/linux-command/c/tput.html)
 
 [curses (programming library) - Wikipedia](https://en.wikipedia.org/wiki/Curses_(programming_library))
+
+<Vssue title="tput" />

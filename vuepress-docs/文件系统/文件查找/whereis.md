@@ -91,3 +91,5 @@ bin: /usr/lib64
 [whereis(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/whereis.1.html)
 
 [实例讲解Linux whereis 命令](https://baijiahao.baidu.com/s?id=1594159569681101446&wfr=spider&for=pc)
+
+<Vssue title="whereis" />

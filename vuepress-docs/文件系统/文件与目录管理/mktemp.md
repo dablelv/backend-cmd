@@ -67,3 +67,5 @@ abc.lqV
 [mktemp(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/mktemp.1.html)
 
 [Bash 脚本如何创建临时文件：mktemp 命令和trap 命令教程](https://www.ruanyifeng.com/blog/2019/12/mktemp.html)
+
+<Vssue title="mktemp" />

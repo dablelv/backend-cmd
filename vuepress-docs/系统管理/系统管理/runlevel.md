@@ -56,3 +56,5 @@ Linux 通常有 7 个 runlevel：
 [runlevel(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/runlevel.8.html)
 
 [Linux系统有7个运行级别(runlevel) - 博客园](https://www.cnblogs.com/dkblog/archive/2011/08/30/2160191.html)
+
+<Vssue title="runlevel" />

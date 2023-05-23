@@ -95,3 +95,5 @@ ulimit -s unlimited
 [ulimit(1) manual - linux.org](https://www.linux.org/docs/man1/ulimit.html)
 
 [linux的ulimit各种限制之深入分析](http://blog.sina.com.cn/s/blog_59b6af6901011ekd.html)
+
+<Vssue title="ulimit-builtin" />

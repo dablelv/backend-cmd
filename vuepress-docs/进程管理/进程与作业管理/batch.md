@@ -24,3 +24,5 @@ job 6 at Sun Oct 30 19:05:00 2022
 ---
 ## 参考文献
 [batch(1) - Linux man page - Die.net](https://linux.die.net/man/1/batch)
+
+<Vssue title="batch" />

@@ -89,3 +89,5 @@ skill -STOP -c ls
 ---
 ## 参考文献
 [skill(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/skill.1.html)
+
+<Vssue title="skill" />

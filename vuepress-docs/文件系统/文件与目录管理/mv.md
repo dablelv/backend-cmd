@@ -71,3 +71,5 @@ mv /usr/men/* .
 [Linux命令大全.mv命令](http://man.linuxde.net/mv)
 
 [mv: Directory not empty - Ask Ubuntu](https://askubuntu.com/questions/269775/mv-directory-not-empty)
+
+<Vssue title="mv" />

@@ -50,3 +50,5 @@ cd --
 [cd(1p) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/cd.1p.html)
 
 [Linux命令大全.cd命令](http://man.linuxde.net/cd)
+
+<Vssue title="cd-builtin" />

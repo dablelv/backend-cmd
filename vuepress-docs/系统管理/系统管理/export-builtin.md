@@ -86,8 +86,10 @@ export PATH=$PATH:/usr/local/mysql/bin
 
 ---
 ## 参考文献
-[export(1) manual - linux.org](https://www.linux.org/docs/man1/export.html)
+[bash(1) - Linux manual page - man7.org](https://www.man7.org/linux/man-pages/man1/bash.1.html)
 
 [Linux export命令 - 菜鸟教程](http://www.runoob.com/linux/linux-comm-export.html)
 
 [linux下export命令添加、删除环境变量](https://www.cnblogs.com/zhangwuji/p/7899075.html)
+
+<Vssue title="export" />

@@ -328,3 +328,5 @@ diff dir1/file dir2/file
 [每天一个Linux命令 | diff 命令](https://www.cnblogs.com/peida/archive/2012/12/12/2814048.html)
 
 [Linux 命令手册 | diff 命令](http://linux.51yip.com/search/diff)
+
+<Vssue title="diff" />

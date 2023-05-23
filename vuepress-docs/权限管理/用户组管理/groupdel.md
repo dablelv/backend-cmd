@@ -30,3 +30,5 @@ groupdel -h
 [groupdel(8) manual](https://linux.die.net/man/8/groupdel)
 
 CSDN.【Linux】一步一步学Linux——groupdel命令(88)](https://blog.csdn.net/dengjin20104042056/article/details/98095658)
+
+<Vssue title="groupdel" />

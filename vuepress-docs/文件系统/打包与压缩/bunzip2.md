@@ -53,3 +53,5 @@ bunzip2 -tv passwd.bz2
 ---
 ## 参考文献
 [bunzip(1) manual - linux.org](https://www.linux.org/docs/man1/bunzip2.html)
+
+<Vssue title="bunzip2" />

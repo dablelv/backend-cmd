@@ -57,3 +57,5 @@ updatedb --localpaths='/root' --output=homelocate.db
 [updatedb(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/updatedb.1.html)
 
 [详解：（cron , crontab , anacron）](https://www.cnblogs.com/zhoul/p/9931664.html)
+
+<Vssue title="updatedb" />

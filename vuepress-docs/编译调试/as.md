@@ -75,3 +75,5 @@ as test.s -o test.o
 [as(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/as.1.html)
 
 [GNU Binutils](https://www.gnu.org/software/binutils/)
+
+<Vssue title="as" />

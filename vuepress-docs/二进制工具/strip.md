@@ -120,3 +120,5 @@ nm: main.out: no symbols
 [strip(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/strip.1.html)
 
 [linux中的strip命令简介](https://blog.csdn.net/qq_37858386/article/details/78559490)
+
+<Vssue title="strip" />

@@ -146,3 +146,5 @@ traceroute 提取发 ICMP TTL 到期消息设备的IP地址并作域名解析。
 ---
 ## 参考文献
 [tracetroute(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/traceroute.8.html)
+
+<Vssue title="traceroute" />

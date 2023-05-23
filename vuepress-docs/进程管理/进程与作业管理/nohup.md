@@ -45,3 +45,5 @@ nohup ./test.sh > test.log 2>&1 &
 [Linux执行shell脚本方式及区别&命令后台运行](https://blog.csdn.net/heqiyu34/article/details/19089951/)
 
 [nohup命令 - Linux命令大全](http://man.linuxde.net/nohup)
+
+<Vssue title="nohup" />

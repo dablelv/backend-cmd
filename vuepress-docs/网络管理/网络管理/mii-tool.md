@@ -84,3 +84,5 @@ David Hinds based on Donald Becker's mii-diag
 ---
 ## 参考文献
 [mii-tool(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/mii-tool.8.html)
+
+<Vssue title="mii-tool" />

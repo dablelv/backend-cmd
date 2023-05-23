@@ -179,3 +179,5 @@ default		192.168.1.1		0.0.0.0		UG		0       0	0   eth0
 [CSDN.【Linux】一步一步学Linux——route命令(169)](https://blog.csdn.net/dengjin20104042056/article/details/100008525)
 
 [CSDN.linux 路由表设置 之 route 指令详解](https://blog.csdn.net/chenlycly/article/details/52141854)
+
+<Vssue title="route" />

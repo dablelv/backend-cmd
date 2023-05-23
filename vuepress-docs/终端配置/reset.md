@@ -85,4 +85,6 @@ ncurses 5.9.20130511
 ## 参考文献
 [reset(1) - Linux manual page - linux.org](https://www.linux.org/docs/man1/reset.html)
 
-[Ncurses - Wikipedia]()
+[Ncurses - Wikipedia](https://en.wikipedia.org/wiki/Ncurses)
+
+<Vssue title="reset" />

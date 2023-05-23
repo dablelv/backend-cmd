@@ -52,3 +52,5 @@ split -a3 -d -10 /etc/passwd lvlv
 ---
 ## 参考文献
 [split manual](http://man7.org/linux/man-pages/man1/split.1.html)
+
+<Vssue title="split" />

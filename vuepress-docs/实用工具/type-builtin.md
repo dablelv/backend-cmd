@@ -90,3 +90,5 @@ type is a shell builtin
 [bash(1) - Linux manual page - man7.org](https://www.man7.org/linux/man-pages/man1/bash.1.html)
 
 [Linux type 命令详解：显示指定命令的类型- Linux 命令搜索引擎](https://wangchujiang.com/linux-command/c/type.html)
+
+<Vssue title="type-builtin" />

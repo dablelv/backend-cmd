@@ -85,3 +85,5 @@ grep 'model name'  /proc/cpuinfo | wc -l
 [uptime(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/uptime.1.html)
 
 [如何理解linux的平均负载？](https://www.baidu.com/link?url=MXkULYD06QP5jZKyL3eO3NxDtHimCJgWrGfpSYfqLpPzXkj-dIjV_OIF8Jnrwew3&wd=&eqid=c70b86af00017b74000000065d9d4bbe)
+
+<Vssue title="uptime" />

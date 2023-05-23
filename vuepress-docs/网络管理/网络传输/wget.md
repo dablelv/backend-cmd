@@ -1,5 +1,5 @@
 ## 1.命令简介
-wget 是一个非交互式网络下载器，用于从指定 url 下载文件。
+wget 是一个非交互式网络下载器，用于从指定 URL 下载文件。
 
 wget 是 Linux 环境下流行的强大稳定的文件下载工具，主要有如下几个特点：
 - wget 支持的协议丰富，支持 HTTP、HTTPS 和 FTP 协议，可以使用 HTTP 代理；
@@ -302,3 +302,5 @@ wget -o wget.log https://github.com/git-for-windows/git/releases/download/v2.25.
 [CSDN.【Linux】一步一步学Linux——wget命令(192)](https://blog.csdn.net/dengjin20104042056/article/details/100145281)
 
 [GNU wget 官网](https://www.gnu.org/software/wget/)
+
+<Vssue title="wget" />

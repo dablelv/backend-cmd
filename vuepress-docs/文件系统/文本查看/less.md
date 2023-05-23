@@ -352,3 +352,5 @@ less -?
 # 参考文献
 [less(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/less.1.html)
 [【Linux】一步一步学Linux——less命令(40)](https://blog.csdn.net/dengjin20104042056/article/details/95930905)
+
+<Vssue title="less" />

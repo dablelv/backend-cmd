@@ -132,3 +132,5 @@ network        	0:off	1:off	2:off	3:off	4:off	5:off	6:off
 [chkconfig(8) manual - linux.org](https://www.linux.org/docs/man8/chkconfig.html)
 
 [service和chkconfig命令的使用与区别](https://blog.csdn.net/sdb5858874/article/details/80484599)
+
+<Vssue title="chkconfig" />

@@ -85,3 +85,5 @@ Path `/sbin' mapped to mandir `/usr/share/man'.
 ---
 ## 参考文献
 [mandb(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/mandb.8.html)
+
+<Vssue title="mandb" />

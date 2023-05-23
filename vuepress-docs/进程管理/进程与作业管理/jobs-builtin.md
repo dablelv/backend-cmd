@@ -73,3 +73,5 @@ jobs -n
 [jobs(1) manual - linux.org](https://www.linux.org/docs/man1/jobs.html)
 
 [jobs(1p) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/jobs.1p.html)
+
+<Vssue title="jobs-builtin" />

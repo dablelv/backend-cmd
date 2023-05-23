@@ -53,3 +53,5 @@ ping localhost -a > /dev/null
 ---
 ## 参考文献
 [fg(1) manual - linux.org](https://www.linux.org/docs/man1/fg.html)
+
+<Vssue title="fg-builtin" />

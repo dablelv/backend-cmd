@@ -155,3 +155,5 @@ expect eof
 [expect(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/expect.1.html)
 
 [expect - 自动交互脚本](http://xstarcd.github.io/wiki/shell/expect.html)
+
+<Vssue title="expect" />

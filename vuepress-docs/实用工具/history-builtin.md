@@ -144,3 +144,5 @@ export HISTFILE=/root/history.txt           # 设置历史文件的存储目录
 
 ## 参考文献
 [bash(1) - Linux manual page - man7.org](https://www.man7.org/linux/man-pages/man1/bash.1.html)
+
+<Vssue title="history-builtin" />

@@ -84,3 +84,5 @@ sudo ldconfig
 [ldconfig(8) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man8/ldconfig.8.html)
 
 [Linux 命令大全.ldconfig命令](https://man.linuxde.net/ldconfig)
+
+<Vssue title="ldconfig" />

@@ -100,3 +100,5 @@ status：显示当前Telnet连接状态
 [telnet命令 - Linux命令大全](http://man.linuxde.net/telnet)
 
 [每天一个Linux命令（52）telnet命令](https://blog.csdn.net/dearbaba_8520/article/details/80781437)
+
+<Vssue title="telnet" />

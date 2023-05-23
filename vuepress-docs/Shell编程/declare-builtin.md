@@ -106,3 +106,5 @@ declare -i integer=666
 [Shell数组与关联数组](http://blog.csdn.net/sunnyyoona/article/details/51526312)
 
 Linux指令范例速查手册.马玉军.北京：科学出版社，2008.P178-P183
+
+<Vssue title="declare-builtin" />

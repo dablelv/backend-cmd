@@ -94,3 +94,5 @@ lvlv.com.com
 ---
 ## 参考文献
 [hostname(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/hostname.1.html)
+
+<Vssue title="hostname" />

@@ -326,3 +326,5 @@ SOA dns.baidu.com. sa.baidu.com. 2012145905 300 300 2592000 7200 from server 220
 [dig(1) manual - linux.org](https://www.linux.org/docs/man1/dig.html)
 
 [一步一步学Linux——dig命令(160)](https://blog.csdn.net/dengjin20104042056/article/details/99976430)
+
+<Vssue title="dig" />

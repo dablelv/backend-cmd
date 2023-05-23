@@ -146,3 +146,5 @@ expr 1 + \( 1 + 1 \)
 [expr(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/expr.1.html)
 
 [SHELL脚本--expr命令全解](https://www.cnblogs.com/f-ck-need-u/p/7231832.html)
+
+<Vssue title="expr" />

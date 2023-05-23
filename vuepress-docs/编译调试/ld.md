@@ -136,3 +136,5 @@ usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --
 [wikipedia.Linker (computing)](https://en.wikipedia.org/wiki/Linker_(computing))
 
 [使用ld命令链接目标文件生成可执行文件](https://dablelv.blog.csdn.net/article/details/88094902)
+
+<Vssue title="ld" />

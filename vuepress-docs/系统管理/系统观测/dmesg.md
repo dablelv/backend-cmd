@@ -128,3 +128,5 @@ watch "dmesg | tail"
 
 ## 参考文献
 [dmesg(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/dmesg.1.html)
+
+<Vssue title="dmesg" />

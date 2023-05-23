@@ -84,3 +84,5 @@ end
 [Linux命令大全.trap命令](http://man.linuxde.net/trap)
 
 [linux中的trap命令](https://blog.csdn.net/holandstone/article/details/6738769)
+
+<Vssue title="trap-builtin" />

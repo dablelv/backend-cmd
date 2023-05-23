@@ -25,7 +25,7 @@ module.exports = {
         repo: 'backend-cmd',
         clientId: '00e71455ec1a9e6ac134',
         clientSecret: '0acba82f43bdd51a186be62985a49cbc5c618ec9',
-        // autoCreateIssue: true,
+        autoCreateIssue: true,
       }
     ]
   ],
@@ -247,7 +247,7 @@ module.exports = {
       {
         title: 'Shell 编程',
         children: [
-          ['/Shell编程/builtin', 'builtin'],
+          ['/Shell编程/builtin-builtin', 'builtin-builtin'],
           ['/Shell编程/command-builtin', 'command-builtin'],
           ['/Shell编程/declare-builtin', 'declare-builtin'],
           ['/Shell编程/echo', 'echo'],

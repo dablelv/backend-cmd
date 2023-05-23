@@ -76,3 +76,5 @@ ls DIR | wc -l
 [wc(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/wc.1.html)
 
 [wc (Unix) - Wikipedia](https://en.wikipedia.org/wiki/Wc_(Unix))
+
+<Vssue title="wc" />

@@ -48,3 +48,5 @@ sum -s test.sh
 ---
 ## 参考文献
 [sum(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/sum.1.html)
+
+<Vssue title="sum" />

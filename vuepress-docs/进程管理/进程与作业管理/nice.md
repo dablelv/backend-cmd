@@ -38,3 +38,5 @@ F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
 ---
 ## 参考文献
 [nice(1) — Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/nice.1.html)
+
+<Vssue title="nice" />

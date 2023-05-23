@@ -56,3 +56,5 @@ RLF 字符(reverse line feed)是反向换行符，HRLF字符（half-reverse line
 [Linux 命令大全.col 命令](https://man.linuxde.net/col)
 
 [Stack Overflow.What is a reverse line feed](https://stackoverflow.com/questions/10638382/what-is-a-reverse-line-feed)
+
+<Vssue title="col" />

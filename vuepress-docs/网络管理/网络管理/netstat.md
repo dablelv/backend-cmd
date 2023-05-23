@@ -346,3 +346,5 @@ Path 表示套接字所在路径。
 [Linux命令之netstat](https://www.cnblogs.com/diantong/p/9669568.html)
 
 [TCP的三次握手与四次挥手（详解+动图）](https://blog.csdn.net/qzcsu/article/details/72861891)
+
+<Vssue title="netstat" />

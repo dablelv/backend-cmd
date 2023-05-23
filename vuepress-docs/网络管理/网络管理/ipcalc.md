@@ -76,3 +76,5 @@ NETWORK=192.168.1.0
 
 ## 参考文献
 [ipcalc(1) - Linux manual page - linux.org](https://www.linux.org/docs/man1/ipcalc.html)
+
+<Vssue title="ipcalc" />

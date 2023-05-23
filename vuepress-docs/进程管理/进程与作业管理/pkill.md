@@ -99,3 +99,5 @@ For more details see pgrep(1).
 [pkill(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/pkill.1.html)
 
 [【Linux随笔】Killall 、Kill 、Pkill三个命令之间的区别 - 腾讯云](https://cloud.tencent.com/developer/article/1847239)
+
+<Vssue title="pkill" />

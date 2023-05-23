@@ -84,3 +84,5 @@ visudo grammar version 46
 ---
 ## 参考文献
 [visudo(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/visudo.8.html)
+
+<Vssue title="visudo" />

@@ -38,3 +38,5 @@ vlelbad
 ---
 ## 参考文献
 [rev(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/rev.1.html)
+
+<Vssue title="rev" />

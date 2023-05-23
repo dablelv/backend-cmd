@@ -39,3 +39,5 @@ rmdir .* 2>/dev/null
 [rmdir(1) manual - linux.org](https://www.linux.org/docs/man1/rmdir.html)
 
 [Linux 命令大全.rmdir 命令](https://man.linuxde.net/rmdir)
+
+<Vssue title="rmdir" />

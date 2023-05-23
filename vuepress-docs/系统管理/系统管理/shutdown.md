@@ -98,3 +98,5 @@ shutdown +10
 [shutdown(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/shutdown.8.html)
 
 [Linux 關機指令（shutdown、halt 與 poweroff）教學與範例](https://blog.gtwang.org/linux/how-to-shutdown-linux/)
+
+<Vssue title="shutdown" />

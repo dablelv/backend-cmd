@@ -157,3 +157,5 @@ hexdump -e'/1 "%_ad %02X\n"' txt
 ---
 ## 参考文献
 [hexdump(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/hexdump.1.html)
+
+<Vssue title="hexdump" />

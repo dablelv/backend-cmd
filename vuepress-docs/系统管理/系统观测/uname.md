@@ -65,3 +65,5 @@ Linux TENCENT64.site 3.10.104-1-tlinux2_kvm_guest-0022.tl2 #1 SMP Wed Dec 14 10:
 [uname(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/uname.1.html)
 
 [uname命令 - Linux命令大全](http://man.linuxde.net/uname)
+
+<Vssue title="uname" />

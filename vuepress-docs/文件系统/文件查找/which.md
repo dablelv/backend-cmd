@@ -93,3 +93,5 @@ Report bugs to <which-bugs@gnu.org>.
 ---
 ## 参考文献
 [which(1) manual - linux.org](https://www.linux.org/docs/man1/which.html)
+
+<Vssue title="which" />

@@ -109,3 +109,5 @@ For complete documentation, run: info coreutils 'cksum invocation'
 ## 参考文献
 
 [cksum(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/cksum.1.html)
+
+<Vssue title="cksum" />

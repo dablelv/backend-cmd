@@ -191,3 +191,5 @@ xtrace|	-x |	为调试打开echo模式
 [bash(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/bash.1.html)
 
 [Bash 脚本set 命令教程- 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2017/11/bash-set.html)
+
+<Vssue title="set-builtin" />

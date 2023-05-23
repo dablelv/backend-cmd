@@ -53,3 +53,5 @@ pwd is a shell builtin
 ---
 ## 参考文献
 [command(1) - Linux manual page - linux.org](https://www.linux.org/docs/man1/command.html)
+
+<Vssue title="command-builtin" />

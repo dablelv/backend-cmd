@@ -330,3 +330,5 @@ bar.o. If bar.o refers to functions in `z', those functions may not be loaded.
 [How to link C++ object files with ld.stackoverflow](https://stackoverflow.com/questions/14163208/how-to-link-c-object-files-with-ld)
 
 程序员的自我修养[M].俞甲子，石凡，潘爱民.C2.1被隐藏了的过程.P38-P41
+
+<Vssue title="g++" />

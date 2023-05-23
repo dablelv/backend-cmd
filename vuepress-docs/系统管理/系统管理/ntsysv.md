@@ -38,3 +38,5 @@ ntsysv
 ---
 ## 参考文献
 [ntsysv(8) - Linux man page - Die.net](https://linux.die.net/man/8/ntsysv)
+
+<Vssue title="ntsysv" />

@@ -70,3 +70,5 @@ pwd: pwd [-LP]
 ---
 ## 参考文献
 [pwd(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/pwd.1.html)
+
+<Vssue title="pwd" />

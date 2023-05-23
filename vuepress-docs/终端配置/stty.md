@@ -246,3 +246,5 @@ stty igncr
 [stty(1p) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/stty.1p.html)
 
 [【Linux】一步一步学Linux——stty命令(243)](https://blog.csdn.net/dengjin20104042056/article/details/101099023)
+
+<Vssue title="stty" />

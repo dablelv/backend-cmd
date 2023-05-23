@@ -34,3 +34,5 @@ ifcfg eth0 delete 192.168.10.250/24
 ---
 ## 参考文献
 [ifcfg(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/ifcfg.8.html)
+
+<Vssue title="ifcfg" />

@@ -101,3 +101,5 @@ chage -m 0 -M 90 -W 15 tom
 ---
 ## 参考文献
 [chage(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/chage.1.html)
+
+<Vssue title="chage" />

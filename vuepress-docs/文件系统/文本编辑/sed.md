@@ -184,3 +184,5 @@ sed 的`-i`选项可以直接修改文件内容，这功能非常有帮助！举
 [Linux sed命令详解](http://www.cnblogs.com/ggjucheng/archive/2013/01/13/2856901.html)
 
 鸟哥.鸟哥的私房菜基础学习篇第三版[M].北京：人民邮电出版社，2010：357-360
+
+<Vssue title="sed" />

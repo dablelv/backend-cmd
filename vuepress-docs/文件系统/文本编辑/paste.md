@@ -92,3 +92,5 @@ bash-command-not-found:bash_completion.d:bashrc:blkid:bonobo-activation
 [paste(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/paste.1.html)
 
 [Shell基础之-paste命令](https://blog.csdn.net/wanglei_storage/article/details/48256311)
+
+<Vssue title="paste" />

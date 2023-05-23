@@ -97,3 +97,5 @@ shmid      owner      cpid       lpid
 [工作中常用的Linux命令：ipcs/ipcrm命令](https://www.cnblogs.com/MartinChentf/p/6057100.html)
 
 [ipcs命令详解——共享内存、消息队列、信号量定位利器](https://blog.csdn.net/dalongyes/article/details/50616162)
+
+<Vssue title="ipcs" />

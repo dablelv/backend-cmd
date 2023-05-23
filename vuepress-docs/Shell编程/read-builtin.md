@@ -111,3 +111,5 @@ done < file.txt
 [CSDN.详细解析Shell中的IFS变量](https://blog.csdn.net/guyongqiangx/article/details/80220434)
 
 [菜鸟教程.Linux read 命令](http://www.runoob.com/linux/linux-comm-read.html)
+
+<Vssue title="read-builtin" />

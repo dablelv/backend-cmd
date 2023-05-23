@@ -50,3 +50,5 @@ rename .html .php *
 [rename(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/rename.1.html)
 
 [Linux命令大全.rename命令](http://man.linuxde.net/rename)
+
+<Vssue title="rename" />

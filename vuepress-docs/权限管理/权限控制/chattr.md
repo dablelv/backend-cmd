@@ -70,3 +70,5 @@ chattr +a /data1/user_act.log
 [lsattr(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/lsattr.1.html)
 
 [（总结）Linux的chattr与lsattr命令详解](http://www.ha97.com/5172.html)
+
+<Vssue title="chattr" />

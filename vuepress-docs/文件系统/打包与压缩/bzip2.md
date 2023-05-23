@@ -80,3 +80,5 @@ bzip2 -tv /etc/passwd.bz2
 [bzip2(1) manual - linux.org](https://www.linux.org/docs/man1/bzip2.html)
 
 [bzip2 - Linux 命令手册](http://linux.51yip.com/search/bzip2)
+
+<Vssue title="bzip2" />

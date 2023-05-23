@@ -29,3 +29,5 @@ atrm 8
 ---
 ## 参考文献
 [atrm(1) - Linux man page - Die.net](https://linux.die.net/man/1/atrm)
+
+<Vssue title="atrm" />

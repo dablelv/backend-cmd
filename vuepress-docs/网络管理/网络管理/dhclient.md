@@ -103,3 +103,5 @@ DHCP 协议采用 UDP 作为传输协议，DHCP 客户端发送请求消息到 D
 [dhclient.(8) manual - linux.org](https://www.linux.org/docs/man8/dhclient.html)
 
 [什么是DHCP？为什么要用DHCP？ - 华为](https://info.support.huawei.com/info-finder/encyclopedia/zh/DHCP.html)
+
+<Vssue title="dhclient" />

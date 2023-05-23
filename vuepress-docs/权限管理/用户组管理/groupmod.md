@@ -66,3 +66,5 @@ heima:x:8888:
 [groupmod(8) manual](https://man7.org/linux/man-pages/man8/groupmod.8.html)
 
 [CSDN.【Linux】一步一步学Linux——groupmod命令(89)](https://blog.csdn.net/dengjin20104042056/article/details/98098710)
+
+<Vssue title="groupmod" />

@@ -55,3 +55,5 @@ $ dirname /
 ---
 ## 参考文献
 [dirname(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/dirname.1.html)
+
+<Vssue title="dirname" />

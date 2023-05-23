@@ -66,3 +66,5 @@ echo $?
 ---
 ## 参考文献
 [consoletype(1) - Linux manual page - linux.org](https://www.linux.org/docs/man1/consoletype.html)
+
+<Vssue title="consoletype" />

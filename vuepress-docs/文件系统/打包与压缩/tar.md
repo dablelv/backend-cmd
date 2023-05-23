@@ -106,3 +106,5 @@ tar -tzvf wang.tar.gz
 [tar(1) — Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/tar.1.html)
 
 [tar - wikipedia](https://zh.wikipedia.org/wiki/Tar)
+
+<Vssue title="tar" />

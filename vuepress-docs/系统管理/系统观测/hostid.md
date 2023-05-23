@@ -37,3 +37,5 @@ For complete documentation, run: info coreutils 'hostid invocation'
 ---
 ## 参考文献
 [hostid(1) — Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/hostid.1.html)
+
+<Vssue title="hostid" />

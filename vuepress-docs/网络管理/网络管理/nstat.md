@@ -1,5 +1,5 @@
 ## 1.命令简介
-nstat（network statistics）是一个简单的监视内核的 SNMP 计数器和网络接口状态的实用工具 。
+nstat（network statistics）是一个简单的监视内核的 SNMP 计数器和网络接口状态的实用工具。
 
 nstat 可以使用通配符指定一个或多个要过滤的内核的 SNMP（Simple Network Management Protocol） 计数器名称。
 
@@ -123,3 +123,5 @@ IpInReceives                    875                0.0
 
 ## 参考文献
 [nstat(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/nstat.8.html)
+
+<Vssue title="nstat" />

@@ -62,3 +62,5 @@ For complete documentation, run: info coreutils 'yes invocation'
 ---
 ## 参考文献
 [yes(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/yes.1.html)
+
+<Vssue title="yes" />

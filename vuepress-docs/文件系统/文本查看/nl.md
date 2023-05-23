@@ -120,3 +120,5 @@ nl -nrz -w4 -ba -i2 test.txt
 [nl(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/nl.1.html)
 
 [博客园.每天一个linux命令(11):nl命令](https://www.cnblogs.com/xqzt/p/5414547.html)
+
+<Vssue title="nl" />

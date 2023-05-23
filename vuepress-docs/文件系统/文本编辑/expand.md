@@ -57,3 +57,5 @@ expand -t 4 file
 [expand(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/expand.1.html)
 
 [缩进与对齐——正确地使用Tab和空格](https://blog.csdn.net/tonywearme/article/details/7061530)
+
+<Vssue title="expand" />

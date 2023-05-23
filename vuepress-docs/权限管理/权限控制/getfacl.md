@@ -118,3 +118,5 @@ other::r-x
 ---
 ## 参考文献
 [getfacl(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/getfacl.1.html)
+
+<Vssue title="getfacl" />

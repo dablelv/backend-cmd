@@ -80,3 +80,5 @@ pgrep -l -t pts/0
 ---
 ## 参考文献
 [pgrep(1) — Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/pgrep.1.html)
+
+<Vssue title="pgrep" />

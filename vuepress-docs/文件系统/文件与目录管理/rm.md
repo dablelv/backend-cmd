@@ -85,3 +85,5 @@ rm -rf .* 2>/dev/null
 [rm(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/rm.1.html)
 
 [Linux命令大全.rm命令](http://man.linuxde.net/rm)
+
+<Vssue title="rm" />

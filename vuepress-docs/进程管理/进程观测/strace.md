@@ -285,3 +285,5 @@ strace -p PID
 [strace - Linux 命令大全](https://man.linuxde.net/strace)
 
 [strace命令详解 - 马昌伟](https://www.cnblogs.com/machangwei-8/p/10388883.html)
+
+<Vssue title="strace" />

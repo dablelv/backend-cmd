@@ -98,3 +98,5 @@ usermod -f 3 tom
 [usermod(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/usermod.8.html)
 
 [CSDN.【Linux】一步一步学Linux——usermod命令(86)](https://blog.csdn.net/dengjin20104042056/article/details/97970997)
+
+<Vssue title="usermod" />

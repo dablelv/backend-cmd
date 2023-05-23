@@ -61,3 +61,5 @@ init 0
 
 ## 参考文献
 [init(8) - Linux man page - die.net](https://linux.die.net/man/8/init)
+
+<Vssue title="init" />

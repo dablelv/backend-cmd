@@ -106,3 +106,5 @@ printf "%d%%\n" 80
 
 ## 参考文献
 [printf(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/printf.1.html)
+
+<Vssue title="printf" />

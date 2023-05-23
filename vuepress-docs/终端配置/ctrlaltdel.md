@@ -40,3 +40,5 @@ ctrlaltdel soft
 
 ## 参考文献
 [ctrlaltdel(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/ctrlaltdel.8.html)
+
+<Vssue title="ctrlaltdel" />

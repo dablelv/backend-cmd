@@ -63,3 +63,5 @@ sudo 允许被授权的用户以其他用户或者管理员身份来执行命令
 [su(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/su.1.html)
 
 [sudo(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/sudo.8.html)
+
+<Vssue title="su" />
