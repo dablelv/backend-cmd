@@ -48,4 +48,4 @@ FILE：大写的内容为待替换内容（优先使用）
 CC BY-NC 4.0 Licensed | Copyright © 2023-present Dable Lv
 </p>
 
-<Vssue :title="前言" />
+<Vssue title="前言" />

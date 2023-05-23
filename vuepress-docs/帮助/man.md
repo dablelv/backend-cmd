@@ -251,4 +251,4 @@ man -w man
 
 [Linux 命令（89）—— less 命令](https://dablelv.blog.csdn.net/article/details/102967501)
 
-<Vssue :title="man" />
+<Vssue title="man" />

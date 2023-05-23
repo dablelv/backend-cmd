@@ -130,5 +130,3 @@ $ info -w info
 [info(1) manual - linux.org](https://www.linux.org/docs/man1/info.html)
 
 [Linux 命令大全.info 命令](https://man.linuxde.net/info)
-
-<Vssue :title="info" />
