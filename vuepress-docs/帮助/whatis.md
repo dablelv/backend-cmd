@@ -110,4 +110,4 @@ whatis (1)           - display manual page descriptions
 
 [apropos(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/apropos.1.html)
 
-<Vssue/>
+<Vssue :title="$title" />
