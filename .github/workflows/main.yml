@@ -10,9 +10,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
     - name: Set up Node
       uses: actions/setup-node@v3
       with:
         node-version: 16
+
     - name: Build and Deploy
       run: build.sh
