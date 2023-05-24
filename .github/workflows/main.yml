@@ -29,7 +29,5 @@ jobs:
         git config --global user.email "lovelvqingqing@gmail.com"
         git config --global user.name "Dable Lv"
         git add -A
-        echo what:${{ secrets.ACCESS_TOKEN }}
-        echo "start push"
         git commit -m "build:auto build and deploy"
         git push
