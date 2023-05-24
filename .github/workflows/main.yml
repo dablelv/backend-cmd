@@ -10,24 +10,12 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v3
-
-    - name: Set up Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-
-    - name: Install Dependent Node Pkgs
-      run: npm install
-    
-    - name: Build
-      run: chmod +x ./build.sh && ./build.sh
-
     - name: Deploy
       run: |-
         git config --global user.email "lovelvqingqing@gmail.com"
-        git config --global user.name "DableLv"
+        git config --global user.name "Dable Lv"
         git add -A
         git commit -m "build:auto build and deploy"
+
+        echo ${{secrets.ACCESS_TOKEN}}
         git push https://${{secrets.ACCESS_TOKEN}}@github.com/dablelv/backend-cmd.git
