@@ -17,8 +17,7 @@ jobs:
         git config --global user.email "lovelvqingqing@gmail.com"
         git config --global user.name "Dable Lv"
         git add -A
-        git commit -m "build:auto build and deploy"
-
         echo token:${{secrets.ACCESS_TOKEN}}
         echo "start push"
+        git commit -m "build:auto build and deploy"
         git push https://${{secrets.ACCESS_TOKEN}}@github.com/dablelv/backend-cmd.git
