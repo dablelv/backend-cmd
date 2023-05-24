@@ -32,4 +32,4 @@ jobs:
         echo what:${{ secrets.ACCESS_TOKEN }}
         echo "start push"
         git commit -m "build:auto build and deploy"
-        git push https://${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+        git push
