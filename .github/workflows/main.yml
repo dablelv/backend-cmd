@@ -24,7 +24,7 @@ jobs:
     - name: Build
       run: chmod +x ./build.sh && ./build.sh
 
-    - name: Deploy
+    - name: Commit and Push
       run: |-
         git config --global user.email "lovelvqingqing@gmail.com"
         git config --global user.name "Dable Lv"
@@ -32,4 +32,4 @@ jobs:
         echo what:${{ secrets.ACCESS_TOKEN }}
         echo "start push"
         git commit -m "build:auto build and deploy"
-        git push https://${{ secrets.ACCESS_TOKEN }}@github.com/dablelv/backend-cmd.git
+        git push https://${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
