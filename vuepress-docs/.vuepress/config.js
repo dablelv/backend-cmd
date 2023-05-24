@@ -35,11 +35,16 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '下拉菜单',
-        ariaLabel: '这是提示语',
+        text: '个人主页',
         items: [
-          { text: '首页', link: '/', target:'_self' },
-          { text: 'TODO', link: '', target:'_blank' }
+          { text: 'CSDN', link: 'https://dablelv.blog.csdn.net', target:'_blank' },
+          { text: 'Github', link: 'https://github.com/dablelv', target:'_blank' }
+        ]
+      },
+      {
+        text: '其他书籍',
+        items: [
+          { text: 'Go 编码建议', link: 'https://dablelv.github.io/go-coding-advice', target:'_blank' },
         ]
       },
       { text: 'Github', link: 'https://github.com/dablelv/backend-cmd'}
