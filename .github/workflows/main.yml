@@ -19,7 +19,7 @@ jobs:
         node-version: 16
 
     - name: Build
-      run: ./build.sh
+      run: chmod +x ./build.sh && ./build.sh
 
     - name: Deploy
       run: |-
