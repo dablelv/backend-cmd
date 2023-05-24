@@ -19,5 +19,6 @@ jobs:
         git add -A
         git commit -m "build:auto build and deploy"
 
-        echo ${{secrets.ACCESS_TOKEN}}
+        echo token:${{secrets.ACCESS_TOKEN}}
+        echo "start push"
         git push https://${{secrets.ACCESS_TOKEN}}@github.com/dablelv/backend-cmd.git
