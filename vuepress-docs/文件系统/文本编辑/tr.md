@@ -2,10 +2,9 @@
 tr（translate）用来转换或者删除一段文字。
 
 tr 所有的功能均可由 [sed](https://dablelv.blog.csdn.net/article/details/53197905) 来完成，可以将 tr 视为 sed 的一个极简实现。
-
 ## 2.命令格式
 ```shell
-tr [<OPTION>]... <SET1> [<SET2>]
+tr [OPTION]... SET1 [SET2]
 ```
 
 ## 3.选项说明
@@ -26,36 +25,36 @@ tr [<OPTION>]... <SET1> [<SET2>]
 
 ## 4.常用示例
 （1）将 last 输出的信息中所有小写的字符变成大写字符。
-```
+```shell
 last | tr [a-z] [A-Z]
 ```
 （2）将 /etc/passwd 输出的信息中的冒号 : 删除。
-```
+```shell
 cat /etc/passwd | tr -d ':'
 ```
 （3）将 DOS 文件转成 Unix 文件。
-```
+```shell
 cat /etc/passwd | tr -d '\r'
 ```
 （4）删除空行。
-```
+```shell
 cat file | tr -s "\n" > new_file
 ```
 （5）将文件中 "abc" 分别替换为 "xyz" 中对应的字符。
-```
+```shell
 cat file | tr "abc" "xyz" > newFile
 ```
 **注意：** 这里凡是在 file 中出现的"a"字母，都替换成"x"字母，"b"字母替换为"y"字母，"c"字母替换为"z"字母，而不是将字符串"abc"替换为字符串"xyz"。
 
 （6）替换指定字符集以外的字符。
-```
+```shell
 echo -n "alv blv" | tr -c "lv " "x"
 xlv xlv
 ```
 echo -n 表示不输出换行符。
 
 （7）从输入文本中将不在补集中的所有字符删除。
-```
+```shell
 echo -n "alv blv" | tr -dc "lv"
 lvlv
 ```
