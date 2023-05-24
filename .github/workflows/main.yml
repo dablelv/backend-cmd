@@ -18,6 +18,9 @@ jobs:
       with:
         node-version: 16
 
+    - name: Install Dependent Node Pkgs
+      run: npm install
+    
     - name: Build
       run: chmod +x ./build.sh && ./build.sh
 
@@ -26,4 +29,3 @@ jobs:
         git add -A
         git commit -m "build:auto build and deploy"
         git push
-      
