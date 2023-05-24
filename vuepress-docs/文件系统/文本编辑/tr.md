@@ -1,5 +1,5 @@
 ## 1.命令简介
-tr（translate）用来转换或者删除一段文字。
+tr（translate）用来转换或删除一段文字。
 
 tr 所有的功能均可由 [sed](https://dablelv.blog.csdn.net/article/details/53197905) 来完成，可以将 tr 视为 sed 的一个极简实现。
 ## 2.命令格式
@@ -9,10 +9,10 @@ tr [OPTION]... SET1 [SET2]
 
 ## 3.选项说明
 ```
--c, -C, --complement <SET1> [<SET2>]
+-c, -C, --complement SET1 [SET2]
 	将字符集 SET1 以外的其他字符删除或者转换为字符集 SET2 中的最后一个字符（如果你指定了多个字符的话）。
 -d, --delete
-	删除 SET1 这个字符串。
+	删除指定字符集中的字符。
 -s, --squeeze-repeats
 	如果 SET1 中的字符连续出现多次，压缩重复的字符，只保留一个。
 -t, --truncate-set1
