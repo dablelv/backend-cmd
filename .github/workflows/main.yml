@@ -28,4 +28,4 @@ jobs:
       run: |-
         git add -A
         git commit -m "build:auto build and deploy"
-        git push
+        git push https://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@github.com/dablelv/backend-cmd.git
