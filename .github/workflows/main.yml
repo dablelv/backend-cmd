@@ -18,5 +18,12 @@ jobs:
       with:
         node-version: 16
 
-    - name: Build and Deploy
-      run: build.sh
+    - name: Build
+      run: ./build.sh
+
+    - name: Deploy
+      run: |-
+        git add -A
+        git commit -m "build:auto build and deploy"
+        git push
+      
