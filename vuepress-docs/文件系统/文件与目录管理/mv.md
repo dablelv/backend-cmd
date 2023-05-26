@@ -66,7 +66,7 @@ mv /usr/men/* .
 
 ---
 ## 参考文献
-[mv(1) manual](http://man7.org/linux/man-pages/man1/mv.1.html)
+[mv(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/mv.1.html)
 
 [Linux命令大全.mv命令](http://man.linuxde.net/mv)
 
