@@ -352,7 +352,6 @@ module.exports = {
               ['/权限管理/用户管理/ac', 'ac'],
               ['/权限管理/用户管理/adduser', 'adduser'],
               ['/权限管理/用户管理/chage', 'chage'],
-              ['/权限管理/用户管理/change', 'change'],
               ['/权限管理/用户管理/id', 'id'],
               ['/权限管理/用户管理/last', 'last'],
               ['/权限管理/用户管理/lastb', 'lastb'],
