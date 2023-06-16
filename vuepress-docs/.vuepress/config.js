@@ -109,6 +109,7 @@ module.exports = {
               ['/文件系统/文件与目录查看/file', 'file'],
               ['/文件系统/文件与目录查看/ls', 'ls'],
               ['/文件系统/文件与目录查看/md5sum', 'md5sum'],
+              ['/文件系统/文件与目录查看/sha1sum', 'sha1sum'],
               ['/文件系统/文件与目录查看/pwd', 'pwd'],
               ['/文件系统/文件与目录查看/realpath', 'realpath'],
               ['/文件系统/文件与目录查看/stat', 'stat'],
