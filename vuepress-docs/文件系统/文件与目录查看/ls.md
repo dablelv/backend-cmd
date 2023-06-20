@@ -125,9 +125,10 @@ ls [OPTION]... [FILE]...
 	显示版本信息
 ```
 ## 4.常用示例
+
 （1）以长格式显示隐藏文件，包括当前目录和父级目录。
-```shell
-[dablelv@TENCENT64 ~]$ ll -a
+```bash
+ll -a
 total 148
 drwxr-x---  8 dablelv dablelv  4096 Nov 23 23:56 .
 drwxr-xr-x 22 root    root     4096 Jun  7 15:15 ..
@@ -136,19 +137,19 @@ drwxr-xr-x 22 root    root     4096 Jun  7 15:15 ..
 -rw-------  1 dablelv dablelv   595 Nov 24 16:57 .lesshst
 drwx------  2 dablelv dablelv  4096 Jul 23 20:42 .ssh
 ```
-第一列：文件类型与权限；
-第二列：硬链接数；
-第三列：属主；
-第四列：文件属组，注意不是属主所在的用户组；
-第五列：大小，单位为字节；
-第六列：创建或最后的内容修改时间；
+第一列：文件类型与权限。
+第二列：硬链接数。
+第三列：属主。
+第四列：文件属组，注意不是属主所在的用户组。
+第五列：大小，单位为字节。
+第六列：创建或最后的内容修改时间。
 第七列：文件名或目录名。
 
 输出结构示意图如下：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190923160618968.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9kYWJsZWx2LmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
 
 实际上 ll 是`ls -l`的别称，使用 alias 命令可以查看相关命令的别称。
-```shell
+```bash
 [dablelv@TENCENT64 ~]$ alias
 alias l.='ls -d .* --color=auto'
 alias ll='ls -l --color=auto'
@@ -158,7 +159,7 @@ alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-ti
 ```
 
 （2）以指定的文件大小类型展示。
-```shell
+```bash
 [dablelv@TENCENT64 ~]$ ll --block-size=K
 total 24K
 drwxrwxr-x 10 dablelv dablelv 4K Nov 21 15:08 code_root
@@ -169,14 +170,14 @@ drwxrwxr-x 10 dablelv dablelv 4K Nov 21 15:08 code_root
 drwxrwxrwx  2 dablelv dablelv 4K Nov 21 00:29 new
 drwxrwxr-x  6 dablelv dablelv 4K Nov 21 00:24 test
 ```
-（3）ls 命令按照修改日期递减排序
-```shell
+（3）按照修改日期降序排列。
+```bash
 ls -t
 ```
 如果想按照修改日期递增的话使用`ls -rt` 就行了。
 
-（4）ls 命令按照文件大小递减排序。
-```shell
+（4）按照文件大小降序排列。
+```bash
 # 递减排序
 ls -Sh
 
