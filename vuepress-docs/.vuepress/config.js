@@ -3,7 +3,8 @@ module.exports = {
   title: "后台开发命令 365",
   description: "后台开发常用命令介绍",
   head: [
-    ['meta',{name: 'referrer',content: 'no-referrer'}]
+    ['meta',{name: 'referrer',content: 'no-referrer'}],
+    ['link',{rel: 'icon', href: '/favicon.png'}]
   ],
   plugins: [
     [
@@ -31,7 +32,7 @@ module.exports = {
   ],
   themeConfig: {
     lastUpdated: 'Last Updated',
-    logo: "https://excalidraw.com/apple-touch-icon.png",
+    logo: "",
     nav: [
       { text: '首页', link: '/' },
       {
