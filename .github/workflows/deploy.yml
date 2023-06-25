@@ -18,13 +18,13 @@ jobs:
       with:
         node-version: 16
 
-    - name: Install Dependent Node Pkgs
+    - name: Install dependent node pkgs
       run: npm install
     
     - name: Build
       run: chmod +x ./build.sh && ./build.sh
 
-    - name: Commit and Push
+    - name: Commit and push
       run: |-
         git config --global user.email "lovelvqingqing@gmail.com"
         git config --global user.name "Dable Lv"
