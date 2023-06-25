@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>后台开发命令 365</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/backend-cmd/favicon.png">
+    <meta name="description" content="后台开发常用命令介绍">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/backend-cmd/assets/css/0.styles.6608425b.css" as="style"><link rel="preload" href="/backend-cmd/assets/js/app.d9490acc.js" as="script"><link rel="preload" href="/backend-cmd/assets/js/2.08ee4580.js" as="script"><link rel="preload" href="/backend-cmd/assets/js/151.c0a60d92.js" as="script"><link rel="prefetch" href="/backend-cmd/assets/js/10.3fd50d48.js"><link rel="prefetch" href="/backend-cmd/assets/js/100.4a5ce293.js"><link rel="prefetch" href="/backend-cmd/assets/js/101.c6b7074f.js"><link rel="prefetch" href="/backend-cmd/assets/js/102.8031f6b0.js"><link rel="prefetch" href="/backend-cmd/assets/js/103.fe85cafb.js"><link rel="prefetch" href="/backend-cmd/assets/js/104.32749cf1.js"><link rel="prefetch" href="/backend-cmd/assets/js/105.2128987a.js"><link rel="prefetch" href="/backend-cmd/assets/js/106.c4bf7675.js"><link rel="prefetch" href="/backend-cmd/assets/js/107.732b8d6e.js"><link rel="prefetch" href="/backend-cmd/assets/js/108.7cd1f2d6.js"><link rel="prefetch" href="/backend-cmd/assets/js/109.44ef34fa.js"><link rel="prefetch" href="/backend-cmd/assets/js/11.7412dbb5.js"><link rel="prefetch" href="/backend-cmd/assets/js/110.b21b7308.js"><link rel="prefetch" href="/backend-cmd/assets/js/111.37176584.js"><link rel="prefetch" href="/backend-cmd/assets/js/112.db15a109.js"><link rel="prefetch" href="/backend-cmd/assets/js/113.7345d2a3.js"><link rel="prefetch" href="/backend-cmd/assets/js/114.c158618c.js"><link rel="prefetch" href="/backend-cmd/assets/js/115.b462a0d4.js"><link rel="prefetch" href="/backend-cmd/assets/js/116.09c37e37.js"><link rel="prefetch" href="/backend-cmd/assets/js/117.5a939af1.js"><link rel="prefetch" href="/backend-cmd/assets/js/118.aa75fb03.js"><link rel="prefetch" href="/backend-cmd/assets/js/119.beb4a6fa.js"><link rel="prefetch" href="/backend-cmd/assets/js/12.c4e5e260.js"><link rel="prefetch" href="/backend-cmd/assets/js/120.bc02e68a.js"><link rel="prefetch" href="/backend-cmd/assets/js/121.aa4bf34b.js"><link rel="prefetch" href="/backend-cmd/assets/js/122.fd79df6a.js"><link rel="prefetch" href="/backend-cmd/assets/js/123.4a43f0a6.js"><link rel="prefetch" href="/backend-cmd/assets/js/124.4ab1dc03.js"><link rel="prefetch" href="/backend-cmd/assets/js/125.55939223.js"><link rel="prefetch" href="/backend-cmd/assets/js/126.25f9c22e.js"><link rel="prefetch" href="/backend-cmd/assets/js/127.ad9ac543.js"><link rel="prefetch" href="/backend-cmd/assets/js/128.918607da.js"><link rel="prefetch" href="/backend-cmd/assets/js/129.c8be7e42.js"><link rel="prefetch" href="/backend-cmd/assets/js/13.c67450d5.js"><link rel="prefetch" href="/backend-cmd/assets/js/130.c45e02f0.js"><link rel="prefetch" href="/backend-cmd/assets/js/131.725a079b.js"><link rel="prefetch" href="/backend-cmd/assets/js/132.9b9e3f30.js"><link rel="prefetch" href="/backend-cmd/assets/js/133.8a8dfb99.js"><link rel="prefetch" href="/backend-cmd/assets/js/134.9fa951a4.js"><link rel="prefetch" href="/backend-cmd/assets/js/135.f155d79a.js"><link rel="prefetch" href="/backend-cmd/assets/js/136.397aae06.js"><link rel="prefetch" href="/backend-cmd/assets/js/137.51ca0b35.js"><link rel="prefetch" href="/backend-cmd/assets/js/138.185bb2d3.js"><link rel="prefetch" href="/backend-cmd/assets/js/139.7419993d.js"><link rel="prefetch" href="/backend-cmd/assets/js/14.42f2e7b1.js"><link rel="prefetch" href="/backend-cmd/assets/js/140.780c28fa.js"><link rel="prefetch" href="/backend-cmd/assets/js/141.bb3c75e9.js"><link rel="prefetch" href="/backend-cmd/assets/js/142.f96a99dd.js"><link rel="prefetch" href="/backend-cmd/assets/js/143.1fe12973.js"><link rel="prefetch" href="/backend-cmd/assets/js/144.7ad6227b.js"><link rel="prefetch" href="/backend-cmd/assets/js/145.e5347c51.js"><link rel="prefetch" href="/backend-cmd/assets/js/146.ad8248af.js"><link rel="prefetch" href="/backend-cmd/assets/js/147.eaeb8fd8.js"><link rel="prefetch" href="/backend-cmd/assets/js/148.b4d6a5b4.js"><link rel="prefetch" href="/backend-cmd/assets/js/149.0b96c3f0.js"><link rel="prefetch" href="/backend-cmd/assets/js/15.58042256.js"><link rel="prefetch" href="/backend-cmd/assets/js/150.12ed5133.js"><link rel="prefetch" href="/backend-cmd/assets/js/152.6546611c.js"><link rel="prefetch" href="/backend-cmd/assets/js/153.7c073b91.js"><link rel="prefetch" href="/backend-cmd/assets/js/154.e596b279.js"><link rel="prefetch" href="/backend-cmd/assets/js/155.abc79d45.js"><link rel="prefetch" href="/backend-cmd/assets/js/156.5112e6c0.js"><link rel="prefetch" href="/backend-cmd/assets/js/157.9ae069d4.js"><link rel="prefetch" href="/backend-cmd/assets/js/158.5626cfc9.js"><link rel="prefetch" href="/backend-cmd/assets/js/159.6f5a26b0.js"><link rel="prefetch" href="/backend-cmd/assets/js/16.1a7f30b3.js"><link rel="prefetch" href="/backend-cmd/assets/js/160.87d5a898.js"><link rel="prefetch" href="/backend-cmd/assets/js/161.941d7ee4.js"><link rel="prefetch" href="/backend-cmd/assets/js/162.5f1895df.js"><link rel="prefetch" href="/backend-cmd/assets/js/163.b730c08e.js"><link rel="prefetch" href="/backend-cmd/assets/js/164.1dc02ef8.js"><link rel="prefetch" href="/backend-cmd/assets/js/165.75d92c08.js"><link rel="prefetch" href="/backend-cmd/assets/js/166.5b7e9fc2.js"><link rel="prefetch" href="/backend-cmd/assets/js/167.bd396d7a.js"><link rel="prefetch" href="/backend-cmd/assets/js/168.d25fa30e.js"><link rel="prefetch" href="/backend-cmd/assets/js/169.945c7b44.js"><link rel="prefetch" href="/backend-cmd/assets/js/17.b04e2988.js"><link rel="prefetch" href="/backend-cmd/assets/js/170.d5a680c0.js"><link rel="prefetch" href="/backend-cmd/assets/js/171.e03333bf.js"><link rel="prefetch" href="/backend-cmd/assets/js/172.ba4307b2.js"><link rel="prefetch" href="/backend-cmd/assets/js/173.cb4fa5c7.js"><link rel="prefetch" href="/backend-cmd/assets/js/174.72663d94.js"><link rel="prefetch" href="/backend-cmd/assets/js/175.36311e46.js"><link rel="prefetch" href="/backend-cmd/assets/js/176.6f2bb1cb.js"><link rel="prefetch" href="/backend-cmd/assets/js/177.fc5e23fe.js"><link rel="prefetch" href="/backend-cmd/assets/js/178.935e369f.js"><link rel="prefetch" href="/backend-cmd/assets/js/179.b0f4fb84.js"><link rel="prefetch" href="/backend-cmd/assets/js/18.c1105cb5.js"><link rel="prefetch" href="/backend-cmd/assets/js/180.adb8ac22.js"><link rel="prefetch" href="/backend-cmd/assets/js/181.fd055b72.js"><link rel="prefetch" href="/backend-cmd/assets/js/182.bf17fea9.js"><link rel="prefetch" href="/backend-cmd/assets/js/183.640319cd.js"><link rel="prefetch" href="/backend-cmd/assets/js/184.a4711680.js"><link rel="prefetch" href="/backend-cmd/assets/js/185.fdf1285a.js"><link rel="prefetch" href="/backend-cmd/assets/js/186.13322c52.js"><link rel="prefetch" href="/backend-cmd/assets/js/187.03620cf8.js"><link rel="prefetch" href="/backend-cmd/assets/js/188.911f5ba9.js"><link rel="prefetch" href="/backend-cmd/assets/js/189.d94a663f.js"><link rel="prefetch" href="/backend-cmd/assets/js/19.1aaace09.js"><link rel="prefetch" href="/backend-cmd/assets/js/190.4f527a7a.js"><link rel="prefetch" href="/backend-cmd/assets/js/191.6a1738ba.js"><link rel="prefetch" href="/backend-cmd/assets/js/192.507a0245.js"><link rel="prefetch" href="/backend-cmd/assets/js/193.623de4db.js"><link rel="prefetch" href="/backend-cmd/assets/js/194.3e0d5da0.js"><link rel="prefetch" href="/backend-cmd/assets/js/195.01c93928.js"><link rel="prefetch" href="/backend-cmd/assets/js/196.9add4d72.js"><link rel="prefetch" href="/backend-cmd/assets/js/197.76eec49c.js"><link rel="prefetch" href="/backend-cmd/assets/js/198.9dbdc1de.js"><link rel="prefetch" href="/backend-cmd/assets/js/199.2701a49c.js"><link rel="prefetch" href="/backend-cmd/assets/js/20.23481c53.js"><link rel="prefetch" href="/backend-cmd/assets/js/200.f0f7e712.js"><link rel="prefetch" href="/backend-cmd/assets/js/201.8e5f2efb.js"><link rel="prefetch" href="/backend-cmd/assets/js/202.c7c8ae99.js"><link rel="prefetch" href="/backend-cmd/assets/js/203.ae31d4d2.js"><link rel="prefetch" href="/backend-cmd/assets/js/204.3cc20395.js"><link rel="prefetch" href="/backend-cmd/assets/js/205.92beb3dd.js"><link rel="prefetch" href="/backend-cmd/assets/js/206.3ee04118.js"><link rel="prefetch" href="/backend-cmd/assets/js/207.4b82ae10.js"><link rel="prefetch" href="/backend-cmd/assets/js/208.bbce9dee.js"><link rel="prefetch" href="/backend-cmd/assets/js/209.fc4837b0.js"><link rel="prefetch" href="/backend-cmd/assets/js/21.1abbee35.js"><link rel="prefetch" href="/backend-cmd/assets/js/210.779e1bf7.js"><link rel="prefetch" href="/backend-cmd/assets/js/211.06c30e5d.js"><link rel="prefetch" href="/backend-cmd/assets/js/212.7c6659ce.js"><link rel="prefetch" href="/backend-cmd/assets/js/213.1cac4d44.js"><link rel="prefetch" href="/backend-cmd/assets/js/214.e4ac8064.js"><link rel="prefetch" href="/backend-cmd/assets/js/215.35ff5b11.js"><link rel="prefetch" href="/backend-cmd/assets/js/216.48ee261e.js"><link rel="prefetch" href="/backend-cmd/assets/js/217.4861e084.js"><link rel="prefetch" href="/backend-cmd/assets/js/218.3cb17667.js"><link rel="prefetch" href="/backend-cmd/assets/js/219.be1bc546.js"><link rel="prefetch" href="/backend-cmd/assets/js/22.9c1e2885.js"><link rel="prefetch" href="/backend-cmd/assets/js/220.70e7bda7.js"><link rel="prefetch" href="/backend-cmd/assets/js/221.5082a02e.js"><link rel="prefetch" href="/backend-cmd/assets/js/222.33829dd1.js"><link rel="prefetch" href="/backend-cmd/assets/js/223.e8f53eb5.js"><link rel="prefetch" href="/backend-cmd/assets/js/224.32911dff.js"><link rel="prefetch" href="/backend-cmd/assets/js/225.7add8634.js"><link rel="prefetch" href="/backend-cmd/assets/js/226.dd573eda.js"><link rel="prefetch" href="/backend-cmd/assets/js/227.2a244db4.js"><link rel="prefetch" href="/backend-cmd/assets/js/228.e6f2d798.js"><link rel="prefetch" href="/backend-cmd/assets/js/229.81d2fc99.js"><link rel="prefetch" href="/backend-cmd/assets/js/23.ab73c4d2.js"><link rel="prefetch" href="/backend-cmd/assets/js/230.a92b1e8a.js"><link rel="prefetch" href="/backend-cmd/assets/js/231.27d1dbde.js"><link rel="prefetch" href="/backend-cmd/assets/js/232.09ee6e44.js"><link rel="prefetch" href="/backend-cmd/assets/js/233.57f62175.js"><link rel="prefetch" href="/backend-cmd/assets/js/234.20f19eea.js"><link rel="prefetch" href="/backend-cmd/assets/js/235.9506f3ed.js"><link rel="prefetch" href="/backend-cmd/assets/js/236.05ab28e2.js"><link rel="prefetch" href="/backend-cmd/assets/js/237.f24bc066.js"><link rel="prefetch" href="/backend-cmd/assets/js/238.886fd775.js"><link rel="prefetch" href="/backend-cmd/assets/js/239.1075e23c.js"><link rel="prefetch" href="/backend-cmd/assets/js/24.ae373333.js"><link rel="prefetch" href="/backend-cmd/assets/js/240.8a108243.js"><link rel="prefetch" href="/backend-cmd/assets/js/241.dc41217a.js"><link rel="prefetch" href="/backend-cmd/assets/js/242.1ae16a92.js"><link rel="prefetch" href="/backend-cmd/assets/js/243.fded0300.js"><link rel="prefetch" href="/backend-cmd/assets/js/244.0eaebbb8.js"><link rel="prefetch" href="/backend-cmd/assets/js/245.9f4e767d.js"><link rel="prefetch" href="/backend-cmd/assets/js/246.4ef6d9f0.js"><link rel="prefetch" href="/backend-cmd/assets/js/247.430455f9.js"><link rel="prefetch" href="/backend-cmd/assets/js/248.0d7167e0.js"><link rel="prefetch" href="/backend-cmd/assets/js/249.7b79ae4c.js"><link rel="prefetch" href="/backend-cmd/assets/js/25.a5885eb4.js"><link rel="prefetch" href="/backend-cmd/assets/js/250.d008d124.js"><link rel="prefetch" href="/backend-cmd/assets/js/251.c918a0e5.js"><link rel="prefetch" href="/backend-cmd/assets/js/252.99ba2205.js"><link rel="prefetch" href="/backend-cmd/assets/js/253.3dbc6011.js"><link rel="prefetch" href="/backend-cmd/assets/js/254.ba14178e.js"><link rel="prefetch" href="/backend-cmd/assets/js/255.70329495.js"><link rel="prefetch" href="/backend-cmd/assets/js/256.7caf09f6.js"><link rel="prefetch" href="/backend-cmd/assets/js/257.f205d194.js"><link rel="prefetch" href="/backend-cmd/assets/js/258.25327f8a.js"><link rel="prefetch" href="/backend-cmd/assets/js/259.a57223a9.js"><link rel="prefetch" href="/backend-cmd/assets/js/26.58f95260.js"><link rel="prefetch" href="/backend-cmd/assets/js/260.e16aff22.js"><link rel="prefetch" href="/backend-cmd/assets/js/261.20a4bdad.js"><link rel="prefetch" href="/backend-cmd/assets/js/262.7138904e.js"><link rel="prefetch" href="/backend-cmd/assets/js/263.38535e7e.js"><link rel="prefetch" href="/backend-cmd/assets/js/264.cdb80447.js"><link rel="prefetch" href="/backend-cmd/assets/js/265.1cabdc9f.js"><link rel="prefetch" href="/backend-cmd/assets/js/266.fb7bf64b.js"><link rel="prefetch" href="/backend-cmd/assets/js/267.09b2ed3e.js"><link rel="prefetch" href="/backend-cmd/assets/js/268.a0e23402.js"><link rel="prefetch" href="/backend-cmd/assets/js/269.7dbfb760.js"><link rel="prefetch" href="/backend-cmd/assets/js/27.d05635b9.js"><link rel="prefetch" href="/backend-cmd/assets/js/28.0af33d1f.js"><link rel="prefetch" href="/backend-cmd/assets/js/29.4e5c4127.js"><link rel="prefetch" href="/backend-cmd/assets/js/3.5c1aba3c.js"><link rel="prefetch" href="/backend-cmd/assets/js/30.69ecf715.js"><link rel="prefetch" href="/backend-cmd/assets/js/31.abd94c4a.js"><link rel="prefetch" href="/backend-cmd/assets/js/32.b9de3979.js"><link rel="prefetch" href="/backend-cmd/assets/js/33.a69ce7e9.js"><link rel="prefetch" href="/backend-cmd/assets/js/34.f5a1c5d7.js"><link rel="prefetch" href="/backend-cmd/assets/js/35.f94fbb4a.js"><link rel="prefetch" href="/backend-cmd/assets/js/36.ee7809b4.js"><link rel="prefetch" href="/backend-cmd/assets/js/37.929bf4f2.js"><link rel="prefetch" href="/backend-cmd/assets/js/38.51f67bbc.js"><link rel="prefetch" href="/backend-cmd/assets/js/39.deb75689.js"><link rel="prefetch" href="/backend-cmd/assets/js/4.ccd1ddcb.js"><link rel="prefetch" href="/backend-cmd/assets/js/40.dce5e506.js"><link rel="prefetch" href="/backend-cmd/assets/js/41.9c87b0a6.js"><link rel="prefetch" href="/backend-cmd/assets/js/42.88b6da06.js"><link rel="prefetch" href="/backend-cmd/assets/js/43.e9129b71.js"><link rel="prefetch" href="/backend-cmd/assets/js/44.07da43e2.js"><link rel="prefetch" href="/backend-cmd/assets/js/45.ebff7c46.js"><link rel="prefetch" href="/backend-cmd/assets/js/46.11d0740a.js"><link rel="prefetch" href="/backend-cmd/assets/js/47.abc5fa62.js"><link rel="prefetch" href="/backend-cmd/assets/js/48.ca6238e6.js"><link rel="prefetch" href="/backend-cmd/assets/js/49.018b7481.js"><link rel="prefetch" href="/backend-cmd/assets/js/5.56ae9307.js"><link rel="prefetch" href="/backend-cmd/assets/js/50.ba6f1f61.js"><link rel="prefetch" href="/backend-cmd/assets/js/51.684caca2.js"><link rel="prefetch" href="/backend-cmd/assets/js/52.7e249dbc.js"><link rel="prefetch" href="/backend-cmd/assets/js/53.093cf391.js"><link rel="prefetch" href="/backend-cmd/assets/js/54.56000b8a.js"><link rel="prefetch" href="/backend-cmd/assets/js/55.a62573b2.js"><link rel="prefetch" href="/backend-cmd/assets/js/56.72525ab5.js"><link rel="prefetch" href="/backend-cmd/assets/js/57.888a1255.js"><link rel="prefetch" href="/backend-cmd/assets/js/58.96ed9197.js"><link rel="prefetch" href="/backend-cmd/assets/js/59.cf5efa9a.js"><link rel="prefetch" href="/backend-cmd/assets/js/6.f78bc038.js"><link rel="prefetch" href="/backend-cmd/assets/js/60.7107891f.js"><link rel="prefetch" href="/backend-cmd/assets/js/61.f0fb7504.js"><link rel="prefetch" href="/backend-cmd/assets/js/62.e3e0d9fb.js"><link rel="prefetch" href="/backend-cmd/assets/js/63.8729312f.js"><link rel="prefetch" href="/backend-cmd/assets/js/64.563ec3b7.js"><link rel="prefetch" href="/backend-cmd/assets/js/65.cc31ff45.js"><link rel="prefetch" href="/backend-cmd/assets/js/66.0ba5722f.js"><link rel="prefetch" href="/backend-cmd/assets/js/67.ee4d8bcb.js"><link rel="prefetch" href="/backend-cmd/assets/js/68.e92b5975.js"><link rel="prefetch" href="/backend-cmd/assets/js/69.813d865b.js"><link rel="prefetch" href="/backend-cmd/assets/js/7.fb892f3f.js"><link rel="prefetch" href="/backend-cmd/assets/js/70.232e3c28.js"><link rel="prefetch" href="/backend-cmd/assets/js/71.c39ab5b0.js"><link rel="prefetch" href="/backend-cmd/assets/js/72.f7a276fb.js"><link rel="prefetch" href="/backend-cmd/assets/js/73.5991c526.js"><link rel="prefetch" href="/backend-cmd/assets/js/74.22827044.js"><link rel="prefetch" href="/backend-cmd/assets/js/75.53b3a7cf.js"><link rel="prefetch" href="/backend-cmd/assets/js/76.35431791.js"><link rel="prefetch" href="/backend-cmd/assets/js/77.b09b9f2c.js"><link rel="prefetch" href="/backend-cmd/assets/js/78.692cbe69.js"><link rel="prefetch" href="/backend-cmd/assets/js/79.fabdfbff.js"><link rel="prefetch" href="/backend-cmd/assets/js/8.4f7199ba.js"><link rel="prefetch" href="/backend-cmd/assets/js/80.e89bb783.js"><link rel="prefetch" href="/backend-cmd/assets/js/81.a67779c2.js"><link rel="prefetch" href="/backend-cmd/assets/js/82.d56f955b.js"><link rel="prefetch" href="/backend-cmd/assets/js/83.dc0d22be.js"><link rel="prefetch" href="/backend-cmd/assets/js/84.39ae4a57.js"><link rel="prefetch" href="/backend-cmd/assets/js/85.efc677c2.js"><link rel="prefetch" href="/backend-cmd/assets/js/86.3a509475.js"><link rel="prefetch" href="/backend-cmd/assets/js/87.a67acbe9.js"><link rel="prefetch" href="/backend-cmd/assets/js/88.c6158adf.js"><link rel="prefetch" href="/backend-cmd/assets/js/89.7411f1e6.js"><link rel="prefetch" href="/backend-cmd/assets/js/9.dd6b6182.js"><link rel="prefetch" href="/backend-cmd/assets/js/90.6ac49b24.js"><link rel="prefetch" href="/backend-cmd/assets/js/91.48e71808.js"><link rel="prefetch" href="/backend-cmd/assets/js/92.960eb09a.js"><link rel="prefetch" href="/backend-cmd/assets/js/93.ec0ed01c.js"><link rel="prefetch" href="/backend-cmd/assets/js/94.aae6ca2b.js"><link rel="prefetch" href="/backend-cmd/assets/js/95.33ae374c.js"><link rel="prefetch" href="/backend-cmd/assets/js/96.ed0ca6a1.js"><link rel="prefetch" href="/backend-cmd/assets/js/97.2ce7ff96.js"><link rel="prefetch" href="/backend-cmd/assets/js/98.d0699989.js"><link rel="prefetch" href="/backend-cmd/assets/js/99.33e0d46e.js">
+    <link rel="stylesheet" href="/backend-cmd/assets/css/0.styles.6608425b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/backend-cmd/" class="home-link router-link-active"><!----> <span class="site-name">后台开发命令 365</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/backend-cmd/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人主页" class="dropdown-title"><span class="title">个人主页</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人主页" class="mobile-dropdown-title"><span class="title">个人主页</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dablelv" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他书籍" class="dropdown-title"><span class="title">其他书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他书籍" class="mobile-dropdown-title"><span class="title">其他书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.github.io/go-coding-advice" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Go 编码建议
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dablelv/backend-cmd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/backend-cmd/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人主页" class="dropdown-title"><span class="title">个人主页</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人主页" class="mobile-dropdown-title"><span class="title">个人主页</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dablelv" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他书籍" class="dropdown-title"><span class="title">其他书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他书籍" class="mobile-dropdown-title"><span class="title">其他书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.github.io/go-coding-advice" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Go 编码建议
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dablelv/backend-cmd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/backend-cmd/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>帮助</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>文件系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进程管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>编译调试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>二进制工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Shell 编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>系统管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>终端配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>权限管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>版本控制</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend-cmd/版本控制/svn.html" class="sidebar-link">svn</a></li><li><a href="/backend-cmd/版本控制/git.html" class="active sidebar-link">git</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实用工具</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p><img src="https://img-blog.csdnimg.cn/20201214105406191.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <h2 id="导语"><a href="#导语" class="header-anchor">#</a> 导语</h2> <p>这里记录本人使用 Git 的点滴，以需要完成的功能为切入点来讲解需要使用的命令，供大家参考。当然，再结合官方文档 <a href="https://git-scm.com/docs" target="_blank" rel="noopener noreferrer">Git Reference<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 及<a href="http://blog.csdn.net/dengsilinming/article/details/8000622" target="_blank" rel="noopener noreferrer"> Git 常用命令大全<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>这类较全面的 Git 命令介绍的文章，能帮助我们更好地掌握 Git 的使用。</p> <h2 id="_1-git-简介"><a href="#_1-git-简介" class="header-anchor">#</a> 1.Git 简介</h2> <p>Git 是一款由 Linux 之父 Linus Torvalds 开发的免费、开源的分布式源码管理（SCM，Source Code Management）工具，也称为版本控制系统（VCS，Version Control System），用于敏捷高效地处理任何或小或大的项目。Git 相比于其它的 SCM 工具，比如 Subversion（SVN）、Mercurial、CVS、Perforce 和 ClearCase，因其高效的性能、便捷的分支管理、免费开源等优秀特性，自 2005 年诞生以来，迅速成为最流行的分布式版本控制系统，没有之一。</p> <h2 id="_2-git-客户端下载安装"><a href="#_2-git-客户端下载安装" class="header-anchor">#</a> 2.Git 客户端下载安装</h2> <p>Windows下主要有三款客户端：</p> <ul><li><a href="https://git-for-windows.github.io/" target="_blank" rel="noopener noreferrer">git for windows<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://desktop.github.com/" target="_blank" rel="noopener noreferrer">GitHub Desktop<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://tortoisegit.org/" target="_blank" rel="noopener noreferrer">TortoiseGit <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p>本文使用的是 GitHub Desktop，可以下载<a href="http://download.csdn.net/detail/lyg468088/8723039" target="_blank" rel="noopener noreferrer">离线安装包<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <p>双击安装，这里不再赘述，安装成功后，打开 Git Shell 就可以执行 Git 命令了。需要注意一点，安装好 GitHub Desktop 后，桌面会出现两个图标：</p> <p><img src="https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTYxMjI0MTExNjExMTc0" alt=""></p> <p>首先需要打开 GitHub 图标，使用 GitHub 账号登陆，让 GitHub Desktop 帮助我们创建 SSH Key，并以邮件的方式通知我们。如果使用 git for windows，需要手动安装 SSH Key，安装教程见：<a href="http://blog.csdn.net/wfdtxz/article/details/8678982" target="_blank" rel="noopener noreferrer">git使用SSH密钥<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。git for windows 每次更新远程仓库时，都需要输入 GitHub 用户名和密码，解决办法见：<a href="http://blog.csdn.net/collonn/article/details/52848784" target="_blank" rel="noopener noreferrer">git for windows 总是提示输入用户名和秘密<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <h2 id="_3-设置和配置-setup-and-config"><a href="#_3-设置和配置-setup-and-config" class="header-anchor">#</a> 3.设置和配置（Setup and Config）</h2> <h3 id="git-config"><a href="#git-config" class="header-anchor">#</a> git config</h3> <p>（1）简介</p> <p>安装完 Git 后，需要对 Git 环境进行一次配置，且只需要配置一次。程序升级时会保留配置信息。 你可以在任何时候再次通过运行命令来修改它们。</p> <p>Git 自带一个 git config 的工具来设置控制 Git 外观和行为的配置变量，这些变量按照不同的作用级别默认存储在四个不同的文件中。 可以使用 --file 选项来显示指明配置文件的路径。</p> <table><thead><tr><th>文件路径</th> <th>级别</th> <th>说明</th></tr></thead> <tbody><tr><td>/etc/gitconfig</td> <td>系统级别</td> <td>包含系统上每一个用户及他们仓库的通用配置。 如果使用带有 --system 选项 Git 会读写此文件</td></tr> <tr><td>~/.config/git/config</td> <td>用户级别</td> <td>针对当前用户。 使用 --global 选项 Git 会读写此文件</td></tr> <tr><td>~/.gitconfig</td> <td>用户级别</td> <td>针对当前用户。 使用 --global 选项 Git 会读写此文件。较新版本的 Git 会使用此配置文件</td></tr> <tr><td>仓库目录/.gitconfig</td> <td>仓库级别</td> <td>对当前仓库有效。使用 --local 选项 Git 会读写此文件，为默认选项</td></tr></tbody></table> <p>从下到上，每一个级别会覆盖上一级别的配置，优先级如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>仓库目录/.git/config <span class="token operator">&gt;</span> ~/.gitconfig <span class="token operator">&gt;</span> /etc/gitconfig
+</code></pre></div><p>（2）格式</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> config <span class="token punctuation">[</span><span class="token operator">&lt;</span>options<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+</code></pre></div><p>（3）选项</p> <div class="language-shell extra-class"><pre class="language-shell"><code>配置文件路径（Config <span class="token function">file</span> location）
+<span class="token parameter variable">--system</span>
+	使用系统级别的配置文件
+<span class="token parameter variable">--global</span>
+	使用当前用户全局配置文件
+<span class="token parameter variable">--local</span>
+	使用当前仓库的配置文件，为默认选项
+-f, <span class="token parameter variable">--file</span><span class="token operator">=</span><span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+	显示指定配置文件路径
+
+动作（Action）
+-l, <span class="token parameter variable">--list</span>
+	列出所有配置
+<span class="token parameter variable">--unset</span>
+	从配置文件中删除变量名匹配的某一行
+--unset-all
+	从配置文件中删除变量名匹配的所有行
+</code></pre></div><p>（4）示例</p> <ul><li>配置用户信息。</li></ul> <p>当安装完 Git 应该做的第一件事就是设置你的用户名称与邮件地址。这样做很重要，因为每一个 Git 的提交都会使用这些信息，并且它会写入到你的每一次提交中。</p> <div class="language- extra-class"><pre class="language-text"><code>git config --global user.name &quot;John Doe&quot;
+git config --global user.email &quot;johndoe@example.com&quot;
+</code></pre></div><ul><li>配置文本编辑器。</li></ul> <p>当 Git 需要你输入信息时会调用文本编辑器。 如果未配置，Git 会使用操作系统默认的文本编辑器，通常是 Vim。 如果你想使用不同的文本编辑器，例如 Emacs，可以这样做：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> core.editor emacs
+</code></pre></div><ul><li>让 Git 记住用户名和密码。</li></ul> <p>每次使用 HTTP 协议与 Git 远端交互时均需要输入用户名和密码，为了避免如此繁琐的操作，可以使用 Git 凭证系统来处理这个事情。 下面有一些 Git 的选项：
+（1）默认所有都不缓存。 每一次连接都会询问你的用户名和密码。
+（2）cache 模式会将凭证存放在内存中一段时间。 密码永远不会被存储在磁盘中，并且在15分钟后从内存中清除。
+（3）store 模式会将凭证用明文的形式存放在磁盘中，并且永不过期。 这意味着除非你修改了你在 Git 服务器上的密码，否则你永远不需要再次输入你的凭证信息。 这种方式的缺点是你的密码是用明文的方式存放在你的 home 目录下。
+（4）如果你使用的是 Mac，Git 还有一种 osxkeychain 模式，它会将凭证缓存到你系统用户的钥匙串中。 这种方式将凭证存放在磁盘中，并且永不过期，但是是被加密的，这种加密方式与存放 HTTPS 凭证以及 Safari 的自动填写是相同的。
+（5）如果你使用的是 Windows，你可以安装一个叫做 Git Credential Manager for Windows 的辅助工具。 这和上面说的 osxkeychain 十分类似，但是是使用 Windows Credential Store 来控制敏感信息。 可以在 <a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 下载。</p> <p>其中部分辅助工具有一些选项。如 store 模式可以接受一个 <code>--file &lt;path&gt;</code> 参数，可以自定义存放密码的文件路径（默认 ~/.git-credentials ）。cache 模式有 <code>--timeout &lt;seconds&gt;</code> 参数，可以设置凭证存放在内存的存活时间（默认是 900，也就是 15 分钟）。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 设置记住密码（默认15分钟）</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> credential.helper cache
+
+<span class="token comment"># 设置记住密码，自定义有效时长，比如一小时后失效</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> credential.helper <span class="token string">'cache --timeout=3600'</span>
+
+<span class="token comment"># 长期存储用户名和密码</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> credential.helper store
+
+<span class="token comment"># 长期存储用户名和密码，指定用户名密码存储位置</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> credential.helper <span class="token string">'store --file ~/.git-credentials'</span>
+
+<span class="token comment"># 不记住用户名密码，以 HTTP 协议的 clone、pull、push 等每次请求，都需要输入用户名和密码</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> <span class="token parameter variable">--unset</span> credential.helper
+</code></pre></div><p>如果变更了用户名或密码，只需要清除存放密码的文件（默认 ~/.git-credentials ），会提示重新输入。</p> <ul><li>协议替换</li></ul> <p>当你想去克隆一个别人 Github 上的 repository 时，如果使用 HTTPS 协议无法访问，那么可以变更协议采用 SSH 来访问。除了在 clone 时显示变更协议，我们也可以通过配置，让 git 自动进行协议替换。</p> <p>例如将 HTTPS 协议变更为 SSH 协议。在终端中输入：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> url.https://github.com/.insteadOf git@github.com:
+</code></pre></div><p>一顿操作之后，你的 .gitconfig 中会多出一行参数设置：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>url <span class="token string">&quot;https://github.com/&quot;</span><span class="token punctuation">]</span>
+	insteadOf <span class="token operator">=</span> git@github.com:
+</code></pre></div><p>设置之后，使用 git 进行 clone 时，资源 url 中协议和域名部分<code>git@github.com:</code>将被替换为<code>https://github.com/</code>。</p> <ul><li>core.autocrlf 的配置。</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment">#提交时转换为 LF，检出时转换为 CRLF</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> core.autocrlf <span class="token boolean">true</span>   
+
+<span class="token comment">#提交时转换为 LF，检出时不转换</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> core.autocrlf input
+
+<span class="token comment">#提交检出均不转换</span>
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> core.autocrlf <span class="token boolean">false</span>
+</code></pre></div><p>建议设置为最后一种，提交检出均不转换。</p> <ul><li>查看配置信息。</li></ul> <p>使用<code>git config -l, --list</code>命令可以列出 Git 当前所有配置。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> config <span class="token parameter variable">-l</span>
+<span class="token assign-left variable">user.name</span><span class="token operator">=</span>John Doe
+<span class="token assign-left variable">user.email</span><span class="token operator">=</span>johndoe@example.com
+<span class="token assign-left variable">color.status</span><span class="token operator">=</span>auto
+<span class="token assign-left variable">color.branch</span><span class="token operator">=</span>auto
+<span class="token assign-left variable">color.interactive</span><span class="token operator">=</span>auto
+<span class="token assign-left variable">color.diff</span><span class="token operator">=</span>auto
+<span class="token punctuation">..</span>.
+</code></pre></div><p>或者通过输入<code>git config &lt;key&gt;</code> 或<code>git config --get &lt;key&gt;</code>来检查 Git 的某一项配置。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> config user.name
+John
+
+<span class="token function">git</span> config <span class="token parameter variable">--get</span> user.email
+John@tencent.com
+</code></pre></div><h2 id="_4-获取或创建项目-getting-and-creating-projects"><a href="#_4-获取或创建项目-getting-and-creating-projects" class="header-anchor">#</a> 4.获取或创建项目（Getting and Creating Projects）</h2> <h3 id="git-clone"><a href="#git-clone" class="header-anchor">#</a> git clone</h3> <p>git clone 命令用于将远程仓库克隆到本地。这一个操作类似于 SVN 的 check out，只有将远程仓库克隆到本地，才可以通过对本地的代码进行增删改后再提交至远程服务端。</p> <p>（1）克隆远端仓库到本地。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> clone <span class="token operator">&lt;</span>repository path<span class="token operator">&gt;</span>
+<span class="token function">git</span> clone <span class="token parameter variable">--recursive</span> <span class="token operator">&lt;</span>repository path<span class="token operator">&gt;</span> <span class="token builtin class-name">:</span> 给定远端仓库地址进行克隆，同时克隆仓库依赖的子模块。子模块是独立的仓库
+
+<span class="token comment"># 示例</span>
+<span class="token function">git</span> clone https://github.com/dablelv/dablelvweb.git
+</code></pre></div><p>如果你的仓库地址是在Github，那么你可以在Github的网站查看，点击 &quot;Clone or download&quot; 按钮，具体如下图：</p> <img width="80%" hegiht="80%" src="https://img-blog.csdn.net/20160922114612906"> <h2 id="_5-基本快照-basic-snapshotting"><a href="#_5-基本快照-basic-snapshotting" class="header-anchor">#</a> 5.基本快照（Basic Snapshotting）</h2> <h3 id="git-add"><a href="#git-add" class="header-anchor">#</a> git add</h3> <p>git add 命令用于将工作区的变更添加到暂存区。</p> <p>（1）批量提交。</p> <p>在进行修改、删除和新增操作后，需要提交多个文件或文件夹到暂存区，此时不需要一个一个进行<code>git add</code>，这样做的话效率太低，使用<code>git add</code>命令批量提交修改、删除和新增的文件或文件夹。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> <span class="token function">add</span> -A, --all, --no-ignore-removal
+	添加所有更新的内容，包括修改、新增的和删除的文件
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+	添加新增的和删除的文件，只对当前目录及其子目录有效。2.x 版本开始，可以添加修改的文件
+<span class="token function">git</span> <span class="token function">add</span> -u,--update
+	添加修改和删除的文件，不包括新增文件
+</code></pre></div><p>（2）查各命令选项的具体含义。</p> <div class="language- extra-class"><pre class="language-text"><code>git add -h
+</code></pre></div><p>（3）其它不常用选项。</p> <div class="language- extra-class"><pre class="language-text"><code>git add -n, --dry-run [FILE]
+	不实际添加文件，仅仅是展示他们是否存在或者将被忽略
+git add -v, --verbose
+	冗余模式
+git add -i, --interactive
+	交互式
+git add -f, --force
+	允许添加其他被忽略的文件
+git add --ignore-errors
+	跳过因错误不能被添加的文件
+</code></pre></div><h3 id="git-commit"><a href="#git-commit" class="header-anchor">#</a> git commit</h3> <p>git commit 命令用于将工作区或暂存区的变更提交至仓库。</p> <p>每次使用 git commit 都会在本地版本库通过 SHA1 生成一个40 位的哈希值，这个哈希值也叫 commit-id。commit-id 在版本回退的时候是非常有用的，它相当于一个快照，可以在未来的任何时候通过 git reset 命令回退到指定版本。</p> <p>（1）提交暂存区的变更到仓库并备注。</p> <div class="language- extra-class"><pre class="language-text"><code>git commit -m &lt;comment&gt;
+</code></pre></div><p>（2）将工作区被修改和被删除的文件，以及暂存区的变更提交至版本库并备注。必须要备注，不然无法提交。</p> <div class="language- extra-class"><pre class="language-text"><code>git commit (-a | --all) -m &lt;comment&gt;
+
+#等同于
+git add -u
+git commit -m &lt;comment&gt;
+</code></pre></div><p>注意，新加的文件（即没有被 Git 系统管理的文件）是不能被提交到本地仓库的。建议一般不要使用 -a | --all 参数，正常的提交过程还是先使用 git add 将要改动的文件添加到暂存区，再用 git commit 提交到本地版本库。</p> <p>（3）使用新的提交记录（ commitid 与 comment）覆盖最近一次提交记录。</p> <div class="language- extra-class"><pre class="language-text"><code>git commit --amend -m &lt;comment&gt;
+</code></pre></div><p>注意，使用 git push 推送至远端时，需要使用 -f 选项强制推送，不然会提示本地落后于远端，需要先使用 git pull 更新。强制推送时，千万要注意不要把别人的提交给覆盖了。一般在自己的开发分支使用 git push -f 不会有什么问题。</p> <p>使用 --amend 参数，一般出于两种考虑：
+（a）最近一次提交有 bug 需要修复，但又不想保留最近一次的提交记录；
+（b）减少提交记录的数量，保持提交记录的干净整洁。</p> <p>（4） 查看帮助，还有许多参数有其他效果，一般来说了解上述三种即可满足我们工作中的日常开发了。</p> <div class="language- extra-class"><pre class="language-text"><code>git commit --help
+</code></pre></div><h3 id="git-status"><a href="#git-status" class="header-anchor">#</a> git status</h3> <p>git status命令用于显示工作区和暂存区的状态。
+（1）查看工作区与暂存区中文件的变更情况。</p> <div class="language- extra-class"><pre class="language-text"><code>git status
+</code></pre></div><h3 id="git-rm"><a href="#git-rm" class="header-anchor">#</a> git rm</h3> <p>git rm 命令用于从工作区或暂存区删除文件或目录。注意，git rm无法删除未受版本控制的文件（untracked file）。</p> <div class="language- extra-class"><pre class="language-text"><code>git rm [&lt;options&gt;] [--] &lt;file&gt;...
+    -n, --dry-run         用于查看删除之前会删除哪些东西，并不会有实际的影响
+    -q, --quiet        	  不列出被删除的文件
+    --cached              仅从暂存区删除文件，可用于文件脱离版本控制
+    -f, --force           覆盖最新的检查，强制删除
+    -r                    递归删除，可用于删除目录
+    --ignore-unmatch      未匹配到文件不报错
+</code></pre></div><h3 id="git-mv"><a href="#git-mv" class="header-anchor">#</a> git mv</h3> <p>git mv 命令用于移动或重命名文件或目录。</p> <div class="language- extra-class"><pre class="language-text"><code>git mv [&lt;options&gt;] &lt;source&gt;... &lt;destination&gt;
+	-v, --verbose         冗长模式执行，输出过程信息
+	-n, --dry-run         只查看影响的文件或目录，实际不做重命名处理
+	-f, --force           强制移动或重命名，即使目标文件或目录已经存在
+	-k                    跳过移动或重命名错误
+</code></pre></div><h2 id="_6-分支与合并-branching-and-merging"><a href="#_6-分支与合并-branching-and-merging" class="header-anchor">#</a> 6.分支与合并（Branching and Merging）</h2> <h3 id="git-branch"><a href="#git-branch" class="header-anchor">#</a> git branch</h3> <p>git branch 用于管理分支，包括查看、创建、删除、重命名和关联。</p> <p>（1）查看分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 查看本地分支</span>
+<span class="token function">git</span> branch
+
+<span class="token comment"># 查看远端分支</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-r</span>
+
+<span class="token comment"># 查看所有分支</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-a</span>
+
+<span class="token comment"># 查看本地分支 commit id 与 commit comment</span>
+<span class="token function">git</span> branch -v<span class="token operator">|</span>--verbose
+
+<span class="token comment"># 查看本地分支commit id与commit comment，以及关联的上游分支</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-vv</span>
+</code></pre></div><p>（2）创建分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 基于当前分支创建本地分支不切换</span>
+<span class="token function">git</span> branch <span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span>
+
+<span class="token comment"># 基于当前分支创建本地分支并切换</span>
+<span class="token function">git</span> checkout <span class="token parameter variable">-b</span> <span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span>
+<span class="token comment"># 或</span>
+<span class="token function">git</span> switch <span class="token parameter variable">-c</span> <span class="token operator">&lt;</span>branchName<span class="token operator">&gt;</span>
+
+<span class="token comment"># 将创建的本地分支推送到远端，远端分支不存在则创建。</span>
+<span class="token function">git</span> push origin <span class="token operator">&lt;</span>local_branchname<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>remote_branchname<span class="token operator">&gt;</span>
+</code></pre></div><p>（3）更新分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 使用远端分支更新本地分支</span>
+<span class="token function">git</span> pull <span class="token punctuation">[</span>远程仓库名<span class="token punctuation">]</span> <span class="token punctuation">[</span>远程分支名<span class="token punctuation">]</span>:<span class="token punctuation">[</span>本地分支名<span class="token punctuation">]</span>
+
+<span class="token comment"># 使用关联的远端分支更新当前本地分支</span>
+<span class="token function">git</span> pull
+</code></pre></div><p>（5）合并分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 合并某分支到当前分支</span>
+<span class="token function">git</span> merge <span class="token operator">&lt;</span>srcbranch<span class="token operator">&gt;</span>
+</code></pre></div><p>（6）删除分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 删除本地分支</span>
+<span class="token function">git</span> branch <span class="token punctuation">(</span>-d <span class="token operator">|</span> --delete<span class="token punctuation">)</span> <span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span>
+
+<span class="token comment"># 强制删除本地分支</span>
+<span class="token function">git</span> branch <span class="token punctuation">(</span>-D <span class="token operator">|</span> <span class="token parameter variable">-df</span> <span class="token operator">|</span> <span class="token parameter variable">--delete</span> --force<span class="token punctuation">)</span>  <span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span>
+
+<span class="token comment"># 删除远端分支</span>
+<span class="token function">git</span> push origin :<span class="token operator">&lt;</span>remote_branchname<span class="token operator">&gt;</span>
+<span class="token comment"># 或</span>
+<span class="token function">git</span> push  origin <span class="token punctuation">(</span>-d <span class="token operator">|</span> --delete<span class="token punctuation">)</span> <span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span>
+
+<span class="token comment"># 注意，该命令无法删除远端分支，只是删除 git branch -r 列表中的远端追踪分支</span>
+<span class="token function">git</span> branch <span class="token parameter variable">-dr</span> origin/<span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span>
+</code></pre></div><p>（7）本地分支关联远端分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 第一种情况，远端分支已经存在。不指定 local_branchname 为当前分支。</span>
+<span class="token function">git</span> branch <span class="token punctuation">(</span>--set-upstream-to<span class="token operator">=</span>origin/<span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span> <span class="token operator">|</span> <span class="token parameter variable">-u</span> origin/<span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>local_branchname<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+
+<span class="token comment"># 第二种情况，远端分支不存在</span>
+<span class="token comment"># 1.将当前本地分支推送至远端并关联（远端分支与本地分支同名）</span>
+<span class="token function">git</span> push <span class="token punctuation">(</span>-u <span class="token operator">|</span> --set-upstream<span class="token punctuation">)</span> origin HEAD
+
+<span class="token comment"># 2.将当前本地分支推送至远端并关联（指定远端分支名）</span>
+<span class="token function">git</span> push <span class="token punctuation">(</span>-u <span class="token operator">|</span> --set-upstream<span class="token punctuation">)</span> origin HEAD:<span class="token operator">&lt;</span>remote_branchname<span class="token operator">&gt;</span>
+
+<span class="token comment"># 3.将本地分支推送至远端并关联（指定本地与远端分支名）</span>
+<span class="token function">git</span> push <span class="token punctuation">(</span>-u <span class="token operator">|</span> --set-upstream<span class="token punctuation">)</span> origin <span class="token operator">&lt;</span>local_branchname<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>remote_branchname<span class="token operator">&gt;</span>
+</code></pre></div><p>（8）删除本地分支与远端分支的关联。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> branch --unset-upstream <span class="token punctuation">[</span><span class="token operator">&lt;</span>local_branch<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+</code></pre></div><p>（9）重命名本地分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 重命名当前分支</span>
+<span class="token function">git</span> branch <span class="token punctuation">(</span>-m <span class="token operator">|</span> --move<span class="token punctuation">)</span> <span class="token operator">&lt;</span>newbranch<span class="token operator">&gt;</span>
+
+<span class="token comment"># 重命名指定分支</span>
+<span class="token function">git</span> branch <span class="token punctuation">(</span>-m <span class="token operator">|</span> <span class="token parameter variable">--move</span> <span class="token punctuation">)</span> <span class="token operator">&lt;</span>oldbranch<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>newbranch<span class="token operator">&gt;</span>
+
+<span class="token comment"># 强制重命名本地分支</span>
+<span class="token function">git</span> branch <span class="token punctuation">(</span>-M <span class="token parameter variable">-f</span> <span class="token operator">|</span> <span class="token parameter variable">--move</span> --force<span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>oldbranch<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>newbranch<span class="token operator">&gt;</span>
+</code></pre></div><p>（10）重命名远端分支。
+Git 没有直接修改远端分支名的命令，我们可以通过删除重建的方式来间接重命名远端分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 先删除远端分支</span>
+<span class="token function">git</span> push origin <span class="token parameter variable">-d</span> <span class="token operator">&lt;</span>branch_name<span class="token operator">&gt;</span>
+
+<span class="token comment"># 再重命名当前本地分支</span>
+<span class="token function">git</span> branch <span class="token punctuation">(</span>-m <span class="token operator">|</span> --move<span class="token punctuation">)</span> <span class="token operator">&lt;</span>newbranch<span class="token operator">&gt;</span>
+
+<span class="token comment"># 将当前本地分支推送至远端并关联</span>
+<span class="token function">git</span> push origin <span class="token punctuation">(</span>-u <span class="token operator">|</span> --set-upstream<span class="token punctuation">)</span> HEAD
+</code></pre></div><h3 id="git-checkout"><a href="#git-checkout" class="header-anchor">#</a> git checkout</h3> <p>git checkout 主要用于分支切换与工作区文件的恢复。</p> <p>（1）撤销工作区文件的修改。</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout -- &lt;file name...&gt;
+</code></pre></div><p>（2）切换分支。</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout &lt;branchName&gt;
+</code></pre></div><p>（3）切换分支，如果目标分支不存在则新建。</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout -b &lt;branchName&gt;
+</code></pre></div><p>（4）将远端分支拉取到本地。</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout -b &lt;branchName&gt; origin/&lt;branchName&gt;
+</code></pre></div><p>（5）切换当前分支到某个提交，即移动 HEAD 指针指向某个提交。</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout &lt;commit&gt;
+</code></pre></div><h3 id="git-switch"><a href="#git-switch" class="header-anchor">#</a> git switch</h3> <p>（1）简介
+git switch 从 git 2.23 版本开始引入，是一个比较新的命令，主要用于分支的创建和切换，实现了 git checkout 命令分支创建与切换的功能。git switch 命令的语义更加贴合其作用，更容易理解，建议使用。</p> <p>（2）格式</p> <div class="language- extra-class"><pre class="language-text"><code>git switch [&lt;options&gt;] [&lt;branch&gt;]
+</code></pre></div><p>（3）选项</p> <div class="language- extra-class"><pre class="language-text"><code>-c &lt;branch&gt;
+--create &lt;branch&gt;
+	创建一个新分支然后切换过去
+-C &lt;branch&gt;
+--force-create &lt;branch&gt;
+	强制创建一个新分支然后切换过去
+-t
+--track
+	将远端分支拉取到本地
+</code></pre></div><p>（4）示例</p> <div class="language- extra-class"><pre class="language-text"><code>git switch dablelv
+	切换到指定分支
+git switch -c dablelv_new
+	基于当前分支创建一个新分支然后切换过去
+git switch -
+	切回到之前的分支
+git switch -t origin/dablelv
+	将远端分支 dablelv 拉取到本地
+</code></pre></div><h3 id="git-stash"><a href="#git-stash" class="header-anchor">#</a> git stash</h3> <p>（1）简介
+当一个分支的开发工作未完成，却要切换到另外一个分支进行开发的时候，除了commit 原分支的代码改动的方法外，可以使用 git stash 来保存当前分支的工作进度。</p> <p>（2）格式</p> <div class="language- extra-class"><pre class="language-text"><code>git stash list [&lt;options&gt;]
+git stash show [&lt;options&gt;] [&lt;stash&gt;]
+git stash drop [-q|--quiet] [&lt;stash&gt;]
+git stash ( pop | apply ) [--index] [-q|--quiet] [&lt;stash&gt;]
+git stash branch &lt;branchname&gt; [&lt;stash&gt;]
+git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+	     [-u|--include-untracked] [-a|--all] [-m|--message &lt;message&gt;]
+	     [--] [&lt;pathspec&gt;…​]]
+git stash clear
+git stash create [&lt;message&gt;]
+git stash store [-m|--message &lt;message&gt;] [-q|--quiet] &lt;commit&gt;
+</code></pre></div><p>（3）示例</p> <div class="language- extra-class"><pre class="language-text"><code>git stash [push]
+保存当前工作进度，会把暂存区和工作区的改动保存起来。执行完这个命令后，在运行git status命令，就会发现当前是一个干净的工作区，没有任何改动。使用 git stash save 'message...' 可以添加一些注释。注意，git stash 是 git stash push 的简写
+
+git stash list
+显示保存进度的列表。也就意味着，git stash命令可以多次执行。
+
+git stash pop 
+恢复最新的进度到工作区。git默认会把工作区和暂存区的改动都恢复到工作区。
+
+git stash pop --index 
+不仅恢复工作区，还恢复暂存区，即恢复最新的进度到工作区和暂存区。
+
+git stash pop stash@{stash_id}
+恢复指定的进度到工作区。stash_id是通过git stash list命令得到的。
+
+注意：通过git stash pop命令恢复进度后，会删除当前进度。
+
+git stash apply --index
+不仅恢复工作区，还恢复暂存区，即恢复最新的进度到工作区和暂存区。不删除当前进度。
+
+git stash apply stash@{stash_id}
+恢复指定的进度到工作区，不删除当前进度。stash_id是通过git stash list命令得到的。
+
+注意：git stash apply除了不删除恢复的进度之外，其余和git stash pop命令一样。
+
+git stash drop [stash_id]
+删除一个存储的进度。如果不指定stash_id，则默认删除最新的存储进度。
+
+git stash clear
+删除所有存储的进度。
+</code></pre></div><h3 id="git-tag"><a href="#git-tag" class="header-anchor">#</a> git tag</h3> <p>同大多数 VCS 一样，Git 也可以对某一时间点上的版本打上标签，用于版本的发布管理。一个版本发布时，我们可以为当前版本打上类似于 v.1.0.1、v.1.0.2 这样的 Tag。一个 Tag 指向一个 Commit ID，同时还可以为 Tag 添加备注，如当前的版本功能。</p> <ul><li>新建标签</li></ul> <p>Git 使用的标签有两种类型：轻量级的（lightweight）和含附注的（annotated）。轻量级标签就像是个不会变化的分支，实际上它就是个指向特定提交对象的引用。而含附注标签，实际上是存储在仓库中的一个独立对象，它有自身的校验和信息，包含着标签的名字，电子邮件地址和日期，以及标签说明，标签本身也允许使用 GNU Privacy Guard (GPG) 来签署或验证。一般我们都建议使用含附注型的标签，以便保留相关信息；当然，如果只是临时性加注标签，或者不需要旁注额外信息，用轻量级标签也没问题。</p> <div class="language- extra-class"><pre class="language-text"><code># 轻量级标签
+git tag &lt;tagname&gt;
+
+# 含附注的标签
+git tag -a &lt;tagname&gt; -m &lt;comment&gt;
+
+# 示例
+git tag v1.0
+git tag -a v1.1 -m &quot;my version 1.1&quot;
+</code></pre></div><ul><li>将本地标签推送到远端</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 推送本地指定标签
+git push origin &lt;tagname&gt;
+
+# 推送本地所有标签
+git push origin --tags
+</code></pre></div><ul><li>查看标签</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 查看所有本地标签
+git tag
+v1.1.0
+v1.1.1
+
+# 按照创建时间降序排列
+git tag --sort=-creatordate
+
+# 按照创建时间升序排列
+git tag --sort=creatordate
+
+# 查看所有远端标签
+git ls-remote --tags
+
+# 模糊查询标签。支持使用通配符 *
+git tag -l &lt;tagname pattern&gt;
+
+git tag -l &quot;*.1.1&quot;
+v1.1.1
+
+# 查看标签详细信息
+git show &lt;tagname&gt;
+</code></pre></div><ul><li>删除标签</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 删除本地标签
+git tag -d &lt;tagname&gt;
+
+# 删除远端标签
+git push origin (-d | --delete) &lt;tagname&gt;
+git push origin :refs/tags/&lt;tagname&gt;
+</code></pre></div><ul><li>重命名标签</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 无重命名标签选项，只能删除然后新建
+git tag -d &lt;tagname&gt; &amp;&amp; git tag &lt;tagname&gt;
+</code></pre></div><h3 id="git-merge"><a href="#git-merge" class="header-anchor">#</a> git merge</h3> <p>（1）简介</p> <p>git merge 用于分支合并。比如当开发分支上的代码达到上线的标准后，此时需要使用 git merge 将开发分支合并到 master 分支。</p> <p>（2）常见用法</p> <div class="language- extra-class"><pre class="language-text"><code># 将原分支合并到当前分支。原分支的历史提交记录会被保留
+git merge &lt;srcbranch&gt;
+
+# 将原分支合并到当前分支。原分支的历史提交记录不会被保留，然后使用 git commit 创建一个新提交，这样会使提交历史干净整洁，推荐使用
+git merge --squash &lt;srcbranch&gt;
+</code></pre></div><p>（3）git merge 与 git merge --squash 的区别</p> <p>一图看懂二者的区别。
+<img src="https://img-blog.csdnimg.cn/20210713210817629.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+判断是否使用 --squash 选项最根本的标准是，待合并分支上的历史记录是否有意义。如果没有意义，建议使用 --squash 选项将其废弃。</p> <h2 id="_7-分享与更新项目-sharing-and-updating-projects"><a href="#_7-分享与更新项目-sharing-and-updating-projects" class="header-anchor">#</a> 7.分享与更新项目（Sharing and Updating Projects）</h2> <h3 id="git-pull"><a href="#git-pull" class="header-anchor">#</a> git pull</h3> <p>git pull 命令用于取回远程仓库某个分支的更新与本地指定分支合并。实际上 git pull = git fetch + git merge。其基本用法格式如下：</p> <div class="language- extra-class"><pre class="language-text"><code>git pull [&lt;options&gt;] [&lt;repository&gt; [&lt;refspec&gt;…​]]
+</code></pre></div><p>refspec 为分支名。</p> <p>（1）例如将远程仓库 origin 的 master 分支拉取过来，与本地的 branchtest 分支合并。</p> <div class="language- extra-class"><pre class="language-text"><code>git pull origin master:branchtest
+</code></pre></div><p>（2）后面的冒号与本地的分支名可以省略，表示与本地当前分支合并。</p> <div class="language- extra-class"><pre class="language-text"><code>git pull origin master
+</code></pre></div><p>（3）远程仓库名和远程分支名均可省略，表示使用与本地当前分支关联的远端分支更新本地分支。</p> <div class="language- extra-class"><pre class="language-text"><code>git pull
+</code></pre></div><p>（4）git push 出现<code>error: failed to push some refs to '仓库地址'</code>的错误，原因是远程仓库中代码版本与本地不一致冲突导致的，解决办法是先<code>git pull</code>，再<code>git push</code>。</p> <p>（5）git pull 与 git pull --rebase 的区别。
+git pull --rebase = git fetch + git rebase。使用 --reabase 选项可以使项目提交历史变成直线，没有分叉，非常整洁。git rebase是变基操作，使得本地分支的修改变成在远端最新版本基础上进行，于是少了一步将远端分支的最新版本merge到本地分支的记录，即 git pull --rebase 可以消除<code>Merge branch 'master' of &lt;repository path&gt;</code>这种commit 记录。建议使用 -r（--rebase）选项。</p> <p>git pull --rebase 的过程可以使用如下图表示：
+<img src="https://img-blog.csdnimg.cn/20190130144938906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <h3 id="git-push"><a href="#git-push" class="header-anchor">#</a> git push</h3> <p>git push 命令用于将本地分支的更新推送到远端分支，命令格式与 git pull 相似。</p> <div class="language- extra-class"><pre class="language-text"><code>git push [&lt;options&gt;] [&lt;repository&gt; [&lt;refspec&gt;…​]]
+</code></pre></div><p>如果命令行没有使用<code>&lt;repository&gt;</code>参数指定推送的仓库，则会采用<code>branch.*.remote</code>配置。如果缺少配置，则默认为 origin。</p> <p>（1）使用将当前本地分支更新关联的远端分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> push
+</code></pre></div><p>（2）将本地分支推送至远端并关联。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 将当前分支推送至远端并关联（远端分支与本地分支同名）</span>
+<span class="token function">git</span> push <span class="token punctuation">(</span>-u <span class="token operator">|</span> --set-upstream<span class="token punctuation">)</span> origin HEAD
+
+<span class="token comment"># 将当前分支推送至远端并关联（指定远端分支名）</span>
+<span class="token function">git</span> push <span class="token punctuation">(</span>-u <span class="token operator">|</span> --set-upstream<span class="token punctuation">)</span> origin HEAD:<span class="token operator">&lt;</span>remote_branchname<span class="token operator">&gt;</span>
+
+<span class="token comment"># 将本地分支推送至远端并关联（指定本地与远端分支名）</span>
+<span class="token function">git</span> push <span class="token punctuation">(</span>-u <span class="token operator">|</span> --set-upstream<span class="token punctuation">)</span> origin <span class="token operator">&lt;</span>local_branchname<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>remote_branchname<span class="token operator">&gt;</span>
+</code></pre></div><p>（3）使用本地分支更新远端分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> push <span class="token operator">&lt;</span>仓库名<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>本地分支名<span class="token operator">&gt;</span>:<span class="token operator">&lt;</span>远端分支名<span class="token operator">&gt;</span>
+</code></pre></div><p>（4）删除远端分支。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 方式一：推送一个空分支到远端分支</span>
+<span class="token function">git</span> push origin :<span class="token operator">&lt;</span>remote_branchname<span class="token operator">&gt;</span>
+
+<span class="token comment"># 方式二：使用 git push -d</span>
+<span class="token function">git</span> push origin <span class="token punctuation">(</span>-d <span class="token operator">|</span> --delete<span class="token punctuation">)</span> <span class="token operator">&lt;</span>branchname<span class="token operator">&gt;</span>
+</code></pre></div><p>（5）本地与远端分支版本回退，需要使用 -f, --force 选项。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> reset <span class="token parameter variable">--hard</span> <span class="token operator">&lt;</span>commitid<span class="token operator">&gt;</span>
+<span class="token function">git</span> push <span class="token punctuation">(</span>-f <span class="token operator">|</span> --force<span class="token punctuation">)</span>
+</code></pre></div><h3 id="git-remote"><a href="#git-remote" class="header-anchor">#</a> git remote</h3> <p>git remote 命令用于管理一组被跟踪的远程代码仓库。</p> <p>选项说明：</p> <div class="language- extra-class"><pre class="language-text"><code>-h
+	显示帮助信息
+-v, --verbose
+	查看远端仓库名称与地址。仓库地址在名称的后面，仓库名默认为 origin
+</code></pre></div><p>子命令说明：</p> <div class="language- extra-class"><pre class="language-text"><code>git remote
+	查看远端仓库名称，默认为 origin
+git remote rename &lt;old&gt; &lt;new&gt;
+	修改远程仓库名称，默认为 origin
+git remote remove &lt;name&gt;
+	删除与远程仓库的关联
+git remote add &lt;name&gt; &lt;url&gt;
+	添加新的远程仓库关联
+git remote set-head &lt;name&gt; (-a | --auto | -d | --delete | &lt;branch&gt;)
+	设置或删除远程仓库的默认分支。默认分支一般为 master
+git remote [-v | --verbose] show [-n] &lt;name&gt;
+	显示远程仓库相关分支信息
+git remote prune [-n | --dry-run] &lt;name&gt;
+	清理与远程仓库关联的过时分支。如果使用 --dry-run，则只显示过时分支，不进行清理。使用该命令后，被删除的远程分支将不会出现在 git branch -r 命令结果中
+git remote [-v | --verbose] update [-p | --prune] [(&lt;group&gt; | &lt;remote&gt;)...]
+	更新远程分支列表
+git remote set-branches [--add] &lt;name&gt; &lt;branch&gt;...
+	为远程仓库添加分支列表
+git remote get-url [--push] [--all] &lt;name&gt;
+	查看远程仓库地址。如果使用 --push，则查询 push 地址，而非 fetch 地址
+git remote set-url [--push] &lt;name&gt; &lt;newurl&gt; [&lt;oldurl&gt;]
+	改变远程仓库地址
+git remote set-url --add &lt;name&gt; &lt;newurl&gt;
+	为远程仓库添加新地址
+git remote set-url --delete &lt;name&gt; &lt;url&gt;
+	删除所有远程仓库所有正则匹配 &lt;url&gt; 的地址
+</code></pre></div><p>常用示例：</p> <p>（1）常看关联的远程仓库名与地址。</p> <div class="language- extra-class"><pre class="language-text"><code>git remote -v
+origin	http://git.code.oa.com/trpc-cpp/trpc-cpp.git (fetch)
+origin	http://git.code.oa.com/trpc-cpp/trpc-cpp.git (push)
+</code></pre></div><p>（2）将关联的远程仓库名由默认的 origin 更名为 test。</p> <div class="language- extra-class"><pre class="language-text"><code>git remote -v rename origin test
+
+# 再次查看，更改成功
+git remote -v
+test	http://git.code.oa.com/trpc-cpp/trpc-cpp.git (fetch)
+test	http://git.code.oa.com/trpc-cpp/trpc-cpp.git (push)
+</code></pre></div><p>（3）关联新的远程仓库。</p> <div class="language- extra-class"><pre class="language-text"><code>git remote add NewRepo http://git.code.oa.com/dablelv/trpc-cpp.git
+
+# 查看，添加成功
+git remote -v
+NewRepo	http://git.code.oa.com/dablelv/trpc-cpp.git (fetch)
+NewRepo	http://git.code.oa.com/dablelv/trpc-cpp.git (push)
+test	http://git.code.oa.com/trpc-cpp/trpc-cpp.git (fetch)
+test	http://git.code.oa.com/trpc-cpp/trpc-cpp.git (push)
+</code></pre></div><p>成功关联远程仓库后，便可以从其 fetch 或向其 push 代码了。</p> <p>（4）修改远程仓库地址。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> remote set-url <span class="token operator">&lt;</span>name<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>new_url<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="git-submodule"><a href="#git-submodule" class="header-anchor">#</a> git submodule</h3> <p>（1）更新子模块指针。</p> <div class="language- extra-class"><pre class="language-text"><code>git submodule update
+</code></pre></div><p>将远端仓库子模块指针更新到本地，注意与命令<code>git submodule update --remote --merge</code>的区别。子模块指针指的是子模块的版本号。</p> <p>（2）更新子模块代码。</p> <div class="language- extra-class"><pre class="language-text"><code>git submodule update --remote --merge
+</code></pre></div><p>将从每个子模块的上游获取最新更改，并将其合并，这相当于在每个子模块中执行 git pull。</p> <h2 id="_8-修补-patching"><a href="#_8-修补-patching" class="header-anchor">#</a> 8.修补（Patching）</h2> <h3 id="git-rebase"><a href="#git-rebase" class="header-anchor">#</a> git rebase</h3> <p>（1）简介</p> <p>git rebase 是变基操作，其作用与 git merge 类似，用于将另一个分支合并到当前分支。变基是将一系列提交按照原有次序依次应用到另一分支上，使得提交历史变成一条直线，而合并（git merge）是把最终结果合在一起，提交历史可能会出现分叉，并多出一个 merge 的提交记录。</p> <p>（2） git rebase 与 git merge 的区别</p> <p>比如基于 master 分支创建了一个新的分支 experiment，开发任务分叉到两个不同分支，又各自提交了更新，那么提交历史日志如下：
+<img src="https://img-blog.csdnimg.cn/20190130110346331.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+现将 experiment 分支合并到 master 分支有两种方式，一是 git rebase，二是 git merge。</p> <p>（a）git merge 方式</p> <p>切换到 master 分支，执行合并操作，会将 experiment 分支的最新快照 C3 合并到 master 分支的最新快照 C2 中并生成一个新的快照（并提交）。提交历史将出现分叉，示意如下：
+<img src="https://img-blog.csdnimg.cn/20190130111528259.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+操作命令如下：</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout master
+git merge experiment
+</code></pre></div><p>（b）git rebase 方式</p> <p>git rebase 实现原理是首先找到两个分支的最近共同祖先 C1，提取 experiment 分支相对于该祖先的历次提交存为临时的差异补丁 patch 文件，存在 .git/rebase 目录下；然后在 master 分支最新提交 C2 的基础上，将保存的 patch 文件中的提交依次应用到 master 分支，并生成新的提交（commit id）。</p> <p>最后回到 master 分支，进行一次快进合并，即将 experiment 分支合并到 master 分支。
+<img src="https://img-blog.csdnimg.cn/20190130113135881.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+操作命令如下：</p> <div class="language- extra-class"><pre class="language-text"><code># 第一步，变基
+git checkout experiment
+git rebase master
+
+# 或者
+git rebase master experiment
+
+# 第二步，合并
+git checkout master
+git merge experiment
+</code></pre></div><p>（3）变基的风险</p> <p>变基帮助我们拥有直线提交历史，也并非完美无缺，为避免出错，使用时需要遵守一条准则：<strong>不要对已推送至远程仓库的提交进行变基操作</strong>。</p> <p>变基操作的实质是丢弃一些现有的提交，然后相应地新建一些内容一样但实际上不同的提交。 如果你已经将提交推送至远程仓库，而其他人也已经从该仓库拉取提交并进行了后续工作，此时，如果你用 git rebase 命令重新整理了提交并再次推送，相当于删除之前的提交。你的同伴再次 git pull 时，会将存放在本地的你已经删除的提交再次合并，如果你的同伴将合并后的提交推送到服务器上，实际上是将那些已经被你变基抛弃的提交又恢复了回来，这会令人感到混乱。</p> <p>（4）变基 vs 合并</p> <p>变基和合并都可以完成分支合并，到底哪种方式更好？在回答这个问题之前，让我们退后一步，讨论一下提交历史的意义。</p> <p>有一种观点认为，仓库的提交历史记录实际发生过什么。 它是针对历史的文档，本身就有价值，不能乱改。 从这个角度看来，改变提交历史是一种亵渎，你使用谎言掩盖了实际发生过的事情。 如果由合并产生的提交历史是一团糟怎么办？ 既然事实就是如此，那么这些痕迹就应该被保留下来，让后人能够查阅。</p> <p>另一种观点则正好相反，他们认为提交历史是 项目过程中发生的事。 没人会出版一本书的第一版草稿，软件维护手册也是需要反复修订才能方便使用。 持这一观点的人会使用 rebase 及 filter-branch 等工具来编写故事，怎么方便后来的读者就怎么写。</p> <p>现在，让我们回到之前的问题上来，到底合并还是变基好？这并没有一个正确的答案。 Git 是一个非常强大的工具，它允许你对提交历史做许多事情，但每个团队、每个项目对此的需求并不相同，按实际需要来选择即可。</p> <p>个人建议，git merge 足以完成分支合并，易于理解，基于惰性与简明原则，没有必要使用变基。</p> <p>（5）常用命令选项</p> <p>git rebase 的基本命令格式如下：</p> <div class="language- extra-class"><pre class="language-text"><code>git rebase [-i] [options] [--exec &lt;cmd&gt;] [--onto &lt;newbase&gt;] [&lt;upstream&gt;] [&lt;branch&gt;]
+git rebase [-i] [options] [--exec &lt;cmd&gt;] [--onto &lt;newbase&gt;] --root [&lt;branch&gt;]
+git rebase --continue | --abort | --skip | --edit-todo
+</code></pre></div><p>（a）git rebase --onto
+截取特性分支上的另一个特性分支，然后变基到其他分支。比如，假设当前本地仓库提交历史如下：</p> <div class="language- extra-class"><pre class="language-text"><code>A---B---E---F---G  master
+    \
+     C---D---H---I---J  next
+                      \
+                       K---L---M  topic
+</code></pre></div><p>此时topic分支的上游分支是next分支，如果要将topic分支上的提交（K，M，L）跳过next分支，直接放到master分支上，就需要加上--onto参数：</p> <div class="language- extra-class"><pre class="language-text"><code>git rebase --onto master next topic
+</code></pre></div><p>上述命令的意思是：取出topic分支，找出topic和next分支的共同祖先之后的提交，然后放在master分支上，执行后提交历史变为如下：</p> <div class="language- extra-class"><pre class="language-text"><code>A---B---E---F---G  master
+    \            \
+     \            K'---L'---M'  topic 
+      \     
+       C---D---H---I---J  next
+</code></pre></div><p>（b）git rebase –continue/abort/skip
+这三个命令分别表示继续执行变基操作、终止变基、跳过某一文件继续进行。因为在rebase的过程中，有可能会出现文件冲突。这种情况下，首先要解决冲突，解决冲突后可以选择继续执行rebase或者结束rebase，一般的做法为：</p> <div class="language- extra-class"><pre class="language-text"><code>git add filename
+git rebase --continue
+</code></pre></div><p>或者可以选择终止变基：</p> <div class="language- extra-class"><pre class="language-text"><code>git rebase --abort
+</code></pre></div><p>或者跳过该patch。</p> <div class="language- extra-class"><pre class="language-text"><code>git rebase --skip
+</code></pre></div><p>（c）git rebase -i, --interactive
+该命令相比其他命令，使用频率要高得多。<code>git rebase -i &lt;commitid&gt;</code> 可以进行交互式变基，相比于 <code>git rebase &lt;branch&gt;</code> 用来变基，它经常用来操作当前分支的提交，git 会将 <code>&lt;commitid&gt;-HEAD</code> 之间的提交列在一个变基脚本中，每一笔提交根据用户设置的命令，会进行不同的操作，如修改提交信息、移除指定提交、合并两个提交为一个（压缩提交）、拆分提交等。</p> <p>如要对最近 4 次提交进行重新操作，则：</p> <div class="language- extra-class"><pre class="language-text"><code>git rebase -i HEAD~4
+</code></pre></div><p>此时将会弹出如下形式的变基脚本：</p> <div class="language- extra-class"><pre class="language-text"><code>1 pick af98479 [Description]:test4
+2 pick 3cc9d66 test3
+3 pick a7e819e usera commit03 branch2
+4 pick efc5b15 usera commit04 branch2
+5 
+6 # Rebase de7b118..efc5b15 onto de7b118 (4 command(s))
+7 #
+8 # Commands:
+9 # p, pick = use commit
+10 # r, reword = use commit, but edit the commit message
+11 # e, edit = use commit, but stop for amending
+12 # s, squash = use commit, but meld into previous commit
+13 # f, fixup = like &quot;squash&quot;, but discard this commit's log message
+14 # x, exec = run command (the rest of the line) using shell
+15 # d, drop = remove commit
+16 #
+17 # These lines can be re-ordered; they are executed from top to bottom.
+18 #
+19 # If you remove a line here THAT COMMIT WILL BE LOST.
+20 #
+21 # However, if you remove everything, the rebase will be aborted.
+22 #
+23 # Note that empty commits are commented out
+</code></pre></div><p>这里我们可以修改pick为下面给出的其他命令，比如如果要修改提交信息，就使用r或reword，各指令的含义如下：</p> <div class="language- extra-class"><pre class="language-text"><code>p,pick：直接使用该次提交
+r,reword：使用该次提交，但重新编辑提交信息
+e,edit：停止到该次提交，通过`git commit --amend`追加提交，完毕之后不要忘记使用`git rebase --continue`完成这此rebase
+s,squash：压缩提交，将和上一次提交合并为一个提交
+x,exec：运行命令
+d,drop：移除这次提交
+</code></pre></div><h3 id="git-cherry-pick"><a href="#git-cherry-pick" class="header-anchor">#</a> git cherry-pick</h3> <p>（1）简介
+git cherry-pick 用于应用某些现有提交引入的更改。</p> <p>比如 master 分支有如下提交记录，A -&gt; B -&gt; C，程序在运行过程中，提交 B 引入的特性存在一个隐藏很深的 bug，现在需要将 B 从分支踢出，但是需要保留提交 C。此时需要将分支回退（reset）  到 A，然后使用 cherry-pick 将 C 的更改应用到 A。这里要注意，cherry-pick 时 C 一定要存在，不然会出错，这就要求我们在回滚 master 分支前，基于 master 先创建一个新的分支来保留提交 C。</p> <p>（2）用法</p> <div class="language- extra-class"><pre class="language-text"><code>git cherry-pick &lt;commit&gt;…​
+</code></pre></div><h2 id="_9-调试-debugging"><a href="#_9-调试-debugging" class="header-anchor">#</a> 9.调试（Debugging）</h2> <h3 id="git-blame"><a href="#git-blame" class="header-anchor">#</a> git blame</h3> <p>git blame 命令用于查看文件的每一行是谁修改的。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> blame <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+<span class="token function">git</span> blame <span class="token punctuation">[</span>-L n,m<span class="token punctuation">]</span> <span class="token punctuation">[</span>file<span class="token punctuation">]</span>	//指定文件的行范围为n,m
+</code></pre></div><h3 id="git-version"><a href="#git-version" class="header-anchor">#</a> git version</h3> <p>git version 用于查看 git 版本。</p> <div class="language- extra-class"><pre class="language-text"><code>git version
+</code></pre></div><h2 id="_10-管理-administration"><a href="#_10-管理-administration" class="header-anchor">#</a> 10.管理（Administration）</h2> <h3 id="git-clean"><a href="#git-clean" class="header-anchor">#</a> git clean</h3> <p>git clean 命令用于删除工作目录所有 untracked 的文件或目录。基本用法如下：</p> <div class="language- extra-class"><pre class="language-text"><code>git clean [-d] [-f] [-i] [-n] [-q] [-e &lt;pattern&gt;] [-x | -X] [--] &lt;paths&gt;...
+    -q, --quiet           				不打印被删除的文件或目录名称
+    -n, --dry-run        				查看删除之前会删除哪些东西，并不会有实际的影响
+    -f, --force             			强制删除
+    -i, --interactive     			交互式删除
+    -d                         			删除目录
+    -e, --exclude &lt;pattern&gt;   添加&lt;pattern&gt;到忽略规则中，用于忽略符合规则的文件或目录
+    -x                    					同时可删除被忽略的文件或目录
+    -X                   					只删除被忽略的文件
+</code></pre></div><p>注意，未指定目录<code>&lt;paths&gt;</code>默认为当前目录。一般情况下，git reset --hard 会和 git clean -df 一起使用，让你的工作目录完全回退到最近一次 commit 的时候。</p> <h2 id="_11-检查与比较-inspection-and-comparison"><a href="#_11-检查与比较-inspection-and-comparison" class="header-anchor">#</a> 11.检查与比较（Inspection and Comparison）</h2> <h3 id="git-log"><a href="#git-log" class="header-anchor">#</a> git log</h3> <p>（1）简介
+git log 用于看历史提交日志，最近的排在最上方，显示提交对象的哈希值、作者、提交日期和提交说明。如果记录过多，则按 Page Up、Page Down、↓、↑ 键来控制显示，按 q 退出历史记录列表。</p> <p>（2）命令格式</p> <div class="language- extra-class"><pre class="language-text"><code>git log [&lt;options&gt;] [&lt;revision range&gt;] [[--] &lt;path&gt;…​]
+</code></pre></div><p>（3）常用选项</p> <div class="language- extra-class"><pre class="language-text"><code>-- &lt;path&gt;…​
+	显示指定文件的提交日志
+-, -n, --max-count=&lt;number&gt;
+	显示最近 number 次的提交日志
+--since, --after=&lt;date&gt;
+	显示指定日期之后的提交日志
+--until, --before=&lt;date&gt;
+	显示指定日期之前的提交日志
+--author, --committer=&lt;pattern&gt;
+	显示指定提交者提交的日志
+--merges
+	只展示 merge 信息
+--no-merges
+	不展示 merge 信息
+--abbrev-commit
+	精简 commit id，只展示 40 个十六进制数字构成的 commit id 的首部
+--graph
+	以文本字符绘制的“图形”展示
+--pretty[=&lt;format&gt;]
+--format=&lt;format&gt;
+	以指定格式展示，&lt;format&gt; 可取值 oneline, short, medium, full, fuller, email, raw, format:&lt;string&gt; 和 tformat:&lt;string&gt;，
+	其中&lt;string&gt;为格式控制字符串。缺省值为 medium。常用的是 oneline
+--oneline
+	等价于 --pretty=oneline --abbrev-commit
+</code></pre></div><p>（4）常用示例
+（a）展示提交历史。</p> <div class="language- extra-class"><pre class="language-text"><code>git log
+</code></pre></div><p>（b）单行展示，显示简短 commitid（%h）、提交日期（%cd）、提交者的名字（%cn）和提交说明（%s）。</p> <div class="language- extra-class"><pre class="language-text"><code>git log --pretty=format:&quot;%h %cd %cn : %s&quot;
+955599561 Tue Mar 10 16:21:51 2020 +0800 tom : 性能优化
+692028af8 Tue Mar 10 10:26:08 2020 +0800 bill : 修改 bug
+11a8e2021 Tue Mar 10 10:26:08 2020 +0800 jerry : 首次提交
+</code></pre></div><p>（c）以图形方式展示提交历史。</p> <div class="language- extra-class"><pre class="language-text"><code>git log --graph
+</code></pre></div><p>（d）以图形方式展示提交历史，提交信息以单行展示。</p> <div class="language- extra-class"><pre class="language-text"><code>git log --graph --oneline
+
+*   2fa056a8c Merge branch 'master' of http://git.code.oa.com/nfa/goserver_proj
+|\
+| * d336234bc (tag: Tag_20190312_V003) set gopath
+| * b8c3bbd55 (tag: Tag_20190312_V002) fix command.go proto path
+| * 2f6a13fc2 (tag: Tag_20190312_V001) fix proto path
+| * 7a147abe2 fix proto path
+| *   99e295279 (tag: Tag_20190311_B1000) Merge branch 'kbAbOp_eddie' into 'master'
+| |\
+| | * 809801eb9 add cityhash
+| | * b588a5d40 接口改造
+| * | f1c0ca554 fix
+| |/
+| * 92e4249a9 update conf&amp;log
+| *   bd8cf2755 Merge branch 'master' of http://git.code.oa.com/nfa/goserver_proj
+| |\
+| * | 886fd1ed3 change log
+* | | 0d911b64d 提交新结构
+| |/
+|/|
+* | 8c7eca23a ad
+|/
+* 769b68c61 KbADProxyServer first commit
+* 8cea1f0b4 信息流商业化的所有go服务代码放此项目，方便公用代码
+</code></pre></div><h3 id="git-diff"><a href="#git-diff" class="header-anchor">#</a> git diff</h3> <ul><li>简介</li></ul> <p>主要用于查看文件之间的区别：
+（1）工作区（working tree）与暂存区（index）；
+（2）工作区与版本库（repository）；
+（3）暂存区与版本库；
+（4）版本库与版本库的不同版本；
+（5）不同分支；
+（6）磁盘上两个文件之间；
+（7）本地分支与远端分支。</p> <ul><li>示例</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git diff [&lt;filepath&gt;]...
+	工作区与暂存区比较
+git diff &lt;commitid&gt; [&lt;filepath&gt;]...
+	工作区与版本库比较
+git diff &lt;branch&gt; [&lt;filepath&gt;]...
+	工作区与分支比较
+git diff (--staged | --cached) [&lt;commit&gt;] [&lt;filepath&gt;]...
+	暂存区与版本库比较。commit 缺省为 HEAD，即最新提交
+git diff [commit1] [commit2] [&lt;filepath&gt;]...
+	版本库与版本库的不同版本比较
+git diff &lt;branch1&gt; &lt;branch2&gt; [&lt;filepath&gt;]...
+	不同分支最新提交比较
+git diff --stat
+	列出发生变更的文件列表以及有多少行产生了改动
+git diff &lt;file1&gt; &lt;file2&gt;
+	两个磁盘文件比较
+git diff &lt;remote&gt;/&lt;remote branch&gt; &lt;local branch&gt;
+	本地分支与远端分支
+</code></pre></div><p>注意：比较的两个对象，第一对象是被比较的对象，给出的差异结果也是第二个对象相对于第一个对象的差异结果。</p> <h3 id="git-show"><a href="#git-show" class="header-anchor">#</a> git show</h3> <p>（1）简介
+git show 用于显示各种类型的对象，包括 blobs、trees、tags 和 commits。</p> <p>对于 commits，它显示日志消息和文本差异。
+对于 tags，它显示标签消息和引用对象。
+对于 trees，它显示 tree 的名称。
+对于简单的 blobs，它显示了普通的内容。</p> <p>（2）命令格式</p> <div class="language- extra-class"><pre class="language-text"><code>git show [&lt;options&gt;] [&lt;object&gt;…​]
+</code></pre></div><p>（3）常用选项</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;object&gt;…​
+	待展示的对象，默认为 HEAD
+--pretty[=&lt;format&gt;], --format=&lt;format&gt;
+	以指定格式展示，&lt;format&gt; 可取值 oneline, short, medium, full, fuller, email, raw, format:&lt;string&gt; 和 tformat:&lt;string&gt;，
+	其中&lt;string&gt;为格式控制字符串。缺省值为 medium。常用的是 oneline
+--abbrev-commit
+	精简 commit id，只展示 40 个十六进制数字构成的 commit id 的首部
+--oneline
+	等价于 --pretty=oneline --abbrev-commit
+--name-only
+	只显示发生变更的文件名
+</code></pre></div><p>（4）常用示例
+（a）查看某个 tag 指向的版本信息。</p> <div class="language- extra-class"><pre class="language-text"><code>git show v1.0.0
+</code></pre></div><p>（b）显示某个 tag 指向的版本的目录树。</p> <div class="language- extra-class"><pre class="language-text"><code>git show v1.0.0^{tree}
+
+.gitignore
+.orange-ci.yml
+PRJ_ROOT
+README.md
+bin/
+pkg/
+src/
+</code></pre></div><p>（c）显示某次提交的详细信息，包括文件差异。</p> <div class="language- extra-class"><pre class="language-text"><code>git show &lt;commitid&gt;
+</code></pre></div><p>（d）只显示某次提交发生变化的文件名。</p> <div class="language- extra-class"><pre class="language-text"><code>git show --name-only &lt;commitid&gt;
+</code></pre></div><h2 id="_12-基本快照-basic-snapshotting"><a href="#_12-基本快照-basic-snapshotting" class="header-anchor">#</a> 12.基本快照（Basic Snapshotting）</h2> <h3 id="git-reset"><a href="#git-reset" class="header-anchor">#</a> git reset</h3> <ul><li>简介</li></ul> <p>git reset 将当前 HEAD 重置为指定状态，即版本回退。</p> <p>可将分支重设（reset）到指定的<code>&lt;commit&gt;</code>，如果不显示指定 commit，默认是 HEAD，即最近一次提交。</p> <p>比如我们用 Git 时可能在 commit 后，发现这次 commit 的内容是有错误的，那么有两种处理方法：
+（1）修改错误内容，再次 commit；
+（2）使用 git reset 撤销这一次错误的 commit。</p> <p>第一种方法比较直接，但会多一次 commit 记录，建议使用 git reset 进行版本回退，方便快捷，错误的 commit 记录不会被保留下来。</p> <ul><li>命令格式</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git reset [-q] [&lt;tree-ish&gt;] [--] &lt;paths&gt;…​
+git reset (--patch | -p) [&lt;tree-ish&gt;] [--] [&lt;paths&gt;…​]
+git reset [--soft | --mixed [-N] | --hard | --merge | --keep] [-q] [&lt;commit&gt;]
+</code></pre></div><ul><li>选项说明</li></ul> <div class="language- extra-class"><pre class="language-text"><code>-q, --quiet
+	静默模式，只打印错误信息
+--soft
+	重置 HEAD，保留暂存区和工作区。版本库的修改会回退到暂存区，工作区的修改保持不动
+--mixed
+	重置 HEAD 和暂存区，保留工作区。版本库与暂存区的修改都将回退到工作区，即回滚到了所有 git add 和 git commit 的执行之前的状态。为默认模式
+--hard
+	重置 HEAD、暂存区和工作区。暂存区和工作区的修改都将被丢弃。请谨慎使用，暂存区的修改很难找回，工作区的修改无法找回。
+--merge
+	重置 HEAD 和暂存区，保留工作区。与 --mixed 不同的是，暂存区的修改不会回退到工作。如果工作区的某个文件与暂存区不同，则命令执行失败。该选项很少使用
+--keep
+	重置 HEAD 与暂存区，保留工作区。与 --mixed 不同的是，暂存区的修改不会回退到工作。与 --merge 的区别是，如果工作区的某个文件与暂存区不同，则命令不会执行失败。该选项很少使用
+-p, --patch
+	以 patch 的方式展示出来需要 reset 的代码， git reset -p 和 git add -p 就是一对互为反向的操作，后者是把工作目录下变更的代码以 patch 的方式展示出来，以互动的方式应用到 index 上，前者则是一个反向操作
+-N, --intent-to-add
+	任何新加入到 HEAD 的文件，再回退到工作区后都将标记为 tracked，即受版本控制
+</code></pre></div><p>（4）常用示例</p> <ul><li>放弃当前版本的所有修改。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git reset --hard
+git reset --hard HEAD
+</code></pre></div><ul><li>分支版本跳转。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git reset --hard [commit]
+commit 可取值 HEAD 当前版本，上一个版本 HEAD^（或 HEAD~1），上上一个版本就是 HEAD^^（或 HEAD~2），以此类推。缺省为 HEAD
+</code></pre></div><ul><li>将暂存区的修改回退到工作区。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git reset &lt;file&gt;...
+git reset HEAD &lt;file&gt;...
+git reset --mixed &lt;file&gt;...
+git reset --mixed HEAD &lt;file&gt;...
+</code></pre></div><h3 id="git-revert"><a href="#git-revert" class="header-anchor">#</a> git revert</h3> <p>（1）简介
+git revert 用一个新的提交来消除历史提交所做的修改，历史 commit 记录都会保留，并且这次撤销
+操作会产生一次新的提交。</p> <p>与 git reset 的区别主要有：
+（a）实现的方式不用。git revert 使用一次新的提交来回退到指定版本，不会改变历史的提交历史。git reset 移动 HEAD 指针指向历史某次提交，历史提交记录将被改变。因此，git revert 一般用在公共分支上，git reset 一般用在私有分支上。
+（b）使用的场景不同。git revert 一般只用于版本回退，撤销已经提交的更改，并且要求暂存区与工作区是干净的。git reset 一般用于撤销未提交的修改，比如使用<code>git reset --hard</code>放弃暂存区与工作区的修改。</p> <p>（2）格式</p> <div class="language- extra-class"><pre class="language-text"><code>git revert [--[no-]edit] [-n] [-m parent-number] [-s] [-S[&lt;keyid&gt;]] &lt;commit&gt;…​
+git revert (--continue | --skip | --abort | --quit)
+</code></pre></div><p>（3）选项</p> <div class="language- extra-class"><pre class="language-text"><code>-e
+--edit
+	版本回退在提交之前编辑提交消息。如果从终端运行命令，则这是默认设置。
+--no-edit
+	git revert 将不会启动提交消息编辑器
+</code></pre></div><p>（4）示例</p> <p>（a）回退到上一版本。</p> <div class="language- extra-class"><pre class="language-text"><code>git revert HEAD^
+</code></pre></div><h3 id="git-restore"><a href="#git-restore" class="header-anchor">#</a> git restore</h3> <p>（1）简介
+git restore 是从 git 2.23 版本开始引入，是一个比较新的命令，用于恢复暂存区或者工作区中的文件。恢复工作区中的文件，也可以使用<code>git checkout -- &lt;file&gt;</code>。可见，git restore 实现了 git checkout 命令的文件恢复功能，git restore 命令的语义更加贴合其作用，更容易理解，建议使用。</p> <p>（2）格式</p> <div class="language- extra-class"><pre class="language-text"><code> git restore [&lt;options&gt;] [--source=&lt;branch&gt;] &lt;file&gt;...
+</code></pre></div><p>（3）选项</p> <div class="language- extra-class"><pre class="language-text"><code>-W
+--worktree
+	恢复工作区指定文件，为缺省选项
+-S
+--staged
+	将暂存区指定文件回退到工作区
+-s
+--source
+	指明文件所在的分支，缺省为当前分支
+</code></pre></div><p>（4）示例
+（a）将暂存区的文件回退到工作区。</p> <div class="language- extra-class"><pre class="language-text"><code>git restore -S &lt;file&gt;...
+</code></pre></div><p>（b）恢复工作区中的文件。</p> <div class="language- extra-class"><pre class="language-text"><code>git restore &lt;file&gt;...
+</code></pre></div><h2 id="_13-管理-administration"><a href="#_13-管理-administration" class="header-anchor">#</a> 13.管理（Administration）</h2> <h3 id="git-reflog"><a href="#git-reflog" class="header-anchor">#</a> git reflog</h3> <p>（1）简介
+git reflog 用于管理存储在引用日志 reflog 中的记录的信息。用于查看分支版本所有的变更记录，包括因版本回退出现在 HEAD 之后的变更记录。git log 只能查看 HEAD 之前的版本记录，不能查看 HEAD 之后的版本记录。</p> <p>reflog 可以很好地帮助我们恢复误操作的数据，比如我们错误地 reset 到了一个旧的提交，这个时候我们可以使用 reflog 去查看在误操作之前的信息，并且使用 git reset 恢复到之前的状态。</p> <p>（2）格式
+该命令采用各种子命令，并根据子命令使用不同的选项：</p> <div class="language- extra-class"><pre class="language-text"><code>git reflog [show] [log-options] [&lt;ref&gt;]
+git reflog expire [--expire=&lt;time&gt;] [--expire-unreachable=&lt;time&gt;]
+	[--rewrite] [--updateref] [--stale-fix]
+	[--dry-run | -n] [--verbose] [--all [--single-worktree] | &lt;refs&gt;…​]
+git reflog delete [--rewrite] [--updateref]
+	[--dry-run | -n] [--verbose] ref@{specifier}…​
+git reflog exists &lt;ref&gt;
+</code></pre></div><p>show 子命令是缺省命令，用于显示命令行中提供的引用的日志，引用默认为 HEAD。</p> <p>expire 子命令用于修剪旧的 reflog 条目。超过 expire 时间的条目，或者早于 expire-unreachable 时间且当前提示无法访问的条目将从 reflog 中删除。一般情况下不会使用该命令。</p> <p>delete 子命令从 reflog 中删除单个条目。其参数必须是精确条目，例如<code>git reflog delete master@{2}</code>。一般情况下不会使用该命令。</p> <p>exists 子命令检查 ref 是否具有 reflog。如果 reflog 存在则退出为零状态，如果不存在则退出为非零状态。</p> <p>（3）选项</p> <div class="language- extra-class"><pre class="language-text"><code>--all
+	处理所有引用的 reflog
+--single-worktree
+	仅处理当前工作树的 reflog
+-n, --dry-run
+	不要删除任何条目，只展示会被修剪的东西
+--verbose
+	打印额外信息
+</code></pre></div><p>（4）示例</p> <p>（a）查看当前分支所有的变更记录。</p> <div class="language- extra-class"><pre class="language-text"><code>git reflog
+</code></pre></div><h2 id="_14-别名设置"><a href="#_14-别名设置" class="header-anchor">#</a> 14.别名设置</h2> <p>为了简化输入，提高效率，推荐使用如下 Git 命令的简短别名。将下面的内容粘帖至文件<code>~/.bashrc</code>，然后执行命令<code>. ~/.bashrc</code>或<code>source ~/.bashrc</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>alias gcl='git clone'
+alias gs='git status'
+alias ga='git add'
+alias gcm='git commit -m'
+alias gcam='git commit -am'
+alias gb='git branch -vv'
+alias gc='git checkout'
+alias gph='git push'
+alias gpl='git pull'
+</code></pre></div><hr> <h2 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h2> <p><a href="https://git-scm.com/docs" target="_blank" rel="noopener noreferrer">git reference<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.bookstack.cn/read/git-doc-zh/README.md" target="_blank" rel="noopener noreferrer">Git 中文参考 <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="http://www.itbulu.com/10-minutes-git.html" target="_blank" rel="noopener noreferrer">10分钟学会Git教程 - 安装Git、建仓库、添加和推送文件至库<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="http://blog.csdn.net/dengsilinming/article/details/8000622" target="_blank" rel="noopener noreferrer">Git常用命令大全<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="http://blog.sina.com.cn/s/blog_5f2ca1ed010167hs.html" target="_blank" rel="noopener noreferrer">Git push 报错 &quot;error: failed to push some refs to &quot; 解决<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/furzoom/article/details/53002699" target="_blank" rel="noopener noreferrer">git命令行删除远程分支<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/c_z_w/article/details/52862129" target="_blank" rel="noopener noreferrer">git stash命令总结<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.cnblogs.com/houpeiyong/p/5890748.html" target="_blank" rel="noopener noreferrer">代码回滚：git reset、git checkout和git revert区别和联系<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.cnblogs.com/kidsitcn/p/4513297.html" target="_blank" rel="noopener noreferrer">git reset soft,hard,mixed之区别深解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener noreferrer">1.6 起步 - 初次运行 Git 前的配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.cnblogs.com/kevingrace/p/5896706.html" target="_blank" rel="noopener noreferrer">简单对比git pull和git pull --rebase的使用<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://git-scm.com/docs/git-clean" target="_blank" rel="noopener noreferrer">git clean.git reference<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA" target="_blank" rel="noopener noreferrer">Pro Git Online.C3.6 变基<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/fightfightfight/article/details/80850328" target="_blank" rel="noopener noreferrer">Git整理(四) git rebase 的使用<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.codercto.com/a/45325.html" target="_blank" rel="noopener noreferrer">这一次彻底搞懂 Git Rebase<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://blog.csdn.net/trochiluses/article/details/14451777" target="_blank" rel="noopener noreferrer">git rebase：永远不要衍合那些已经推送到公共仓库的更新<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <!----></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/25/2023, 10:22:27 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/backend-cmd/版本控制/svn.html" class="prev">
+        svn
+      </a></span> <span class="next"><a href="/backend-cmd/实用工具/alias-builtin.html">
+        alias-builtin
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/backend-cmd/assets/js/app.d9490acc.js" defer></script><script src="/backend-cmd/assets/js/2.08ee4580.js" defer></script><script src="/backend-cmd/assets/js/151.c0a60d92.js" defer></script>
+  </body>
+</html>
