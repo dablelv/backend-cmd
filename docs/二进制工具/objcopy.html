@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.命令简介 | 后台开发命令 365</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/backend-cmd/favicon.png">
+    <meta name="description" content="后台开发常用命令介绍">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/backend-cmd/assets/css/0.styles.6608425b.css" as="style"><link rel="preload" href="/backend-cmd/assets/js/app.d9490acc.js" as="script"><link rel="preload" href="/backend-cmd/assets/js/2.08ee4580.js" as="script"><link rel="preload" href="/backend-cmd/assets/js/31.abd94c4a.js" as="script"><link rel="prefetch" href="/backend-cmd/assets/js/10.3fd50d48.js"><link rel="prefetch" href="/backend-cmd/assets/js/100.4a5ce293.js"><link rel="prefetch" href="/backend-cmd/assets/js/101.c6b7074f.js"><link rel="prefetch" href="/backend-cmd/assets/js/102.8031f6b0.js"><link rel="prefetch" href="/backend-cmd/assets/js/103.fe85cafb.js"><link rel="prefetch" href="/backend-cmd/assets/js/104.32749cf1.js"><link rel="prefetch" href="/backend-cmd/assets/js/105.2128987a.js"><link rel="prefetch" href="/backend-cmd/assets/js/106.c4bf7675.js"><link rel="prefetch" href="/backend-cmd/assets/js/107.732b8d6e.js"><link rel="prefetch" href="/backend-cmd/assets/js/108.7cd1f2d6.js"><link rel="prefetch" href="/backend-cmd/assets/js/109.44ef34fa.js"><link rel="prefetch" href="/backend-cmd/assets/js/11.7412dbb5.js"><link rel="prefetch" href="/backend-cmd/assets/js/110.b21b7308.js"><link rel="prefetch" href="/backend-cmd/assets/js/111.37176584.js"><link rel="prefetch" href="/backend-cmd/assets/js/112.db15a109.js"><link rel="prefetch" href="/backend-cmd/assets/js/113.7345d2a3.js"><link rel="prefetch" href="/backend-cmd/assets/js/114.c158618c.js"><link rel="prefetch" href="/backend-cmd/assets/js/115.b462a0d4.js"><link rel="prefetch" href="/backend-cmd/assets/js/116.09c37e37.js"><link rel="prefetch" href="/backend-cmd/assets/js/117.5a939af1.js"><link rel="prefetch" href="/backend-cmd/assets/js/118.aa75fb03.js"><link rel="prefetch" href="/backend-cmd/assets/js/119.beb4a6fa.js"><link rel="prefetch" href="/backend-cmd/assets/js/12.c4e5e260.js"><link rel="prefetch" href="/backend-cmd/assets/js/120.bc02e68a.js"><link rel="prefetch" href="/backend-cmd/assets/js/121.aa4bf34b.js"><link rel="prefetch" href="/backend-cmd/assets/js/122.fd79df6a.js"><link rel="prefetch" href="/backend-cmd/assets/js/123.4a43f0a6.js"><link rel="prefetch" href="/backend-cmd/assets/js/124.4ab1dc03.js"><link rel="prefetch" href="/backend-cmd/assets/js/125.55939223.js"><link rel="prefetch" href="/backend-cmd/assets/js/126.25f9c22e.js"><link rel="prefetch" href="/backend-cmd/assets/js/127.ad9ac543.js"><link rel="prefetch" href="/backend-cmd/assets/js/128.918607da.js"><link rel="prefetch" href="/backend-cmd/assets/js/129.c8be7e42.js"><link rel="prefetch" href="/backend-cmd/assets/js/13.c67450d5.js"><link rel="prefetch" href="/backend-cmd/assets/js/130.c45e02f0.js"><link rel="prefetch" href="/backend-cmd/assets/js/131.725a079b.js"><link rel="prefetch" href="/backend-cmd/assets/js/132.9b9e3f30.js"><link rel="prefetch" href="/backend-cmd/assets/js/133.8a8dfb99.js"><link rel="prefetch" href="/backend-cmd/assets/js/134.9fa951a4.js"><link rel="prefetch" href="/backend-cmd/assets/js/135.f155d79a.js"><link rel="prefetch" href="/backend-cmd/assets/js/136.397aae06.js"><link rel="prefetch" href="/backend-cmd/assets/js/137.51ca0b35.js"><link rel="prefetch" href="/backend-cmd/assets/js/138.185bb2d3.js"><link rel="prefetch" href="/backend-cmd/assets/js/139.7419993d.js"><link rel="prefetch" href="/backend-cmd/assets/js/14.42f2e7b1.js"><link rel="prefetch" href="/backend-cmd/assets/js/140.780c28fa.js"><link rel="prefetch" href="/backend-cmd/assets/js/141.bb3c75e9.js"><link rel="prefetch" href="/backend-cmd/assets/js/142.f96a99dd.js"><link rel="prefetch" href="/backend-cmd/assets/js/143.1fe12973.js"><link rel="prefetch" href="/backend-cmd/assets/js/144.7ad6227b.js"><link rel="prefetch" href="/backend-cmd/assets/js/145.e5347c51.js"><link rel="prefetch" href="/backend-cmd/assets/js/146.ad8248af.js"><link rel="prefetch" href="/backend-cmd/assets/js/147.eaeb8fd8.js"><link rel="prefetch" href="/backend-cmd/assets/js/148.b4d6a5b4.js"><link rel="prefetch" href="/backend-cmd/assets/js/149.0b96c3f0.js"><link rel="prefetch" href="/backend-cmd/assets/js/15.58042256.js"><link rel="prefetch" href="/backend-cmd/assets/js/150.12ed5133.js"><link rel="prefetch" href="/backend-cmd/assets/js/151.c0a60d92.js"><link rel="prefetch" href="/backend-cmd/assets/js/152.6546611c.js"><link rel="prefetch" href="/backend-cmd/assets/js/153.7c073b91.js"><link rel="prefetch" href="/backend-cmd/assets/js/154.e596b279.js"><link rel="prefetch" href="/backend-cmd/assets/js/155.abc79d45.js"><link rel="prefetch" href="/backend-cmd/assets/js/156.5112e6c0.js"><link rel="prefetch" href="/backend-cmd/assets/js/157.9ae069d4.js"><link rel="prefetch" href="/backend-cmd/assets/js/158.5626cfc9.js"><link rel="prefetch" href="/backend-cmd/assets/js/159.6f5a26b0.js"><link rel="prefetch" href="/backend-cmd/assets/js/16.1a7f30b3.js"><link rel="prefetch" href="/backend-cmd/assets/js/160.87d5a898.js"><link rel="prefetch" href="/backend-cmd/assets/js/161.941d7ee4.js"><link rel="prefetch" href="/backend-cmd/assets/js/162.5f1895df.js"><link rel="prefetch" href="/backend-cmd/assets/js/163.b730c08e.js"><link rel="prefetch" href="/backend-cmd/assets/js/164.1dc02ef8.js"><link rel="prefetch" href="/backend-cmd/assets/js/165.75d92c08.js"><link rel="prefetch" href="/backend-cmd/assets/js/166.5b7e9fc2.js"><link rel="prefetch" href="/backend-cmd/assets/js/167.bd396d7a.js"><link rel="prefetch" href="/backend-cmd/assets/js/168.d25fa30e.js"><link rel="prefetch" href="/backend-cmd/assets/js/169.945c7b44.js"><link rel="prefetch" href="/backend-cmd/assets/js/17.b04e2988.js"><link rel="prefetch" href="/backend-cmd/assets/js/170.d5a680c0.js"><link rel="prefetch" href="/backend-cmd/assets/js/171.e03333bf.js"><link rel="prefetch" href="/backend-cmd/assets/js/172.ba4307b2.js"><link rel="prefetch" href="/backend-cmd/assets/js/173.cb4fa5c7.js"><link rel="prefetch" href="/backend-cmd/assets/js/174.72663d94.js"><link rel="prefetch" href="/backend-cmd/assets/js/175.36311e46.js"><link rel="prefetch" href="/backend-cmd/assets/js/176.6f2bb1cb.js"><link rel="prefetch" href="/backend-cmd/assets/js/177.fc5e23fe.js"><link rel="prefetch" href="/backend-cmd/assets/js/178.935e369f.js"><link rel="prefetch" href="/backend-cmd/assets/js/179.b0f4fb84.js"><link rel="prefetch" href="/backend-cmd/assets/js/18.c1105cb5.js"><link rel="prefetch" href="/backend-cmd/assets/js/180.adb8ac22.js"><link rel="prefetch" href="/backend-cmd/assets/js/181.fd055b72.js"><link rel="prefetch" href="/backend-cmd/assets/js/182.bf17fea9.js"><link rel="prefetch" href="/backend-cmd/assets/js/183.640319cd.js"><link rel="prefetch" href="/backend-cmd/assets/js/184.a4711680.js"><link rel="prefetch" href="/backend-cmd/assets/js/185.fdf1285a.js"><link rel="prefetch" href="/backend-cmd/assets/js/186.13322c52.js"><link rel="prefetch" href="/backend-cmd/assets/js/187.03620cf8.js"><link rel="prefetch" href="/backend-cmd/assets/js/188.911f5ba9.js"><link rel="prefetch" href="/backend-cmd/assets/js/189.d94a663f.js"><link rel="prefetch" href="/backend-cmd/assets/js/19.1aaace09.js"><link rel="prefetch" href="/backend-cmd/assets/js/190.4f527a7a.js"><link rel="prefetch" href="/backend-cmd/assets/js/191.6a1738ba.js"><link rel="prefetch" href="/backend-cmd/assets/js/192.507a0245.js"><link rel="prefetch" href="/backend-cmd/assets/js/193.623de4db.js"><link rel="prefetch" href="/backend-cmd/assets/js/194.3e0d5da0.js"><link rel="prefetch" href="/backend-cmd/assets/js/195.01c93928.js"><link rel="prefetch" href="/backend-cmd/assets/js/196.9add4d72.js"><link rel="prefetch" href="/backend-cmd/assets/js/197.76eec49c.js"><link rel="prefetch" href="/backend-cmd/assets/js/198.9dbdc1de.js"><link rel="prefetch" href="/backend-cmd/assets/js/199.2701a49c.js"><link rel="prefetch" href="/backend-cmd/assets/js/20.23481c53.js"><link rel="prefetch" href="/backend-cmd/assets/js/200.f0f7e712.js"><link rel="prefetch" href="/backend-cmd/assets/js/201.8e5f2efb.js"><link rel="prefetch" href="/backend-cmd/assets/js/202.c7c8ae99.js"><link rel="prefetch" href="/backend-cmd/assets/js/203.ae31d4d2.js"><link rel="prefetch" href="/backend-cmd/assets/js/204.3cc20395.js"><link rel="prefetch" href="/backend-cmd/assets/js/205.92beb3dd.js"><link rel="prefetch" href="/backend-cmd/assets/js/206.3ee04118.js"><link rel="prefetch" href="/backend-cmd/assets/js/207.4b82ae10.js"><link rel="prefetch" href="/backend-cmd/assets/js/208.bbce9dee.js"><link rel="prefetch" href="/backend-cmd/assets/js/209.fc4837b0.js"><link rel="prefetch" href="/backend-cmd/assets/js/21.1abbee35.js"><link rel="prefetch" href="/backend-cmd/assets/js/210.779e1bf7.js"><link rel="prefetch" href="/backend-cmd/assets/js/211.06c30e5d.js"><link rel="prefetch" href="/backend-cmd/assets/js/212.7c6659ce.js"><link rel="prefetch" href="/backend-cmd/assets/js/213.1cac4d44.js"><link rel="prefetch" href="/backend-cmd/assets/js/214.e4ac8064.js"><link rel="prefetch" href="/backend-cmd/assets/js/215.35ff5b11.js"><link rel="prefetch" href="/backend-cmd/assets/js/216.48ee261e.js"><link rel="prefetch" href="/backend-cmd/assets/js/217.4861e084.js"><link rel="prefetch" href="/backend-cmd/assets/js/218.3cb17667.js"><link rel="prefetch" href="/backend-cmd/assets/js/219.be1bc546.js"><link rel="prefetch" href="/backend-cmd/assets/js/22.9c1e2885.js"><link rel="prefetch" href="/backend-cmd/assets/js/220.70e7bda7.js"><link rel="prefetch" href="/backend-cmd/assets/js/221.5082a02e.js"><link rel="prefetch" href="/backend-cmd/assets/js/222.33829dd1.js"><link rel="prefetch" href="/backend-cmd/assets/js/223.e8f53eb5.js"><link rel="prefetch" href="/backend-cmd/assets/js/224.32911dff.js"><link rel="prefetch" href="/backend-cmd/assets/js/225.7add8634.js"><link rel="prefetch" href="/backend-cmd/assets/js/226.dd573eda.js"><link rel="prefetch" href="/backend-cmd/assets/js/227.2a244db4.js"><link rel="prefetch" href="/backend-cmd/assets/js/228.e6f2d798.js"><link rel="prefetch" href="/backend-cmd/assets/js/229.81d2fc99.js"><link rel="prefetch" href="/backend-cmd/assets/js/23.ab73c4d2.js"><link rel="prefetch" href="/backend-cmd/assets/js/230.a92b1e8a.js"><link rel="prefetch" href="/backend-cmd/assets/js/231.27d1dbde.js"><link rel="prefetch" href="/backend-cmd/assets/js/232.09ee6e44.js"><link rel="prefetch" href="/backend-cmd/assets/js/233.57f62175.js"><link rel="prefetch" href="/backend-cmd/assets/js/234.20f19eea.js"><link rel="prefetch" href="/backend-cmd/assets/js/235.9506f3ed.js"><link rel="prefetch" href="/backend-cmd/assets/js/236.05ab28e2.js"><link rel="prefetch" href="/backend-cmd/assets/js/237.f24bc066.js"><link rel="prefetch" href="/backend-cmd/assets/js/238.886fd775.js"><link rel="prefetch" href="/backend-cmd/assets/js/239.1075e23c.js"><link rel="prefetch" href="/backend-cmd/assets/js/24.ae373333.js"><link rel="prefetch" href="/backend-cmd/assets/js/240.8a108243.js"><link rel="prefetch" href="/backend-cmd/assets/js/241.dc41217a.js"><link rel="prefetch" href="/backend-cmd/assets/js/242.1ae16a92.js"><link rel="prefetch" href="/backend-cmd/assets/js/243.fded0300.js"><link rel="prefetch" href="/backend-cmd/assets/js/244.0eaebbb8.js"><link rel="prefetch" href="/backend-cmd/assets/js/245.9f4e767d.js"><link rel="prefetch" href="/backend-cmd/assets/js/246.4ef6d9f0.js"><link rel="prefetch" href="/backend-cmd/assets/js/247.430455f9.js"><link rel="prefetch" href="/backend-cmd/assets/js/248.0d7167e0.js"><link rel="prefetch" href="/backend-cmd/assets/js/249.7b79ae4c.js"><link rel="prefetch" href="/backend-cmd/assets/js/25.a5885eb4.js"><link rel="prefetch" href="/backend-cmd/assets/js/250.d008d124.js"><link rel="prefetch" href="/backend-cmd/assets/js/251.c918a0e5.js"><link rel="prefetch" href="/backend-cmd/assets/js/252.99ba2205.js"><link rel="prefetch" href="/backend-cmd/assets/js/253.3dbc6011.js"><link rel="prefetch" href="/backend-cmd/assets/js/254.ba14178e.js"><link rel="prefetch" href="/backend-cmd/assets/js/255.70329495.js"><link rel="prefetch" href="/backend-cmd/assets/js/256.7caf09f6.js"><link rel="prefetch" href="/backend-cmd/assets/js/257.f205d194.js"><link rel="prefetch" href="/backend-cmd/assets/js/258.25327f8a.js"><link rel="prefetch" href="/backend-cmd/assets/js/259.a57223a9.js"><link rel="prefetch" href="/backend-cmd/assets/js/26.58f95260.js"><link rel="prefetch" href="/backend-cmd/assets/js/260.e16aff22.js"><link rel="prefetch" href="/backend-cmd/assets/js/261.20a4bdad.js"><link rel="prefetch" href="/backend-cmd/assets/js/262.7138904e.js"><link rel="prefetch" href="/backend-cmd/assets/js/263.38535e7e.js"><link rel="prefetch" href="/backend-cmd/assets/js/264.cdb80447.js"><link rel="prefetch" href="/backend-cmd/assets/js/265.1cabdc9f.js"><link rel="prefetch" href="/backend-cmd/assets/js/266.fb7bf64b.js"><link rel="prefetch" href="/backend-cmd/assets/js/267.09b2ed3e.js"><link rel="prefetch" href="/backend-cmd/assets/js/268.a0e23402.js"><link rel="prefetch" href="/backend-cmd/assets/js/269.7dbfb760.js"><link rel="prefetch" href="/backend-cmd/assets/js/27.d05635b9.js"><link rel="prefetch" href="/backend-cmd/assets/js/28.0af33d1f.js"><link rel="prefetch" href="/backend-cmd/assets/js/29.4e5c4127.js"><link rel="prefetch" href="/backend-cmd/assets/js/3.5c1aba3c.js"><link rel="prefetch" href="/backend-cmd/assets/js/30.69ecf715.js"><link rel="prefetch" href="/backend-cmd/assets/js/32.b9de3979.js"><link rel="prefetch" href="/backend-cmd/assets/js/33.a69ce7e9.js"><link rel="prefetch" href="/backend-cmd/assets/js/34.f5a1c5d7.js"><link rel="prefetch" href="/backend-cmd/assets/js/35.f94fbb4a.js"><link rel="prefetch" href="/backend-cmd/assets/js/36.ee7809b4.js"><link rel="prefetch" href="/backend-cmd/assets/js/37.929bf4f2.js"><link rel="prefetch" href="/backend-cmd/assets/js/38.51f67bbc.js"><link rel="prefetch" href="/backend-cmd/assets/js/39.deb75689.js"><link rel="prefetch" href="/backend-cmd/assets/js/4.ccd1ddcb.js"><link rel="prefetch" href="/backend-cmd/assets/js/40.dce5e506.js"><link rel="prefetch" href="/backend-cmd/assets/js/41.9c87b0a6.js"><link rel="prefetch" href="/backend-cmd/assets/js/42.88b6da06.js"><link rel="prefetch" href="/backend-cmd/assets/js/43.e9129b71.js"><link rel="prefetch" href="/backend-cmd/assets/js/44.07da43e2.js"><link rel="prefetch" href="/backend-cmd/assets/js/45.ebff7c46.js"><link rel="prefetch" href="/backend-cmd/assets/js/46.11d0740a.js"><link rel="prefetch" href="/backend-cmd/assets/js/47.abc5fa62.js"><link rel="prefetch" href="/backend-cmd/assets/js/48.ca6238e6.js"><link rel="prefetch" href="/backend-cmd/assets/js/49.018b7481.js"><link rel="prefetch" href="/backend-cmd/assets/js/5.56ae9307.js"><link rel="prefetch" href="/backend-cmd/assets/js/50.ba6f1f61.js"><link rel="prefetch" href="/backend-cmd/assets/js/51.684caca2.js"><link rel="prefetch" href="/backend-cmd/assets/js/52.7e249dbc.js"><link rel="prefetch" href="/backend-cmd/assets/js/53.093cf391.js"><link rel="prefetch" href="/backend-cmd/assets/js/54.56000b8a.js"><link rel="prefetch" href="/backend-cmd/assets/js/55.a62573b2.js"><link rel="prefetch" href="/backend-cmd/assets/js/56.72525ab5.js"><link rel="prefetch" href="/backend-cmd/assets/js/57.888a1255.js"><link rel="prefetch" href="/backend-cmd/assets/js/58.96ed9197.js"><link rel="prefetch" href="/backend-cmd/assets/js/59.cf5efa9a.js"><link rel="prefetch" href="/backend-cmd/assets/js/6.f78bc038.js"><link rel="prefetch" href="/backend-cmd/assets/js/60.7107891f.js"><link rel="prefetch" href="/backend-cmd/assets/js/61.f0fb7504.js"><link rel="prefetch" href="/backend-cmd/assets/js/62.e3e0d9fb.js"><link rel="prefetch" href="/backend-cmd/assets/js/63.8729312f.js"><link rel="prefetch" href="/backend-cmd/assets/js/64.563ec3b7.js"><link rel="prefetch" href="/backend-cmd/assets/js/65.cc31ff45.js"><link rel="prefetch" href="/backend-cmd/assets/js/66.0ba5722f.js"><link rel="prefetch" href="/backend-cmd/assets/js/67.ee4d8bcb.js"><link rel="prefetch" href="/backend-cmd/assets/js/68.e92b5975.js"><link rel="prefetch" href="/backend-cmd/assets/js/69.813d865b.js"><link rel="prefetch" href="/backend-cmd/assets/js/7.fb892f3f.js"><link rel="prefetch" href="/backend-cmd/assets/js/70.232e3c28.js"><link rel="prefetch" href="/backend-cmd/assets/js/71.c39ab5b0.js"><link rel="prefetch" href="/backend-cmd/assets/js/72.f7a276fb.js"><link rel="prefetch" href="/backend-cmd/assets/js/73.5991c526.js"><link rel="prefetch" href="/backend-cmd/assets/js/74.22827044.js"><link rel="prefetch" href="/backend-cmd/assets/js/75.53b3a7cf.js"><link rel="prefetch" href="/backend-cmd/assets/js/76.35431791.js"><link rel="prefetch" href="/backend-cmd/assets/js/77.b09b9f2c.js"><link rel="prefetch" href="/backend-cmd/assets/js/78.692cbe69.js"><link rel="prefetch" href="/backend-cmd/assets/js/79.fabdfbff.js"><link rel="prefetch" href="/backend-cmd/assets/js/8.4f7199ba.js"><link rel="prefetch" href="/backend-cmd/assets/js/80.e89bb783.js"><link rel="prefetch" href="/backend-cmd/assets/js/81.a67779c2.js"><link rel="prefetch" href="/backend-cmd/assets/js/82.d56f955b.js"><link rel="prefetch" href="/backend-cmd/assets/js/83.dc0d22be.js"><link rel="prefetch" href="/backend-cmd/assets/js/84.39ae4a57.js"><link rel="prefetch" href="/backend-cmd/assets/js/85.efc677c2.js"><link rel="prefetch" href="/backend-cmd/assets/js/86.3a509475.js"><link rel="prefetch" href="/backend-cmd/assets/js/87.a67acbe9.js"><link rel="prefetch" href="/backend-cmd/assets/js/88.c6158adf.js"><link rel="prefetch" href="/backend-cmd/assets/js/89.7411f1e6.js"><link rel="prefetch" href="/backend-cmd/assets/js/9.dd6b6182.js"><link rel="prefetch" href="/backend-cmd/assets/js/90.6ac49b24.js"><link rel="prefetch" href="/backend-cmd/assets/js/91.48e71808.js"><link rel="prefetch" href="/backend-cmd/assets/js/92.960eb09a.js"><link rel="prefetch" href="/backend-cmd/assets/js/93.ec0ed01c.js"><link rel="prefetch" href="/backend-cmd/assets/js/94.aae6ca2b.js"><link rel="prefetch" href="/backend-cmd/assets/js/95.33ae374c.js"><link rel="prefetch" href="/backend-cmd/assets/js/96.ed0ca6a1.js"><link rel="prefetch" href="/backend-cmd/assets/js/97.2ce7ff96.js"><link rel="prefetch" href="/backend-cmd/assets/js/98.d0699989.js"><link rel="prefetch" href="/backend-cmd/assets/js/99.33e0d46e.js">
+    <link rel="stylesheet" href="/backend-cmd/assets/css/0.styles.6608425b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/backend-cmd/" class="home-link router-link-active"><!----> <span class="site-name">后台开发命令 365</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/backend-cmd/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人主页" class="dropdown-title"><span class="title">个人主页</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人主页" class="mobile-dropdown-title"><span class="title">个人主页</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dablelv" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他书籍" class="dropdown-title"><span class="title">其他书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他书籍" class="mobile-dropdown-title"><span class="title">其他书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.github.io/go-coding-advice" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Go 编码建议
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dablelv/backend-cmd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/backend-cmd/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人主页" class="dropdown-title"><span class="title">个人主页</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人主页" class="mobile-dropdown-title"><span class="title">个人主页</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dablelv" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他书籍" class="dropdown-title"><span class="title">其他书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他书籍" class="mobile-dropdown-title"><span class="title">其他书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.github.io/go-coding-advice" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Go 编码建议
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dablelv/backend-cmd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/backend-cmd/" aria-current="page" class="sidebar-link">前言</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>帮助</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>文件系统</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进程管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>编译调试</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>二进制工具</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend-cmd/二进制工具/c++filt.html" class="sidebar-link">c++filt</a></li><li><a href="/backend-cmd/二进制工具/hexdump.html" class="sidebar-link">hexdump</a></li><li><a href="/backend-cmd/二进制工具/nm.html" class="sidebar-link">nm</a></li><li><a href="/backend-cmd/二进制工具/objcopy.html" class="active sidebar-link">objcopy</a></li><li><a href="/backend-cmd/二进制工具/objdump.html" class="sidebar-link">objdump</a></li><li><a href="/backend-cmd/二进制工具/od.html" class="sidebar-link">od</a></li><li><a href="/backend-cmd/二进制工具/readelf.html" class="sidebar-link">readelf</a></li><li><a href="/backend-cmd/二进制工具/size.html" class="sidebar-link">size</a></li><li><a href="/backend-cmd/二进制工具/strings.html" class="sidebar-link">strings</a></li><li><a href="/backend-cmd/二进制工具/strip.html" class="sidebar-link">strip</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Shell 编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>系统管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>终端配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>权限管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网络管理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>版本控制</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实用工具</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-命令简介"><a href="#_1-命令简介" class="header-anchor">#</a> 1.命令简介</h2> <p>obj 是 GNU Binutils 的一员，将目标文件的一部分或者全部内容拷贝到另外一个目标文件中，或者实现目标文件的格式转换，。</p> <p>objcopy 使用 BFD 库读写目标文件，它可以将一个目标文件的内容拷贝到另外一个目标文件。objcopy 通过它的选项来控制其不同的动作，它可以将目标文件拷贝成和原来的文件不一样的格式。需要注意的是 objcopy 能够在两种格式之间拷贝一个完全链接的文件，在两种格式之间拷贝一个可重定位的目标文件可能不会正常地工作。</p> <p>objcopy 在做转换的时候会创建临时文件，然后将这些临时文件删除。objcopy 使用 BFD 来做它所有的转换工作；它访问 BFD 中描述的所有格式，可以不必指定就识别大多数的格式。
+通过指定输出目标为 srec（例如 -O srec），objcopy 可以用来生成 S-record 文件。</p> <p>通过指定输入目标为二进制文件（例如-O binary），objcopy 可以生成原始格式的二进制文件。当 objcopy 生成一个原始格式的二进制文件的时候，它会生成输入的目标文件的基本内存拷贝，然后所有的符号和可重定位信息都会被去掉。内存拷贝开始于最低段的加载地址，拷贝到输出文件。</p> <p>当生成一个 S-record 或者原始的二进制文件的时候，可以使用<code>-S</code>选项来移除一些调试信息。有时<code>-R</code>可以用来移除一些二进制文件不需要的段。</p> <p>注意：objcopy 不能用来改变文件的大小端属性。</p> <h2 id="_2-命令格式"><a href="#_2-命令格式" class="header-anchor">#</a> 2.命令格式</h2> <div class="language- extra-class"><pre class="language-text"><code>objcopy [OPTION] [INFILE] [OUTFILE]
+</code></pre></div><h2 id="_3-选项说明"><a href="#_3-选项说明" class="header-anchor">#</a> 3.选项说明</h2> <div class="language- extra-class"><pre class="language-text"><code>-I bfdname, --input-target=bfdname
+	指定输入文件的格式 bfdname，可取值 elf32-little，elf32-big 等，而不是让 objcopy 去推测
+-O bfdname, --output-target=bfdname
+    指定输出文件的的格式 bfdname
+-F bfdname, --target=bfdname
+    指定输入、输出文件的 bfdname，目标文件格式，只用于在目标和源文件之间传输数据，不转换
+-B bfdarch, --binary-architecture=bfdarch
+	将无架构的输入文件转换为目标文件时很有用，输出体系结构可以设置为 bfdarch。如果输入文件具有已知的架构，将忽略此选项。可以在程序内通过引用转换过程创建的特殊符号来访问二进制数据。这些符号称为 _binary_objfile_start、_binary_objfile_end 和 _binary_objfile_size。例如，您可以将图片文件转换为对象文件，然后使用这些符号在代码中访问它
+-j sectionname, --only-section=sectionname 
+    只将由 sectionname 指定的 section 拷贝到输出文件，可以多次指定，并且注意如果使用不当会导致输出文件不可用
+-R sectionname, --remove-section=sectionname 
+	从输出文件中去除掉指定的 section，可以多次指定，并且注意如果使用不当会导致输出文件不可用
+-S, --strip-all 
+    不从源文件拷贝符号信息和relocation信息。 
+-g, --strip-debug 
+    不从源文件拷贝调试符号信息和相关的段。对使用 -g 编译生成的可执行文件执行该选项后，生成的结果文件几乎和不用 -g 编译生成的可执行文件一样
+--strip-unneeded 
+	去掉所有重定位处理不需要的符号
+-K symbolname, --keep-symbol=symbolname
+    strip 的时候，保留由 symbolname 指定的符号信息。该选项可以多次指定
+-N symbolname, --strip-symbol=symbolname 
+    不拷贝由 symbolname 指定的符号信息。该选项可以多次指定 
+--strip-unneeded-symbol=symbolname
+	不拷贝重定位不需要的符号。该选项可以多次指定
+-G symbolname, --keep-global-symbol=symbolname
+	只保留 symbolname 为全局的，让其他符号均为局部符号，外部不可见。该选项可以多次指定
+--localize-hidden
+	在 ELF 目标文件中，将所有具有隐藏或内部可见性的符号标记为“局部”。此选项适用于特定的符号本地化的选项，如 -L
+-L symbolname, --localize-symbol=symbolname 
+	将变量 symbolname 变成文件局部的变量。该选项可以多次指定
+-W symbolname, --weaken-symbol=symbolname 
+    将指定符号变为弱符号。该选项可以多次指定
+--globalize-symbol=symbolname 
+    让变量symbolname变成全局范围，这样它可以在定义它的文件外部可见。可以多次指定。 
+-w, --wildcard
+    允许对其他选项中的 symbolname 使用正则表达式。问号(?)，星号(*)，反斜线(\)，和中括号([])可以出现在 symbolname 的任何位置。如果 symbolname 
+	的第一个字符是感叹号(!)，那么表示相反的含义，例如
+    -w -W !foo -W fo*
+    表示将要弱化所有以 &quot;fo&quot; 开头的符号，但是除了符号 &quot;foo&quot;
+-x, --discard-all
+	不从源文件中拷贝非全局符号
+-X, --discard-locals
+	不拷贝编译器生成的局部变量(一般以 L 或者 .. 开头)
+-b byte, --byte=byte
+	只保留输入文件的每个第 byte 个字节(不会影响头部数据)。byte 的范围可以是 0 到 interleave-1。这里，interleave 通过 -i 选项指定，默认为 4。将文件创建成程序 rom 的时候，这个命令很有用。它经常用于 srec 输出目标
+-i interleave, --interleave=interleave 
+	每隔 interleave 字节拷贝 1 byte，interleave 默认为 4。通过 -b 选项指定选择哪个字节如果不指定 -b 那么 objcopy 会忽略这个选项
+--interleave-width=width
+	与 --interleave 配合使用，-b 指定起始下标，--interleave-width 则指定每次拷贝的字节数为 width，width 默认为 1。注意 -b 指定的下标与 --interleave-width 指定的字节数相加不能超过 -i 设定的宽度
+-p, --preserve-dates
+	将输出文件的访问和修改日期设置为与输入文件的访问和修改日期相同
+-D, --enable-deterministic-archives
+	以确定性模式操作。复制存档成员和写入存档索引时，对 uid、gid、时间戳使用零，对所有文件使用一致的文件模式。如果 binutils 配置了 --enable-deterministic-archives，那么这个模式是打开的，可以使用 -U 来禁止
+-U, --disable-deterministic-archives
+	与 -D 作用相反。复制存档成员和写入存档索引时，复制存档成员和写入存档索引时，使用他们实际的 uid、gid、时间戳和文件模式。这个选项是默认的，除非 binutils 配置了 --enable-deterministic-archives
+--debugging
+	如果可能，转换调试信息。这不是默认设置，因为只支持某些调试格式，而且转换过程可能很耗时
+--gap-fill val
+    在 section 之间的空隙中填充 val
+--pad-to address
+	将输出文件填充到加载地址 address。这是通过增加最后一段的大小来完成的。用 --gap-fill 指定的值（默认为零）填充额外的空间
+--set-start val 
+    设定新文件的起始地址为 val，并不是所有格式的目标文件都支持设置起始地址
+--change-start INCR, --adjust-start INCR
+    通过增加指定的值 INCR来调整起始地址，并不是所有格式的目标文件都支持设置起始地址
+--change-addresses INCR, --adjust-vma INCR
+	通过增加 INCR 调整所有 sections 的 VMA（virtual memory address）和 LMA（load memory address）以及起始地址。有些目标文件格式不支持对段地址的任意改动。注意，这不会重新定位分区
+--change-section-address sectionpattern{=,+,-}val, --adjust-section-vma sectionpattern{=,+,-}val 
+	调整指定 section 的 VMA/LMA 地址。如果 sectionpattern 未匹配到 section，则会引发告警，除非使用 --no-change-warnings 抑制告警
+--change-section-lma sectionpattern{=,+,-}val
+	调整指定 section 的 LMA 地址
+--change-section-vma sectionpattern{=,+,-}val
+	调整指定 section 的 VMA 地址
+--change-warnings, --adjust-warnings
+	使用 --change-section-address、--adjust-section-lma、--adjust-section-vma，如果 section pattern 没有匹配到 section，引发告警。该选项为默认选项
+--no-change-warnings, --no-adjust-warnings
+	使用 --change-section-address、--adjust-section-lma、--adjust-section-vma，如果 section pattern 没有匹配到 section，不引发告警
+--set-section-flags sectionpattern=flag 
+    为指定的 section 设置 flag，flag 是一个逗号分隔的由 flag name 组成的字符串，取值可以为 alloc, contents, load, noload, readonly, code, data, rom, share, debug。我们可以为一个没有内容的 section 设置 contents flag，但是清除一个有内容的 section 的 contents flag 是没有意义的--应当把相应的 section 移除。并不是所有的 flags 对所有格式的目标文件都有意义
+--add-section sectionname=filename
+    在拷贝文件的时候，添加一个名为 sectionname 的 section，该 section 的内容为 filename 的内容，大小为文件大小。这个选项只在那些可以支持任意名称 section 的文件格式上生效
+--rename-section oldname=newname[,flags]
+	将一个 section 的名字从 oldname 更改为 newname，同时也可以更改其 flags。这个在执行 linker 脚本进行重命名的时候，并且输出文件还是一个目标文件且不会是可执行文件的时候很有优势。 
+    这个项在输入文件格式是 binary 的时候很有用，因为这经常会创建一个名称为 .data 的 section，例如，你想创建一个名称为 .rodata 的包含二进制数据的 section，这时候，你可以使用如下命令： 
+    objcopy -I binary -O &lt;output_format&gt; -B &lt;architecture&gt; --rename-section .data=.rodata,alloc,load,readonly,data,contents &lt;input_binary_file&gt; &lt;output_object_file&gt;
+--long-section-names {enable,disable,keep}
+	在处理 COFF 和 PE-COFF 格式目标文件时，控制对长段名称的处理。默认行为是 keep，保留长段名称（如果有）。enable 和 disable 分别强制启用或禁用在输出目标文件中使用长段名称
+--change-leading-char
+	有些格式的目标文件在符号前使用特殊的前导字符，最常用的是下划线。此选项告诉 objcopy 在目标文件格式之间转换时更改每个符号的前导字符。如果不同的目标文件使用相同的前导字符，则此选项无效。否则，它将根据需要添加字符、删除字符或更改字符
+--remove-leading-char
+	移除目标文件全局符号前的前导字符
+--reverse-bytes=num
+	反转段中的字节。注意，段的大小必须可以被指定的数值 num 均分。该选项一般用于产生 ROM 映像用于在有问题的目标系统上进行调试。假如一个段的内容只有 8 个字节，为 12345678。
+	使用 --reverse-bytes=2 ，输出文件中的结果是 21436587
+	使用 --reverse-bytes=4，输出文件中的结果是 43218765
+	使用 --reverse-bytes=2，接着再对输出文件使用 --reverse-bytes=4，再第二个输出文件中的结果将是 34127856
+--srec-len=ival
+	只对输出目标文件格式 SREC 有意义。指定生成 SREC 文件的最大长度为 ival
+--srec-forceS3
+	只对输出目标文件格式是 SREC 有意义。避免产生 S1/S2 记录，只产生 S3 格式的记录
+--redefine-sym old=new
+	变更符号名称。当链接两个目标文件产生符号名称冲突时，可以使用该选项来解决
+--redefine-syms=filename
+	将 --redefine-sym 选项应用于指定的文件 filename。该选项可以多次出现
+--weaken
+	将所有全局符号变更为弱符号。改选只对在支持弱符号的目标文件格式有效
+--keep-symbols=filename
+	将 --keep-symbol 选项应用于指定的文件 filename。该选项可以多次出现
+--strip-symbols=filename
+	将 --strip-symbol 选项应用于指定的文件 filename。该选项可以多次出现
+--strip-unneeded-symbols=filename
+	将 --strip-unneeded-symbol 选项应用于指定的文件 filename。该选项可以多次出现
+--keep-global-symbols=filename
+	将 --keep-global-symbol 选项应用于指定的文件 filename。该选项可以多次出现
+--localize-symbols=filename
+	将 --localize-symbol 选项应用于指定的文件 filename。该选项可以多次出现
+--globalize-symbols=filename
+	将 --globalize-symbol 选项应用于指定的文件 filename。该选项可以多次出现
+--weaken-symbols=filename
+	将 --weaken-symbol 选项应用于指定的文件 filename。该选项可以多次出现
+--alt-machine-code=index
+	果输出体系结构具有备用机器代码，请使用 indexth 代码而不是默认代码
+--add-gnu-debuglink=path-to-file 
+    为输出文件创建一个.gnu_debuglink 段，该段包含对一个调试信息文件 path-to-file 的引用
+--writable-text
+	将输出文本标记为可写。此选项对所有目标文件格式都没有意义
+--readonly-text
+	将输出文本标记为只读。此选项对所有目标文件格式都没有意义
+--pure
+	将输出文件标记为按需分页。此选项对所有目标文件格式都没有意义
+--impure
+	将输出文件标记为不纯。此选项对所有对象文件格式都没有意义
+--prefix-symbols=string
+	在输出文件中使用指定的字符串作为符号的前缀
+--prefix-sections=string
+	在输出文件中使用指定的字符串作为所有段名的前缀
+--prefix-alloc-sections=string
+	在输出文件中使用指定的字符串作为所有分配的段名的前缀
+--add-gnu-debuglink=path-to-file
+	创建一个 .gnu-debuglink 段，该段包含一个特定路径的文件引用，并且把它添加到输出文件中
+--only-keep-debug 
+    对文件进行 strip，移走所有不会被 --strip-debug 移走的 section，并且保持调试相关的 section 原封不动
+--strip-dwo
+	删除所有 DWARF .dwo 段的内容，保留其余调试段和所有符号的完整性
+--extract-dwo
+	提取所有 DWARF .dwo 段的内容
+--file-alignment num
+	指定文件对齐方式。文件中的段始终相对于文件起始部分的偏移量是数值 num 的整数倍，默认值为512。此选项特定于 PE 文件
+--heap reserve, --heap reserve,commit
+	指定要保留的内存字节数，以用作此程序的堆。此选项特定于 PE 文件
+--image-base value
+	使用指定的值 value 作为程序或 dll 的基地址。这是加载程序或 dll 时使用的最低内存位置。为了减少重新定位进而提高 dll 性能，每个 dll 都应该有一个唯一的基地址，且不应与其他 dll 重叠。对于可执行文件，默认值为 0x400000，对于 dll，默认值为 0x10000000。此选项特定于 PE 文件
+--section-alignment num
+	设置段的对齐方式。段在内存中的起始地址是指定数值 num 的整数倍。num 默认为 0x1000。此选项特定于 PE 文件
+--stack reserve, --stack reserve,commit
+	指定要保留的内存字节数，以用作此程序的栈。此选项特定于 PE 文件
+--subsystem which, --subsystem which:major, --subsystem which:major.minor
+	指定程序执行的子系统。which 的合法值为 &quot;native&quot;、&quot;windows&quot;、&quot;console&quot;、&quot;posix&quot;、&quot;efi-app&quot;、&quot;efi-bsd&quot;、&quot;efi-rtd&quot;、&quot;sal-rtd&quot; 和 &quot;xbox&quot;。您也可以选择性地设置子系统版本。此选项特定于 PE 文件
+--extract-symbol
+	保留文件的段标志和符号，但删除段的数据
+--compress-debug-sections
+	使用 zlib 压缩 DWARF 调试部分
+-V, --version
+	显示版本
+-v,--verbose
+	冗余输出
+--help
+	显示帮助
+--info
+	显示所有可用架构和目标文件格式
+@file
+	从文件中读取命令行选项
+</code></pre></div><h2 id="_4-常用示例"><a href="#_4-常用示例" class="header-anchor">#</a> 4.常用示例</h2> <p>为了后面的示例，先看一下源码。</p> <div class="language- extra-class"><pre class="language-text"><code>//
+//@file: main.cpp
+//
+
+#include &lt;iostream&gt;
+using namespace std;
+
+void my_print() {
+    cout&lt;&lt;&quot;print&quot;&lt;&lt;endl;
+}    
+
+int main(int argc, char *argv[]) {
+    my_print();
+    cout&lt;&lt;&quot;hello&quot;&lt;&lt;endl;
+    return 0;
+}
+</code></pre></div><p>通过 g++ 分别生成带调试信息与不带调试信息的可执行文件 main.debug 和 main。</p> <div class="language- extra-class"><pre class="language-text"><code>g++ -g -o main.debug main.cpp
+g++ -o main main.cpp
+</code></pre></div><p>（1）分离可执行文件中的调试信息后并将两者关联。</p> <div class="language- extra-class"><pre class="language-text"><code>#1.生成调试信息文件，将其中的调试信息提取出来之后保存成一个文件
+objcopy --only-keep-debug main.debug main.debuginfo
+
+#2.将调试信息从可执行文件中剥离
+objcopy --strip-debug main.debug main.stripdebug
+
+#3.为不含调试信息的可执行文件添加调试信息
+objcopy --add-gnu-debuglink=main.debuginfo main.stripdebug
+</code></pre></div><p>（2）添加一个自定义的段到可执行文件，段的内容由一个文件指定。</p> <div class="language- extra-class"><pre class="language-text"><code>objcopy --add-section mysection=text.txt main main.add
+</code></pre></div><p>使用命令 <code>readelf -S main.add</code> 可以看到可执行文件 main.add 中多出来了一个段 mysection。</p> <div class="language- extra-class"><pre class="language-text"><code>Section Headers:
+  [Nr] Name              Type             Address           Offset
+       Size              EntSize          Flags  Link  Info  Alig
+  ...
+  [27] mysection         PROGBITS         0000000000000000  00001088
+       0000000000000006  0000000000000000           0     0     1
+  ...
+</code></pre></div><p>（3）将指定的段拷贝出来。这里拷贝出我们新增的段 mysetion。</p> <div class="language- extra-class"><pre class="language-text"><code>objcopy --only-section=mysection main.add section_hello
+</code></pre></div><p>（4）去掉指定名称的段。去掉我们新增的段 mysection。</p> <div class="language- extra-class"><pre class="language-text"><code>objcopy -R mysection main.add main.remove
+</code></pre></div><p>使用命令 <code>readelf -S main.remove</code> 可以看到可执行文件 main.remove 中的段 mysection 已经不见了。</p> <hr> <h2 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h2> <p><a href="https://www.gnu.org/software/binutils/" target="_blank" rel="noopener noreferrer">GNU Binutils<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://www.linux.org/docs/man1/objcopy.html" target="_blank" rel="noopener noreferrer">objcopy(1) manual - linux.org<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://man7.org/linux/man-pages/man1/objcopy.1.html" target="_blank" rel="noopener noreferrer">objcopy(1) - Linux manual page - man7.org<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="http://linux.51yip.com/search/objcopy" target="_blank" rel="noopener noreferrer">Linux命令手册.objcopy<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="http://blog.chinaunix.net/uid-9525959-id-2001841.html" target="_blank" rel="noopener noreferrer">Linux命令学习手册-objcopy命令<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <!----></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/25/2023, 10:22:27 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/backend-cmd/二进制工具/nm.html" class="prev">
+        nm
+      </a></span> <span class="next"><a href="/backend-cmd/二进制工具/objdump.html">
+        objdump
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/backend-cmd/assets/js/app.d9490acc.js" defer></script><script src="/backend-cmd/assets/js/2.08ee4580.js" defer></script><script src="/backend-cmd/assets/js/31.abd94c4a.js" defer></script>
+  </body>
+</html>
