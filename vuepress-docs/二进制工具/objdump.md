@@ -92,7 +92,8 @@ objdump [OPTIONS] OBJFILES
 	帮助信息
 ```
 ## 4.常用示例
-首先给出后面大部分测试所基于的源代码以及编译指令。 涉及两个 C++ 源文件。
+首先给出后面大部分测试所基于的源代码以及编译指令。涉及两个 C++ 源文件。
+
 objdump.cpp：
 ```cpp
 #include <iostream>
@@ -113,18 +114,19 @@ int main() {
         print();
 }
 ```
-使用-g选项加入调试信息，分别编译生成目标文件objdump.o与main.o。
-```
+使用 -g 选项加入调试信息，分别编译生成目标文件 objdump.o 与 main.o。
+```shell
 g++ -c -g objdump.cpp -o objdump.o
 g++ -c -g main.cpp -o main.o
 ```
 然后通过ar命令将两个目标文件打包成静态库libobjdump.a。
-```
+```shell
 ar crv libobjdump.a main.o objdump.o
 ```
+
 （1）查看档案包含的目标文件列表。
-```
-[root@TENCENT64 ~]# objdump -a libobjdump.a
+```shell
+objdump -a libobjdump.a
 In archive libobjdump.a:
 
 main.o:     file format elf64-x86-64
@@ -139,9 +141,10 @@ rw-r--r-- 0/0  21352 Mar  8 20:25 2019 objdump.o
 rw-r--r-- 0/0  18696 Mar  8 20:25 2019 main.o
 rw-r--r-- 0/0  21352 Mar  8 20:25 2019 objdump.o
 ```
+
 （2）显示目标文件objdump.o的代码段（.text）内容。
-```
-[root@TENCENT64 ~]# objdump --section=.text  -s objdump.o
+```shell
+objdump --section=.text  -s objdump.o
 objdump.o:     file format elf64-x86-64
 
 Contents of section .text:
@@ -157,8 +160,8 @@ Contents of section .text:
 注意，不能单独使用-j或者--section选项，一定要加上-s选项。
 
 （3）反汇编objdump.o中的text段内容，并尽可能用源代码形式表示。
-```
-[root@TENCENT64 ~]# objdump --section=.text -S objdump.o
+```shell
+objdump --section=.text -S objdump.o
 objdump.o:     file format elf64-x86-64
 
 Disassembly of section .text:
@@ -215,9 +218,10 @@ void print()
   72:	5d                   	pop    %rbp
   73:	c3                   	retq
 ```
-（3）显示目标文件的符号表入口。
-```
-[root@TENCENT64 ~]# objdump -t objdump.o
+
+（4）显示目标文件的符号表入口。
+```shell
+objdump -t objdump.o
 objdump.o:     file format elf64-x86-64
 
 SYMBOL TABLE:
@@ -248,9 +252,9 @@ SYMBOL TABLE:
 0000000000000000         *UND*	0000000000000000 _ZNSt8ios_base4InitD1Ev
 0000000000000000         *UND*	0000000000000000 __cxa_atexit
 ```
-这里，输出的信息类似nm -s命令的输出，相比较之下，nm命令的输出如下： 
+这里，输出的信息类似 nm -s 命令的输出，相比较之下，nm 命令的输出如下： 
 ```
-[root@TENCENT64 ~]# nm -s objdump.o
+nm -s objdump.o
                  U __cxa_atexit
                  U __dso_handle
 000000000000005f t _GLOBAL__sub_I__Z5printv
@@ -264,7 +268,8 @@ SYMBOL TABLE:
 0000000000000000 b _ZStL8__ioinit
                  U _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
 ```
-（4）显示目标文件各个段的头部摘要信息。
+
+（5）显示目标文件各个段的头部摘要信息。
 ```
 [root@TENCENT64 ~]# objdump -h objdump.o
 objdump.o:     file format elf64-x86-64

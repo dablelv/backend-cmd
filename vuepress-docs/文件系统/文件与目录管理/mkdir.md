@@ -1,10 +1,10 @@
 ## 1.命令简介
 mkdir（make directories）创建目录。
 
-若指定目录不存在则创建目录。若指定目录已存在，则会提示已存在而不继续创建。
+若指定目录不存在则创建目录。若指定目录已存在，则提示已存在而不继续创建。
 ## 2.命令格式
 ```shell
-mkdir [<OPTION>] ... <DIRECTORY> ...
+mkdir [OPTION] ... DIRECTORY ...
 ```
 ## 3.选项说明
 ```shell
@@ -26,7 +26,7 @@ mkdir [<OPTION>] ... <DIRECTORY> ...
 ## 4.常用示例
 （1）创建新目录。
 ```
-# mkdir go cpp
+mkdir go cpp
 ```
 （2）创建目录并指定权限。
 
