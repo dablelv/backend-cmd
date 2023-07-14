@@ -223,11 +223,17 @@ curl [OPTIONS] [URL...]
 ## 4.常用示例
 - 发起 HTTP GET 请求。
 
-注意 GET 请求可以携带包体。
 ```bash
 curl -X GET 'http://9.138.158.214:10000?advertiser_id=93&auth_code=AUTH_CODE' -H 'Content-Type:application/json' -d '{"action_time":1591100087,"ad_id":"101642"}'
 ```
 如果 URL 携带参数，需要使用单引号或双引号将 URL 引起来，因为字符 & 是 Shell 特殊字符，或使用反斜杠对其转义。
+
+注意，GET 请求可以携带包体。虽然 HTTP 规范允许 GET 请求发送请求体，但大多数 Web 服务器和客户端库在处理 GET 请求时会忽略请求体。也就是说，大多数 Web 服务器和客户端库并不期望在 GET 请求中包含请求体，并且可能会忽略或拒绝处理请求体中的数据。
+
+HTTP/1.1规范（RFC 7231）中指出：
+>A payload within a GET request message has no defined semantics; sending a payload body on a GET request might cause some existing implementations to reject the request.
+
+也就是说 HTTP/1.1 规范虽然允许 GET 请求发送请求体，但是不建议这么做，因为 GET 请求被定义为获取资源的操作，而不是在请求体中发送数据。
 
 - 获取网页数据。
 ```bash
