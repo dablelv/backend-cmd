@@ -5,7 +5,10 @@ ethtool（ethernet tool）查询或控制网络驱动程序和硬件设置。
 
 ## 2.命令格式
 ```shell
-ethtool [<options>] [<devname>]
+ethtool DEVNAME
+ethtool -h|--help
+ethtool --version
+ethtool [OPTIONS] DEVNAME [ARG]
 ```
 
 ## 3.选项说明
