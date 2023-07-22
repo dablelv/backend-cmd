@@ -1,5 +1,5 @@
 ## 1.命令简介
-ld（Link eDitor）命令是二进制工具集 [GNU Binutils](https://www.gnu.org/software/binutils/) 的一员，是 GNU 链接器，用于将目标文件与库链接为可执行文件或库文件。
+ld（Link eDitor）是 GNU 链接器，是二进制工具集 [GNU Binutils](https://www.gnu.org/software/binutils/) 的一员，用于将目标文件与库链接为可执行文件或库文件。
 
 ## 2.命令格式
 ```
