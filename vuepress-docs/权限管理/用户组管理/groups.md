@@ -50,7 +50,7 @@ uid=0(root) gid=0(root) groups=0(root)
 
 ---
 ## 参考文献
-[groups(1) manual - linux.org](https://www.linux.org/docs/man1/groups.html)
+[groups(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/groups.1.html)
 
 [linux怎么查看当前用户属于哪个用户组?](https://www.jb51.net/LINUXjishu/571236.html)
 
