@@ -48,7 +48,7 @@ echo -n what you want to output
 ```
 **方法二：** 使用命令选项 -e 让 echo 识别转义字符 \c，echo 默认是不识别转义字符的。转义字符 \c 使用 man echo 查看 echo 的使用手册，其意思是 produce no further output，表示截断不输出 \c 后面的内容。
 ```shell
-echo -e lalalala\cend #输出：lalalala
+echo -e lalalala\cend # 输出：lalalala
 ```
 （2）使用 echo 打印带有颜色的字体。
 
@@ -91,15 +91,17 @@ echo -e "\e[1;31mThis is red text\e[0m"
 
 其中，`\e[0m`表示恢复终端默认设置。
 
-（b）显示绿色背景字体：
+（b）显示绿色背景字体。
 ```
-echo -e "\e[1;42mGreed Background\e[0m" Greed Background
+echo -e "\e[1;42mGreen Background\e[0m"
 ```
 输出：
 
-![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTcxMTIyMDAzMzMyNjg2?x-oss-process=image/format,png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/c388a7859bd948c99866a94d209cfce5.png)
 
-（c）文字闪动。使用前景色31（红色），背景色42（绿色）闪动：
+（c）文字闪动。
+
+使用前景色31（红色），背景色42（绿色）闪动：
 ```
 echo -e "\033[5;31;42mMySQL Server Stop...\033[0m"
 ```
