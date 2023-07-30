@@ -1,13 +1,13 @@
 ## 1.命令简介
-init 命令是 Linux 下的进程初始化工具。
+init 是 Linux 下的进程初始化工具。
 
 init 进程是所有 Linux 进程的父进程，它的进程号为1。init 命令是 Linux 操作系统中不可缺少的程序之一，init 进程是 Linux 内核引导运行的，是系统中的第一个进程。
 
-注意：Centos7.5 中第一个进程是 systemd 进程
+注意：Centos7.5 中第一个进程是 systemd 进程。
 
 ## 2.命令格式
 ```shell
-init [OPTION]... [<command>]
+init [OPTION]... [CMD]
 ```
 command 为系统运行等级和 init daemon 进程 控制命令。
 
