@@ -5,18 +5,19 @@ ssh-keygen 用于 OpenSSH 身份验证密钥的生成、管理和转换，它支
 
 ## 2.命令格式
 ```shell
-ssh-keygen [OPTIONS] <file>...
+ssh-keygen [OPTIONS] FILE...
 ```
 
 ## 3.选项说明
+下面只列出常用的选项，更多选项可参考手册。
 ```shell
--b <bits>
+-b BITS
 	指定密钥长度。
 -e
 	读取 OpenSSH 的私钥或者公钥文件。
 -C
 	添加注释。
--f <filename>
+-f FILENAME
 	指定用来保存密钥的文件名。
 -i
 	读取未加密的 ssh-v2 兼容的私钥/公钥文件，然后在标准输出设备上显示 openssh 兼容的私钥/公钥。
@@ -24,15 +25,15 @@ ssh-keygen [OPTIONS] <file>...
 	显示公钥文件的指纹数据。
 -N
 	提供一个新密语。
--P <passphrase>
+-P PASSPHRASE
 	提供（旧）密语。
 -q
 	静默模式。
 -t
-	指定要创建的密钥类型。
+	指定要创建的密钥类型。可能的值为“dsa”、“ecdsa”、“ecdsa-sk”、“ed25519”、“ed25519-sk”或“rsa”。
 ```
 ## 4.常用示例
-（1）创建一个默认密钥。
+（1）创建一个默认密钥，缺省为 RSA 类型的密钥。
 ```shell
 ssh-keygen
 Generating public/private rsa key pair.
@@ -68,55 +69,11 @@ id_rsa 为当前主机的私钥。id_rsa.pub 为当前主机的公钥。
 （2）指定要创建的密钥类型，缺省为 RSA。
 ```shell
 ssh-keygen -t rsa
-Generating public/private rsa key pair.
-Enter file in which to save the key (/root/.ssh/id_rsa): 
-/root/.ssh/id_rsa already exists.
-Overwrite (y/n)? y
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /root/.ssh/id_rsa.
-Your public key has been saved in /root/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:nTaoqOxlG6IQQ2zDTMvSk2EON+4tLrYqPy7IBrstoy4 root@localhost.localdomain
-The key's randomart image is:
-+---[RSA 2048]----+
-|..=              |
-|*B.+             |
-|.X*              |
-|+..o     o .     |
-|o o .   S =      |
-|.+ . . . . .     |
-|*oo = .          |
-|EBo= o           |
-|%@B..            |
-+----[SHA256]-----+
 ```
 
 （3）指定密钥的类型并添加注释。
 ```shell
 ssh-keygen -t rsa -C "dablelv@qq.com"
-Generating public/private rsa key pair.
-Enter file in which to save the key (/root/.ssh/id_rsa): 
-/root/.ssh/id_rsa already exists.
-Overwrite (y/n)? y
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /root/.ssh/id_rsa.
-Your public key has been saved in /root/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:Wx3MWwj36fwhcnb6hjdIIJ3SUggCLcmFq62Earqy2E0 deng@qq.com
-The key's randomart image is:
-+---[RSA 2048]----+
-|  ..*o .. o .    |
-|   = ..  . * o . |
-|    o     + * +  |
-|   .     + * *   |
-|. o     S =.++oo |
-|.o .     o  +.+..|
-|o . E   .   ..o .|
-|++ o         o.+ |
-|Oo. .         o..|
-+----[SHA256]-----+
 ```
 
 （4）读取 OpenSSH 的私钥或者公钥文件。
