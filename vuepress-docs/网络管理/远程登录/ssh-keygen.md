@@ -31,6 +31,8 @@ ssh-keygen [OPTIONS] FILE...
 	静默模式。
 -t
 	指定要创建的密钥类型。可能的值为“dsa”、“ecdsa”、“ecdsa-sk”、“ed25519”、“ed25519-sk”或“rsa”。
+-y
+	从 OpenSSH 格式的私钥导出公钥。
 ```
 ## 4.常用示例
 （1）创建一个默认密钥，缺省为 RSA 类型的密钥。
@@ -98,6 +100,11 @@ Overwrite (y/n)? y
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again:
 ```
+（6）从私钥导出公钥。
+```shell
+ssh-keygen -y [-f input_keyfile]
+```
+如果不通过 -f 选项指定私钥文件，则以交互方式指定。
 ## 5.authorized_keys 和 known_hosts
 有时，你在 ~/.ssh 目录下可能还会看到 authorized_keys 和 known_hosts 这两个文件。
 
