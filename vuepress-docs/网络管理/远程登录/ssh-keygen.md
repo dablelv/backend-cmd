@@ -14,15 +14,17 @@ ssh-keygen [OPTIONS] FILE...
 -b BITS
 	指定密钥长度。
 -e
-	读取 OpenSSH 的私钥或者公钥文件。
+	读取私有或公共 OpenSSH 密钥文件并以 -m 选项指定的格式之一将密钥打印到标准输出。
 -C
 	添加注释。
 -f FILENAME
 	指定用来保存密钥的文件名。
 -i
-	读取未加密的 ssh-v2 兼容的私钥/公钥文件，然后在标准输出设备上显示 openssh 兼容的私钥/公钥。
+	以 -m 选项指定的格式读取未加密的私钥（或公钥）文件，并将 OpenSSH 兼容的私钥（或公钥）打印到 stdout。
 -l
 	显示公钥文件的指纹数据。
+-m KEY_FORMAT
+	为 -i（导入）或 -e（导出）转换选项指定密钥格式。支持的密钥格式为：“RFC4716”（RFC 4716/SSH2 公钥或私钥）、“PKCS8”（PEM PKCS8 公钥）或“PEM”（PEM 公钥）。 默认转换格式为“RFC4716”。
 -N
 	提供一个新密语。
 -P PASSPHRASE
@@ -102,9 +104,19 @@ Enter same passphrase again:
 ```
 （6）从私钥导出公钥。
 ```shell
-ssh-keygen -y [-f input_keyfile]
+ssh-keygen -y [-f PRV_KEY_FILE]
 ```
 如果不通过 -f 选项指定私钥文件，则以交互方式指定。
+
+（7）将 OpenSSH 格式公钥转换成 OpenSSL 的 PKCS#1 格式公钥。
+```shell
+ssh-keygen -e -m PEM -f id_rsa.pub > rsa_pub_key.pem
+```
+
+（8）将 OpenSSL 的 PKCS#8 格式公钥转换成 OpenSSH 的格式公钥。
+```shell
+ssh-keygen -i -m PKCS8 -f rsa_pub_key.pem > id_rsa.pub
+```
 ## 5.authorized_keys 和 known_hosts
 有时，你在 ~/.ssh 目录下可能还会看到 authorized_keys 和 known_hosts 这两个文件。
 
@@ -133,6 +145,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ---
 ## 参考文献
 [ssh-keygen(1) — Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/ssh-keygen.1.html)
+
+[PKI - 语法[ASN.1]、规范[PKCS、X.509]、编码[DER、PEM]](https://blog.csdn.net/ttyy1112/article/details/107064407)
 
 [SSH_KNOWN_HOSTS FILE FORMAT](https://man7.org/linux/man-pages/man8/sshd.8.html#SSH_KNOWN_HOSTS_FILE_FORMAT)
 
