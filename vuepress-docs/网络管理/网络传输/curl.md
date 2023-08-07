@@ -81,7 +81,7 @@ curl [OPTIONS] [URL...]
 --crlf
 	上传是把 LF 转变成 CRLF
 -f, --fail
-	连接失败时不显示 http 错误
+	(HTTP) 服务器出现错误时静默失败（根本没有输出）。 这样做主要是为了更好地启用脚本来更好地失败尝试。在正常情况下，当 HTTP 服务器无法传递文档时，它会返回一个 HTML 文档来说明情况（通常还描述了原因及更多信息）。该标志将阻止 curl 输出该内容并返回错误 22。
 --ftp-create-dirs
 	如果远程目录不存在，创建远程目录
 --ftp-method [multicwd/nocwd/singlecwd]
@@ -166,8 +166,8 @@ curl [OPTIONS] [URL...]
 	作为第一个参数，关闭 .curlrc
 -Q, --quote CMD
 	文件传输前，发送命令到服务器
--r/--range RANGE
-	检索来自HTTP/1.1或FTP服务器字节范围
+-r, --range RANGE
+	检索来自 HTTP/1.1、FTP、SFTP 服务器或本地文件的字节范围。
 --range-file
 	读取（SSL）的随机文件
 -R, --remote-time
@@ -179,9 +179,9 @@ curl [OPTIONS] [URL...]
 --retry-max-time SECONDS
 	传输出现问题时，设置最大重试时间
 -s, --silent
-	静默模式。不输出任何东西
+	静默模式，不显示进度表或错误消息。
 -S, --show-error
-	显示错误
+	当与 -s 选项连用时，如果 curl 失败，会显示错误消息。
 --socks4 HOST[:PORT]
 	用 socks4 代理给定主机和端口
 --socks5 HOST[:PORT]
