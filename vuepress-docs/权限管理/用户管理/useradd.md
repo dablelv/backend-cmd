@@ -1,13 +1,13 @@
 ## 1.命令简介
-useradd 是系统管理员命令，用来创建新用户或更新创建新用户时的默认信息。
+useradd 用来创建新用户或更新创建新用户时的默认信息。
 
-如果在创建用户时没有指定密码的话，用户的默认密码是不可用的。所以 useradd 一般与 passwd 命令成对使用，在创建用户后给用户设置密码。
+如果在创建用户时没有指定密码，用户的默认密码是不可用的。所以 useradd 一般与 passwd 命令成对使用，在创建用户后给用户设置密码。
 
 ## 2.命令格式
 ```shell
-useradd [options] LOGIN
+useradd [OPTIONS] LOGIN
 useradd -D
-useradd -D [options]
+useradd -D [OPTIONS]
 ```
 
 ## 3.选项说明

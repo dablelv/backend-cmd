@@ -1,9 +1,9 @@
 ## 1.命令简介
-adduser 创建新用户或更新默认新用户信息。
+adduser 创建新用户或更新创建新用户时的默认信息。
 
-adduser 命令用于创建的新的系统用户。adduser 可用来建立用户帐号。帐号建好之后，再用 passwd 设定帐号的密码。而可用 userdel 删除帐号。使用 adduser 指令所建立的帐号，实际上是保存在 /etc/passwd 文本文件中。
+adduser 用于创建的新的用户。用户帐号建好后，再用 passwd 设定帐号的密码。而可用 userdel 删除帐号。使用 adduser 所建立的帐号，实际上是保存在 /etc/passwd 文本文件中。
 
-adduser 实际上是 useradd 命令的软链接，所以 adduser 用法和 useradd 用法一样。
+在 Centos 和 Redhat 中，adduser 实际上是 useradd 的软链接，所以 adduser 用法和 useradd 用法一样。
 ## 2.命令格式
 ```shell
 adduser [<options>] <LOGIN>
@@ -108,6 +108,8 @@ INACTIVE=0
 
 ---
 ## 参考文献
-[adduser(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/useradd.8.html)
+[adduser linux command man page](https://www.commandlinux.com/man-page/man8/adduser.8.html)
+
+[useradd(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/useradd.8.html)
 
 <Vssue title="adduser" />
