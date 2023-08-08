@@ -7,12 +7,12 @@ strace 的最简单的用法就是执行一个指定的命令，在指定的命�
 
 ## 2.命令格式
 ```shell
-strace [options] -p <pid>
-strace [options] <command> [<args>]
+strace [OPTIONS] -p PID
+strace [OPTIONS] COMMAND [ARGS]
 ```
 
 ## 3.选项说明
-```shell
+```
 -c
 	统计每个系统调用的时间、次数和错误，并在程序退出时报告摘要
 -C
