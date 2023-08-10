@@ -7,7 +7,7 @@ lastlog 命令格式化输出上次登录日志 /var/log/lastlog 的内容。它
 
 ## 2.命令格式
 ```shell
-lastlog [<options>]
+lastlog [OPTIONS]
 ```
 无选项单独执行 lastlog 将打印 lastlog 日志中的条目，并按其在 /etc/passwd 中的顺序进行排序。
 
