@@ -11,8 +11,8 @@ mandb 用于初始化或手动更新索引数据库缓存。缓存包含与手�
 
 ## 2.命令格式
 ```shell
-mandb [-dqsucpt?V] [-C <file>] [<manpath>]
-mandb [-dqsut] [-C <file>] -f <filename> ...
+mandb [-dqsucpt?V] [-C FILE] [MANPATH]
+mandb [-dqsut] [-C FILE] -f FILENAME ...
 ```
 
 ## 3.选项说明
