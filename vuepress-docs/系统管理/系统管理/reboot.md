@@ -1,11 +1,11 @@
 ## 1.命令简介
-reboot 用于用来重启主机。
+reboot 用于重启主机。
 
-poweroff、reboot 和 halt 可分别用于关机、重启或停止机器。这三个命令都有相同的选项。
+poweroff、reboot 和 halt 可分别用于关机、重启或停止机器。这三个命令拥有相同的选项。
 
 ## 2.命令格式
 ```
-poweroff [OPTIONS...]
+poweroff [OPTIONS]
 ```
 
 ## 3.选项说明

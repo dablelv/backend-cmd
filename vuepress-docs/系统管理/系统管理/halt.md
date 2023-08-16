@@ -4,11 +4,11 @@ halt 关闭正在运行的主机。
 
 halt 命令会先检测系统的 runlevel，若 runlevel 为 0 或 6，则关闭系统，否则立即调用 shutdown 来关闭系统。
 
-poweroff、reboot 和 halt 可分别用于关机、重启或停止机器。这三个命令都有相同的选项。
+poweroff、reboot 和 halt 可分别用于关机、重启或停止机器。这三个命令拥有相同的选项。
 
 ## 2.命令格式
 ```
-poweroff [OPTIONS...]
+poweroff [OPTIONS]
 ```
 
 ## 3.选项说明

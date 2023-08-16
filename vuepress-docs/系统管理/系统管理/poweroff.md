@@ -3,11 +3,11 @@ poweroff 关闭机器电源。
 
 poweroff 命令用来关闭计算机操作系统并且切断系统电源。如果确认系统中已经没有用户存在且所有数据都已保存，需要立即关闭系统，可以使用 poweroff 命令。
 
-poweroff、reboot 和 halt 可分别用于关机、重启或停止机器。这三个命令都有相同的选项。
+poweroff、reboot 和 halt 可分别用于关机、重启或停止机器。这三个命令拥有相同的选项。
 
 ## 2.命令格式
 ```
-poweroff [OPTIONS...]
+poweroff [OPTIONS]
 ```
 
 ## 3.选项说明
@@ -60,6 +60,7 @@ poweroff --no-wall
 ```shell
 poweroff -n
 ```
+
 （6）强制执行 poweroff。
 ```shell
 poweroff -f

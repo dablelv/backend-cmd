@@ -1,5 +1,5 @@
 ## 1.命令简介
-export 命令为 Shell 内建命令，用于设置或显示环境变量，环境变量包含变量与函数。
+export 为内建命令，用于设置或显示环境变量，环境变量包含变量与函数。
 
 在 Shell 中执行程序时，Shell 会提供一组环境变量。export 可新增、删除或修改环境变量，供后续被执行的程序使用。export 的作用效果仅限于当前登录。
 
@@ -16,7 +16,7 @@ export -p
 -n
 	删除指定的变量。变量实际上并未删除，只是不会输出到后续指令的执行环境中
 -p
-	列出所有的 Shell 环境变量
+	列出所有 Shell 环境变量
 ```
 
 ## 4.常用示例
@@ -32,7 +32,7 @@ export PATH=$PATH:/usr/local/mysql/bin
 ```
 export -p | grep PATH
 
-#或
+# 或
 echo $PATH
 ```
 （3）export 用于 Shell 脚本。
@@ -62,27 +62,51 @@ in ./test2.sh
 666
 ```
 ## 5.设置环境变量的三种方法
-（1）使用 export 命令。
+
+1. 使用 export 设置临时环境变量。
 ```shell
 export PATH=$PATH:/usr/local/mysql/bin
 ```
-注意：直接使用 export 设置的变量都是临时变量，也就是说退出当前的 Shell 为该变量定义的值便不会生效了。我们可以使用如下两种方式使变更永久有效。
+直接使用 export 设置的变量都是临时变量，也就是说退出当前的 Shell 为该变量定义的值便不会生效了。我们可以使用如下两种方式使环境变量永久有效。
 
-（2）修改 /etc/bashrc 或 /etc/profile，加入如下行，对所有用户永久生效。
+
+2. 在 /etc/profile 或 /etc/bashrc 文件中添加环境变量，对所有用户永久生效。
+
+例如通过 vim 编辑文件，在最后一行添加 CLASSPATH 变量。
+```shell
+export CLASSPATH=./JAVA_HOME/lib;$JAVA_HOME/jre/lib
 ```
-export PATH=$PATH:/usr/local/mysql/bin
-```
-注意：修改完这个文件必须要使用如下命令执行配置文件的内容，在不用重启系统的情况下使修改的内容生效。
-```
+修改文件后要想马上生效需要执行以下文件中的命令，不然只能在下次重新登录时才生效。
+```shell
 source /etc/profile
+source /etc/profile
+
 # 或
 . /etc/profile
+. /etc/bashrc
 ```
-（3）修改 ~/.bashrc 或者 ~/.bash_profile 文件，加入如下行，只对当前用户永久生效。
+
+3. 在 ~/.bash_profile 或 ~/.bashrc 文件中添加环境变量，只对当前用户永久有效。
+
+例如通过 vim 编辑 ~/.bash_profile 或 ~/.bashrc 文件中添加环境变量。
+```shell
+export CLASSPATH=./JAVA_HOME/lib;$JAVA_HOME/jre/lib
 ```
-export PATH=$PATH:/usr/local/mysql/bin
+同样地，要想修改文件后马上生效需要执行以下文件中的命令，不然只能在下次重新登录时才生效。
+```shell
+source ~/.bash_profile
+source ~/.bashrc
+
+# 或
+. ~/.bash_profile
+. ~/.bashrc
 ```
-修改这个文件之后同样也需要使用 source 或者是 . 命令使配置文件生效。
+
+~/.bash_profile 通常会显式调用 ~/.bashrc 文件，而 ~/.bashrc 会显式调用 /etc/bashrc 文件。
+
+/etc/profile 是一个系统级别的配置文件，它在任何用户登录系统时被调用，用于设置全局的环境变量和执行系统范围的初始化脚本。
+
+另外，如果想删除已设置的环境变量，可以使用 unset（builtin）命令来清除环境变量 ，例如`unset  CLASSPATH`。使用 readonly 命令可设置只读变量。如果使用了 readonly 命令的话，变量不可以被修改或清除。
 
 ---
 ## 参考文献
