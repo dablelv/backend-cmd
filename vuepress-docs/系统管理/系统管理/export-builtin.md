@@ -21,15 +21,15 @@ export -p
 
 ## 4.常用示例
 （1）定义环境变量并赋值。
-```
+```shell
 export MYNEWV=8
 ```
 （2）修改指明 Shell 命令搜索路径的环境变量 PATH。
-```
+```shell
 export PATH=$PATH:/usr/local/mysql/bin
 ```
 查看是否已经设置好，可以使用命令`export -p`命令来查看，也可以使用 echo 命令打印变量内容。
-```
+```shell
 export -p | grep PATH
 
 # 或
@@ -40,7 +40,7 @@ echo $PATH
 
 如果在一个 Shell 脚本中定义了一个变量，该脚本运行时，这个定义的变量只是该脚本内的一个局部变量，子 Shell 无法引用它。要使某个变量可以在子 Shell 中被引用，可以使用 export 命令对已定义的变量进行导出，称为导出变量。系统在创建每一个新的 Shell 时会拷贝导出变量，子 Shell 可以访问或修改导出变量，但是这种修改父 Shell 看不到。
 
-例如脚本 test1.sh 中调用脚本 test2.sh，test2.sh 中使用 test1.sh 定义的变量shareVar。
+例如脚本 test1.sh 中调用脚本 test2.sh，test2.sh 中使用 test1.sh 定义的变量 shareVar。
 
 test1.sh 定义如下：
 ```shell
@@ -61,59 +61,9 @@ echo $shareVar
 in ./test2.sh
 666
 ```
-## 5.设置环境变量的三种方法
-
-1. 使用 export 设置临时环境变量。
-```shell
-export PATH=$PATH:/usr/local/mysql/bin
-```
-直接使用 export 设置的变量都是临时变量，也就是说退出当前的 Shell 为该变量定义的值便不会生效了。我们可以使用如下两种方式使环境变量永久有效。
-
-
-2. 在 /etc/profile 或 /etc/bashrc 文件中添加环境变量，对所有用户永久生效。
-
-例如通过 vim 编辑文件，在最后一行添加 CLASSPATH 变量。
-```shell
-export CLASSPATH=./JAVA_HOME/lib;$JAVA_HOME/jre/lib
-```
-修改文件后要想马上生效需要执行以下文件中的命令，不然只能在下次重新登录时才生效。
-```shell
-source /etc/profile
-source /etc/profile
-
-# 或
-. /etc/profile
-. /etc/bashrc
-```
-
-3. 在 ~/.bash_profile 或 ~/.bashrc 文件中添加环境变量，只对当前用户永久有效。
-
-例如通过 vim 编辑 ~/.bash_profile 或 ~/.bashrc 文件中添加环境变量。
-```shell
-export CLASSPATH=./JAVA_HOME/lib;$JAVA_HOME/jre/lib
-```
-同样地，要想修改文件后马上生效需要执行以下文件中的命令，不然只能在下次重新登录时才生效。
-```shell
-source ~/.bash_profile
-source ~/.bashrc
-
-# 或
-. ~/.bash_profile
-. ~/.bashrc
-```
-
-~/.bash_profile 通常会显式调用 ~/.bashrc 文件，而 ~/.bashrc 会显式调用 /etc/bashrc 文件。
-
-/etc/profile 是一个系统级别的配置文件，它在任何用户登录系统时被调用，用于设置全局的环境变量和执行系统范围的初始化脚本。
-
-另外，如果想删除已设置的环境变量，可以使用 unset（builtin）命令来清除环境变量 ，例如`unset  CLASSPATH`。使用 readonly 命令可设置只读变量。如果使用了 readonly 命令的话，变量不可以被修改或清除。
 
 ---
 ## 参考文献
 [bash(1) - Linux manual page - man7.org](https://www.man7.org/linux/man-pages/man1/bash.1.html)
-
-[Linux export命令 - 菜鸟教程](http://www.runoob.com/linux/linux-comm-export.html)
-
-[linux下export命令添加、删除环境变量](https://www.cnblogs.com/zhangwuji/p/7899075.html)
 
 <Vssue title="export" />

@@ -5,9 +5,9 @@ fg（foreground）用于将后台作业（在后台运行的或在后台挂起�
 
 ## 2.命令格式
 ```shell
-fg [<jobspec>]
+fg [JOBSPEC]
 ```
-jobspec 为任务号，若不指定任务号，则与 bg 命令一样，缺省为标有 + 号的任务。
+JOBSPEC 为任务号，若不指定任务号，则与 bg 命令一样，缺省为标有 + 号的任务。
 
 ## 3.选项说明
 无。
@@ -52,6 +52,6 @@ ping localhost -a > /dev/null
 
 ---
 ## 参考文献
-[fg(1) manual - linux.org](https://www.linux.org/docs/man1/fg.html)
+[bash(1) - Linux manual page - Michael Kerrisk](https://www.man7.org/linux/man-pages/man1/bash.1.html)
 
 <Vssue title="fg-builtin" />

@@ -71,7 +71,7 @@ What manual page do you want?
 
 （2）长选项的必填参数对于短选项也是必须的。
 
-```shell
+```
 一般选项:
 -C, --config-file=FILE
 	使用指定的用户配置文件而不是默认的 ~/.manpath
@@ -248,7 +248,5 @@ man -w man
 [man(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/man.1.html)
 
 [GNU troff (Groff) — a GNU project](http://www.gnu.org/software/groff/) 
-
-[Linux 命令（89）—— less 命令](https://dablelv.blog.csdn.net/article/details/102967501)
 
 <Vssue title="man" />

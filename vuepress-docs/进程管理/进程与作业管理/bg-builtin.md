@@ -5,9 +5,9 @@ bg（backgroud）恢复被挂起的作业放到后台重新执行。
 
 ## 2.命令格式
 ```shell
-bg [<jobspec> ...]
+bg [JOBSPEC ...]
 ```
-jobspec 为任务号，若不指定任务号，则与 fg 命令一样，缺省为标有 + 号的任务。
+JOBSPEC 为任务号，若不指定任务号，则与 fg 命令一样，缺省为标有 + 号的任务。
 
 ## 3.选项说明
 无
@@ -58,6 +58,6 @@ bg 2
 
 ---
 ## 参考文献
-[bg(1) manual - linux.org](https://www.linux.org/docs/man1/bg.html)
+[bash(1) - Linux manual page - Michael Kerrisk](https://www.man7.org/linux/man-pages/man1/bash.1.html)
 
 <Vssue title="bg-builtin" />

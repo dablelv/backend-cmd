@@ -1,5 +1,9 @@
 ## 1.命令简介
-env 命令用于显示系统中已存在的环境变量，以及在定义的环境中执行指令。若没有设置任何选项和参数时，则直接显示当前系统的环境变量。本文介绍的是 GNU 版本的 env，其它版本（如 POSIX 版）的实现可能会有所不同。
+env 在修改后的环境中运行程序。
+
+env 也可以用于显示系统中已存在的环境变量。若没有设置任何选项和参数时，则直接显示当前系统的环境变量。
+
+本文介绍的是 GNU 版本的 env，其它版本（如 POSIX 版）的实现可能会有所不同。
 
 ## 2.命令格式
 ```
@@ -22,7 +26,7 @@ env [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]
 
 ## 4.常用示例
 （1）显示所有的环境变量。
-```
+```shell
 env
 XDG_SESSION_ID=2216652
 HOSTNAME=TENCENT64.site
@@ -31,7 +35,7 @@ SHELL=/bin/bash
 ...
 ```
 （2）临时更改环境变量，使得程序在新的环境变量下运行。例如，使用 C 程序 a.out 用于获取环境变量 PAHT。实现如下：
-```
+```c
 // main.c
 
 #include <stdlib.h>
@@ -58,7 +62,7 @@ PATH=test
 ```
 
 （3）查看 env 版本。
-```
+```shell
 env --version
 env (GNU coreutils) 8.22
 Copyright (C) 2013 Free Software Foundation, Inc.
