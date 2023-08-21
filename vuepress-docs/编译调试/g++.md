@@ -280,21 +280,20 @@ g++ 链接库时，默认优先链接动态链接库，因为这样编译出来�
 
 如果在链接时想混合链接静态库与动态库，有如下两种方法。
 
-（1）静态链接库使用绝对路径，动态链接库使用 -l，以 boost 库为例。
+（1）静态链接库使用绝对路径，动态链接库使用 -l。
 ```shell
- g++ main.cpp -lboost_thread /usr/lib64/libboost_thread.a /usr/lib64/libboost_system.a
+g++ main.cpp -lpthread /usr/lib64/libboost_system.a
 ```
-（2）使用`-Wl,-Bstatic`告诉链接器`ld`链接静态库，不存在静态库，则报错。使用`-Wl,-Bdynamic`告诉链接器优先使用动态链接库，如果只存在静态库，则使用静态库。
+（2）使用`-Wl,-Bstatic`告诉链接器`ld`链接静态库，不存在静态库则报错。使用`-Wl,-Bdynamic`告诉链接器优先使用动态链接库，如果只存在静态库，则使用静态库。
 ```shell
-g++  main.cpp -Wl,-Bstatic -lboost_system -lboost_thread -Wl,-Bdynamic
+g++ main.cpp -Wl,-Bstatic -lboost_system -Wl,-Bdynamic -lpthread
 ```
-
-（1）命令末尾`-Wl,-Bdynamic`，作用是告诉链接器，后续系统库的链接默认使用动态链接，否则会出现找不到系统库的错误，诸如：
+命令末尾`-Wl,-Bdynamic`，作用是告诉链接器，后续系统库的链接默认使用动态链接，否则会报找不到库的错误。
 ```shell
-/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: cannot find -lpthread
 collect2: ld returned 1 exit status
 ```
-（2）链接时，库要放在目标文件的后面，否则会报"undefined reference to: xxx"错误。具体参见 gcc 手册的如下描述：
+链接时，库要放在目标文件的后面，否则会报"undefined reference to: xxx"错误。具体参见 gcc 手册的如下描述：
 ```
 the linker searches and processes libraries and object files in the order they are 
 specified. Thus, `foo.o -lz bar.o' searches library `z' after file foo.o but before 
@@ -305,15 +304,7 @@ bar.o. If bar.o refers to functions in `z', those functions may not be loaded.
 ## 参考文献
 [g++(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/g++.1.html)
 
-[gcc及其选项详解](http://blog.chinaunix.net/uid-25119314-id-224398.html)
-
 [GCC官方手册](https://gcc.gnu.org/onlinedocs/gcc-6.1.0/gcc.pdf)
-
-[gcc编译选项](http://www.cnblogs.com/fengbeihong/p/3641384.html)
-
-[gcc/g++ 静态动态库混链接](http://blog.csdn.net/wangxvfeng101/article/details/15336955)
-
-[折腾gcc/g++链接时.o文件及库的顺序问题](http://blog.csdn.net/imilli/article/details/51454236)
 
 [g++参数介绍](http://www.cnblogs.com/lidan/archive/2011/05/25/2239517.html)
 
