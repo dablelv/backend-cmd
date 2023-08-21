@@ -51,13 +51,13 @@ as test.s -o test.o
 
 由链接器 ld，将 .o 文件链接成可执行程序。
 ```shell
-//生成二进制.out可执行文件
+// 生成二进制.out可执行文件
 g++ test.o -o test.out
 
 #或者直接使用ld进行链接，但是需要注意使用ld需添加较长命令选项。使用g++ -v选项可以查看最后一行collect2使用的命令选项。collect2是对ld的封装，最终还是要调用ld来完成链接工作。
 ld -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib64/crt1.o /usr/lib64/crti.o /usr/lib64/crtn.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib64 -L/usr/lib -lstdc++ -lm -lgcc_s -lc -lgcc  main.o -o test.out
 ```
-执行最后链接生成的test.out输出：
+执行最后链接生成的 test.out 输出：
 ```
 hello world
 ```
@@ -73,11 +73,11 @@ gcc [-c|-S|-E] [-std=standard]
 ```
 
 ## 3.命令选项
-关于 g++ 的命令选项，大家可以参考 [g++ 百度百科](http://baike.baidu.com/link?url=FQvGegKMC9UsRPbdBRSRkto7y-QJuy093kei3dqlVwzghhwZv_i3nD53Xtq16n4_26phqLxD4DKCqnXSQ17Az_)或者 [GCC官方手册](https://gcc.gnu.org/onlinedocs/gcc-6.1.0/gcc.pdf)，或者使用`man g++`单独查看 g++ 使用手册。
+关于 g++ 的命令选项，大家可以参考 [GCC 官方手册](https://gcc.gnu.org/onlinedocs/gcc-6.1.0/gcc.pdf)，或者使用`man g++`查看 g++ 使用手册。
 
 下面列出常用的命令选项。
 
-总体选项：
+（1）总体选项
 ```shell
 -E
 	只激活预处理，这个不生成文件,你需要把它重定向到一个输出文件里面。例子用法:   
@@ -98,7 +98,7 @@ gcc [-c|-S|-E] [-std=standard]
 	g++ -o hello.asm -S hello.cpp   
 ```
 
-目录选项：
+（2）目录选项
 ```shell
 -I[dir]
 	在你是用#include "file"的时候，gcc/g++会先在当前目录查找你所指定的头文件，如果没有找到，会到系统默认的头文件目录找。如果使用-I指定了目录，编译器会先在指定的目录查找，然后再去系统默认头文件目录查找。对于#include <file>，gcc/g++会到-I指定的目录查找，查找不到，然后再到系统默认的头文件目录查找。
@@ -112,16 +112,14 @@ gcc [-c|-S|-E] [-std=standard]
 	在-I的目录里面查找失败，将到目录dir里面查找。
 -iprefix [prefix]，-iwithprefix [dir]
 	一般一起使用，当-I的目录查找失败，会到prefix+dir下查找。
--L[dir]   
+-L[dir]
 	编译的时候，指定搜索库的路径。比如你自己的库，可以用它指定目录，不然编译器将只在标准库的
 	目录找。这个dir就是目录的名称。
 -l[library]    
-	指定编译的时使用的库，例子用法   
-	gcc -lcurses hello.c   
-	使用curses库编译连接，生成程序。  
+	指定编译的时使用的库，如 gcc -lcurses hello.c，使用curses库编译链接，生成程序。
 ```
 
-预处理选项：
+（3）预处理选项
 ```shell
 -Dmacro
 	相当于C语言中的#define macro
@@ -133,7 +131,7 @@ gcc [-c|-S|-E] [-std=standard]
 	取消任何非标准宏的定义，C++标准预定义的宏仍然有效
 ```
 
-链接方式选项：
+（4）链接方式选项
 ```shell
 -static
 	此选项将禁止使用动态库。优点：程序运行不依赖于其他库。缺点：可执行文件比较大。
@@ -155,7 +153,7 @@ gcc [-c|-S|-E] [-std=standard]
 	指定链接器消除调试符号信息，而非所有符号信息
 ```
 
-错误与告警选项：
+（5）错误与告警选项
 ```
 -pedantic
 	允许发出ANSI/ISO C标准所列出的所有警告
@@ -177,7 +175,7 @@ gcc [-c|-S|-E] [-std=standard]
 	关闭所有警告,建议不要使用此项。
 ```
 
-调试选项：
+（6）调试选项
 ```
  -g   
 	指示编译器，在编译时，产生调试信息。
@@ -193,7 +191,7 @@ gcc [-c|-S|-E] [-std=standard]
 	编译的过程中加入额外的代码， 供性能分析工具gprof剖析程序的耗时情况
 ```
 
-优化选项：
+（7）优化选项
 ```
 -O0   
 -O1   
@@ -202,7 +200,7 @@ gcc [-c|-S|-E] [-std=standard]
 	编译器优化选项分为4个级别，-O0表示没有优化，-O1为缺省值，建议使用-O2，-O3优化级别最高。
 ```
 
-其他选项：
+（8）其他选项
 ```
 -fpic
 	编译器生成位置无关目标码（PIC，position-independent code），用于动态链接库，即Linux下的.so文件。通过全局偏移表（GOT，Global Offset Table）访问所有常量地址。程序启动时通过动态加载程序解析GOT条目。如果链接的so文件的GOT大小超过计算机特定的最大大小，则会从链接器收到错误消息，指示-fpic不起作用。这种情况下，请使用-fPIC重新编译
@@ -277,28 +275,26 @@ gcc [-c|-S|-E] [-std=standard]
 	关掉上一个选项，也就是让gcc根据文件名后缀，自动识别文件类型，例子用法:   
 	gcc -x c hello.pig -x none hello2.c
 ```
-
 ## 4.链接注意事项
-### 指定静态与动态的链接方式
-g++ 链接库时，默认优先链接动态链接库。静态库与动态库混合链接时，有如下两种方法：
+g++ 链接库时，默认优先链接动态链接库，因为这样编译出来的程序会更小。
 
-（1）静态链接库使用绝对路径，动态链接库使用-l。以boost库为例，如果我们要使用静态库则可书写如下：
+如果在链接时想混合链接静态库与动态库，有如下两种方法。
+
+（1）静态链接库使用绝对路径，动态链接库使用 -l，以 boost 库为例。
+```shell
+ g++ main.cpp -lboost_thread /usr/lib64/libboost_thread.a /usr/lib64/libboost_system.a
 ```
- g++ main.cpp -pthread /usr/lib64/libboost_thread.a /usr/lib64/libboost_system.a
-```
-（2）使用`-Wl,-Bstatic`告诉链接器`ld`链接静态库，不存在静态库，则`ld`报错，只存在动态链接库也报错。使用`-Wl,-Bdynamic`告诉链接器**优先**使用动态链接库，如果只存在静态库，则链接静态库，不报错。示例如下：
-```
+（2）使用`-Wl,-Bstatic`告诉链接器`ld`链接静态库，不存在静态库，则报错。使用`-Wl,-Bdynamic`告诉链接器优先使用动态链接库，如果只存在静态库，则使用静态库。
+```shell
 g++  main.cpp -Wl,-Bstatic -lboost_system -lboost_thread -Wl,-Bdynamic
 ```
 
-**注意：**
-
 （1）命令末尾`-Wl,-Bdynamic`，作用是告诉链接器，后续系统库的链接默认使用动态链接，否则会出现找不到系统库的错误，诸如：
-```
+```shell
 /usr/bin/ld: cannot find -lgcc_s
 collect2: ld returned 1 exit status
 ```
-（2）链接时，库要放在目标文件的后面，否则会报"undefined reference to: xxx"错误。具体参见gcc手册的如下描述：
+（2）链接时，库要放在目标文件的后面，否则会报"undefined reference to: xxx"错误。具体参见 gcc 手册的如下描述：
 ```
 the linker searches and processes libraries and object files in the order they are 
 specified. Thus, `foo.o -lz bar.o' searches library `z' after file foo.o but before 

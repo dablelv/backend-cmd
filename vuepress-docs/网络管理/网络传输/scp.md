@@ -52,75 +52,54 @@ scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file] [-l limit] [-o 
 （3）使用 scp 命令要确保使用的用户具有可读取远程服务器相应文件的权限，否则scp 命令无法起作用。
 
 ## 4.常用示例
-（1）远程主机之间，使用 scp 拷贝多个文件。
+（1）远程主机之间拷贝多个文件。
 
-方法一：将多个文件放在同一个目录中，使用`scp -r`来拷贝。
-```
+方法一：将多个文件放在同一个目录中，使用`scp -r`拷贝。
+```shell
 scp -r UerName@SrcHostName:SrcDir UserName@DstHostName:DstDir
 ```
 方法二：将多个文件或者目录使用 tar 打包后作为单个文件传输。
 
-方法三：scp 支持同时拷贝多个文件的功能。
-```
-scp file1  file2 remote_username@remote_ip:remote_folder 
+方法三：scp 支持同时拷贝多个文件。
+```shell
+scp file1 file2 remote_username@remote_ip:remote_folder 
 ```
 
-（2）从本地复制文件到远程。
-
-命令格式：
-```
-scp local_file  remote_username@remote_ip:remote_folder 
+（2）复制本地文件到远程。
+```shell
+scp local_file [remote_username@]remote_ip:remote_file
 # 或
-scp local_file remote_username@remote_ip:remote_file 
-# 或
-scp local_file remote_ip:remote_folder 
-# 或
-scp local_file remote_ip:remote_file 
+scp local_file [remote_username@]remote_ip:remote_dir
 ```
-第1,2个指定了用户名，命令执行后需要再输入密码，第1个仅指定了远程的目录，文件名字不变，第2个指定了文件名；
-第3,4个没有指定用户名，命令执行后需要输入用户名和密码，第3个仅指定了远程的目录，文件名字不变，第4个指定了文件名。
-应用实例：
-```
-scp /home/space/music/1.mp3 root@www.runoob.com:/home/root/others/music 
-scp /home/space/music/1.mp3 root@www.runoob.com:/home/root/others/music/001.mp3 
-scp /home/space/music/1.mp3 www.runoob.com:/home/root/others/music 
-scp /home/space/music/1.mp3 www.runoob.com:/home/root/others/music/001.mp3 
-```
-（3）使用 scp 复制目录。
+用户名是可选的，可以在命令执行后需要输入用户名和密码。
 
-命令格式：
+（3）复制本地目录到远程。
+```shell
+scp -r local_dir [remote_username@]remote_ip:remote_dir
 ```
-scp -r local_folder remote_username@remote_ip:remote_folder 
-# 或
-scp -r local_folder remote_ip:remote_folder
-```
-第 1 个指定了用户名，命令执行后需要再输入密码；
-第 2 个没有指定用户名，命令执行后需要输入用户名和密码。
-应用实例：
-```
-scp -r /home/space/music/ root@www.runoob.com:/home/root/others/ 
-scp -r /home/space/music/ www.runoob.com:/home/root/others/ 
-```
-上面命令将本地 music 目录复制到远程 others 目录下。
 
-（4）从远程复制到本地。
+（4）从远程复制文件或目录到本地。
 
-从远程复制到本地，只要将从本地复制到远程的命令的后2个参数调换顺序即可，如下实例
-应用实例：
+从远程复制文件或目录到本地，只要将从本地复制文件或目录到远程命令的两个参数调换位置即可。
+```shell
+# 复制单个文件
+scp [remote_username@]remote_ip:remote_file local_file
+scp [remote_username@]remote_ip:remote_file local_dir
+
+# 以递归方式复制整个目录
+scp -r [remote_username@]remote_ip:remote_dir local_dir
+scp -r [remote_username@]remote_ip:remote_dir local_dir
 ```
-scp root@www.runoob.com:/home/root/others/music /home/space/music/1.mp3 
-scp -r www.runoob.com:/home/root/others/ /home/space/music/
-```
-**说明**：如果远程服务器防火墙有为scp命令设置了指定的端口，我们需要使用 -P 参数来设置命令的端口号，命令格式如下：
-```
-#scp 命令使用端口号 4588
-scp -P 4588 remote@www.runoob.com:/usr/local/sin.sh /home/administrator
+如果远程服务器防火墙有为 scp 命令设置了指定的端口，我们需要使用 -P 参数来设置命令的端口号。
+```shell
+scp -P 4588 remote@example.com:/usr/local/sin.sh /home/administrator/
 ```
 
 （5）使用 expect 和 scp 实现不同主机之间文件的自动传输。
 
-```
+```shell
 #!/usr/bin/expect
+
 set timeout 5
 spawn scp dablelv@172.25.44.22:/yourpath/yourfile root@10.130.89.104:/destinationpath
 expect "dablelv@172.25.44.22's password:"
