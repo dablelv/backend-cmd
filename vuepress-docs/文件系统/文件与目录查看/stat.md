@@ -65,7 +65,7 @@ stat [OPTION]... FILE..
 ## 4.常用示例
 （1）显示文件信息。
 ```shell
-[root@TENCENT64 ~]# stat Changelog
+stat Changelog
   File: ‘Changelog’
   Size: 1598      	Blocks: 8          IO Block: 4096   regular file
 Device: fd01h/64769d	Inode: 1579435     Links: 1
@@ -96,7 +96,7 @@ Birth -：无法获知文件创建时间。注意：Linux下的文件未存储�
 
 （2）显示文件所在文件系统信息。
 ```shell
-[root@TENCENT64 /data/vas_pgg_proj/apps/penguin_game]# stat -f Makefile
+stat -f Makefile
   File: "Makefile"
     ID: 6f75a4f02634e23e Namelen: 255     Type: ext2/ext3
 Block size: 4096       Fundamental block size: 4096
