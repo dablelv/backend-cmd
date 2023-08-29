@@ -1,8 +1,8 @@
 ## 1.命令简介
 ldd 命令用于打印程序或共享库文件所依赖的共享库列表。
 
-注意，ldd 本身不是一个二进制程序，而是一个 Shell 脚本，使用文本编辑器 vim 可以查看其内容，具体目录可以使用 which 命令查看：
-```
+注意，ldd 本身不是一个二进制程序，而是一个 Shell 脚本，使用文本编辑器 vim 可以查看其内容，具体目录可以使用 which 命令查看。
+```shell
 which ldd
 /usr/bin/ldd
 ```
@@ -49,10 +49,10 @@ Changelog  Changelog.ln  dablelv  txt.txt
 由此可见，ldd 命令其实是通过设置 ld-linux.so 依赖的环境变量来影响 ld-linux.so的工作方式，使得可执行模块加载时显示其依赖的动态库。实际上可以直接执行 ld-linux.so 模块，如`/lib/ld-linux.so.2 --list program`，来达到命令`ldd program`的效果。
 
 ## 2.命令格式
+```shell
+ldd [OPTIONS] FILES
 ```
-ldd [OPTIONS] <FILES>
-```
-其中`[OPTIONS]`为可选的命令选项，`<FILES>...`为必填的程序或者共享库文件列表。
+其中 OPTIONS 为可选的命令选项，FILES 为必填的程序或共享库文件列表。
 
 ## 3.选项说明
 ```
@@ -66,7 +66,7 @@ ldd [OPTIONS] <FILES>
 
 ## 4.示例说明
 （1）显示可执行文件依赖的动态链接库。
-```
+```shell
 ldd /usr/bin/ls
 	linux-vdso.so.1 =>  (0x00007ffd90514000)
 	/$LIB/libonion.so => /lib64/libonion.so (0x00007f294ade8000)

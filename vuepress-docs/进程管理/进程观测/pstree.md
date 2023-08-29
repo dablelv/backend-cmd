@@ -7,7 +7,7 @@ pstree 将所有行程以树状图显示，树状图将会以 pid (如果有指�
 
 ## 2.命令格式
 ```shell
-pstree [<options>] [<pid> | <user>]
+pstree [OPTIONS] [PID | USER]
 pstree -V | --version
 ```
 

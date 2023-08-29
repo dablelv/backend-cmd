@@ -1,5 +1,5 @@
 ## 1.命令简介
-netstat 命令用来打印 Linux 系统的网络状态信息，包括网络连接（network connections）、路由表（routing tables）、网络接口设备统计信息（interface statistics）、伪连接（masquerade connections）和多播成员信息（multicast memberships）等，得知 Linux 系统网络的整体情况。
+netstat 用来打印 Linux 系统的网络状态信息，包括网络连接（network connections）、路由表（routing tables）、网络接口设备统计信息（interface statistics）、伪连接（masquerade connections）和多播成员信息（multicast memberships）等，得知 Linux 系统网络的整体情况。
 
 如我们可以通过 netstat 获知系统当前被监听的端口号列表。
 

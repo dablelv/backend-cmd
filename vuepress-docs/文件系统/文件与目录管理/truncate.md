@@ -11,7 +11,7 @@ truncate 将文件的大小缩小或扩展到指定的大小。
 
 ## 2.命令格式
 ```shell
-truncate <OPTION>... <FILE>...
+truncate OPTION... FILE...
 ```
 
 ## 3.选项说明
@@ -70,6 +70,6 @@ Hello World
 
 ---
 ## 参考文献
-[strace(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/strace.1.html)
+[truncate(1) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man1/truncate.1.html)
 
 <Vssue title="truncate" />
