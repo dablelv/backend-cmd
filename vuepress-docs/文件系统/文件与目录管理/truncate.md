@@ -8,12 +8,10 @@ truncate 将文件缩小或扩展到指定大小。
 注意，文件空洞部分不占用磁盘空间，文件所占用的磁盘空间仍然是连续的。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/21477614c8124b8282ca1b3b80a8b11e.png)
-
 ## 2.命令格式
 ```shell
 truncate OPTION... FILE...
 ```
-
 ## 3.选项说明
 ```shell
 -c, --no-create
