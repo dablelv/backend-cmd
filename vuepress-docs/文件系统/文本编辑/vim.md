@@ -203,8 +203,7 @@ termencoding -> encoding  -> fileencoding
 ![在这里插入图片描述](https://img-blog.csdn.net/20181012195217621)
 
 ## 6.常见用法
-
-（1）vim 查看文件编码。
+1. 查看文件编码。
 ```
 :set fileencoding
 或者简写
@@ -212,22 +211,21 @@ termencoding -> encoding  -> fileencoding
 ```
 可显示文件编码格式。这个命令有致命的缺点。原因是只有正常显示文件内容时，该命令显示的文件编码格式才是文件本身的编码格式。因为该命令显示的编码格式并不是文件本身的编码格式，而是当前打开该文件所使用的编码格式。因此，这个命令在网上的说明大都是不准确的，特此说明。
 
-（2）修改编码类型。
-使用vim修改：
-```shell
+2. 修改编码类型。
+```
 :set fileencoding=gbk
 #或者
 :set fenc=gbk
 ```
-使用 iconv 来修改文件编码：
-```Shell
+还可以使用 iconv 修改文件编码类型。
+```shell
 iconv -f encoding -t encoding inputfile
 
 # 比如将一个GBK编码的文件转换成 UTF8 编码
 iconv -f GBK -t UTF-8 file1 -o file2UTF-8
 ```
-iconv 的参数说明：
-```Shell
+iconv 参数说明：
+```
 -f, --from-code=名称，原始文本编码
 -t, --to-code=名称，输出编码
 -l, --list 列举所有已知的字符集
@@ -236,7 +234,7 @@ iconv 的参数说明：
 -s, --silent，关闭警告
 --verbose，打印进度信息
 ```
-（3）vim 指定编码类型浏览文件。
+3. 指定编码类型浏览文件。
 
 如果知道了文件的编码类型，可显示指定编码类型来解析文件，而不用vim去猜测文件的编码类型，事实上猜测的往往是错误。命令如下：
 ```
@@ -246,8 +244,9 @@ vim file_name -c "e ++enc=utf-8"
 ```
 :e ++enc=utf-8
 ```
-（4）vim 新增空白行
-新增一行空白，在命令行模式下输入 o。如果想添加三行的话，键入 3o ，如果想添加 n 行则键入 n 个 o。如果键入 3o 后立即退出插入模式的话，就可以添加三个空白行。如果输入一些内容再退出，可以添加三行相同的内容。
+4. 新增空白行
+
+在命令行模式下输入 o。如果想添加三行的话，键入 3o ，如果想添加 n 行则键入 n 个 o。如果键入 3o 后立即退出插入模式的话，就可以添加三个空白行。如果输入一些内容再退出，可以添加三行相同的内容。
 
 如果想在每一行执行相同的命令，在 vim 里可以用 :g 实现。一般的语法是：
 ```
@@ -259,36 +258,40 @@ vim file_name -c "e ++enc=utf-8"
 ```
 norm 这个命令的意思是，把后面的参数看成是在普通模式下的按键，即命令模式下的按键。
 
-（5）vim 高亮显示选中的单词
+5. 高亮显示选中的单词。
 
-将光标移到需要高亮显示的单词上，在命令模式下输入gd，那么就可以将当前的单词在当前文本中全部高亮显示，如下图所示，高亮显示 dwBeInvitedUinLen。
+将光标移到需要高亮显示的单词上，在命令模式下输入 gd，那么就可以将当前的单词在当前文本中全部高亮显示。
+
+如下图所示，高亮显示 dwBeInvitedUinLen。
 ![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTYwODAyMTYwNzMyMTMx)
 
-（6）vim 输入特殊字符
+6. 输入特殊字符
 
 有三种方法，第一种是使用字符编码，第二种是使用二合字母（digraph），三是使用快捷键（Ctrl+字母）。
 
-**使用字符编码：**
+- 使用字符编码
 
 vim 可以用字符编码插入任意字符，使用此功能可以方便地输入键盘上找不到的字符。使用步骤如下：
-1. 编辑模式下按下 Ctrl+v；
-2. 如果是 ASCII 字符，则输入三位十进制 ASCII 码值，不足三位，前补0。比如输入大写字母 A，则输入 065；如果是 Unicode 字符，则输入“u+四位十六进制码值”。比如输入大写字母 A，则输入 u0041。
+（1）编辑模式下按下 Ctrl+v；
+（2）如果是 ASCII 字符，则输入三位十进制 ASCII 码值，不足三位，前补0。比如输入大写字母 A，则输入 065；如果是 Unicode 字符，则输入“u+四位十六进制码值”。比如输入大写字母 A，则输入 u0041。
 
-更多详情内容可参见vim的帮助文档，末行模式输入：`h  i_ctrl-v_digit`。
+更多详情内容可参见 vim 帮助文档，末行模式输入`:h  i_ctrl-v_digit`。
 
-**使用二合字母（digraph）：**
+- 使用二合字母（digraph）
+
 二合字母顾名思义，使用两个字母的组合来标识特殊字符。使用步骤如下：
-1. 编辑模式下按下 Ctrl+k；
-2. 输入特殊字符对应的二合字母。可以使用`:dig`或`:h digraph-table`查看对应二合字母。比如回车符（Carriage Return） 的二合字母是 CR。
+（1）编辑模式下按下 Ctrl+K。
+（2）输入特殊字符对应的二合字母。可以使用`:dig`或`:h digraph-table`查看对应二合字母。比如回车符（Carriage Return） 的二合字母是 CR。
 
-**Ctrl+字母：**
-在vim中，使用`:set list`显示所有字符时，经常会看到有`^I、^M`等符号，代表的字符可以使用`:h digraph-table`查看，特殊字符列表如下：
+-  Ctrl+字母
+
+在 vim 中使用`:set list`显示所有字符时，经常会看到有`^I、^M`等符号，代表的字符可以使用`:h digraph-table`查看，特殊字符列表如下：
+
 ![这里写图片描述](https://img-blog.csdn.net/20180608145829247?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0szNDZLMzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-在vim的编辑模式下，可使用“Ctrl+字母”进行输入，例如使用"Ctrl+i"或"Ctrl+I"可以输入字符`^I`（Tab），使用"Ctrl+m"或"Ctrl+M"可以输入字符`^M`（回车）。
+在 vim 的编辑模式下，可使用“Ctrl+字母”进行输入，例如使用"Ctrl+I"可以输入字符`^I`（Tab），使用"Ctrl+M"可以输入字符`^M`（回车）。
 
-（7）其它常见操作
-
-```shell
+7. 其它常见操作
+```
 #显示行号
 :set number
 
