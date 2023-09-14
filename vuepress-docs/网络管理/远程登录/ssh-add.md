@@ -1,8 +1,16 @@
 ## 1.命令简介
 ssh-add 将私钥身份添加到 OpenSSH 身份验证代理，从而提高 ssh(1) 的认证速度。
 
-ssh-add 向认证代理 ssh-agent(1) 添加私钥身份。当不带参数运行时，它将添加文件 `~/.ssh/id_rsa`、`~/.ssh/id_dsa`、`~/ssh/id_ecdsa`、`~/.ssh/id_ecdsa_sk`、`~/.ssh/id_ed25519` 和 `~/.ssh/id_ed25519_sk`。加载私钥后
-，ssh-add 将尝试加载相应的证书，通过向私钥文件的名称追加 -cert.pub 来获得的相应的证书。可选的文件名可以在命令行中给出。
+ssh-add 向认证代理 ssh-agent(1) 添加私钥身份。当不带参数运行时，它将添加如下文件：
+```
+~/.ssh/id_rsa
+~/.ssh/id_dsa
+~/ssh/id_ecdsa
+~/.ssh/id_ecdsa_sk
+~/.ssh/id_ed25519
+~/.ssh/id_ed25519_sk
+```
+加载私钥后，ssh-add 将尝试加载相应的证书，通过向私钥文件的名称追加 -cert.pub 来获得相应的证书。可选的文件名可以在命令行中给出。
 
 如果任何文件需要密码短语，ssh-add 将通过 tty 向用户请求该密码短语。如果给定了多个身份文件，ssh-add 将重试最后一个密码短语。
 
@@ -19,13 +27,13 @@ ssh-add -T pubkey ...
 ## 3.选项说明
 ```
 -D
-	删除 ssh-agent 中的所有密钥。
+	删除 ssh-agent(1) 中的所有密钥。
 -d
 	从 ssh-agent 中的删除密钥。
 -e <pkcs11>
 	删除 PKCS#11 共享库 pkcs11 提供的钥匙。
 -s <pkcs11>
-	添加 PKCS#11 共享库 pkcs1 提供的钥匙
+	添加 PKCS#11 共享库 pkcs1 提供的钥匙。
 -L
 	列出 ssh-agent(1) 中的公钥。
 -l
