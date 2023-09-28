@@ -134,7 +134,7 @@ traceroute to www.baidu.com (220.181.38.149), 30 hops max, 60 byte packets
  4  10.196.7.65 (10.196.7.65)  0.664 ms 10.196.7.57 (10.196.7.57)  0.703 ms 10.196.7.65 (10.196.7.65)  0.658 ms
 ...
 ```
-## 5.traceroute 工作原理
+## 5.工作原理
 traceroute 最简单的基本用法是：traceroute hostname。
 
 traceroute 的设计是利用 ICMP 及 IP header 的 TTL（Time To Live）栏位（field）。首先，traceroute 送出一个 TTL 是 1 的IP datagram（其实，每次送出的为 3 个 40 字节的包，包括源地址，目的地址和包发出的时间标签）到目的地，当路径上的第一个路由器（router）收到这个 datagram 时，它将 TTL 减 1。此时，TTL 变为 0 了，所以该路由器会将此 datagram 丢掉，并送回一个「ICMP time exceeded」消息（包括发IP包的源地址，IP包的所有内容及路由器的IP地址），traceroute 收到这个消息后，便知道这个路由器存在于这个路径上，接着 traceroute 再送出另一个 TTL 是 2 的datagram，发现第 2 个路由器… traceroute 每次将送出的datagram的TTL 加1来发现另一个路由器，这个重复的动作一直持续到某个datagram 抵达目的地。当datagram到达目的地后，该主机并不会送回 ICMP time exceeded 消息，因为它已是目的地了，那么 traceroute 如何得知目的地到达了呢？
@@ -145,6 +145,6 @@ traceroute 提取发 ICMP TTL 到期消息设备的IP地址并作域名解析。
 
 ---
 ## 参考文献
-[tracetroute(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/traceroute.8.html)
+[traceroute(8) - Linux manual page - man7.org](https://man7.org/linux/man-pages/man8/traceroute.8.html)
 
 <Vssue title="traceroute" />

@@ -1,5 +1,7 @@
 ## 1.命令简介
-g++ 是 GNU 开发的 C++ 编译器，是 GNU 编译器套件 GCC（GNU Compiler Collection）的组成部分。另外，gcc 是 GNU 的 C 编译器。
+g++ 是 GNU 开发的 C++ 编译器，是 GNU 编译器套件 GCC（GNU Compiler Collection）的组成部分。
+
+注意 gcc 是 GNU 的 C 编译器，不要与 g++ 混为一谈。
 
 看官方手册你会发现 g++ 的命令选项真的多如繁星，令人头皮发麻。但是常用的命令选项也就那几个，足以完成日常编译，g++ 使用起来还是比较简单的！
 

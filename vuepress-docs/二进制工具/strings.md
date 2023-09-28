@@ -7,7 +7,7 @@ strings 在二进制目标文件或其他二进制文件中查找可打印的字
 
 ## 2.命令格式
 ```
-strings [<options>] <file>...
+strings [OPTIONS] FILE...
 ```
 ## 3.选项说明
 注意，长选项的参数对于短选项也是必须的。
