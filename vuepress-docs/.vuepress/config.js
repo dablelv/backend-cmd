@@ -55,7 +55,7 @@ module.exports = {
     sidebar:[
       ['/', '前言'],
       {
-          title: '帮助', // 分组标题
+          title: '帮助',
           children: [
             ['/帮助/man', 'man'],
             ['/帮助/info', 'info'],
