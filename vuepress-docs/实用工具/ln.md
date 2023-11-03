@@ -4,14 +4,14 @@ ln（link）用于在文件之间建立链接。
 链接分为硬链接（hard link）和软链接（符号链接，symbolic link）两种，默认创建硬链接，如果要创建软链接须使用 -s 选项。本文介绍的是 GNU 版本的实现，其它版本（如 POSIX 版）实现会所有不同。
 
 注意：
-（1）硬链接不是一个独立的文件，只是一个文件名。一个文件可以有多个文件名，只有将最后一个文件名从磁盘上删除，才能把这个文件删掉；
-（2）软链接可以跨文件系统，但硬链接不能跨文件系统，因为硬链接只是文件的别名，而非独立的文件；
-（3）不能给目录建立硬链接，因为硬链接连接到目录可会导致目录的 inode 与实体 block 形成环状。此时，如果删除目录，会导致目录实体 block 无法被系统访问，产生孤立的目录（从根目录无法再访问）；
-（4）创建硬链接时，每个目标必须存在。创建软链接时，目标文件可以不存在；
-（5）软链接是一个包含了路径信息的独立文件，类似于 Windows 的快捷方式，它的许多属性依赖于原文件，所以给软链接文件设置权限是没有意义的。
+- 硬链接不是一个独立的文件，只是一个文件名。一个文件可以有多个文件名，只有将最后一个文件名从磁盘上删除，才能把这个文件删掉。
+- 软链接可以跨文件系统，但硬链接不能跨文件系统，因为硬链接只是文件的别名，而非独立的文件。
+- 不能给目录建立硬链接，因为硬链接连接到目录可会导致目录的 inode 与实体 block 形成环状。此时，如果删除目录，会导致目录实体 block 无法被系统访问，产生孤立的目录（从根目录无法再访问）。
+- 创建硬链接时，每个目标必须存在。创建软链接时，目标文件可以不存在。
+- 软链接是一个包含了路径信息的独立文件，类似于 Windows 的快捷方式，它的许多属性依赖于原文件，所以给软链接文件设置权限是没有意义的。
 
 ## 2.命令格式
-```
+```shell
 ln [OPTION]... [-T] TARGET LINK_NAME   (1st form)
 ln [OPTION]... TARGET                  (2nd form)
 ln [OPTION]... TARGET... DIRECTORY     (3rd form)
@@ -72,7 +72,7 @@ simple, never
 
 ## 4.常用示例
 （1）给文件 /etc/passwd 建立软链接。
-```
+```shell
 ln -s /etc/passwd passwdSoftLink
 
 ll passwdSoftLink
@@ -80,7 +80,7 @@ lrwxrwxrwx  1 root root   11 Nov 13 22:21 passwdSoftLink -> /etc/passwd
 ```
 
 （2）给文件 /etc/passwd 多次建立软链接，软链接的名称相同，采用数字表示备份文件的版本号。多次备份，版本号将依序递增。
-```
+```shell
 ln -s --backup=numbered /etc/passwd passwdSoftLink
 
 ll passwdSoftLink*
@@ -89,14 +89,17 @@ lrwxrwxrwx  1 root root   11 Nov 14 10:36 passwdSoftLink.~1~ -> /etc/passwd
 ```
 
 （3）给不存在的文件建立软链接。
-```
+```shell
 ln -s nofile nofileSoftLink
 ```
-使用 ll 命令查看软链接时，软链接名为红色，且不存在的目标文件名以红底白字在不停地闪烁。![在这里插入图片描述](https://img-blog.csdnimg.cn/20191114125309155.gif)
+使用 ll 命令查看软链接时，软链接名为红色，且不存在的目标文件名以红底白字不停地闪烁。
+
+<img src=https://img-blog.csdnimg.cn/20191114125309155.gif width=60%/>
+
 向软链接 nofileSoftLink 写入内容后保存，将会生成文件 nofile。
 
 （4）给 /etc/passwd 建立硬链接。
-```
+```shell
 ln /etc/passwd passwdHardLink
 
 ll -i /etc/passwd passwdHardLink
@@ -106,7 +109,7 @@ ll -i /etc/passwd passwdHardLink
 使用 ll 命令查看两个文件时，第一列 inode 号相同，且第三列硬链接数为 2，表示有两个文件名指向文件的数据实体。
 
 （5）给 /etc/passwd 建立同名的软链接且软链接放在当前目录。即使用第三和第四种命令格式为文件建立链接。
-```
+```shell
 ln -s /etc/passwd .
 
 # 或
@@ -119,12 +122,12 @@ lrwxrwxrwx  1 root root   11 Nov 14 10:43 passwd -> /etc/passwd
 注意，书写目标文件时，路径要相对于目标目录，或者使用绝对路径，不然软链接无法指向目标文件。
 
 （6）创建的链接文件有同名的文件时，强制覆盖，不进行备份。
-```
+```shell
 ln -sf /etc/passwd passwdSoftLink
 ```
 
 （7）修改软链接指向新的目标文件。将软链接 passwdSoftLink 指向 /usr/bin/passwd，重新建立软链接，强制覆盖原有的软链接 passwdSoftLink 即可。
-```
+```shell
 ln -sf /usr/bin/passwd passwdSoftLink
 
 ll passwdSoftLink
