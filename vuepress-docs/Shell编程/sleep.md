@@ -6,7 +6,7 @@ sleep 暂停指定的时间。
 sleep NUMBER[SUFFIX]...
 sleep OPTION
 ```
-SUFFIX  缺省是 s，指暂停指定的秒数，m 指分钟，h 指小时，d 指天数。
+SUFFIX 缺省是 s 秒数，此外 m 指分钟，h 指小时，d 指天数。
 
 如果 NUMBER 是 infinity，表示暂停永久。
 

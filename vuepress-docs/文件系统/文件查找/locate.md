@@ -1,7 +1,7 @@
 ## 1.命令简介
 locate 用于查看文件。
 
-如果没有指定`--regex`选项，匹配模式可以包含通配符（globbing characters）。如果模式不包含通配符，则模式等价于 `*PATTERN*`。
+如果没有指定 `--regex` 选项，匹配模式可以包含通配符（globbing characters）。如果模式不包含通配符，则模式等价于 `*PATTERN*`。
 
 ## 2.locate 与 find 命令的区别？
 
@@ -61,7 +61,7 @@ locate [OPTION]... PATTERN...
 ```
 locate -b '\NAME'
 ```
-反斜杠 \ 阻止了隐式地将 NAME 转为 *NAME*。
+反斜杠 \ 阻止了隐式地将 NAME 转为 `*NAME*`。
 
 （2）查找文件名包含某个字符串的相关文件。
 ```
