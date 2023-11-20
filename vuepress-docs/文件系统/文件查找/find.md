@@ -1,5 +1,5 @@
 ## 1.命令简介
-find 命令用于在指定目录查找文件。
+find 用于在指定目录查找文件。
 
 find 可以指定一些匹配条件，如按文件名、文件类型、文件属主甚至是时间戳来查找文件，默认递归查找。
 
@@ -7,11 +7,11 @@ find 可以指定一些匹配条件，如按文件名、文件类型、文件属
 ```
 find [-H] [-L] [-P] [-D DEBUGOPTS] [-O LEVEL] [PATH...] [EXPRESSION]
 ```
-基本命令选项`-H`、`-L`、和`-P`控制着对符号链接的处理方式；
+基本选项`-H`、`-L`、和`-P`控制着对符号链接的处理方式。
 
-如果没有给定搜索路径 PATH，则默认为当前目录；
+如果没有给定搜索路径 PATH，则默认为当前目录。
 
-如果没有给定表达式 EXPRESSION，则默认为`-print`，将匹配的文件输出到标准输出。
+如果没有给定表达式 EXPRESSION，默认为`-print`，将匹配的文件输出到标准输出。
 
 其实`-H -L -P -D -O`这几个选项并不常用，EXPRESSION 可以拆解为 options/tests/actions，将在第四节详细介绍。
 
@@ -38,11 +38,9 @@ find [-H] [-L] [-P] [-D DEBUGOPTS] [-O LEVEL] [PATH...] [EXPRESSION]
 ## 4.命令表达式
 find 命令表达式可以分为三类：
 
-一是普通选项（options），总是真，在其它表达式前指定，设置搜索路径的深度、查看帮助、版本信息等；
-
-二是比较测试（tests），给定find查找满足特定条件的文件；
-
-三是动作（actions），对查找到的文件，执行指定的操作。
+- 普通选项（options），在其它表达式前指定，设置搜索路径的深度、查看帮助、版本信息等。
+- 比较测试（tests），给定查找条件。
+- 动作（actions），对查找到的文件，执行指定操作。
 
 对于多个表达式，find 从左向右处理，所以表达式的前后顺序不同会有不同的搜索性能。
 
@@ -88,7 +86,7 @@ find /tmp -type f -o -name "*.log"
 ### 4.2 表达式说明
 #### options
 options 表示 find 的普通选项。
-```
+```shell
 -d：等同于-depth，为了与 FreeBSD, NetBSD, MacOS X and OpenBSD 兼容。
 --daystart:从本日开始计算时间,在使用（-amin、-atime、-cmin、-mmin和-mtime）选项时，时间从当前开始，而非24小时前；
 -depth：查找文件时，首先查找当前目录中的文件，然后再在其子目录中查找；
@@ -107,10 +105,9 @@ options 表示 find 的普通选项。
 -xautofs：查找文件时不在autofs文件系统查询；
 -xdev：作用同-mount；
 ```
-
 #### tests
 tests 表示 find 的比较测试。
-```
+```shell
 +n：大于指定的n；
 -n：小于指定的n；
 n：等于指定的n；
@@ -168,10 +165,9 @@ n：等于指定的n；
 -xtype [c]:等同于-type选项，除非文件是符号链接；当制定选项-P或-H时，连接文件所指文件类型是[c]则满足条件，如果指定选项-L，[c]为l才有效，表名查找符号链接；
 -context [pattern]:
 ```
-
 #### actions
 actions 部分一般是执行某些命令或实现某些功能。这部分是 find 的 command line 部分。
-```
+```shell
 -delete:删除文件，如果删除成功则返回true，如果删除失败，将给出错误信息。"-delete"动作隐含了"-depth"这个option。
 -exec [command] ;:注意有个分号";"结尾，该action是用于执行给定的命令。如果命令的返回状态码为0则该action返回true，command后面的所有内容都被当作command的参数，直到分号";"为止，其中参数部分使用字符串"{}"时，它表示find找到的文件名，即在执行命令时，"{}"会被逐一替换为find到的文件名，"{}"可以出现在参数中的任何位置，只要出现，它都会被文件名替换。注意，分号";"需要转义，即"\;"，如有需要，可以将"{}"用引号包围起来。
 -exec command {} +:这种-exec动作变种，只允许使用find查找到的文件一次；
@@ -189,39 +185,41 @@ actions 部分一般是执行某些命令或实现某些功能。这部分是 fi
 -printf [format]:以指定的格式输出匹配的文件名；
 -prune:使用这一选项可以使find命令不在当前指定的目录中查找，如果同时使用-depth选项，那么-prune将被find命令忽略。比如：find /apps -path "/apps/bin" -prune -o –print在/apps目录下查找文件，但不希望在/apps/bin目录下查找；
 
--quit:立即退出，没有子进程会继续运作，但没有更多的路径，在命令行中指定将被处理；
+-quit:立即退出，没有子进程会继续运作，但没有更多的路径，在命令行中指定将被处理。
 ```
 ## 5.常用示例
 （1）在/logs目录中查找更改时间在5日以前的文件并删除它们。
-```
+```shell
 find /logs -type f -mtime +5 -exec rm {} ;
 ```
+
 （2）列出当前目录及子目录下所有文件和文件夹。
-```
+```shell
 find .
 ```
+
 （3）在/home目录下查找以.txt结尾的文件名。
-```
+```shell
 find /home -name "*.txt" 
 
-#同上，但忽略大小写 
+# 同上，但忽略大小写 
 find /home -iname "*.txt"
 ```
 
 （4）当前目录及子目录下查找所有以.txt和.pdf结尾的文件。
-```
+```shell
 find . \( -name "*.txt" -o -name "*.pdf" \) 
 #或
 find . -name "*.txt" -o -name "*.pdf"
 ```
 
 （5）匹配文件路径或者文件。
-```
+```shell
 find /usr/ -path "*local*"
 ```
 
 （6）基于正则表达式匹配文件路径。
-```
+```shell
 find . -regex ".*\(\.txt\|\.pdf\)$" 
 
 #同上，但忽略大小写
@@ -229,12 +227,12 @@ find . -iregex ".*\(\.txt\|\.pdf\)$"
 ```
 
 （7）使用否定参数!，找出/home下不是以.txt结尾的文件。
-```
+```shell
 find /home ! -name "*.txt"
 ```
 
 （8）根据文件类型进行搜索。
-```
+```shell
 find . -type [类型参数] 
 类型参数列表： 
 	c - 字符设备文件。
@@ -246,37 +244,37 @@ find . -type [类型参数]
 ```
 
 （9）向下搜索的最大深度限制为3。
-```
+```shell
 find . -maxdepth 3 -type f 
 ```
 
 （10）搜索出深度距离当前目录至少2个子目录的所有文件。
-```
+```shell
 find . -mindepth 2 -type f
 ```
 
 （11）根据文件时间戳进行搜索,搜索恰好在七天前被访问过的所有文件。
-```
+```shell
 find . -type f -atime 7
 ```
 
 （12）搜索超过七天内被访问过的所有文件。
-```
+```shell
 find . -type f -atime +7
 ```
 
 （13）搜索访问时间超过10分钟的所有文件。
-```
+```shell
 find . -type f -amin +10
 ```
 
 （14）找出比file.log修改时间更长的所有文件。find
-```
+```shell
 find . -type f -newer file.log
 ```
 
 （15）根据文件大小进行匹配。
-```
+```shell
 find . -type f -size 文件大小
 
 单元文件大小单元： 
@@ -287,72 +285,71 @@ find . -type f -size 文件大小
 	M —— 兆字节
 	G —— 吉字节
 	
-#搜索大于10KB的文件
+# 搜索大于10KB的文件
 find . -type f -size +10k 
 	
-#搜索小于10KB的文件
+# 搜索小于10KB的文件
 find . -type f -size -10k
 
-#搜索等于10KB的文件
+# 搜索等于10KB的文件
 find . -type f -size 10k
 ```
 
 （16）删除匹配文件,#删除当前目录下所有.txt文件。
-```
-
+```shell
 find . -type f -name "*.txt" -delete
 ```
 
 （17）根据文件权限/所有权进行匹配。
-```
-#当前目录下搜索出权限为777的文件
+```shell
+# 当前目录下搜索出权限为777的文件
 find . -type f -perm 777
 
-#找出当前目录下权限不是644的php文件 
+# 找出当前目录下权限不是644的php文件 
 find . -type f -name "*.php" ! -perm 644
 
-#找出当前目录用户tom拥有的所有文件
+# 找出当前目录用户tom拥有的所有文件
 find . -type f -user tom
 
-#找出当前目录用户组sunk拥有的所有文件
-#find . -type f -group sunk
+# 找出当前目录用户组sunk拥有的所有文件
+find . -type f -group sunk
 ```
 （18）借助-exec选项与其他命令结合使用。
-```
-找出当前目录下所有root的文件，并把所有权更改为用户tom
+```shell
+# 找出当前目录下所有root的文件，并把所有权更改为用户tom
 find .-type f -user root -exec chown tom {} \; 
 上例中，{} 用于与-exec选项结合使用来匹配所有文件，然后会被替换为相应的文件名。 
 
-#找出自己家目录下所有的.txt文件并删除
+# 找出自己家目录下所有的.txt文件并删除
 find $HOME/. -name "*.txt" -ok rm {} \; 
 上例中，-ok和-exec行为一样，不过它会给出提示，是否执行相应的操作。
 
-#查找当前目录下所有.txt文件并把他们拼接起来写入到all.txt文件中
+# 查找当前目录下所有.txt文件并把他们拼接起来写入到all.txt文件中
 find . -type f -name "*.txt" -exec cat {} \;> all.txt
 
-#将30天前的.log文件移动到old目录中
+# 将30天前的.log文件移动到old目录中
 find . -type f -mtime +30 -name "*.log" -exec cp {} old \;
 
-#找出当前目录下所有.txt文件并以“File:文件名”的形式打印出来
+# 找出当前目录下所有.txt文件并以“File:文件名”的形式打印出来
 find . -type f -name "*.txt" -exec printf "File: %s\n" {} \; 
 
-#因为单行命令中-exec参数中无法使用多个命令，以下方法可以实现在-exec之后接受多条命令
+# 因为单行命令中-exec参数中无法使用多个命令，以下方法可以实现在-exec之后接受多条命令
 -exec ./text.sh {} \; 
 ```
 
 （19）搜索但跳出指定的目录,查找当前目录或者子目录下所有.txt文件，但是跳过子目录sk。
-```
+```shell
 find . -path "./sk" -prune -o -name "*.txt" -print
 ```
 
 （20）要列出所有大小为零的文件。
-```
+```shell
 find . -empty
 ```
 
 （21）find 命令 -perm 的权限的加减号的区别。
 首先创建了 4 个具有 suid 和 sgid 属性的文件，因为是大写的 S，所以实际上无效，但不影响我们来说明 -perm 选项指定权限时加减号的区别。
-```
+```shell
 ls -l ./testdir
 ------S--- 1 root root 0 2016-11-06 10:39 2000
 ---S------ 1 root root 0 2016-11-06 10:39 4000
@@ -360,7 +357,7 @@ ls -l ./testdir
 -rwS--S--- 1 root root 0 2016-11-06 10:39 6600
 ```
 假定我执行
-```
+```shell
 find . -type f -perm 6000
 ```
 那么我们显然可以得到下面的结果
@@ -400,19 +397,19 @@ find . -type f -perm 6000
 注意：find的 +mode已经废弃，建议使用/mode来代替+mode。
 
 （22）删除文件大小为零的文件。
-```
+```shell
 find ./ -size 0 -exec rm {} \;
 
-#或
+# 或
 find ./ -size 0 -ok rm {} \;
 
-#或
+# 或
 rm -i find ./ -size 0
 
-#或
+# 或
 find ./ -size 0 | xargs rm -f
 ```
--ok和-exec的作用相同，只不过以一种更为安全的模式来执行该参数所给出的shell命令，在执行每一个命令之前，都会给出提示，让用户来确定是否执行。例如`find . -name "*.conf" -mtime +5 -ok rm {} \;`，在当前目录中查找所有文件名以.LOG结尾、最近更改时间在5日以上的文件，并删除它们，只不过在删除之前先给出提示。
+-ok 和 -exec 的作用相同，只不过以一种更为安全的模式来执行该参数所给出的shell命令，在执行每一个命令之前，都会给出提示，让用户来确定是否执行。例如`find . -name "*.conf" -mtime +5 -ok rm {} \;`，在当前目录中查找所有文件名以.LOG结尾、最近更改时间在5日以上的文件，并删除它们，只不过在删除之前先给出提示。
 
 ----
 ## 参考文献

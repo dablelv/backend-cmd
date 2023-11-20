@@ -1,11 +1,13 @@
 ## 1.命令简介
 gunzip（GNU unzip）用来解压缩文件。
 
-gunzip 是使用广泛的解压缩程序，用于解开被 gzip 压缩的文件，这些压缩文件扩展名为 .gz。
+gunzip 是使用广泛的解压缩程序，可以解压缩由 gzip、zip、compress、compress -H 或 pack 创建的文件。输入格式的检测是自动的。
 
-事实上 gunzip 是 gzip 的硬连接，因此不论是压缩或解压缩，都可通过 gzip 单独完成。
+如果是解压缩 gzip 创建的 .gz 压缩文件，也可通过 gzip 单独完成，即 gzip -d。
 
-gunzip 等价于 gzip -d。
+如果是解压缩 zip 创建的 .zip 压缩文件，也可通过 unzip 完成。
+
+如果解压缩 compress 创建的 .Z 压缩文件，也可通过 uncompress 完成。事实上 uncompress 是 gunzip 的硬链接。
 
 ## 2.命令格式
 ```shell
