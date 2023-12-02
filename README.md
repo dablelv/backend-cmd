@@ -1,6 +1,8 @@
 ﻿![这里写图片描述](vuepress-docs/assets/imgs/logo.png)
-## 本书由来
+## 在线阅读
+[后台开发命令365](https://dablelv.github.io/backend-cmd/)
 
+## 本书由来
 Linux 命令是用户与系统交互的主要手段之一，是 Linux 后台开发与运维从业者的必备技能。
 
 Linux 命令分两类，Shell 内建命令和 Linux 命令。学习掌握常用的 Linux 命令，在求职应聘和日常工作中，都会给我们带来很大的帮助。当然，熟练使用 Linux 命令，也有助于我们进一步理解 Linux 系统的方方面面，比如资源管理、文件系统、网络通信等。
