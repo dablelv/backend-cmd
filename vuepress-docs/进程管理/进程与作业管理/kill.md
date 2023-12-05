@@ -57,16 +57,18 @@ kill -l
 只有信号 SIGKILL(9) 才可以无条件终止进程，其他信号进程都有权忽略。
 
 下面是常用的信号：
-信号|全称|取值|默认动作|含义
----|---|---|---|---
-SIGHUP|Signal Hang Up|1|Terminate|终端断线
-SIGINT|Signal Interrupt|2|Terminate|中断（同 Ctrl + C）
-SIGQUIT|Signal Quit|3|Terminate and Dump Core|退出（同 Ctrl + \）
-SIGABRT|Signal Abort|6|Terminate and Dump Core|来自 abort(3) 的中止信号
-SIGKILL|Signal Kill|9|Terminate|强制终止
-SIGTERM|Signal Terminate|15|Terminate|优雅终止进程
-SIGCONT|Signal Continue|18|Continue|如果停止则继续执行（与 STOP 相反）
-SIGSTOP|Signal Stop|19|Stop|暂停进程（同 Ctrl + Z）
+信号|全称|默认动作|含义
+:---|:---|:---|:---
+SIGHUP(1)|Signal Hang Up|Terminate|终端断线
+SIGINT(2)|Signal Interrupt|Terminate|中断（同 Ctrl+C）
+SIGQUIT(3)|Signal Quit|Terminate and Dump Core|退出（同 Ctrl+\）
+SIGABRT(6)|Signal Abort|Terminate and Dump Core|来自 abort(3) 的中止信号
+SIGKILL(9)|Signal Kill|Terminate|强制终止
+SIGSEGV(11)|Signal Segmentation Fault|Terminate and Dump Core|段错误。通常表示程序访问了无效的内存地址
+SIGTERM(15)|Signal Terminate|Terminate|优雅终止进程。该信号可以被捕获
+SIGCONT(18)|Signal Continue|Continue|如果停止则继续执行（与 STOP 和 TSTP 相反）
+SIGSTOP(19)|Signal Stop|Stop|强制暂停进程。不可被捕获
+SIGTSTP(20)|Signal Terminal Stop|Stop|终端暂停信号。可以被捕获。终端按下 Ctrl+Z 键可触发
 
 ---
 ## 参考文献
