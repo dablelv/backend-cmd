@@ -58,13 +58,12 @@ objfile...：目标文件，包括库文件或可执行文件
 
 #include <iostream>
 
-int main()
-{
-        std::cout<<"strip"<<std::endl;
+int main() {
+      std::cout<<"strip"<<std::endl;
 }
 ```
 使用 g++ 编译生成可执行文件 main.out。
-```
+```shell
 g++ -o main.out main.cpp
 ll
 -rw-r--r-- 1 root root     68 Mar 22 15:55 main.cpp
@@ -111,7 +110,7 @@ nm: main.out: no symbols
 ## 5.小结
 通过上面的例子可以看出，strip 命令可用于剥掉目标文件的符号，使文件变小，这就节省了很多空间。
 
-其实，strip 不仅仅针对可执行文件， 还能针对目标文件和静态、动态库等。在实际的开发中， 经常需要对动态库 .so 进行 strip 操作， 减少空间。 而在调试的时候（比如用 addr2line），就需要符号了。因此，通常的做法是用 strip 前的库来调试，strip 后的库用来发布， 发布的 strip 后的库一旦出了问题， 就可以找对应的未 strip 的库来定位。
+其实，strip 不仅仅针对可执行文件，还能针对目标文件和静态、动态库等。在实际的开发中，经常需要对动态库 .so 进行 strip 操作以减少空间。而在调试的时候（比如用 addr2line），就需要符号了。因此，通常的做法是用 strip 前的库调试，strip 后的库发布，发布的 strip 后的库一旦出了问题， 可以找对应未 strip 的库来定位。
 
 ---
 ## 参考文献
