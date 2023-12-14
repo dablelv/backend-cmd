@@ -8,7 +8,7 @@ date 命令用于按照指定格式显示当前时间或者指定的时间，也
 date [OPTION]... [+FORMAT]
 date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
 ```
-其中，FORMAT为格式控制字符串，可取如下值：
+其中 FORMAT 为格式控制字符串，可取如下值：
 ```shell
 %% 字符%
 %a 星期的简称（Sun~Sat）
@@ -65,40 +65,54 @@ _ (underscore，下划线)：以空格填充
 
 ## 3.命令选项
 ```shell
--d, --date=STRING：显示由STRING指定的时间，而不是当前时间戳；
--f, --file=DATEFILE：显示DATEFILE文件中的每行时间；
--I[TIMESPEC], --iso-8601[=TIMESPEC]：以ISO 8601规范格式按照指定精度[TIMESPEC]显示时间。TIMESPEC默认取值为"date"，亦可取值'hours', 'minutes', 'seconds', 或 'ns'；
--r, --reference=FILE：显示文件的最后修改时间
--R, --rfc-2822：以RFC-2822规定格式显示时间，例如：Wed, 05 Dec 2018 22:10:34 +0800
---rfc-3339=TIMESPEC：以RFC 3339规定格式显示时间，可以由TIMESPEC指明精度，TIMESPEC可取值'date', 'seconds', or 'ns'。例如：2018-12-05 22:09:59.230994842+08:00
--s, --set=STRING：设置系统时间为STRING指定的时间
--u, --utc, --universal：显示或设定为协调世界时（UTC，Coordinated Universal Time）时间格式
---help：显示date命令的帮助信息
---version：显示date命令的版本信息
+-d, --date=STRING
+	显示由STRING指定的时间，而不是当前时间戳
+-f, --file=DATEFILE
+	显示 DATEFILE 文件中的每行时间
+-I[TIMESPEC], --iso-8601[=TIMESPEC]
+	以ISO 8601 规范格式按照指定精度[TIMESPEC]显示时间。TIMESPEC默认取值为"date"，亦可取值'hours', 'minutes', 'seconds', 或 'ns'。
+-r, --reference=FILE
+	显示文件的最后修改时间
+-R, --rfc-2822
+	以 RFC-2822 规定格式显示时间，例如：Wed, 05 Dec 2018 22:10:34 +0800
+--rfc-3339=TIMESPEC
+	以 RFC 3339 规定格式显示时间，可以由TIMESPEC指明精度，TIMESPEC可取值'date', 'seconds', or 'ns'。例如：2018-12-05 22:09:59.230994842+08:00
+-s, --set=STRING
+	设置系统时间为 STRING 指定的时间
+-u, --utc, --universal
+	显示或设定为协调世界时（UTC，Coordinated Universal Time）时间格式
+--help
+	显示帮助信息
+--version
+	显示版本信息
 ```
 
 ## 4.常用示例
-（1）获取Unix时间戳。
+（1）获取 Unix 时间戳。
 ```shell
+# 获取当前 Unix 时间戳
 date +%s
 1544067345
+
+# 按照 UTC+0 时间解析指定日期时间的 Unix 时间戳
+date -u -d "2023-12-14 01:56:31"
 ```
-（2）将Unix时间戳转换为可读时间。
-```
+（2）将 Unix 时间戳转换为可读时间。
+```shell
 date -d @1483525407
 Wed Jan  4 18:23:27 CST 2017
 
 date -d @1483525407 +"%F %T"
 2017-01-04 18:23:27
 ```
-注意：-d后需跟合法格式的日期，所以时间戳需要添加@符以示区别。
+注意：-d 后需跟合法格式的日期时间，所以时间戳需要添加 @ 符以示区别。
 
 （3）格式化输出当前时间。
 ```shell
 date +"%Y-%m-%d %H:%M:%S"
 2018-12-06 10:57:33
 
-#或
+# 等价于
 date +"%F %T"
 ```
 （4）时间加减操作。
@@ -111,18 +125,17 @@ date -d "+1 month" +"%Y-%m-%d %H:%M:%S"     //显示下一月的时间
 date -d "-1 year" +"%Y-%m-%d %H:%M:%S"      //显示前一年的时间
 date -d "+1 year" +"%Y-%m-%d %H:%M:%S"      //显示下一年的时间
 ```
-
 （5）普通格式转换。
 ```shell
 date -d "2009-12-12" +"%Y/%m/%d %H:%M:%S"
 2009/12/12 00:00:00
 ```
-
 （6）设置系统时间。
 ```shell
 date -s "2016-11-11 00:00:00"
 Fri Nov 11 00:00:00 CST 2016
 
+# 查看是否设置成功
 date
 Fri Nov 11 00:00:05 CST 2016
 ```

@@ -11,7 +11,7 @@ Linux 命令分两类，Shell 内建命令和 Linux 命令。学习掌握常用�
 - 作为个人学习笔记，以备日常工作需要时查阅；
 - 网络和市面上已经有很多关于 Linux 命令的文章和书籍，但是因为命令选项介绍的不够齐全或者是示例不够丰富，所以自己整理记录下命令的选项说明和常见用例，以飨读者。
 
-希望本书[《后台开发命令365》](https://dablelv.github.io/backend-cmd/)能够帮助大家。
+希望本书[《后台开发命令365》](https://dablelv.github.io/backend-cmd/)能够帮助到大家。
 
 ## 内容简介
 
@@ -48,5 +48,5 @@ FILE：大写的内容为待替换内容（优先使用）
 ---
 
 <p align=center style="font-size:13px;color:gray">
-CC BY-NC 4.0 Licensed | Copyright © 2023-present Dable Lv
+CC BY-NC 4.0 Licensed | Copyright © 2023-present 恋喵大鲤鱼
 </p>

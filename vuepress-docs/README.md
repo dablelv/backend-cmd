@@ -1,8 +1,7 @@
-﻿![这里写图片描述](./assets/imgs/logo.png)
+﻿![这里写图片描述](vuepress-docs/assets/imgs/logo.png)
 
 ## 本书由来
-
-Linux 命令是用户与 Linux 交互的主要手段之一，是 Linux 后台开发与运维从业者的必备技能。
+Linux 命令是用户与系统交互的主要手段之一，是 Linux 后台开发与运维从业者的必备技能。
 
 Linux 命令分两类，Shell 内建命令和 Linux 命令。学习掌握常用的 Linux 命令，在求职应聘和日常工作中，都会给我们带来很大的帮助。当然，熟练使用 Linux 命令，也有助于我们进一步理解 Linux 系统的方方面面，比如资源管理、文件系统、网络通信等。
 
@@ -11,6 +10,8 @@ Linux 命令分两类，Shell 内建命令和 Linux 命令。学习掌握常用�
 分享这些命令的初衷有两点：
 - 作为个人学习笔记，以备日常工作需要时查阅；
 - 网络和市面上已经有很多关于 Linux 命令的文章和书籍，但是因为命令选项介绍的不够齐全或者是示例不够丰富，所以自己整理记录下命令的选项说明和常见用例，以飨读者。
+
+希望本书[《后台开发命令365》](https://dablelv.github.io/backend-cmd/)能够帮助大家。
 
 ## 内容简介
 
@@ -47,7 +48,7 @@ FILE：大写的内容为待替换内容（优先使用）
 ---
 
 <p align=center style="font-size:13px;color:gray">
-CC BY-NC 4.0 Licensed | Copyright © 2023-present Dable Lv
+CC BY-NC 4.0 Licensed | Copyright © 2023-present 恋喵大鲤鱼
 </p>
 
 <Vssue title="前言" />
