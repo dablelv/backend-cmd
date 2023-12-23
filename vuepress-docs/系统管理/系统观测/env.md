@@ -34,15 +34,16 @@ TERM=xterm
 SHELL=/bin/bash
 ...
 ```
-（2）临时更改环境变量，使得程序在新的环境变量下运行。例如，使用 C 程序 a.out 用于获取环境变量 PAHT。实现如下：
+（2）临时更改环境变量，使得程序在新的环境变量下运行。
+
+例如，使用 C 程序 a.out 用于获取环境变量 PATH。
 ```c
 // main.c
 
 #include <stdlib.h>
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     char *pathvar;
     pathvar = getenv("PATH");
     printf("PATH=%s\n",pathvar);
