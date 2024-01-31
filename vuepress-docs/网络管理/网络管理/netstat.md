@@ -299,7 +299,7 @@ eth1            1      ff02::1
 ```
 netstat 的大部分功能都介绍了，如果想知道 netstat 更高级的功能，请参考 netstat 帮助手册。
 
-## 6.输出结果整体说明
+## 6.输出结果说明
 执行 netstat 命令输出：
 ```shell
 Active Internet connections (w/o servers)
@@ -373,7 +373,5 @@ Path 表示套接字所在路径。
 [Linux netstat命令详解](http://www.cnblogs.com/ggjucheng/archive/2012/01/08/2316661.html)
 
 [Linux命令之netstat](https://www.cnblogs.com/diantong/p/9669568.html)
-
-[TCP的三次握手与四次挥手（详解+动图）](https://blog.csdn.net/qzcsu/article/details/72861891)
 
 <Vssue title="netstat" />
