@@ -1,19 +1,56 @@
 ## 1.命令简介
-netstat 用来打印 Linux 系统的网络状态信息，包括网络连接（network connections）、路由表（routing tables）、网络接口设备统计信息（interface statistics）、伪连接（masquerade connections）和多播成员信息（multicast memberships）等，得知 Linux 系统网络的整体情况。
+netstat 用来打印系统的网络状态信息，包括：
+- 网络连接（network connections）
+- 路由表（routing tables）
+- 网络接口设备统计信息（interface statistics）
+- 伪连接（masquerade connections）
+- 多播成员信息（multicast memberships）等
 
-如我们可以通过 netstat 获知系统当前被监听的端口号列表。
+比如通过 netstat 获知系统当前被监听的端口号列表。
 
-netstat 是通过读取 /proc/net/ 路径下的 tcp、udp、unix 等文件来获取连接信息的。
+netstat 通过读取 /proc/net/ 路径下的 tcp、udp、unix 等文件获取连接信息。
 
 ## 2.命令格式
+```shell
+netstat [<address_family_options>] [OPTIONS]
+netstat [--route|-r] [<address_family_options>] [OPTIONS]
+netstat [--interfaces|-i] [OPTIONS]
+netstat [--groups|-g] [OPTIONS]
+netstat [--masquerade|-M] [OPTIONS]
+netstat [--statistics|-s] [OPTIONS]
+netstat -V|--version
+netstat -h|--help
 ```
-netstat [OPTIONS]
+其中 address_family_options 表示协议族，可取值：
+```shell
+[-4|--inet] [-6|--inet6]
+[--protocol={inet,inet6,unix,ipx,ax25,netrom,ddp,bluetooth, ... }]
+[--unix|-x] [--inet|--ip|--tcpip] [--ax25] [--x25] [--rose]
+[--ash] [--bluetooth] [--ipx] [--netrom] [--ddp|--appletalk]
+[--econet|--ec]
 ```
 
-## 3.选项说明
+## 3.类型参数
+netstat 打印有关 Linux 网络子系统的信息。打印信息的类型由第一个参数控制。
+```
+(none)
+	默认情况下，显示打开的套接字列表。如果不指定任何地址族，将打印所有配置的地址族的活动套接字
+-r, --route
+	显示内核路由表。命令 route -e 会产生同样的结果
+-g, --groups
+	显示 IPv4 和 IPv6 的多播组成员信息
+-i, --interfaces
+	以表格形式显示所有网络接口及其各自的接收和传输错误计数器
+-M, --masquerade
+	显示伪装连接的列表
+-s, --statistics
+	显示各协议的汇总统计信息
+```
+
+## 4.选项说明
 ```shell
 -a, --all
-	显示所有网络连接
+	显示侦听和非侦听套接字。如果包含 --interfaces 选项，未启动的接口也会显示
 -A，--protocol=FAMILY
 	列出指定地址族的连接信息。FAMILY 为逗号分隔的地址族关键字列表，比如inet，inet6，unix，ipx，ax25，netrom，econet 和 ddp 等
 -c,--continuous
@@ -28,12 +65,8 @@ netstat [OPTIONS]
 	显示 IPv4 和 IPv6 的多播组成员关系信息
 -h, --help
 	显示帮助信息
--i, -I=IFACE, --interfaces=IFACE
-	显示所有网络接口或指定的网络接口
 -l, --listening
 	显示监听中的套接字(默认选项)
--M, --masquerade
-	显示伪装的网络连接
 -n, --numeric
 	以数字形式而不是以符号显示主机、端口或用户名。
 --numeric-hosts
@@ -48,10 +81,6 @@ netstat [OPTIONS]
 	显示计时器
 -p, --programs
 	显示正在使用 Socket 的进程 ID 和进程名
--r, --route
-	显示内核路由表。命令 route -e 会产生同样的结果
--s, --statistice
-	显示每种协议的统计信息
 -t, --tcp
 	显示TCP传输协议的连接状况
 -u, --udp
@@ -68,7 +97,7 @@ netstat [OPTIONS]
 	此参数的效果和指定 "-A inet" 参数相同
 ```
 
-## 4.常用示例
+## 5.常用示例
 （1）列出所有端口信息（包括监听和未监听的）。
 - 列出所有端口。
 ```
@@ -270,7 +299,7 @@ eth1            1      ff02::1
 ```
 netstat 的大部分功能都介绍了，如果想知道 netstat 更高级的功能，请参考 netstat 帮助手册。
 
-## 5.输出结果整体说明
+## 6.输出结果整体说明
 执行 netstat 命令输出：
 ```shell
 Active Internet connections (w/o servers)
