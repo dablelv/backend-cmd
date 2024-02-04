@@ -1,11 +1,12 @@
 ## 1.命令简介
-cat 用于连接文件的内容并打印到标准输出。
+cat（concatenate）连接文件的内容并打印到标准输出。
 
 ## 2.命令格式
-```
+```bash
 cat [OPTION]... [FILE]...
 ```
 在没有文件或文件是 - 时，读取标准输入。
+
 ## 3.选项说明
 ```
 -
@@ -36,34 +37,32 @@ cat [OPTION]... [FILE]...
 
 ## 4.常用示例
 （1）查看文件内容。
-```
+```bash
 cat  filename
 ```
 （2）将几个文件合并为一个文件。
-```
+```bash
 cat file1 file2 > file
 ```
 （3）从标准输入读取内容并重定向到文件。键入 Ctrl + d 结束输入。
-```
+```bash
 cat > filename
 ```
 （4）把 file1 的文档内容加上行号后重定向到 file2。
-```
+```bash
 cat -n file1 > file2
 ```
 （5）将文件 file1 和标准输入内容，纵向连接后重定向至文件 file2。
-```
+```bash
 cat file1 - > file2
 ```
 （6）清空文件内容。
-```
+```bash
 cat /dev/null > file
 ```
 
-----
+---
 ## 参考文献
-[cat(1) - Linux manual page - man7.org](http://man7.org/linux/man-pages/man1/cat.1.html)
-
-[菜鸟教程.Linux cat命令](http://www.runoob.com/linux/linux-comm-cat.html)
+[cat(1) manual - man7.org](http://man7.org/linux/man-pages/man1/cat.1.html)
 
 <Vssue title="cat" />
