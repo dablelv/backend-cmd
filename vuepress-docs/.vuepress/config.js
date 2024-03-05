@@ -18,10 +18,7 @@ module.exports = {
     [
       '@vssue/vuepress-plugin-vssue',
       {
-        // 设置 `platform` 而不是 `api`
         platform: 'github',
-  
-        // 其他的 Vssue 配置
         owner: 'dablelv',
         repo: 'backend-cmd',
         clientId: '00e71455ec1a9e6ac134',
@@ -293,6 +290,7 @@ module.exports = {
               ['/系统管理/系统观测/dnsdomainname', 'dnsdomainname'],
               ['/系统管理/系统观测/domainname', 'domainname'],
               ['/系统管理/系统观测/env', 'env'],
+              ['/系统管理/系统观测/printenv', 'printenv'],
               ['/系统管理/系统观测/free', 'free'],
               ['/系统管理/系统观测/hostid', 'hostid'],
               ['/系统管理/系统观测/hostname', 'hostname'],
