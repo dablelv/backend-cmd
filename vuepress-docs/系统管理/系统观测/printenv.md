@@ -66,7 +66,6 @@ TERM：指定终端类型。
 EDITOR：指定默认的文本编辑器。
 TZ：指定时区。
 LD_LIBRARY_PATH：指定动态链接库（shared library）的搜索路径。
-PS1：指定Shell提示符的格式。
 MAIL：指定邮件的存放路径。
 HOSTNAME：当前主机的主机名。
 _(下划线)：上一条命令的最后一个参数
